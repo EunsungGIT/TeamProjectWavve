@@ -1,0 +1,28 @@
+/* 위로가기 */
+#up {position: fixed; right: 20px; bottom: 20px;}
+
+/* header */
+header {background: #1b1b1b;}
+header .h_top {
+    height: 34px; padding: 0 204px;
+    border-bottom: 1px solid #a5a5a5;
+    display: flex; justify-content: flex-end;
+    align-items: center;
+}
+header .h_top a {
+    font-size: 0.75rem; padding: 0 11px;
+    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+}
+header .h_bottom {
+    height: 74px; margin: 0 204px; align-items: center;
+    display: flex; justify-content: space-between;
+}
+header .h_bottom .logo {}
+header .h_bottom a img {}
+header .h_bottom nav {}
+header .h_bottom nav a {
+    font-size: 1.25rem; padding: 0 10px;
+    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+}
+header .h_bottom nav a:first-child {color: #fff;}
+header .h_bottom .search {}
