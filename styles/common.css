@@ -4,25 +4,144 @@
 /* header */
 header {background: #1b1b1b;}
 header .h_top {
-    height: 34px; padding: 0 204px;
-    border-bottom: 1px solid #a5a5a5;
+    width: 1240px; height: 34px; margin: 0 auto;
     display: flex; justify-content: flex-end;
     align-items: center;
 }
-header .h_top a {
+header .h_top .profile {position: relative;}
+header .h_top .profile > a {
     font-size: 0.75rem; padding: 0 11px;
     color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
 }
+header .h_top .profile .profile_m {
+    width: 150px; height: 300px;
+    background: #1b1b1b; text-align: center;
+    position: absolute; top: 34px;
+}
+header .h_top .profile .profile_m .photo {margin-bottom: 10px;}
+header .h_top .profile .profile_m .photo img {width: 80px;}
+header .h_top .profile .profile_m .name {
+    font-size: 0.875rem; color: #fff;
+    font-weight: 700; font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 10px;
+}
+header .h_top .profile .profile_m .edit {font-size: 0.75rem;}
+header .h_top .profile .profile_m a {
+    display: block; color: #a5a5a5;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 20px; font-size: 0.875rem;
+}
+header .h_top .profile .profile_m a:hover {color: #fff;}
+header .h_top > a {
+    font-size: 0.75rem; padding: 0 11px;
+    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+}
+header .h_top .coupon {position: relative;}
+header .h_top .coupon > a {
+    font-size: 0.75rem; padding: 0 11px;
+    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+}
+header .h_top .coupon .coupon_m {
+    width: 80px; height: 70px;
+    background: #1b1b1b; text-align: center;
+    position: absolute; top: 34px;
+}
+header .h_top .coupon .coupon_m a {
+    padding: 10px 15px; border-bottom: 1px solid #a5a5a5;
+    display: block; font-size: 0.75rem;
+    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+}
+header .h_top .coupon .coupon_m a:hover {color: #fff;}
+header .h_top .coupon .coupon_m a:last-child {border: none;}
+header .h_top .profile .profile_m a span {color: #e938c6;}
 header .h_bottom {
-    height: 74px; margin: 0 204px; align-items: center;
+    position: relative;
+    width: 1240px; height: 74px; margin: 0 auto;
     display: flex; justify-content: space-between;
+    align-items: center; border-top: 1px solid #a5a5a5;
 }
 header .h_bottom .logo {}
 header .h_bottom a img {}
-header .h_bottom nav {}
-header .h_bottom nav a {
-    font-size: 1.25rem; padding: 0 10px;
+header .h_bottom nav {
+    display: flex;
+    position: absolute; left: 180px;
+}
+header .h_bottom nav > a {
+    font-size: 1.25rem; padding: 0 20px;
     color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
 }
-header .h_bottom nav a:first-child {color: #fff;}
+header .h_bottom nav > a:hover {color: #fff;}
+header .h_bottom nav > a:first-child {color: #fff;}
+header .h_bottom nav .category {}
+header .h_bottom nav .category > a {
+    font-size: 1.25rem; padding: 0 20px;
+    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+}
+header .h_bottom nav .category .category_m {
+    width: 220px; height: 460px;
+    background: #101010; padding: 20px;
+    position: absolute; top: 45px;
+}
+header .h_bottom nav .category .category_m .all {
+    padding: 10px 0 20px 0; border-bottom: 1px solid #252525;
+}
+header .h_bottom nav .category .category_m h2 {
+    font-weight: 700; padding: 20px 0 10px 0; font-size: 0.875rem;
+    color: #fff; font-family: 'Noto Sans KR', sans-serif;
+}
+header .h_bottom nav .category .category_m a {
+    display: block; padding: 10px 0; font-size: 0.875rem;
+    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+}
+header .h_bottom nav .category .category_m a:hover {color: #fff;}
 header .h_bottom .search {}
+
+/* main */
+main {height: 100vh; background: aqua;}
+/* footer */
+footer {
+    background: #1b1b1b;
+    border-top: 1px solid #2f2f2f;
+}
+footer .f_top {
+    width: 1240px; height: 50px; margin: 0 auto;
+    border-bottom: 1px solid #2f2f2f; align-items: center;
+    display: flex; justify-content: space-between;
+}
+footer .f_top > a {
+    font-size: 1.125rem; color: #a5a5a5;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+footer .f_top .notice {}
+footer .f_top .notice a {
+    color: #a5a5a5;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+footer .f_top .move {display: flex;}
+footer .f_top .move a {border-left: 1px solid #2f2f2f;}
+footer .f_top .move a:last-child {border-right: 1px solid #2f2f2f;}
+footer .f_bottom {
+    width: 1240px; margin: 0 auto; padding-bottom: 100px;
+    display: flex; justify-content: space-between;
+}
+footer .f_bottom .f_left {}
+footer .f_bottom .f_left .info {}
+footer .f_bottom .f_left .info a {
+    padding: 10px 0; color: #717171;
+    font-size: 0.875rem; font-family: 'Noto Sans KR', sans-serif;
+}
+footer .f_bottom .f_left .company {}
+footer .f_bottom .f_left .company .company_info {}
+footer .f_bottom .f_left .company .company_info a {}
+footer .f_bottom .f_left .company .copyright {
+    color: #717171; margin-top: 10px;
+    font-size: 0.75rem; font-family: 'Noto Sans KR', sans-serif;
+}
+footer .f_bottom .f_right {display: flex;}
+footer .f_bottom .f_right .logo {background: #252525;}
+footer .f_bottom .f_right .logo img {}
+footer .f_bottom .f_right #selWavveOn {}
+footer .f_bottom .f_right option {}
+footer .f_bottom .f_right .sns {display: flex;}
+footer .f_bottom .f_right .sns a {width: 32px;}
+footer .f_bottom .f_right .sns a img {width: 100%;}
