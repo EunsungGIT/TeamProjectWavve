@@ -1,0 +1,36 @@
+body {background: #1b1b1b;}
+main {width: 1240px; margin: 0 auto; height: 100vh;}
+main .category {
+    margin-top: 60px;
+    display: flex; justify-content: flex-start;
+}
+main .category #seriesBtn {
+    width: 240px; height: 60px; text-align: left;
+    padding-left: 64px; position: relative;
+    border: 1px solid #717171; border-radius: 50px;
+    color: #fff; font-family: 'Noto Sans KR', sans-serif;
+    transition: 0.5s;
+}
+main .category #seriesBtn:hover {
+    width: 500px; white-space: nowrap;
+    background: #333;
+}
+main .category #seriesBtn:hover::after {
+    content: '#장르 #채널 #방영정보';
+    position: absolute; right: 20px;
+}
+main .category #movieBtn {
+    width: 240px; height: 60px; text-align: left;
+    margin-left: 10px; padding-left: 64px;
+    border: 1px solid #717171; border-radius: 50px;
+    color: #fff; font-family: 'Noto Sans KR', sans-serif;
+    transition: 0.5s; position: relative;
+}
+main .category #movieBtn:hover {
+    width: 500px; white-space: nowrap;
+    background: #333;
+}
+main .category #movieBtn:hover::after {
+    content: '#장르 #국가 #개봉연도';
+    position: absolute; right: 20px;
+}

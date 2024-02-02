@@ -4,12 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wavve(웨이브)</title>
+    <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
+    <!-- 팝업 -->
+    <div class="popup">
+        <div class="popup_background">
+            <div class="contents">
+                <div class="top">
+                    <a href="#" class="popup_img"></a>
+                    <a href="#" class="close"><img src="./images/close.png" alt="close"></a>
+                </div>
+                <div class="bottom">
+                    <label for="day_close"><input type="checkbox" name="#" id="day_close"><span>일주일동안 안보기</span></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 알림함 -->
+    <div class="notification">
+        <div class="contents_all">
+            <div class="main_contents">
+                <div class="contents_top">
+                    <div class="left">
+                        <span class="notification_sub">알림함</span>
+                    </div>
+                    <div class="right">
+                        <a href="#">
+                            <img src="../images/다운로드.png" alt="#">
+                            <p>알림설정</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="contents_bottom">
+                    <div class="first_contents">
+                        <img src="../images/다운로드 (1).png" alt="#">
+                        <p>알림 내역이 없어요 </p>
+                    </div>
+                    <div class="second_contents">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 전체 카테고리 -->
+    <div class="category_s">
+        <div class="contents_background">
+            <div class="contents">
+                <div class="all_category">
+                    <h1>전체 카테고리</h1>
+                    <div class="scroll">
+                        <ul>
+                            <li class="first">
+                                <h2>방송</h2>
+                                <ul>
+                                    <li><a href="#"><em>CLASSIC</em></a></li>
+                                    <li><a href="#">인기 드라마</a></li>
+                                    <li><a href="#">인기 예능</a></li>
+                                    <li><a href="#">애니메이션</a></li>
+                                    <li><a href="#">키즈</a></li>
+                                    <li><a href="#">스포츠</a></li>
+                                    <li><a href="#">시사교양</a></li>
+                                    <li><a href="#">크리에이터</a></li>
+                                </ul>
+                            </li>
+                            <li class="second">
+                                <h2>해외시리즈</h2>
+                                <ul>
+                                    <li><a href="#"><em>업데이트</em></a></li>
+                                    <li><a href="#">독점</a></li>
+                                    <li><a href="#">미드</a></li>
+                                    <li><a href="#">중드</a></li>
+                                    <li><a href="#">일드</a></li>
+                                    <li><a href="#">영드</a></li>
+                                    <li><a href="#">대드</a></li>
+                                    <li><a href="#">다큐</a></li>
+                                    <li><a href="#">엔터테이먼트</a></li>
+                                    <li><a href="#">SF/판타지</a></li>
+                                    <li><a href="#">로맨스</a></li>
+                                    <li><a href="#">범죄</a></li>
+                                    <li><a href="#">수사</a></li>
+                                    <li><a href="#">액션</a></li>
+                                    <li><a href="#">성장</a></li>
+                                    <li><a href="#">사극</a></li>
+                                    <li><a href="#">시대극</a></li>
+                                    <li><a href="#">현대극</a></li>
+                                    <li><a href="#">메디컬</a></li>
+                                    <li><a href="#">코미디</a></li>
+                                    <li><a href="#">미스터리</a></li>
+                                    <li><a href="#">19</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </li>
+                            <li class="third">
+                                <h2>영화</h2>
+                                <ul>
+                                    <li><a href="#"><em>업데이트</em></a></li>
+                                    <li><a href="#">드라마</a></li>
+                                    <li><a href="#">로맨스</a></li>
+                                    <li><a href="#">코미디</a></li>
+                                    <li><a href="#">액션</a></li>
+                                    <li><a href="#">SF/판타지</a></li>
+                                    <li><a href="#">모험</a></li>
+                                    <li><a href="#">범죄</a></li>
+                                    <li><a href="#">공포</a></li>
+                                    <li><a href="#">음악</a></li>
+                                    <li><a href="#">애니메이션</a></li>
+                                    <li><a href="#">다큐멘터리</a></li>
+                                    <li><a href="#">전쟁/재난</a></li>
+                                    <li><a href="#">가족</a></li>
+                                    <li><a href="#">에로티시즘</a></li>
+                                </ul>
+                            </li>
+                            <li class="four">
+                                <h2>영화플러스</h2>
+                                <ul>
+                                    <li><a href="#"><em>인기</em></a></li>
+                                    <li><a href="#"><em>이벤트/할인</em></a></li>
+                                    <li><a href="#">드라마</a></li>
+                                    <li><a href="#">로맨스</a></li>
+                                    <li><a href="#">코미디</a></li>
+                                    <li><a href="#">액션</a></li>
+                                    <li><a href="#">SF/판타지</a></li>
+                                    <li><a href="#">모험</a></li>
+                                    <li><a href="#">범죄</a></li>
+                                    <li><a href="#">공포</a></li>
+                                    <li><a href="#">애니메이션</a></li>
+                                    <li><a href="#">다큐멘터리</a></li>
+                                    <li><a href="#">전쟁/재난</a></li>
+                                    <li><a href="#">가족</a></li>
+                                    <li><a href="#">에로티시즘</a></li>
+                                </ul>
+                            </li>
+                            <li class="five">
+                                <h2>LIVE</h2>
+                                <ul>
+                                    <li><a href="#">정주행 채널</a></li>
+                                    <li><a href="#">지상파</a></li>
+                                    <li><a href="#">종편/보도</a></li>
+                                    <li><a href="#">홈쇼핑</a></li>
+                                    <li><a href="#">드라마/예능</a></li>
+                                    <li><a href="#">시사/교양</a></li>
+                                    <li><a href="#">영화/스포츠</a></li>
+                                    <li><a href="#">키즈/아내</a></li>
+                                    <li><a href="#">라디오/음악</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- 위로가기 -->
     <a href="#" id="up"><img src="./images/up.png" alt="위로가기"></a>
     <!-- header -->
@@ -20,7 +171,7 @@
                 <div class="profile_m">
                     <p class="photo"><img src="./images/profile.png" alt="프로필"></p>
                     <p class="name">프로필1</p>
-                    <a href="#" class="edit">프로필 편집 <img src="#" alt="바로가기"></a>
+                    <a href="#" class="edit">프로필 편집 <img src="./images/more.png" alt="바로가기"></a>
                     <a href="#">회원정보 수정</a>
                     <a href="#">성인 콘텐츠 설정</a>
                     <a href="#">알림함 <span>0</span></a>
@@ -61,7 +212,11 @@
                 <a href="#">LIVE</a>
                 <a href="#">MY</a>
             </nav>
-            <a href="#" class="search"><img src="./images/search.svg" alt="검색하기"></a>
+            <div class="search">
+                <label for="user_search"><img src="./images/search.svg" alt="검색하기"></label>
+                <input type="search" id="user_search" placeholder="제목, 장르, 배우로 찾아보세요">
+                <a href="#" class="search"><img src="./images/search.svg" alt="검색하기"></a>
+            </div>
         </div>
     </header>
     <!-- main -->
@@ -84,18 +239,23 @@
             <div class="f_left">
                 <div class="info">
                     <a href="#">회사소개</a>
-                    <a href="#">회사소개</a>
-                    <a href="#">회사소개</a>
-                    <a href="#">회사소개</a>
-                    <a href="#">회사소개</a>
-                    <a href="#">회사소개</a>
+                    <a href="#">인재채용</a>
+                    <a href="#">서비스 소개</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보 처리방침</a>
+                    <a href="#">고객센터</a>
                 </div>
                 <div class="company">
                     <p class="company_info">
-                        콘텐츠웨이브 주식회사대표이사 이태현고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)
-                        사업자등록번호 220-88-38020호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사
-                        통신판매업 신고번호 : 제 2021-서울영등포-0585호통신판매업 정보 공개 : <a href="#">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a>
-                        서울특별시 영등포구 여의나루로 60 포스트타워 19층전자우편주소 : <a href="#">helpdesk@wavve.com</a>
+                        <span>콘텐츠웨이브 주식회사</span>
+                        <span>대표이사 이태현</span>
+                        <span class="last">고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)</span><br>
+                        <span>사업자등록번호 220-88-38020</span>
+                        <span class="last">호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사</span><br>
+                        <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
+                        <span class="last">통신판매업 정보 공개 : <a href="#">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
+                        <span>서울특별시 영등포구 여의나루로 60 포스트타워 19층</span>
+                        <span class="last">전자우편주소 : <a href="#">helpdesk@wavve.com</a></span><br>
                     </p>
                     <p class="copyright">Copyright&copy; 콘텐츠웨이브(주) All rights reserved.</p>
                 </div>
@@ -103,9 +263,6 @@
             <div class="f_right">
                 <a href="#" class="logo"><img src="./images/footer_logo.svg" alt="웨이브온"></a>
                 <select name="selWavveOn" id="selWavveOn">
-                    <option value="">사업자용 웨이브 가입</option>
-                    <option value="">사업자용 웨이브 가입</option>
-                    <option value="">사업자용 웨이브 가입</option>
                     <option value="">사업자용 웨이브 가입</option>
                     <option value="">사업자용 웨이브 가입</option>
                     <option value="">사업자용 웨이브 가입</option>
