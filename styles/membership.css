@@ -1,0 +1,49 @@
+main {background: #1b1b1b;}
+main .title {
+    padding: 40px 0; color: #252525;
+    width: 1240px; margin: 0 auto;
+}
+main .title h2 {
+    color: #fff; font-size: 1.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+main .title p {
+    color: #a5a5a5; margin-top: 2px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+main .event {
+    background: #3468f2;
+    display: flex; justify-content: center;
+}
+main .event img {width: 1024px;}
+main .membership {
+    width: 1240px; margin: 0 auto;
+}
+main .membership .membership_title {
+    display: flex;
+}
+main .membership .membership_title a {
+    height: 110px; align-items: center;
+    width: 50%; color: #fff;
+    display: flex; justify-content: flex-end;
+    font-size: 1.25rem; padding: 0 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+main .membership .membership_title a:nth-of-type(2) {
+    color: #a5a5a5; justify-content: flex-start;
+}
+main .membership table {
+    width: 100%;
+    border: 1px solid #a5a5a5;
+}
+main .membership table thead {}
+main .membership table thead tr {}
+main .membership table thead tr th {}
+main .membership table tbody {}
+main .membership table tbody tr {}
+main .membership table tbody tr th {
+    padding: 28px 16px;
+}
+main .membership table tbody tr td {
+    padding: 28px 16px;
+}
