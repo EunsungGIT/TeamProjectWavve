@@ -195,10 +195,16 @@ header .h_bottom nav .category .category_m a {
 }
 header .h_bottom nav .category .category_m a:hover {color: #fff;}
 header .h_bottom .search {}
-header .h_bottom .search label {}
-header .h_bottom .search label img {}
-header .h_bottom .search #user_search {
-    width: 360px; height: 40px;
+header .h_bottom .search a {}
+header .h_bottom .search a img {}
+header .h_bottom .search label {
+    display: none; position: relative;
+}
+header .h_bottom .search label img {
+    position: absolute; padding: 9px;
+}
+header .h_bottom .search label #user_search {
+    width: 360px; height: 40px; color: #fff;
     background: #000; padding: 0 40px;
     border: 1px solid #232323;
 }
@@ -206,12 +212,6 @@ header .h_bottom .search #user_search::placeholder {
     font-family: 'Noto Sans KR', sans-serif;
     color: #a5a5a5;
 }
-header .h_bottom .search a {}
-header .h_bottom .search a img {}
-
-/* main */
-main {height: 100vh;}
-
 /* footer */
 footer {
     background: #1b1b1b;

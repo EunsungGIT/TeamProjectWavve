@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/search.css">
@@ -63,27 +64,75 @@
                     <a href="#">LIVE</a>
                     <a href="#">MY</a>
                 </nav>
+                <!-- 검색 -->
                 <div class="search">
-                    <label for="user_search"><img src="./images/search.svg" alt="검색하기"></label>
-                    <input type="search" id="user_search" placeholder="제목, 장르, 배우로 찾아보세요">
                     <a href="#"><img src="./images/search.svg" alt="검색하기"></a>
+                    <label for="user_search">
+                        <img src="./images/search.svg" alt="검색하기">
+                        <input type="search" id="user_search" placeholder="제목, 장르, 배우로 찾아보세요">
+                    </label>
                 </div>
             </div>
         </header>
         <!-- main -->
         <main>
             <div class="category">
-                <button type="button" id="seriesBtn">
-                    <img src="./images/series.svg" alt="시리즈">
-                    시리즈
-                    <img src="./images/more.png" alt="">
-                </button>
-                <button type="button" id="movieBtn">
-                    <img src="./images/movie.svg" alt="시리즈">
-                    영화
-                    <img src="./images/more.png" alt="">
-                </button>
+                <button type="button" id="seriesBtn">시리즈</button>
+                <button type="button" id="movieBtn">영화</button>
             </div>
+            <section>
+                <h2>인기 시리즈</h2>
+                <div class="swiper-wrapper" id="swiper">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide">
+                            <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                            <span>나 혼자 산다</span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                            <span>나 혼자 산다</span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                            <span>나 혼자 산다</span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                            <span>나 혼자 산다</span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./images/PRG_M_1003594100000100000-Horizontal_LogoY.jpg" alt="나 혼자 산다">
+                            <span>나 혼자 산다</span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                            <span>나 혼자 산다</span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                            <span>나 혼자 산다</span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                            <span>나 혼자 산다</span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                            <span>나 혼자 산다</span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                            <span>나 혼자 산다</span>
+                        </a>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="./images/slide_prev.png" alt="이전">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="./images/slide_next.png" alt="다음">
+                    </div>
+                </div>
+            </section>
         </main>
         <!-- footer -->
         <footer>
@@ -139,5 +188,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./script/search.js"></script>
 </body>
 </html>
