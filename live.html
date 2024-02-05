@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웨이브 LIVE</title>
+    <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/live.css">
+</head>
+<body>
+    <main>
+        <div class="title_wrap">
+            <div class="title">
+                <h2>LIVE</h2>
+                <div class="reservation_table">
+                    <a href="#"><img src="./images/alarm.svg" alt=""> 시청예약</a>
+                    <a href="#"><img src="./images/table.svg" alt=""> 편성표</a>
+                </div>
+            </div>
+        </div>
+        <section class="live">
+            <div class="live_title">
+                <h2>전체 채널</h2>
+                <select name="genre" id="genre">
+                    <option value="">정주행 채널 (무료)</option>
+                    <option value="">지상파</option>
+                    <option value="">종편/보도</option>
+                    <option value="">홈쇼핑 (무료)</option>
+                    <option value="">드라마/예능</option>
+                    <option value="">시사/교양</option>
+                    <option value="">영화/스포츠</option>
+                    <option value="">키즈/애니</option>
+                    <option value="">라디오/음악</option>
+                </select>
+            </div>
+            <div class="live_video">
+                <video src="./video/live_001.mp4" autoplay muted></video>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

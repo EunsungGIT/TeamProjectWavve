@@ -1,0 +1,36 @@
+main {background: #1b1b1b;}
+main .title_wrap {
+    background: #252525;
+    margin-bottom: 40px; padding: 40px 0;
+}
+main .title_wrap .title {
+    width: 1240px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+}
+main .title_wrap .title h2 {
+    color: #fff; font-size: 1.5rem;
+}
+main .title_wrap .title .reservation_table {display: flex;}
+main .title_wrap .title .reservation_table a {
+    margin-right: 20px; color: #a5a5a5;
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+main .title_wrap .title .reservation_table a:last-child {margin: 0;}
+main .title_wrap .title .reservation_table a img {}
+main .live {
+    width: 1240px; margin: 0 auto;
+}
+main .live .live_title {
+    margin-bottom: 20px;
+    display: flex; justify-content: space-between;
+}
+main .live .live_title h2 {
+    font-size: 1.5rem; color: #fff;
+    font-weight: 700;
+}
+main .live .live_title #genre {}
+main .live .live_title #genre option {}
+main .live .live_video {}
+main .live .live_video video {
+    width: 240px; height: 135px;
+}
