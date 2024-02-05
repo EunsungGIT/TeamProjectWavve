@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>저녀보호설정:웨이브</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/adult_main.css">
+    <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header>
+        <div class="h_top">
+            <div class="profile">
+                <a href="#">프로필1 <img src="./images/arrow.png" alt="더보기"></a>
+                <div class="profile_m">
+                    <p class="photo"><img src="./images/profile.png" alt="프로필"></p>
+                    <p class="name">프로필1</p>
+                    <a href="#" class="edit">프로필 편집 <img src="./images/more.png" alt="바로가기"></a>
+                    <a href="#">회원정보 수정</a>
+                    <a href="#">성인 콘텐츠 설정</a>
+                    <a href="#">알림함 <span>0</span></a>
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+            <a href="./membership.html">이용권</a>
+            <div class="coupon">
+                <a href="#">쿠폰·코인 <img src="./images/arrow.png" alt="더보기"></a>
+                <div class="coupon_m">
+                    <a href="#">쿠폰 등록</a>
+                    <a href="#">코인 충전</a>
+                </div>
+            </div>
+            <a href="#">웨이브온</a>
+            <a href="#">이벤트</a>
+        </div>
+        <div class="h_bottom_wrap">
+            <div class="h_bottom">
+                <a href="./index.html" class="logo"><img src="./images/logo.svg" alt="Wavve"></a>
+                <nav>
+                    <a href="#">홈</a>
+                    <div class="category">
+                        <a href="#">카테고리</a>
+                        <div class="category_m">
+                            <a href="#" class="all">전체 카테고리 보기</a>
+                            <h2>추천 메뉴</h2>
+                            <a href="#">ORIGINAL</a>
+                            <a href="#">CLASSIC</a>
+                            <a href="#">드라마</a>
+                            <a href="#">예능</a>
+                            <a href="#">시사교양</a>
+                            <a href="#">애니메이션</a>
+                            <a href="#">해외시리즈</a>
+                            <a href="#">영화</a>
+                            <a href="#">영화플러스</a>
+                        </div>
+                    </div>
+                    <a href="#">LIVE</a>
+                    <a href="#">MY</a>
+                </nav>
+                <!-- 검색 -->
+                <div class="search">
+                    <a href="./search.html"><img src="./images/search.svg" alt="검색하기"></a>
+                    <label for="user_search">
+                        <img src="./images/search.svg" alt="검색하기">
+                        <input type="search" id="user_search" placeholder="제목, 장르, 배우로 찾아보세요">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="adult">
+            <div class="title">
+                <h1>성인 컨텐츠 설정</h1>
+            </div>
+            <div class="contents">
+                <h2>자녀보호설정</h2>
+                <ul>
+                    <li>
+                        <div class="title_box">
+                            <label for="first_radio" class="first_contents">
+                                <input type="radio" id="first_radio" value="H" name="adult_checked" checked>
+                                <span>성인컨텐츠 숨김</span>
+                            </label>
+                            <div class="main_text">
+                                <span class="title_text">노골적인 성인 콘텐츠를 숨김 처리합니다. (다운로드한 콘텐츠는 숨김 불가능)<br>
+                                * 일반 성인 콘텐츠는 노출됩니다.
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title_box">
+                            <label for="second_contents" class="second_contents">
+                                <div class="contents_title">
+                                    <input type="radio" id="second_contents" value="H" name="adult_checked">
+                                    <span>성인컨텐츠 잠금</span>
+                                </div>
+                                <img src="./images/icon/bag_icon.png" alt="아이콘">
+                            </label>
+                            <div class="main_text">
+                                <span class="title_text">성인 콘텐츠가 흐린 이미지로 보이고 시청 시도 시 성인 비밀번호를 요구합니다. 잠금을 해제해도 Wavve TV 앱에서는 해제되지 않습니다.
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title_box">
+                            <label for="third_contents" class="third_contents">
+                                <div class="contents_title">
+                                    <input type="radio" id="third_contents" value="H" name="adult_checked">
+                                    <span>차단하지 않음</span>
+                                </div>
+                                <img src="./images/icon/bag_icon.png" alt="아이콘">
+                            </label>
+                            <div class="main_text">
+                                <span class="title_text">성인 콘텐츠가 흐린 이미지로 보이며 성인 비밀번호 입력 없이 시청 가능합니다.
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="pw_setting">
+                    <a href="#">성인비밀번호 설정</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="f_top_wrap">
+            <div class="f_top">
+                <a href="#">공지사항</a>
+                <div class="notice">
+                    <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
+                    <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
+                    <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
+                </div>
+                <div class="move">
+                    <a href="#"><img src="./images/prev.png" alt="이전"></a>
+                    <a href="#"><img src="./images/next.png" alt="다음"></a>
+                </div>
+            </div>
+        </div>
+        <div class="f_bottom">
+            <div class="f_left">
+                <div class="info">
+                    <a href="#">회사소개</a>
+                    <a href="#">인재채용</a>
+                    <a href="#">서비스 소개</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보 처리방침</a>
+                    <a href="#">고객센터</a>
+                </div>
+                <div class="company">
+                    <p class="company_info">
+                        <span>콘텐츠웨이브 주식회사</span>
+                        <span>대표이사 이태현</span>
+                        <span class="last">고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)</span><br>
+                        <span>사업자등록번호 220-88-38020</span>
+                        <span class="last">호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사</span><br>
+                        <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
+                        <span class="last">통신판매업 정보 공개 : <a href="#">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
+                        <span>서울특별시 영등포구 여의나루로 60 포스트타워 19층</span>
+                        <span class="last">전자우편주소 : <a href="#">helpdesk@wavve.com</a></span><br>
+                    </p>
+                    <p class="copyright">Copyright&copy; 콘텐츠웨이브(주) All rights reserved.</p>
+                </div>
+            </div>
+            <div class="f_right">
+                <a href="#" class="logo"><img src="./images/footer_logo.svg" alt="웨이브온"></a>
+                <select name="selWavveOn" id="selWavveOn">
+                    <option value="">사업자용 웨이브 가입</option>
+                    <option value="">사업자용 웨이브 가입</option>
+                    <option value="">사업자용 웨이브 가입</option>
+                    <option value="">사업자용 웨이브 가입</option>
+                </select>
+                <div class="sns">
+                    <a href="#"><img src="./images/facebook.png" alt="페이스북"></a>
+                    <a href="#"><img src="./images/naver.png" alt="네이버"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

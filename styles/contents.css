@@ -1,0 +1,126 @@
+/* main */
+main {background: #1b1b1b;}
+/* section */
+main section {width: 1240px; margin: 0 auto;}
+/* contents */
+main section .contents {position: relative;}
+main section .contents .video_bg {
+    width: 2000px; height: 700px;
+    background: rgb(0,0,0); position: absolute; left: 0;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 75%);
+}
+main section .contents video {}
+main section .contents .video_intro {
+    position: absolute; left: 0; bottom: 100px;
+}
+main section .contents .video_intro > img {}
+main section .contents .video_intro .logo {
+    width: 400px; margin: 30px 0;
+}
+main section .contents .video_intro .logo img {width: 100%;}
+main section .contents .video_intro .genre {
+    color: #a5a5a5; display: flex;
+    align-items: center; margin-top: 12px;
+}
+main section .contents .video_intro > p img {width: 24px;}
+main section .contents .video_intro .contents_box {
+    display: flex; margin-top: 24px;
+    position: relative;
+}
+main section .contents .video_intro .contents_box #optionBtn {
+    width: 240px; height: 48px;
+    border: 1px solid #717171; color: #fff;
+    border-radius: 10px; display: flex;
+    padding-left: 20px; align-items: center;
+    justify-content: space-between;
+}
+main section .contents .video_intro .contents_box #optionBtn img {}
+main section .contents .video_intro .contents_box .button_m {
+    display: none;
+    position: absolute; left: 0; top: 55px;
+    width: 240px; height: 118px; background: #1b1b1b;
+    padding: 10px 0; border: 1px solid #717171;
+    border-radius: 10px;
+}
+main section .contents .video_intro .contents_box .button_m a {
+    padding: 0 20px; color: #fff; height: 48px;
+    display: flex; align-items: center;
+}
+main section .contents .video_intro .contents_box #buyBtn {
+    width: 360px; height: 48px; padding: 0 40px;
+    background: #1351f9; border-radius: 10px;
+    color: #fff;
+}
+main section .contents .video_intro .contents_box .icon {
+    margin-left: 20px; display: flex;
+}
+main section .contents .video_intro .contents_box .icon a {
+    display: flex; flex-flow: column nowrap;
+    align-items: center; margin-right: 20px;
+}
+main section .contents .video_intro .contents_box .icon a img {margin: 0 10px;}
+main section .contents .video_intro .contents_box .icon a span {
+    color: #a5a5a5; font-size: 0.75rem;
+    margin-top: 4px;
+}
+main section .contents .video_intro .video_contents {
+    width: 800px; color: #a5a5a5;
+    margin-top: 24px;
+}
+main section .contents .video_intro .video_contents a {color: #fff;}
+/* contents_info */
+main section .contents_info {
+    margin-top: 40px;
+}
+main section .contents_info .info_title {
+    width: 100%; border-bottom: 1px solid #2f2f2f;
+    height: 68px; 
+}
+main section .contents_info .info_title a {
+    color: #fff; font-size: 1.125rem;
+    border-bottom: 4px solid #1351f9;
+    line-height: 63px;  
+    padding: 0 10px 19px;
+}
+main section .contents_info .info_title a:nth-child(2),
+main section .contents_info .info_title a:nth-child(3){
+    margin-left: 20px;
+}
+main section .contents_info .info_contents {}
+/* 관련영상 */
+main section .contents_info .info_contents .contents_item {
+    display: flex;  padding-top: 20px; 
+    display: none;
+    min-height: 550px;
+}
+main section .contents_info .info_contents .contents_item li {}
+main section .contents_info .info_contents .contents_item li:nth-child(1) {
+    margin-right: 10px;
+}
+main section .contents_info .info_contents .contents_item li a {display: flex; flex-flow: column nowrap;}
+main section .contents_info .info_contents .contents_item li a .img_box {
+    border: 1px solid red; border-radius: 10px; overflow: hidden; border: 0;
+}
+main section .contents_info .info_contents .contents_item li a .img_box img {
+    width: 406px; height: 229px; 
+}
+main section .contents_info .info_contents .contents_item li a em {
+    color: #fff; margin-bottom: 4px;
+    margin-top: 8px;
+}
+main section .contents_info .info_contents .contents_item li a span {color: #a5a5a5}
+/* 추천 */
+
+
+
+
+
+
+
+
+
+
+/* 상세정보 */
+main section .contents_info .information {
+    background-color: aqua 
+}
