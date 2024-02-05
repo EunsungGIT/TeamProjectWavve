@@ -36,13 +36,40 @@ main .membership table {
     width: 100%;
     border: 1px solid #a5a5a5;
 }
-main .membership table thead {}
+main .membership table thead {display: flex;}
 main .membership table thead tr {}
-main .membership table thead tr th {}
+main .membership table thead tr th {padding: 54px 20px 16px;}
+main .membership table thead tr th:first-child {
+    padding: 0; width: 230px;
+}
+main .membership table thead tr th h2 {
+    color: #fff; font-size: 1.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+main .membership table thead tr th button {
+    margin-top: 12px; padding: 0 16px;
+    height: 68px; background: #2f2f2f;
+    align-items: center; border-radius: 5px;
+    display: flex; justify-content: space-between;
+}
+main .membership table thead tr th button span {
+    color: #a5a5a5;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+main .membership table thead tr th button .left {}
+main .membership table thead tr th button .left .discount {
+    font-size: 0.75rem; margin-left: 4px; padding: 0 6px;
+    background: #3887ff; border-radius: 5px; height: 24px;
+}
+main .membership table thead tr th button .right {
+    display: flex; flex-flow: column nowrap;
+}
+main .membership table thead tr th button .right .division {font-size: 0.75rem;}
 main .membership table tbody {}
 main .membership table tbody tr {}
 main .membership table tbody tr th {
-    padding: 28px 16px;
+    padding: 28px 16px; width: 230px;
 }
 main .membership table tbody tr td {
     padding: 28px 16px;
