@@ -44,7 +44,7 @@ main section .contents_info {
 }
 main section .contents_info .info_title {
     width: 100%; border-bottom: 1px solid #2f2f2f;
-    margin-bottom: 20px; height: 68px;
+    height: 68px; 
 }
 main section .contents_info .info_title a {
     color: #fff; font-size: 1.125rem;
@@ -57,22 +57,40 @@ main section .contents_info .info_title a:nth-child(3){
     margin-left: 20px;
 }
 main section .contents_info .info_contents {}
-main section .contents_info .info_contents ul {
-    display: flex; 
+/* 관련영상 */
+main section .contents_info .info_contents .contents_item {
+    display: flex;  padding-top: 20px; 
+    display: none;
+    min-height: 550px;
 }
-main section .contents_info .info_contents ul li {}
-main section .contents_info .info_contents ul li:nth-child(1) {
+main section .contents_info .info_contents .contents_item li {}
+main section .contents_info .info_contents .contents_item li:nth-child(1) {
     margin-right: 10px;
 }
-main section .contents_info .info_contents ul li a {display: flex; flex-flow: column nowrap;}
-main section .contents_info .info_contents ul li a .img_box {
+main section .contents_info .info_contents .contents_item li a {display: flex; flex-flow: column nowrap;}
+main section .contents_info .info_contents .contents_item li a .img_box {
     border: 1px solid red; border-radius: 10px; overflow: hidden; border: 0;
 }
-main section .contents_info .info_contents ul li a .img_box img {
+main section .contents_info .info_contents .contents_item li a .img_box img {
     width: 406px; height: 229px; 
 }
-main section .contents_info .info_contents ul li a em {
+main section .contents_info .info_contents .contents_item li a em {
     color: #fff; margin-bottom: 4px;
     margin-top: 8px;
 }
-main section .contents_info .info_contents ul li a span {color: #a5a5a5}
+main section .contents_info .info_contents .contents_item li a span {color: #a5a5a5}
+/* 추천 */
+
+
+
+
+
+
+
+
+
+
+/* 상세정보 */
+main section .contents_info .information {
+    background-color: aqua 
+}
