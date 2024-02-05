@@ -164,17 +164,18 @@ main {  max-width: 1912px; margin: 0 auto;
         text-align: center;
     }
     main .wrap .middle_wrap .img_container1 .wavve_images .wavve_img {
-        display: flex;
-    }
+        display: flex; border-radius: 25px;
+    } 
     main .wrap .middle_wrap .img_container1 .wavve_images .wavve_img a {
     /*     width: calc(100% / 4 - 30px / 4); */
-        margin-right: 20px;
+        margin-right: 20px; overflow: hidden;
+        border-radius: 25px;
     }
     main .wrap .middle_wrap .img_container1 .wavve_images .wavve_img a img {
     /*  /*   border-radius: 30px; */
     /*    width: 20%; */ 
-    border-radius: 25px;
-    width: 250px;
+    
+    width: 250px; 
     }
     
     main .wrap .middle_wrap .img_container1 .wavve_images .wavve_img a:hover {
