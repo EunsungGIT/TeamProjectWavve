@@ -152,7 +152,7 @@ main {  max-width: 1912px; margin: 0 auto;
         font-size: 24px; color: #fff;
     }
     main .wrap .middle_wrap .img_container1 .title a {
-    
+        color: #a5a5a5; font-size: 16px;
     }
     main .wrap .middle_wrap .img_container1 .title a img {}
     /* 믿고 보는 웨이브 에디터 추천작 */
