@@ -1,6 +1,3 @@
-/* body */
-body {position: relative;}
-
 /* 알림함 */
 .notification {
     display: none;
@@ -93,7 +90,10 @@ body {position: relative;}
 #up {position: fixed; right: 20px; bottom: 20px;}
 
 /* header */
-header {background: #1b1b1b;}
+header {
+    background: #1b1b1b;
+    position: sticky; top: 0; z-index: 9999;
+}
 header .h_top {
     width: 1240px; height: 34px; margin: 0 auto;
     display: flex; justify-content: flex-end;
@@ -102,9 +102,10 @@ header .h_top {
 header .h_top .profile {position: relative;}
 header .h_top .profile > a {
     display: flex; align-items: center;
-    font-size: 0.75rem; padding: 0 11px;
-    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.75rem; padding-right: 6px;
+    color: #a5a5a5; border-right: 1px solid #2f2f2f;
 }
+header .h_top .profile > a img {margin-left: 2px;}
 header .h_top .profile .profile_m {
     display: none;
     width: 150px; height: 320px; padding: 15px 0;
@@ -115,7 +116,7 @@ header .h_top .profile .profile_m .photo {margin-bottom: 10px;}
 header .h_top .profile .profile_m .photo img {width: 80px;}
 header .h_top .profile .profile_m .name {
     font-size: 0.875rem; color: #fff;
-    font-weight: 700; font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 header .h_top .profile .profile_m .edit {
@@ -126,20 +127,21 @@ header .h_top .profile .profile_m .edit {
 header .h_top .profile .profile_m .edit img {}
 header .h_top .profile .profile_m a {
     display: block; color: #a5a5a5;
-    font-family: 'Noto Sans KR', sans-serif;
     margin-bottom: 20px; font-size: 0.875rem;
 }
 header .h_top .profile .profile_m a:hover {color: #fff;}
 header .h_top > a {
     font-size: 0.75rem; padding: 0 11px;
-    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+    color: #a5a5a5; border-right: 1px solid #2f2f2f;
 }
+header .h_top > a:last-child {border: none;}
 header .h_top .coupon {position: relative;}
 header .h_top .coupon > a {
     display: flex; align-items: center;
-    font-size: 0.75rem; padding: 0 11px;
-    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.75rem; padding: 0 6px 0 11px;
+    color: #a5a5a5; border-right: 1px solid #2f2f2f;
 }
+header .h_top .coupon > a img {margin-left: 2px;}
 header .h_top .coupon .coupon_m {
     display: none;
     width: 80px; height: 70px;
@@ -149,7 +151,7 @@ header .h_top .coupon .coupon_m {
 header .h_top .coupon .coupon_m a {
     padding: 10px 15px; border-bottom: 1px solid #2f2f2f;
     display: block; font-size: 0.75rem;
-    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+    color: #a5a5a5;
 }
 header .h_top .coupon .coupon_m a:hover {color: #fff;}
 header .h_top .coupon .coupon_m a:last-child {border: none;}
@@ -171,14 +173,13 @@ header .h_bottom_wrap .h_bottom nav {
 }
 header .h_bottom_wrap .h_bottom nav > a {
     font-size: 1.25rem; padding: 0 20px;
-    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+    color: #a5a5a5;
 }
 header .h_bottom_wrap .h_bottom nav > a:hover {color: #fff;}
-header .h_bottom_wrap .h_bottom nav > a:first-child {color: #fff;}
 header .h_bottom_wrap .h_bottom nav .category {}
 header .h_bottom_wrap .h_bottom nav .category > a {
     font-size: 1.25rem; padding: 0 20px;
-    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+    color: #a5a5a5;
 }
 header .h_bottom_wrap .h_bottom nav .category .category_m {
     display: none;
@@ -191,11 +192,11 @@ header .h_bottom_wrap .h_bottom nav .category .category_m .all {
 }
 header .h_bottom_wrap .h_bottom nav .category .category_m h2 {
     font-weight: 700; padding: 20px 0 10px 0; font-size: 0.875rem;
-    color: #fff; font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
 }
 header .h_bottom_wrap .h_bottom nav .category .category_m a {
     display: block; padding: 10px 0; font-size: 0.875rem;
-    color: #a5a5a5; font-family: 'Noto Sans KR', sans-serif;
+    color: #a5a5a5;
 }
 header .h_bottom_wrap .h_bottom nav .category .category_m a:hover {color: #fff;}
 header .h_bottom_wrap .h_bottom .search {}
@@ -212,10 +213,8 @@ header .h_bottom_wrap .h_bottom .search label #user_search {
     background: #000; padding: 0 40px;
     border: 1px solid #232323;
 }
-header .h_bottom_wrap .h_bottom .search #user_search::placeholder {
-    font-family: 'Noto Sans KR', sans-serif;
-    color: #a5a5a5;
-}
+header .h_bottom_wrap .h_bottom .search #user_search::placeholder {color: #a5a5a5;}
+
 /* footer */
 footer {
     background: #1b1b1b;
@@ -225,23 +224,37 @@ footer .f_top_wrap {border-bottom: 1px solid #2f2f2f;}
 footer .f_top_wrap .f_top {
     width: 1240px; height: 50px; margin: 0 auto;
     align-items: center; position: relative;
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: flex-start;
 }
 footer .f_top_wrap .f_top > a {
     font-size: 1.125rem; color: #a5a5a5;
-    font-family: 'Noto Sans KR', sans-serif;
+    margin-right: 25px;
 }
-footer .f_top_wrap .f_top .notice {
+footer .f_top_wrap .f_top #swiper_notice {
+    overflow: hidden; height: 100%;
+}
+footer .f_top_wrap .f_top #swiper_notice #notice_wrap {
     display: flex; flex-flow: column nowrap;
-    position: absolute; left: 100px;
 }
-footer .f_top_wrap .f_top .notice a {
-    color: #a5a5a5; padding: 10px 0;
-    font-family: 'Noto Sans KR', sans-serif;
+footer .f_top_wrap .f_top #swiper_notice #notice_wrap a {
+    color: #a5a5a5; display: flex;
+    align-items: center;
 }
-footer .f_top_wrap .f_top .move {display: flex;}
-footer .f_top_wrap .f_top .move a {border-left: 1px solid #2f2f2f;}
-footer .f_top_wrap .f_top .move a:last-child {border-right: 1px solid #2f2f2f;}
+footer .f_top_wrap .f_top #swiper_notice .move {
+    position: absolute; top: 0; right: 0;
+    display: flex;
+}
+footer .f_top_wrap .f_top #swiper_notice .move #prev {
+    border-left: 1px solid #2f2f2f;
+}
+footer .f_top_wrap .f_top #swiper_notice .move #prev a {}
+footer .f_top_wrap .f_top #swiper_notice .move #prev a img {}
+footer .f_top_wrap .f_top #swiper_notice .move #next {
+    border-left: 1px solid #2f2f2f;
+    border-right: 1px solid #2f2f2f;
+}
+footer .f_top_wrap .f_top #swiper_notice .move #next a {}
+footer .f_top_wrap .f_top #swiper_notice .move #next a img {}
 footer .f_bottom {
     width: 1240px; height: 250px;
     margin: 0 auto; padding-bottom: 100px;
@@ -251,17 +264,17 @@ footer .f_bottom .f_left {}
 footer .f_bottom .f_left .info {padding: 20px 0 10px 0;}
 footer .f_bottom .f_left .info a {
     color: #717171; margin-right: 20px;
-    font-size: 0.875rem; font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.875rem;
 }
 footer .f_bottom .f_left .info a:nth-child(5) {
     font-weight: 700; color: #a5a5a5;
 }
+footer .f_bottom .f_left .info a:nth-child(5):hover {color: #a5a5a5;}
 footer .f_bottom .f_left .info a:hover {color: #1351f9;}
 footer .f_bottom .f_left .company {}
 footer .f_bottom .f_left .company .company_info {}
 footer .f_bottom .f_left .company .company_info span {
     font-size: 0.75rem; color: #717171;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 footer .f_bottom .f_left .company .company_info span:after {
     content: ''; display: inline-block; margin: 0 5px;
@@ -269,30 +282,33 @@ footer .f_bottom .f_left .company .company_info span:after {
 }
 footer .f_bottom .f_left .company .company_info span a {
     font-size: 0.75rem; color: #717171;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 footer .f_bottom .f_left .company .company_info span a:hover {color: #1351f9;}
 footer .f_bottom .f_left .company .company_info .last {}
+footer .f_bottom .f_left .company .company_info .last .web {text-decoration: underline;}
 footer .f_bottom .f_left .company .company_info .last:after {background: none;}
 footer .f_bottom .f_left .company .copyright {
     color: #717171; margin-top: 10px;
-    font-size: 0.75rem; font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.75rem;
 }
 footer .f_bottom .f_right {
     display: flex; height: 38px;
-    margin-top: 20px;
+    margin-top: 20px; align-items: center;
 }
 footer .f_bottom .f_right .logo {
+    height: 100%;
     background: #252525; margin-right: 1px;
 }
 footer .f_bottom .f_right .logo img {}
 footer .f_bottom .f_right #selWavveOn {
+    height: 100%;
     margin-right: 10px; padding-left: 13px;
     background: #252525; color: #aaa;
-    font-size: 0.875rem; width: 225px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.813rem; width: 225px;
 }
-footer .f_bottom .f_right option {}
+footer .f_bottom .f_right option {
+    color: #a5a5a5; font-size: 0.813rem;
+}
 footer .f_bottom .f_right .sns {display: flex;}
 footer .f_bottom .f_right .sns a {
     width: 32px; margin-right: 10px;
