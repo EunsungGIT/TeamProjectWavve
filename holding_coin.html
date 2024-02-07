@@ -9,9 +9,9 @@
     <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/common.css">
-    <link rel="stylesheet" href="./style/holding_coin.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/holding_coin.css">
 </head>
 <body>
     <!-- 전체 카테고리 -->
@@ -184,116 +184,116 @@
             </div>
         </div>
     </header>
-<!-- main -->
-<main>
-    <div class="holding_coin_wrap">
-        <div class="holding_title">
-            <h1>코인내역</h1>
-        </div>
-        <div class="holding_coin_middle">
-            <div class="holding_middle_title">
-                <h3>보유 코인내역</h3>
-                <a href="#">
-                    <img src="./images/coin_icon.svg" alt="">
-                    <span>코인 충전</span>
-                    <img src="./images/charging_coin_next.svg" alt="#"></img>
-                </a>
+    <!-- main -->
+    <main>
+        <div class="holding_coin_wrap">
+            <div class="holding_title">
+                <h1>코인내역</h1>
             </div>
-            <!-- 안쪽 회색 박스 input창 메인. -->
-            <div class="holding_coin_main">
-                <div class="total_coin">
-                    <span>총코인</span>
-                    <em>0</em>
+            <div class="holding_coin_middle">
+                <div class="holding_middle_title">
+                    <h3>보유 코인내역</h3>
+                    <a href="#">
+                        <img src="./images/coin_icon.svg" alt="">
+                        <span>코인 충전</span>
+                        <img src="./images/charging_coin_next.svg" alt="#"></img>
+                    </a>
                 </div>
-                <div class="charging_coin">
-                    <span>충전 코인</span>
-                    <em>0</em>
+                <!-- 안쪽 회색 박스 input창 메인. -->
+                <div class="holding_coin_main">
+                    <div class="total_coin">
+                        <span>총코인</span>
+                        <em>0</em>
+                    </div>
+                    <div class="charging_coin">
+                        <span>충전 코인</span>
+                        <em>0</em>
+                    </div>
+                    <div class="bonus_coin">
+                        <span>보너스 코인</span>
+                        <em>0</em>
+                    </div>
                 </div>
-                <div class="bonus_coin">
-                    <span>보너스 코인</span>
-                    <em>0</em>
+            </div>
+            <!-- 보유쿠폰 | 소진쿠폰 -->
+            <div class="holding_exhaust">
+                <ul class="holding_exhaust_nav">
+                    <li>
+                        <a href="#" class="holding_coin_nav">적립 코인</a>
+                    </li>
+                    <!-- 중간에 |  -->
+                    <div class="vertical-bar">|</div>
+                    <li>
+                        <a href="#" class="exhaust_coin_nav">소진 코인</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="not_coin">
+            <div class="holding_not_coin">
+                <img src="./images/warning.png" alt="">
+                <p>적립 코인이 없어요</p>
+            </div>
+            <div class="exhaust_not_coin">
+                <img src="./images/warning.png" alt="">
+                <p>소진된 코인이 없어요.</p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="f_top">
+            <a href="#">공지사항</a>
+            <div class="notice">
+                <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
+                <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
+                <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
+            </div>
+            <div class="move">
+                <a href="#"><img src="./images/prev.png" alt="이전"></a>
+                <a href="#"><img src="./images/next.png" alt="다음"></a>
+            </div>
+        </div>
+        <div class="f_bottom">
+            <div class="f_left">
+                <div class="info">
+                    <a href="#">회사소개</a>
+                    <a href="#">인재채용</a>
+                    <a href="#">서비스 소개</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보 처리방침</a>
+                    <a href="#">고객센터</a>
+                </div>
+                <div class="company">
+                    <p class="company_info">
+                        <span>콘텐츠웨이브 주식회사</span>
+                        <span>대표이사 이태현</span>
+                        <span class="last">고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)</span><br>
+                        <span>사업자등록번호 220-88-38020</span>
+                        <span class="last">호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사</span><br>
+                        <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
+                        <span class="last">통신판매업 정보 공개 : <a href="#">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
+                        <span>서울특별시 영등포구 여의나루로 60 포스트타워 19층</span>
+                        <span class="last">전자우편주소 : <a href="#">helpdesk@wavve.com</a></span><br>
+                    </p>
+                    <p class="copyright">Copyright&copy; 콘텐츠웨이브(주) All rights reserved.</p>
+                </div>
+            </div>
+            <div class="f_right">
+                <a href="#" class="logo"><img src="./images/footer_logo.svg" alt="웨이브온"></a>
+                <select name="selWavveOn" id="selWavveOn">
+                    <option value="">사업자용 웨이브 가입</option>
+                    <option value="">사업자용 웨이브 가입</option>
+                    <option value="">사업자용 웨이브 가입</option>
+                    <option value="">사업자용 웨이브 가입</option>
+                </select>
+                <div class="sns">
+                    <a href="#"><img src="./images/facebook.png" alt="페이스북"></a>
+                    <a href="#"><img src="./images/naver.png" alt="네이버"></a>
                 </div>
             </div>
         </div>
-        <!-- 보유쿠폰 | 소진쿠폰 -->
-        <div class="holding_exhaust">
-            <ul class="holding_exhaust_nav">
-                <li>
-                    <a href="#" class="holding_coin_nav">적립 코인</a>
-                </li>
-                <!-- 중간에 |  -->
-                <div class="vertical-bar">|</div>
-                <li>
-                    <a href="#" class="exhaust_coin_nav">소진 코인</a>
-                </li>
-            </ul>
-        </div>
-        <div class="not_coin">
-        <div class="holding_not_coin">
-            <img src="./images/warning.png" alt="">
-            <p>적립 코인이 없어요</p>
-        </div>
-        <div class="exhaust_not_coin">
-            <img src="./images/warning.png" alt="">
-            <p>소진된 코인이 없어요.</p>
-        </div>
-    </div>
-    </div>
-</main>
-<!-- footer -->
-<footer>
-    <div class="f_top">
-        <a href="#">공지사항</a>
-        <div class="notice">
-            <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
-            <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
-            <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
-        </div>
-        <div class="move">
-            <a href="#"><img src="./images/prev.png" alt="이전"></a>
-            <a href="#"><img src="./images/next.png" alt="다음"></a>
-        </div>
-    </div>
-    <div class="f_bottom">
-        <div class="f_left">
-            <div class="info">
-                <a href="#">회사소개</a>
-                <a href="#">인재채용</a>
-                <a href="#">서비스 소개</a>
-                <a href="#">이용약관</a>
-                <a href="#">개인정보 처리방침</a>
-                <a href="#">고객센터</a>
-            </div>
-            <div class="company">
-                <p class="company_info">
-                    <span>콘텐츠웨이브 주식회사</span>
-                    <span>대표이사 이태현</span>
-                    <span class="last">고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)</span><br>
-                    <span>사업자등록번호 220-88-38020</span>
-                    <span class="last">호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사</span><br>
-                    <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
-                    <span class="last">통신판매업 정보 공개 : <a href="#">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
-                    <span>서울특별시 영등포구 여의나루로 60 포스트타워 19층</span>
-                    <span class="last">전자우편주소 : <a href="#">helpdesk@wavve.com</a></span><br>
-                </p>
-                <p class="copyright">Copyright&copy; 콘텐츠웨이브(주) All rights reserved.</p>
-            </div>
-        </div>
-        <div class="f_right">
-            <a href="#" class="logo"><img src="./images/footer_logo.svg" alt="웨이브온"></a>
-            <select name="selWavveOn" id="selWavveOn">
-                <option value="">사업자용 웨이브 가입</option>
-                <option value="">사업자용 웨이브 가입</option>
-                <option value="">사업자용 웨이브 가입</option>
-                <option value="">사업자용 웨이브 가입</option>
-            </select>
-            <div class="sns">
-                <a href="#"><img src="./images/facebook.png" alt="페이스북"></a>
-                <a href="#"><img src="./images/naver.png" alt="네이버"></a>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
     <script src="./script/index.js"></script>
 </body>
 </html>
