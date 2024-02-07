@@ -31,11 +31,11 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap a{
 /* 하위 내용들 전체 박스 */
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content {}
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content {}
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_img{background: yellowgreen;}
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_img{}
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_img img{width: 1240px;}
 /* main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content > a .ongoing_container */
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container {
-    background: turquoise; width: 1224px; margin: 0 auto;
+     width: 1224px; margin: 0 auto;
 }
 /* ul */
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items {
@@ -43,31 +43,42 @@ display: flex; flex-flow: row wrap;
 }
 /* 개별 li 아이템들 ex 헝거게임 매복 등등 */
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li{
-    width: calc(50%); background: skyblue;
+    width: calc(50%); 
+    
 }
+
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li::after {
+    content: ""; display: inline-block;
+    background: #2f2f; width: 1px; height: 15px;
+    transform: translate(30px, -10px);
+    position: absolute; top: 202px;
+    margin-left:2054px;
+}
+
+
 /* 이미지와 span 박스를 전체를 묶는 a */
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a {
     display: flex; 
-
-
+    margin-top: 30px;
+ 
+    
 }
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_img {
     width: 185px; /* display: inline-block; */
 }
 /* 개별 아이템 이미지 */
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_img img {
-    width: 185px; 
+    width: 185px; padding-right: 10px;
 }
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box {
-    background: sienna;
+
 }
 /* main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container { background: violet;
 } */
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span {
-    background:snow;
 /*     display: table-cell; */
     width: auto;
-    padding: 0px 0px 0px 1px;
+    padding: 0px 0px 0px 0px;
    /*  vertical-align: top; */
     display: block;
     display: flex;
@@ -75,18 +86,21 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_c
 }
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_h1 {
     font-size: 18px; color:#a5a5a5; display: block;
-     
+     background: saddlebrown;
 }
 /* 제목 감독 출연진 등  ongoing_h*/
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_h {
     flex-flow: column nowrap; color: #a5a5a5; font-size: 14px;
     background: sandybrown; width: 40px;
+    margin-top: 10px; margin-right: 5px;
 }
 /* 판타지, 액션 */
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_hc {font-size: 14px; color: #717171;
     flex-flow: column wrap; 
     background:salmon ; 
     width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 
@@ -94,9 +108,24 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_c
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_c {
     font-size: 16px; color: #717171;
     background: turquoise;
-    width: calc(100% - 150px);
+    width: calc(100% - 70px);
+    margin-top: 10px;
 }
 
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_rc {
-    background: seagreen;
+    color: #717171;
+}
+
+main .event_ongoing_wrap .page_a {
+    padding-top: 120px; padding-bottom: 70px;
+    text-align: center; 
+}
+main .event_ongoing_wrap .page_a .taget {color: #fff; 
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 8px 14px 8px 14px; 
+    font-size: 14px; 
+}
+main .event_ongoing_wrap .page_a a {margin-right: 18px;
+color: #a5a5a5;
 }
