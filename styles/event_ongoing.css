@@ -1,0 +1,102 @@
+main .event_ongoing_wrap {
+    background: #1b1b1b;
+}
+/* 상단 타이틀 */
+main .event_ongoing_wrap .event_ongoing_title {
+    background:  #2f2f2f;
+    justify-content: center;
+    text-align: center;
+    padding: 45px 0 45px 0px;
+}
+main .event_ongoing_wrap .event_ongoing_title img {}
+main .event_ongoing_wrap .event_ongoing_title h1 {
+    font-size: 24px; color: #fff;
+}
+/* 중간 메인  */
+main .event_ongoing_wrap .event_ongoing_middle {width: 1240px; margin: 0 auto;}
+/* 타이틀 탭 */
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap {
+     /* width: 100%; */ border-bottom: 1px solid #2f2f2f;
+     height: 68px; 
+}
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .taget{
+    color: #fff; font-size: 1.125rem;
+    border-bottom: 4px solid #1351f9;
+    line-height: 63px;  
+    padding: 0 10px 19px;
+}
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap a{
+    color: #fff; font-size: 1.125rem;
+}
+/* 하위 내용들 전체 박스 */
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content {}
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content {}
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_img{background: yellowgreen;}
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_img img{width: 1240px;}
+/* main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content > a .ongoing_container */
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container {
+    background: turquoise; width: 1224px; margin: 0 auto;
+}
+/* ul */
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items {
+display: flex; flex-flow: row wrap;
+}
+/* 개별 li 아이템들 ex 헝거게임 매복 등등 */
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li{
+    width: calc(50%); background: skyblue;
+}
+/* 이미지와 span 박스를 전체를 묶는 a */
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a {
+    display: flex; 
+
+
+}
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_img {
+    width: 185px; /* display: inline-block; */
+}
+/* 개별 아이템 이미지 */
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_img img {
+    width: 185px; 
+}
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box {
+    background: sienna;
+}
+/* main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container { background: violet;
+} */
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span {
+    background:snow;
+/*     display: table-cell; */
+    width: auto;
+    padding: 0px 0px 0px 1px;
+   /*  vertical-align: top; */
+    display: block;
+    display: flex;
+    flex-flow: row wrap;
+}
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_h1 {
+    font-size: 18px; color:#a5a5a5; display: block;
+     
+}
+/* 제목 감독 출연진 등  ongoing_h*/
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_h {
+    flex-flow: column nowrap; color: #a5a5a5; font-size: 14px;
+    background: sandybrown; width: 40px;
+}
+/* 판타지, 액션 */
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_hc {font-size: 14px; color: #717171;
+    flex-flow: column wrap; 
+    background:salmon ; 
+    width: 100%;
+}
+
+
+/* 판타지 액션 등등  등등 관련 줄거리 내용 등등 */
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_c {
+    font-size: 16px; color: #717171;
+    background: turquoise;
+    width: calc(100% - 150px);
+}
+
+main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_rc {
+    background: seagreen;
+}

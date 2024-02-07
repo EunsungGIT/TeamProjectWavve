@@ -157,15 +157,22 @@ main .holding_coupon_wrap .holding_exhaust .holding_exhaust_nav li {list-style: 
 main .holding_coupon_wrap .holding_exhaust .holding_exhaust_nav li .holding_coupon_nav{
     font-size: 18px; color: #a5a5a5;
 }
-/* | 부분 */
-main .holding_coupon_wrap .holding_exhaust .holding_exhaust_nav .vertical-bar {
-    width: 10px; 
-    height: 15px;
-/*    border-left: 2px solid #5e5e5e;  */
-    margin-left: 10px;
-    color: #252525;
+
+main .holding_coupon_wrap .holding_exhaust .holding_exhaust_nav li a {
+    color: #2f2f2f; margin-right: 10px;
 
 }
+
+main .holding_coupon_wrap .holding_exhaust .holding_exhaust_nav li a::after {
+    content: ""; display: inline-block;
+    background: #2f2f2f; width: 1px; height: 15px;
+    transform: translate(3px, -1px);
+    position: absolute; top: 7px;
+    margin-left:2px;
+    
+    /* 111 */
+}
+
 main .holding_coupon_wrap .holding_exhaust .holding_exhaust_nav li .holding_coupon_nav {}
 main .holding_coupon_wrap .holding_exhaust .holding_exhaust_nav li .exhaust_coupon_nav {  font-size: 18px; color: #a5a5a5;}
 /* 쿠폰이 없어요. 부분 */
