@@ -1,0 +1,30 @@
+main {
+    width: 100%; background-color: #1b1b1b
+}
+main .main_title {
+    padding: 40px 0; background-color: #252525; 
+    width: 100%; margin-bottom: 40px;
+}
+main .main_title h1 {
+    font-size: 1.5rem ;color: #fff;
+    margin: 0 34.5px;
+    width: 1240px; margin: 0 auto;
+}
+main section {
+    width: 1240px;
+    margin: 0 auto;
+}
+main section .contents_title {
+    border: 1px solid red; overflow: hidden; border-radius: 8px; border: 0;
+    display: flex; flex-flow: row nowrap; justify-content:  space-between;
+}
+main section .contents_title a {
+    width: 25%; background-color: #252525;
+    height: 50px;
+    text-align: center;
+    color: #a5a5a5;
+    line-height: 50px;
+}
+main section .contents_title a:nth-child(1){
+    background: #1351f9; color: #fff; 
+}
