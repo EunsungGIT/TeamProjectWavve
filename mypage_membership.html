@@ -3,29 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wavve(웨이브)</title>
+    <title>웨이브 MY</title>
     <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/mypage_membership.css">
 </head>
 <body>
-    <!-- 팝업 -->
-    <div class="popup">
-        <div class="popup_background">
-            <div class="contents">
-                <div class="top">
-                    <a href="#" class="popup_img"></a>
-                    <a href="#" class="close"><img src="./images/close.png" alt="close"></a>
-                </div>
-                <div class="bottom">
-                    <label for="day_close"><input type="checkbox" name="#" id="day_close"><span>일주일동안 안보기</span></label>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- 알림함 -->
     <div class="notification">
         <div class="contents_all">
@@ -161,8 +147,6 @@
             </div>
         </div>
     </div>
-    <!-- 위로가기 -->
-    <a href="#" id="up"><img src="./images/up.png" alt="위로가기"></a>
     <!-- header -->
     <header>
         <div class="h_top">
@@ -211,7 +195,7 @@
                         </div>
                     </div>
                     <a href="#">LIVE</a>
-                    <a href="./mypage.html">MY</a>
+                    <a href="#">MY</a>
                 </nav>
                 <!-- 검색 -->
                 <div class="search">
@@ -224,70 +208,14 @@
             </div>
         </div>
     </header>
-    <!-- main -->
     <main>
-        <div class="wrap">
-            <div class="top_container">
-                <div class="top_images">
-                    <div class="top_img1">
-                        <!-- clac -->
-                        <a href="#"><img src="./images/top_img1.jpg" alt="">
-                            <img class="top_img_font" src="./images/top_img1_font.png" alt="">
-                        </a>
-                    </div>
-                    <div class="top_img2">
-                        <a href="#"><img src="./images/top_img2.jpg" alt="">
-                            <img class="top_img_font" src="./images/top_img2_font.png" alt="">
-                        </a>
-                    </div>
-                    <div class="top_img3">
-                        <a href="#"><img src="./images/top_img3.jpg" alt="">
-                            <img class="top_img_font" src="./images/top_img3_font.png" alt="">
-                        </a>
-                    </div>
-                    <div class="top_img4">
-                        <a href="#"><img src="./images/top_img4.jpg" alt="">
-                            <img class="top_img_font" src="./images/top_img4_font.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <a href="#" class="top_prev"><img src="./images/top_prev.png" alt=""></a>
-                <a href="#" class="top_next"><img src="./images/top_next.png" alt=""></a>
-                <!-- 밑에 점 추가 x 현재 -->
-            </div>
-            <div class="middle_wrap">
-                <div class="img_container1">
-                    <div class="title">
-                        <span>믿고 보는 웨이브 에디터 추천작</span>
-                        <a href="#"><img src="#" alt="">더보기<img src="./images/bnr_img_next.svg" alt="#"></a>
-                    </div>
-                    <div class="wavve_images">
-                        <div class="wavve_img">
-                            <a href="#"><img src="./images/img1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img2.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img3.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img4.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img5.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img6.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img7.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img8.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img9.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img10.jpg" alt=""></a>
-                        </div>
-                        <a href="#" class="prev"><img src="./images/slide_prev.png" alt=""></a>
-                        <a href="#" class="next"><img src="./images/slide_next.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
+        <div class="breakdown_title">
+            <h2>이용권내역</h2>
         </div>
-        <script>
-/*             $('.slider-nav').slick({
-                slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-            }); */
-        </script>
+        <div class="breakdown">
+            <img src="./images/warning.png" alt="">
+            <span>이용권 결제 내역이 없어요.</span>
+        </div>
     </main>
     <!-- footer -->
     <footer>
@@ -345,6 +273,5 @@
             </div>
         </div>
     </footer>
-    <script src="./script/index.js"></script>
 </body>
 </html>

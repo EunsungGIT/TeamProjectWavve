@@ -1,31 +1,17 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wavve(웨이브)</title>
+    <title>웨이브 MY</title>
     <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/mypage.css">
 </head>
 <body>
-    <!-- 팝업 -->
-    <div class="popup">
-        <div class="popup_background">
-            <div class="contents">
-                <div class="top">
-                    <a href="#" class="popup_img"></a>
-                    <a href="#" class="close"><img src="./images/close.png" alt="close"></a>
-                </div>
-                <div class="bottom">
-                    <label for="day_close"><input type="checkbox" name="#" id="day_close"><span>일주일동안 안보기</span></label>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- 알림함 -->
     <div class="notification">
         <div class="contents_all">
@@ -224,70 +210,59 @@
             </div>
         </div>
     </header>
-    <!-- main -->
     <main>
-        <div class="wrap">
-            <div class="top_container">
-                <div class="top_images">
-                    <div class="top_img1">
-                        <!-- clac -->
-                        <a href="#"><img src="./images/top_img1.jpg" alt="">
-                            <img class="top_img_font" src="./images/top_img1_font.png" alt="">
-                        </a>
-                    </div>
-                    <div class="top_img2">
-                        <a href="#"><img src="./images/top_img2.jpg" alt="">
-                            <img class="top_img_font" src="./images/top_img2_font.png" alt="">
-                        </a>
-                    </div>
-                    <div class="top_img3">
-                        <a href="#"><img src="./images/top_img3.jpg" alt="">
-                            <img class="top_img_font" src="./images/top_img3_font.png" alt="">
-                        </a>
-                    </div>
-                    <div class="top_img4">
-                        <a href="#"><img src="./images/top_img4.jpg" alt="">
-                            <img class="top_img_font" src="./images/top_img4_font.png" alt="">
-                        </a>
+        <div class="mypage_top_wrap">
+            <div class="mypage_top">
+                <a href="#"><img src="./images/mypage/alarm.svg" alt="">알림<span>0</span></a>
+                <a href="./mypage_membership.html"><img src="./images/mypage/ticket.svg" alt="">이용권<span>0</span></a>
+                <a href="./holding_coin.html"><img src="./images/mypage/coin.svg" alt="">코인<span>0</span></a>
+                <a href="./holding_coupon.html"><img src="./images/mypage/coupon.svg" alt="">쿠폰<span>0</span></a>
+            </div>
+        </div>
+        <div class="mypage_bottom_wrap">
+            <div class="mypage_bottom">
+                <div class="mypage_left">
+                    <div class="profile_photo"><img src="./images/profile.png" alt="프로필"></div>
+                    <div class="profile_info">
+                        <h2>프로필1 님</h2>
+                        <p>본인인증하면 첫 달 100원! 추가 2개월 간 50% 할인!</p>
+                        <a href="#">인증하기 <img src="./images/more.png" alt=""></a>
                     </div>
                 </div>
-                <a href="#" class="top_prev"><img src="./images/top_prev.png" alt=""></a>
-                <a href="#" class="top_next"><img src="./images/top_next.png" alt=""></a>
-                <!-- 밑에 점 추가 x 현재 -->
-            </div>
-            <div class="middle_wrap">
-                <div class="img_container1">
-                    <div class="title">
-                        <span>믿고 보는 웨이브 에디터 추천작</span>
-                        <a href="#"><img src="#" alt="">더보기<img src="./images/bnr_img_next.svg" alt="#"></a>
-                    </div>
-                    <div class="wavve_images">
-                        <div class="wavve_img">
-                            <a href="#"><img src="./images/img1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img2.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img3.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img4.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img5.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img6.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img7.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img8.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img9.jpg" alt=""></a>
-                            <a href="#"><img src="./images/img10.jpg" alt=""></a>
-                        </div>
-                        <a href="#" class="prev"><img src="./images/slide_prev.png" alt=""></a>
-                        <a href="#" class="next"><img src="./images/slide_next.png" alt=""></a>
-                    </div>
+                <div class="mypage_right">
+                    <a href="#">구매 콘텐츠 <span>0</span></a>
+                    <a href="#">다운로드 관리 <span>0</span></a>
                 </div>
             </div>
         </div>
-        <script>
-/*             $('.slider-nav').slick({
-                slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-            }); */
-        </script>
+        <section class="record">
+            <h2>전체 시청내역</h2>
+            <div class="data">
+                <img src="./images/warning.png" alt="">
+                <span>시청 내역이 없어요</span>
+            </div>
+        </section>
+        <section class="program">
+            <h2>관심 프로그램</h2>
+            <div class="data">
+                <img src="./images/warning.png" alt="">
+                <span>관심 프로그램이 없어요</span>
+            </div>
+        </section>
+        <section class="movie">
+            <h2>관심 영화</h2>
+            <div class="data">
+                <img src="./images/warning.png" alt="">
+                <span>관심 영화가 없어요</span>
+            </div>
+        </section>
+        <section class="pick">
+            <h2>관심 에디터Pick</h2>
+            <div class="data">
+                <img src="./images/warning.png" alt="">
+                <span>관심 에디터Pick이 없어요</span>
+            </div>
+        </section>
     </main>
     <!-- footer -->
     <footer>
@@ -345,6 +320,5 @@
             </div>
         </div>
     </footer>
-    <script src="./script/index.js"></script>
 </body>
 </html>
