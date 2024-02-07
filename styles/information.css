@@ -23,7 +23,7 @@ main section .contents_title a {
     height: 50px;
     text-align: center;
     color: #a5a5a5;
-    padding-top: 15px;
+    line-height: 50px;
 }
 main section .contents_title a:nth-child(1){
     background: #1351f9; color: #fff; 
