@@ -19,6 +19,9 @@
 .popup .popup_background .contents .bottom label {}
 .popup .popup_background .contents .bottom label span {color: #f5f5f5;}
 
+/* header */
+header .h_bottom_wrap .h_bottom nav > a:first-child {color: #fff;}
+
 /* main */
 /* main {height: 100vh;} */
 /* main 추가한 부분! */
