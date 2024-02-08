@@ -8,8 +8,12 @@
     <title>쿠폰내역 : 웨이브 MY</title>
     <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/holding_coupon.css">
@@ -156,11 +160,12 @@
     <header>
         <div class="h_top">
             <div class="profile">
-                <a href="#">프로필1 <img src="./images/arrow.png" alt="더보기"></a>
+                <a href="#">프로필1<img src="./images/common/arrow.png" alt="더보기"></a>
                 <div class="profile_m">
                     <p class="photo"><img src="./images/common/profile.png" alt="프로필"></p>
                     <p class="name">프로필1</p>
-                    <a href="./profile_edit.html" class="edit">프로필 편집 <img src="./images/common/more.png" alt="바로가기"></a>
+                    <a href="./profile_edit.html" class="edit">프로필 편집 <img src="./images/common/more.png"
+                            alt="바로가기"></a>
                     <a href="#">회원정보 수정</a>
                     <a href="#">성인 콘텐츠 설정</a>
                     <a href="#">알림함 <span>0</span></a>
@@ -169,14 +174,14 @@
             </div>
             <a href="./membership.html">이용권</a>
             <div class="coupon">
-                <a href="#">쿠폰·코인 <img src="./images/arrow.png" alt="더보기"></a>
+                <a href="#">쿠폰·코인<img src="./images/common/arrow.png" alt="더보기"></a>
                 <div class="coupon_m">
                     <a href="./holding_coupon.html">쿠폰 등록</a>
                     <a href="./holding_coin.html">코인 충전</a>
                 </div>
             </div>
             <a href="./waveon.html">웨이브온</a>
-            <a href="#">이벤트</a>
+            <a href="./event.html">이벤트</a>
         </div>
         <div class="h_bottom_wrap">
             <div class="h_bottom">
@@ -219,71 +224,73 @@
             <div class="holding_title">
                 <h1>쿠폰내역</h1>
             </div>
-            <div class="holding_coupon_middle">
-                <div class="holding_middle_title">
-                    <h3>보유 쿠폰내역</h3>
-                </div>
-                <!-- 안쪽 회색 박스 input창 메인. -->
-                <div class="holding_coupon_main">
-                    <form action="#" method="post">
-                        <fieldset>
-                            <legend class="skip">보유쿠폰내역</legend>
-                            <div class="input_container">
-                                <input type="text" placeholder="쿠폰번호를 입력해 주세요." class="holding_coupon_input">
-                                <button type="submit" class="holding_coupon_btn">쿠폰등록</button>
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div class="holding_coupon_container">
-                        <ul class="holding_coupon_font_left">
+            <div class="main_wrap">
+                <div class="holding_coupon_middle">
+                    <div class="holding_middle_title">
+                        <h3>보유 쿠폰 내역</h3>
+                    </div>
+                    <!-- 안쪽 회색 박스 input창 메인. -->
+                    <div class="holding_coupon_main">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend class="skip">보유쿠폰내역</legend>
+                                <div class="input_container">
+                                    <input type="text" placeholder="쿠폰번호를 입력해 주세요." class="holding_coupon_input">
+                                    <button type="submit" class="holding_coupon_btn">쿠폰등록</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="holding_coupon_container">
+                            <ul class="holding_coupon_font_left">
 
-                            <li>
-                                <div class="dot_font"></div>
-                                <p>등록하신 쿠폰은 환불되지 않습니다.</p>
-                            </li>
-                            <li>
-                                <div class="dot_font"></div>
-                                <p>쿠폰은 상업적 용도로 사용하거나 매매하실 수 없습니다.</p>
-                            </li>
-                            <li>
-                                <div class="dot_font"></div>
-                                <p>유효기간이 지난 쿠폰은 등록하실 수 없습니다.</p>
-                            </li>
+                                <li>
+                                    <div class="dot_font"></div>
+                                    <p>등록하신 쿠폰은 환불되지 않습니다.</p>
+                                </li>
+                                <li>
+                                    <div class="dot_font"></div>
+                                    <p>쿠폰은 상업적 용도로 사용하거나 매매하실 수 없습니다.</p>
+                                </li>
+                                <li>
+                                    <div class="dot_font"></div>
+                                    <p>유효기간이 지난 쿠폰은 등록하실 수 없습니다.</p>
+                                </li>
 
-                        </ul>
-                        <ul class="holding_coupon_font_right">
-                            <li>
-                                <div class="dot_font"></div>
-                                <p>쿠폰으로 지급되는 상품은 기존 보유 상품과 중복되어 적용되므로 가급적<br>
-                                    이용중인 상품이 만료 된 뒤에 쿠폰을 사용해 주세요.</p>
-                            </li>
-                            <li>
-                                <div class="dot_font"></div>
-                                <p>쿠폰번호에 숫자 0,1은 없습니다. 영문자 O,I와 혼동하지 않도록 유의해 주세요.</p>
-                            </li>
-                        </ul>
+                            </ul>
+                            <ul class="holding_coupon_font_right">
+                                <li>
+                                    <div class="dot_font"></div>
+                                    <p>쿠폰으로 지급되는 상품은 기존 보유 상품과 중복되어 적용되므로 가급적<br>
+                                        이용중인 상품이 만료 된 뒤에 쿠폰을 사용해 주세요.</p>
+                                </li>
+                                <li>
+                                    <div class="dot_font"></div>
+                                    <p>쿠폰번호에 숫자 0,1은 없습니다. 영문자 O,I와 혼동하지 않도록 유의해 주세요.</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- 보유쿠폰 | 소진쿠폰 -->
-            <div class="holding_exhaust">
-                <ul class="holding_exhaust_nav">
-                    <li>
-                        <a href="#" class="holding_coupon_nav">보유 쿠폰</a>
-                    </li>
-                    <li>
-                        <a href="#" class="exhaust_coupon_nav">소진 쿠폰</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="not_coupon">
-                <div class="holding_not_coupon">
-                    <img src="./images/common/warning.png" alt="">
-                    <p>보유 쿠폰이 없어요.</p>
+                <!-- 보유쿠폰 | 소진쿠폰 -->
+                <div class="holding_exhaust">
+                    <ul class="holding_exhaust_nav">
+                        <li>
+                            <a href="#" class="holding_coupon_nav">보유 쿠폰</a>
+                        </li>
+                        <li>
+                            <a href="#" class="exhaust_coupon_nav">소진 쿠폰</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="exhaust_not_coupon">
-                    <img src="./images/common/warning.png" alt="">
-                    <p>소진된 쿠폰이 없어요.</p>
+                <div class="not_coupon">
+                    <div class="holding_not_coupon">
+                        <img src="./images/common/warning.png" alt="">
+                        <p>보유 쿠폰이 없어요.</p>
+                    </div>
+                    <div class="exhaust_not_coupon">
+                        <img src="./images/common/warning.png" alt="">
+                        <p>소진된 쿠폰이 없어요.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -292,15 +299,23 @@
     <footer>
         <div class="f_top_wrap">
             <div class="f_top">
-                <a href="#">공지사항</a>
-                <div class="notice">
-                    <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
-                    <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
-                    <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
-                </div>
-                <div class="move">
-                    <a href="#"><img src="./images/prev.png" alt="이전"></a>
-                    <a href="#"><img src="./images/next.png" alt="다음"></a>
+                <a href="./information.html">공지사항</a>
+                <div class="swiper_container" id="swiper_notice">
+                    <div class="swiper-wrapper" id="notice_wrap">
+                        <a href="#" class="swiper-slide" id="notice_001">[점검안내] 2월 22일 롯데홈쇼핑 라이브 채널 점검</a>
+                        <a href="#" class="swiper-slide" id="notice_002">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
+                        <a href="#" class="swiper-slide" id="notice_003">[웨이브 폰트 출시] '웨이브 파도체'로 나만의 콘텐츠를 채워보세요!</a>
+                        <a href="#" class="swiper-slide" id="notice_004">[업데이트] 2월 1주 프로그램 리스트</a>
+                        <a href="#" class="swiper-slide" id="notice_005">[업데이트/중지] 2월 wavvie 영화 리스트</a>
+                    </div>
+                    <div class="move">
+                        <div class="swiper-button-prev" id="prev">
+                            <a href="#"><img src="./images/common/prev.png" alt="이전"></a>
+                        </div>
+                        <div class="swiper-button-next" id="next">
+                            <a href="#"><img src="./images/common/next.png" alt="다음"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -322,7 +337,8 @@
                         <span>사업자등록번호 220-88-38020</span>
                         <span class="last">호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사</span><br>
                         <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
-                        <span class="last">통신판매업 정보 공개 : <a href="#" class="web">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
+                        <span class="last">통신판매업 정보 공개 : <a href="#"
+                                class="web">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
                         <span>서울특별시 영등포구 여의나루로 60 포스트타워 19층</span>
                         <span class="last">전자우편주소 : <a href="#">helpdesk@wavve.com</a></span><br>
                     </p>
@@ -349,4 +365,5 @@
     </footer>
     <script src="./script/common.js"></script>
 </body>
+
 </html>
