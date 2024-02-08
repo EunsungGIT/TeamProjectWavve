@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/holding_coin.css">
@@ -128,7 +129,7 @@
     <header>
         <div class="h_top">
             <div class="profile">
-                <a href="#">프로필1 <img src="./images/arrow.png" alt="더보기"></a>
+                <a href="#">프로필1<img src="./images/arrow.png" alt="더보기"></a>
                 <div class="profile_m">
                     <p class="photo"><img src="./images/profile.png" alt="프로필"></p>
                     <p class="name">프로필1</p>
@@ -141,10 +142,10 @@
             </div>
             <a href="./membership.html">이용권</a>
             <div class="coupon">
-                <a href="#">쿠폰·코인 <img src="./images/arrow.png" alt="더보기"></a>
+                <a href="#">쿠폰·코인<img src="./images/arrow.png" alt="더보기"></a>
                 <div class="coupon_m">
-                    <a href="#">쿠폰 등록</a>
-                    <a href="#">코인 충전</a>
+                    <a href="./holding_coupon.html">쿠폰 등록</a>
+                    <a href="./holding_coin.html">코인 충전</a>
                 </div>
             </div>
             <a href="#">웨이브온</a>
@@ -154,7 +155,7 @@
             <div class="h_bottom">
                 <a href="./index.html" class="logo"><img src="./images/logo.svg" alt="Wavve"></a>
                 <nav>
-                    <a href="#">홈</a>
+                    <a href="./index.html">홈</a>
                     <div class="category">
                         <a href="#">카테고리</a>
                         <div class="category_m">
@@ -171,8 +172,8 @@
                             <a href="#">영화플러스</a>
                         </div>
                     </div>
-                    <a href="#">LIVE</a>
-                    <a href="#">MY</a>
+                    <a href="./live.html">LIVE</a>
+                    <a href="./mypage.html">MY</a>
                 </nav>
                 <!-- 검색 -->
                 <div class="search">
@@ -243,16 +244,26 @@
 </main>
 <!-- footer -->
 <footer>
-    <div class="f_top">
-        <a href="#">공지사항</a>
-        <div class="notice">
-            <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
-            <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
-            <a href="#">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
-        </div>
-        <div class="move">
-            <a href="#"><img src="./images/prev.png" alt="이전"></a>
-            <a href="#"><img src="./images/next.png" alt="다음"></a>
+    <div class="f_top_wrap">
+        <div class="f_top">
+            <a href="#">공지사항</a>
+            <div class="swiper_container" id="swiper_notice">
+                <div class="swiper-wrapper" id="notice_wrap">
+                    <a href="#" class="swiper-slide" id="notice_001">[점검안내] 2월 22일 롯데홈쇼핑 라이브 채널 점검</a>
+                    <a href="#" class="swiper-slide" id="notice_002">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
+                    <a href="#" class="swiper-slide" id="notice_003">[웨이브 폰트 출시] '웨이브 파도체'로 나만의 콘텐츠를 채워보세요!</a>
+                    <a href="#" class="swiper-slide" id="notice_004">[업데이트] 2월 1주 프로그램 리스트</a>
+                    <a href="#" class="swiper-slide" id="notice_005">[업데이트/중지] 2월 wavvie 영화 리스트</a>
+                </div>
+                <div class="move">
+                    <div class="swiper-button-prev" id="prev">
+                        <a href="#"><img src="./images/prev.png" alt="이전"></a>
+                    </div>
+                    <div class="swiper-button-next" id="next">
+                        <a href="#"><img src="./images/next.png" alt="다음"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="f_bottom">
@@ -273,7 +284,7 @@
                     <span>사업자등록번호 220-88-38020</span>
                     <span class="last">호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사</span><br>
                     <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
-                    <span class="last">통신판매업 정보 공개 : <a href="#">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
+                    <span class="last">통신판매업 정보 공개 : <a href="#" class="web">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
                     <span>서울특별시 영등포구 여의나루로 60 포스트타워 19층</span>
                     <span class="last">전자우편주소 : <a href="#">helpdesk@wavve.com</a></span><br>
                 </p>
@@ -284,9 +295,12 @@
             <a href="#" class="logo"><img src="./images/footer_logo.svg" alt="웨이브온"></a>
             <select name="selWavveOn" id="selWavveOn">
                 <option value="">사업자용 웨이브 가입</option>
-                <option value="">사업자용 웨이브 가입</option>
-                <option value="">사업자용 웨이브 가입</option>
-                <option value="">사업자용 웨이브 가입</option>
+                <option value="">웨이브온 서비스 소개</option>
+                <option value="">웨이브온 PC방 서비스</option>
+                <option value="">웨이브온 도서관 서비스</option>
+                <option value="">웨이브온 병원 서비스</option>
+                <option value="">웨이브온 숙박 서비스</option>
+                <option value="">웨이브온 일반 서비스</option>
             </select>
             <div class="sns">
                 <a href="#"><img src="./images/facebook.png" alt="페이스북"></a>
@@ -295,6 +309,6 @@
         </div>
     </div>
 </footer>
-    <script src="./script/index.js"></script>
+    <script src="./script/common.js"></script>
 </body>
 </html>
