@@ -1,5 +1,5 @@
 body {background: #1b1b1b;}
-main {width: 1240px; margin: 0 auto; height: 100vh;}
+main {width: 1240px; margin: 0 auto;}
 /* category */
 main .category {
     margin-top: 60px;
@@ -17,14 +17,14 @@ main .category #seriesBtn::before {
     width: 24px; height: 24px; content: '';
     display: inline-block;
     position: absolute; left: 24px;
-    background-image: url(../images/series.svg);
+    background-image: url(../images/search/series.svg);
     background-size: 24px auto;
 }
 main .category #seriesBtn::after {
     width: 16px; height: 16px; content: '';
     display: inline-block;
     position: absolute; right: 24px;
-    background-image: url(../images/icon_search_arrow.svg);
+    background-image: url(../images/search/search_arrow.svg);
     background-size: 16px auto;
 }
 main .category #seriesBtn:hover,
@@ -34,7 +34,9 @@ main .category #movieBtn:hover {
 }
 main .category #seriesBtn:hover::after {
     content: '#장르 #채널 #방영정보';
-    position: absolute; right: 200px;
+    width: 200px; position: absolute; right: 20px;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 main .category #movieBtn {
     width: 240px; height: 60px; text-align: left;
@@ -48,52 +50,55 @@ main .category #movieBtn::before {
     width: 24px; height: 24px; content: '';
     display: inline-block;
     position: absolute; left: 24px;
-    background-image: url(../images/movie.svg);
+    background-image: url(../images/search/movie.svg);
     background-size: 24px auto;
 }
 main .category #movieBtn::after {
     width: 16px; height: 16px; content: '';
     display: inline-block;
     position: absolute; right: 24px;
-    background-image: url(../images/icon_search_arrow.svg);
+    background-image: url(../images/search/search_arrow.svg);
     background-size: 16px auto;
 }
 main .category #movieBtn:hover::after {
     content: '#장르 #국가 #개봉연도';
-    position: absolute; right: 200px;
+    width: 200px; position: absolute; right: 20px;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 /* section */
 main section {margin-top: 40px;}
+main .movie {padding-bottom: 100px;}
 main section h2 {
     margin-bottom: 24px;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1.5rem; color: #fff;
 }
-main section #swiper {
+main section #swiper_series {
     max-width: 1240px; overflow: hidden;
     position: relative;
 }
-main section #swiper .swiper-wrapper {display: flex; }
-main section #swiper .swiper-wrapper a {
+main section #swiper_series #series_wrap {display: flex; }
+main section #swiper_series #series_wrap a {
     display: flex; flex-flow: column nowrap;
     margin-right: 10px;
 }
-main section #swiper .swiper-wrapper a img {
+main section #swiper_series #series_wrap a img {
     width: 240px; border-radius: 10px;
 }
-main section #swiper .swiper-wrapper a span {
+main section #swiper_series #series_wrap a span {
     font-family: 'Noto Sans KR', sans-serif;
     color: #a5a5a5; margin-top: 10px;
 }
-main section #swiper .swiper-button-prev {
+main section #swiper_series .swiper-button-prev {
     position: absolute; top: 40px; left: 0;
     transition: 0.2s;
     transform: translateX(-30px);
 }
-main section:hover #swiper .swiper-button-prev {transform: translateX(0);}
-main section #swiper .swiper-button-next {
+main section:hover #swiper_series .swiper-button-prev {transform: translateX(0);}
+main section #swiper_series .swiper-button-next {
     position: absolute; top: 40px; right: 0;
     transition: 0.2s;
     transform: translateX(30px);
 }
-main section:hover #swiper .swiper-button-next {transform: translateX(0);}
+main section:hover #swiper_series .swiper-button-next {transform: translateX(0);}

@@ -2,7 +2,7 @@
 .popup {
     display: none;
     position: absolute; width: 100%; z-index: 9999;
-    height: 100vh; background: rgba(0, 0, 0, 0.9) ;
+    height: 100vh; background: rgba(0, 0, 0, 0.8) ;
 }
 .popup .popup_background{}
 .popup .popup_background .contents {
@@ -19,7 +19,7 @@
 .popup .popup_background .contents .bottom label {}
 .popup .popup_background .contents .bottom label span {color: #f5f5f5;}
 
-/* header */
+/* header nav hover */
 header .h_bottom_wrap .h_bottom nav > a:first-child {color: #fff;}
 
 /* main */

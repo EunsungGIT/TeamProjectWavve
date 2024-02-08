@@ -2,7 +2,7 @@
 .notification {
     display: none;
     position: absolute;
-    background: rgba(0, 0, 0, 0.5); width: 100%; height: 100vh;
+    background: rgba(0, 0, 0, 0.8); width: 100%; height: 100vh;
 }
 .notification .contents_all {
     display: flex ;  width: 100%; padding-top: 100px;
@@ -44,7 +44,7 @@
 .category_s {
     display: none;
     position: absolute; width: 100%;
-    background: rgba(0, 0, 0, 0.5); height: 100vh ; z-index: 999;
+    background: rgba(0, 0, 0, 0.8); height: 100vh ; z-index: 999;
 }
 
 .category_s .contents_background {padding-top: 150px;}
@@ -244,17 +244,17 @@ footer .f_top_wrap .f_top #swiper_notice .move {
     position: absolute; top: 0; right: 0;
     display: flex;
 }
-footer .f_top_wrap .f_top #swiper_notice .move #prev {
+footer .f_top_wrap .f_top #swiper_notice .move #prev {}
+footer .f_top_wrap .f_top #swiper_notice .move #prev a {}
+footer .f_top_wrap .f_top #swiper_notice .move #prev a img {
     border-left: 1px solid #2f2f2f;
 }
-footer .f_top_wrap .f_top #swiper_notice .move #prev a {}
-footer .f_top_wrap .f_top #swiper_notice .move #prev a img {}
-footer .f_top_wrap .f_top #swiper_notice .move #next {
+footer .f_top_wrap .f_top #swiper_notice .move #next {}
+footer .f_top_wrap .f_top #swiper_notice .move #next a {}
+footer .f_top_wrap .f_top #swiper_notice .move #next a img {
     border-left: 1px solid #2f2f2f;
     border-right: 1px solid #2f2f2f;
 }
-footer .f_top_wrap .f_top #swiper_notice .move #next a {}
-footer .f_top_wrap .f_top #swiper_notice .move #next a img {}
 footer .f_bottom {
     width: 1240px; height: 250px;
     margin: 0 auto; padding-bottom: 100px;

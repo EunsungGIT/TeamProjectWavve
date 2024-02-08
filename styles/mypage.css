@@ -1,3 +1,7 @@
+/* header nav hover */
+header .h_bottom_wrap .h_bottom nav > a:last-child {color: #fff;}
+
+/* main */
 main {background: #1b1b1b;}
 main .mypage_top_wrap {
     background: #252525; padding: 17px 0;
@@ -41,9 +45,9 @@ main .mypage_bottom_wrap .mypage_bottom .mypage_left .profile_info p {
     color: #a5a5a5; margin: 20px 0 5px 0;
 }
 main .mypage_bottom_wrap .mypage_bottom .mypage_left .profile_info a {
-    color: #fff;
+    color: #fff; display: flex; align-items: center;
 }
-main .mypage_bottom_wrap .mypage_bottom .mypage_left .profile_info a img {}
+main .mypage_bottom_wrap .mypage_bottom .mypage_left .profile_info a img {margin-left: 5px;}
 main .mypage_bottom_wrap .mypage_bottom .mypage_right {width: 50%;}
 main .mypage_bottom_wrap .mypage_bottom .mypage_right a {
     color: #a5a5a5; margin-left: 60px;

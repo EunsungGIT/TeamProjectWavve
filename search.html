@@ -23,14 +23,14 @@
                     </div>
                     <div class="right">
                         <a href="#">
-                            <img src="./images/notification.png" alt="알림">
+                            <img src="./images/common/notification.png" alt="알림">
                             <p>알림설정</p>
                         </a>
                     </div>
                 </div>
                 <div class="contents_bottom">
                     <div class="first_contents">
-                        <img src="./images/warning.png" alt="알림없음">
+                        <img src="./images/common/warning.png" alt="알림없음">
                         <p>알림 내역이 없어요 </p>
                     </div>
                     <div class="second_contents">
@@ -149,16 +149,16 @@
         </div>
     </div>
     <!-- 위로가기 -->
-    <a href="#" id="up"><img src="./images/up.png" alt="위로가기"></a>
+    <a href="#" id="up"><img src="./images/common/up.png" alt="위로가기"></a>
     <!-- header -->
     <header>
         <div class="h_top">
             <div class="profile">
-                <a href="#">프로필1<img src="./images/arrow.png" alt="더보기"></a>
+                <a href="#">프로필1<img src="./images/common/arrow.png" alt="더보기"></a>
                 <div class="profile_m">
-                    <p class="photo"><img src="./images/profile.png" alt="프로필"></p>
+                    <p class="photo"><img src="./images/common/profile.png" alt="프로필"></p>
                     <p class="name">프로필1</p>
-                    <a href="#" class="edit">프로필 편집 <img src="./images/more.png" alt="바로가기"></a>
+                    <a href="./profile_edit.html" class="edit">프로필 편집 <img src="./images/common/more.png" alt="바로가기"></a>
                     <a href="#">회원정보 수정</a>
                     <a href="#">성인 콘텐츠 설정</a>
                     <a href="#">알림함 <span>0</span></a>
@@ -167,18 +167,18 @@
             </div>
             <a href="./membership.html">이용권</a>
             <div class="coupon">
-                <a href="#">쿠폰·코인<img src="./images/arrow.png" alt="더보기"></a>
+                <a href="#">쿠폰·코인<img src="./images/common/arrow.png" alt="더보기"></a>
                 <div class="coupon_m">
                     <a href="./holding_coupon.html">쿠폰 등록</a>
                     <a href="./holding_coin.html">코인 충전</a>
                 </div>
             </div>
-            <a href="#">웨이브온</a>
+            <a href="./waveon.html">웨이브온</a>
             <a href="#">이벤트</a>
         </div>
         <div class="h_bottom_wrap">
             <div class="h_bottom">
-                <a href="./index.html" class="logo"><img src="./images/logo.svg" alt="Wavve"></a>
+                <a href="./index.html" class="logo"><img src="./images/common/logo.svg" alt="Wavve"></a>
                 <nav>
                     <a href="./index.html">홈</a>
                     <div class="category">
@@ -202,9 +202,9 @@
                 </nav>
                 <!-- 검색 -->
                 <div class="search">
-                    <a href="./search.html"><img src="./images/search.svg" alt="검색하기"></a>
+                    <a href="./search.html"><img src="./images/common/search.svg" alt="검색하기"></a>
                     <label for="user_search">
-                        <img src="./images/search.svg" alt="검색하기">
+                        <img src="./images/common/search.svg" alt="검색하기">
                         <input type="search" id="user_search" placeholder="제목, 장르, 배우로 찾아보세요">
                     </label>
                 </div>
@@ -217,56 +217,109 @@
             <button type="button" id="seriesBtn">시리즈</button>
             <button type="button" id="movieBtn">영화</button>
         </div>
-        <section>
+        <section class="series">
             <h2>인기 시리즈</h2>
-            <div class="swiper-wrapper" id="swiper">
-                <div class="swiper-wrapper">
-                    <a href="#" class="swiper-slide">
-                        <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+            <div class="swiper-container" id="swiper_series">
+                <div class="swiper-wrapper" id="series_wrap">
+                    <a href="#" class="swiper-slide" id="series_001">
+                        <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
                         <span>나 혼자 산다</span>
                     </a>
-                    <a href="#" class="swiper-slide">
-                        <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                    <a href="#" class="swiper-slide" id="series_002">
+                        <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                        <span>전지적 참견 시점</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_001">
+                        <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
                         <span>나 혼자 산다</span>
                     </a>
-                    <a href="#" class="swiper-slide">
-                        <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                    <a href="#" class="swiper-slide" id="series_002">
+                        <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                        <span>전지적 참견 시점</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_001">
+                        <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
                         <span>나 혼자 산다</span>
                     </a>
-                    <a href="#" class="swiper-slide">
-                        <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
+                    <a href="#" class="swiper-slide" id="series_002">
+                        <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                        <span>전지적 참견 시점</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_001">
+                        <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
                         <span>나 혼자 산다</span>
                     </a>
-                    <a href="#" class="swiper-slide">
-                        <img src="./images/PRG_M_1003594100000100000-Horizontal_LogoY.jpg" alt="나 혼자 산다">
+                    <a href="#" class="swiper-slide" id="series_002">
+                        <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                        <span>전지적 참견 시점</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_001">
+                        <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
                         <span>나 혼자 산다</span>
                     </a>
-                    <a href="#" class="swiper-slide">
-                        <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
-                        <span>나 혼자 산다</span>
-                    </a>
-                    <a href="#" class="swiper-slide">
-                        <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
-                        <span>나 혼자 산다</span>
-                    </a>
-                    <a href="#" class="swiper-slide">
-                        <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
-                        <span>나 혼자 산다</span>
-                    </a>
-                    <a href="#" class="swiper-slide">
-                        <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
-                        <span>나 혼자 산다</span>
-                    </a>
-                    <a href="#" class="swiper-slide">
-                        <img src="./images/1699601581063498561.jpg" alt="나 혼자 산다">
-                        <span>나 혼자 산다</span>
+                    <a href="#" class="swiper-slide" id="series_002">
+                        <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                        <span>전지적 참견 시점</span>
                     </a>
                 </div>
                 <div class="swiper-button-prev">
-                    <img src="./images/slide_prev.png" alt="이전">
+                    <img src="./images/search/slide_prev.png" alt="이전">
                 </div>
                 <div class="swiper-button-next">
-                    <img src="./images/slide_next.png" alt="다음">
+                    <img src="./images/search/slide_next.png" alt="다음">
+                </div>
+            </div>
+        </section>
+        <section class="movie">
+            <h2>인기 시리즈</h2>
+            <div class="swiper-container" id="swiper_series">
+                <div class="swiper-wrapper" id="series_wrap">
+                    <a href="#" class="swiper-slide" id="series_001">
+                        <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
+                        <span>나 혼자 산다</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_002">
+                        <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                        <span>전지적 참견 시점</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_001">
+                        <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
+                        <span>나 혼자 산다</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_002">
+                        <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                        <span>전지적 참견 시점</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_001">
+                        <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
+                        <span>나 혼자 산다</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_002">
+                        <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                        <span>전지적 참견 시점</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_001">
+                        <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
+                        <span>나 혼자 산다</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_002">
+                        <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                        <span>전지적 참견 시점</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_001">
+                        <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
+                        <span>나 혼자 산다</span>
+                    </a>
+                    <a href="#" class="swiper-slide" id="series_002">
+                        <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                        <span>전지적 참견 시점</span>
+                    </a>
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="./images/search/slide_prev.png" alt="이전">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./images/search/slide_next.png" alt="다음">
                 </div>
             </div>
         </section>
@@ -286,10 +339,10 @@
                     </div>
                     <div class="move">
                         <div class="swiper-button-prev" id="prev">
-                            <a href="#"><img src="./images/prev.png" alt="이전"></a>
+                            <a href="#"><img src="./images/common/prev.png" alt="이전"></a>
                         </div>
                         <div class="swiper-button-next" id="next">
-                            <a href="#"><img src="./images/next.png" alt="다음"></a>
+                            <a href="#"><img src="./images/common/next.png" alt="다음"></a>
                         </div>
                     </div>
                 </div>
@@ -321,7 +374,7 @@
                 </div>
             </div>
             <div class="f_right">
-                <a href="#" class="logo"><img src="./images/footer_logo.svg" alt="웨이브온"></a>
+                <a href="#" class="logo"><img src="./images/common/footer_logo.svg" alt="웨이브온"></a>
                 <select name="selWavveOn" id="selWavveOn">
                     <option value="">사업자용 웨이브 가입</option>
                     <option value="">웨이브온 서비스 소개</option>
@@ -332,8 +385,8 @@
                     <option value="">웨이브온 일반 서비스</option>
                 </select>
                 <div class="sns">
-                    <a href="#"><img src="./images/facebook.png" alt="페이스북"></a>
-                    <a href="#"><img src="./images/naver.png" alt="네이버"></a>
+                    <a href="#"><img src="./images/common/facebook.png" alt="페이스북"></a>
+                    <a href="#"><img src="./images/common/naver.png" alt="네이버"></a>
                 </div>
             </div>
         </div>

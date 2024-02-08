@@ -1,3 +1,10 @@
+/* body */
+body {background: #1b1b1b;}
+
+/* header nav hover */
+header .h_bottom_wrap .h_bottom nav > a:last-child {color: #fff;}
+
+/* main */
 main {background: #1b1b1b;}
 main .breakdown_title {
     background: #252525; height: 116px;
