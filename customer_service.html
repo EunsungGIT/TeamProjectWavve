@@ -216,13 +216,29 @@
         <div class="main_title">
             <h1>고객센터</h1>
         </div>
-        <section>
+        <section class="customer_service">
             <div class="contents_title">
                 <a href="#">공지사항</a>
                 <a href="#">자주 묻는 질문 FAQ</a>
                 <a href="#">1:1문의</a>
                 <a href="#">이용약관</a>
             </div>
+            <section class="notice">
+                <div class="notice_title">
+                    <div class="notice_category">
+                        <a href="#">전체</a>
+                        <a href="#">서비스공지</a>
+                        <a href="#">콘텐츠공지</a>
+                    </div>
+                    <form action="#" method="get" id="noticeFrm">
+                        <fieldset>
+                            <legend class="skip">공지사항 검색 양식</legend>
+                            <input type="search" id="notice_search" placeholder="궁금하신 점을 입력해 주세요">
+                            <button type="button" id="noticeBtn">검색</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
         </section>
     </main>
     <!-- footer -->
