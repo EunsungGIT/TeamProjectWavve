@@ -1,11 +1,11 @@
 main {
     width: 100%; background-color: #1b1b1b
 }
-main .wave_on{width: 1005; margin: 0 auto;}
+main .wave_on {width: 1240px; margin: 0 auto;}
 main .page_top {
     padding: 40px 0; background-color: #252525; 
     width: 100%; margin-bottom: 40px;
-    position: fixed;top: 108px;
+    position: sticky; top: 108px;
 }
 main .page_top h1 {
     font-size: 1.5rem ;color: #fff;
