@@ -26,30 +26,25 @@ header .h_bottom_wrap .h_bottom nav > a:first-child {color: #fff;}
 /* main {height: 100vh;} */
 /* main 추가한 부분! */
 main {  max-width: 1912px; margin: 0 auto;
-    background: #1b1b1b; height: 200vh;}
+    background: #1b1b1b;}
     main .wrap {
-     /*    width: 100%; */
+    
     }
     main .wrap .top_container {
-        margin-bottom: 390px;
+        margin-bottom: 120px;
         margin-left: 20px;
     }
     main .wrap .top_container .top_images {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
-    /*     width: calc(100% / 4 - 30px / 4); */
-    /*   overflow: auto; */
-    /*    display: flex;
-        flex-flow: row nowrap; */
-    /*     display: none; */
-    justify-content: center;
-    position: relative;
+        justify-content: center;
+        position: relative;
     
     }
     main .wrap .top_container .top_images .top_img1 {
         position: relative;
-      /*   margin-right: 300px; */
+    
     }
     main .wrap .top_container .top_images .top_img1 a {
         
@@ -58,22 +53,21 @@ main {  max-width: 1912px; margin: 0 auto;
     main .wrap .top_container .top_images .top_img1 a img { /* top_img */
         width: 1240px;  margin-right: 20px;
         display: none;  border-radius: 15px;
-       /*  display: none; */
+       
     }
     main .wrap .top_container .top_images .top_img1 a .top_img_font {
         position: absolute; top: 0px; left: 0px;
-        /* height: 508px; */
+       
     }
     
     main .wrap .top_container .top_images .top_img2 {
         position: relative;   
-       /*  margin-right: 300px; */
+
     }
     main .wrap .top_container .top_images .top_img2 a {}
     /* 밑 이미지 안 글자 */
     main .wrap .top_container .top_images .top_img2 a img {
-        width: 1240px; /* height: 508px; */
-        /* display: none; */
+        width: 1240px; 
         margin-right: 20px; border-radius: 15px;
     }
     
@@ -83,16 +77,13 @@ main {  max-width: 1912px; margin: 0 auto;
     
     main .wrap .top_container .top_images .top_img3 {
         position: relative; 
-    /*   justify-content: center;
-        text-align: center; */
-      /*   margin-right: 300px; */
     }
     main .wrap .top_container .top_images .top_img3 a {
         text-align: center;
     }
     /* 밑 이미지 안 글자 */
     main .wrap .top_container .top_images .top_img3 a img {
-        width: 1240px; /* height: 508px; */
+        width: 1240px; 
         margin-right: 20px;
         display: none; border-radius: 15px;
     }
@@ -146,11 +137,12 @@ main {  max-width: 1912px; margin: 0 auto;
     main .wrap .middle_wrap .img_container1 {
     /* margin: 0px 30px 0px 30px; */
     /* padding: 0px 30px 0px 30px; */
+    margin-top: 80px;
     }
     main .wrap .middle_wrap .img_container1 .title {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     main .wrap .middle_wrap .img_container1 .title span {
         font-size: 24px; color: #fff;
@@ -160,45 +152,61 @@ main {  max-width: 1912px; margin: 0 auto;
     }
     main .wrap .middle_wrap .img_container1 .title a img {}
     /* 믿고 보는 웨이브 에디터 추천작 */
-    main .wrap .middle_wrap .img_container1 .wavve_images {
+    main .wrap .middle_wrap .img_container1 #swiper_wavve_images {
        /*  margin: 0 40px; */
+       position: relative;
         display: flex;
         flex-flow: row nowrap;
         overflow: hidden;
         text-align: center;
+        background: violet;
     }
-    main .wrap .middle_wrap .img_container1 .wavve_images .wavve_img {
-        display: flex; border-radius: 25px;
+    main .wrap .middle_wrap .img_container1 #swiper_wavve_images #swiper_wavve_img {
+        display: flex; border-radius: 25px; 
     } 
-    main .wrap .middle_wrap .img_container1 .wavve_images .wavve_img a {
+    main .wrap .middle_wrap .img_container1 #swiper_wavve_images #swiper_wavve_img .swiper-slide {
     /*     width: calc(100% / 4 - 30px / 4); */
         margin-right: 20px; overflow: hidden;
         border-radius: 25px;
+        background: turquoise;
     }
-    main .wrap .middle_wrap .img_container1 .wavve_images .wavve_img a img {
+    main .wrap .middle_wrap .img_container1 #swiper_wavve_images #swiper_wavve_img .swiper-slide img {
     /*  /*   border-radius: 30px; */
     /*    width: 20%; */ 
-    
     width: 250px; 
     }
     
-    main .wrap .middle_wrap .img_container1 .wavve_images .wavve_img a:hover {
+    main .wrap .middle_wrap .img_container1 #swiper_wavve_images #swiper_wavve_img .swiper-slide:hover {
         /* transform: scale(1.1); transition:  0.3s; */
     }
-    main .wrap .middle_wrap .img_container1 .wavve_images .wavve_img a img:hover {
+    main .wrap .middle_wrap .img_container1 #swiper_wavve_images #swiper_wavve_img .swiper-slide img:hover {
         transform: scale(1.1); transition:  0.3s;
     }
     
     /*  */
-    main .wrap .middle_wrap .img_container1 .wavve_images .prev {
+    main .wrap .middle_wrap .img_container1 #swiper_wavve_images #prev {
         position: absolute;
-        top: 220px; left: 0px;
+        top: 170px; left: 0px;
+        transform: translateX(-30px);
+     
+        transition: 0.2s;
+       
     }
-    main .wrap .middle_wrap .img_container1 .wavve_images .prev > .test {}
-    main .wrap .middle_wrap .img_container1 .wavve_images .next {
-        width: 100px;
+   
+    main .wrap .middle_wrap .img_container1:hover #swiper_wavve_images #prev{
+        transform: translateX(0);
+        
+       
+    }
+
+    main .wrap .middle_wrap .img_container1 #swiper_wavve_images #next {
         position: absolute;
-        top: 220px; right: 0px;
+        top: 170px; right: 0px;
+        transform: translateX(30px);
+        transition: 0.2s;
+    }
+    main .wrap .middle_wrap .img_container1:hover #swiper_wavve_images #next {
+        transform: translateX(0);
     }
     
     /*  */

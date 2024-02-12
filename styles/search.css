@@ -96,6 +96,7 @@ main section #swiper_series .swiper-button-prev {
     transform: translateX(-30px);
 }
 main section:hover #swiper_series .swiper-button-prev {transform: translateX(0);}
+
 main section #swiper_series .swiper-button-next {
     position: absolute; top: 40px; right: 0;
     transition: 0.2s;
