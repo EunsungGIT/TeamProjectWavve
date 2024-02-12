@@ -13,7 +13,10 @@
 }
 .popup .popup_background .contents .top .popup_img {
     background-image: url(../images/1706165557490076058.jpg);
-    width: 420px; height: 600px; border-radius: 10px; background-position: center;
+    width: 420px; height: 600px; border-radius: 10px; background-position: center; 
+}
+.popup .popup_background .contents .top .close{
+    position: relative; left: 10px;
 }
 .popup .popup_background .contents .bottom{margin-top: 10px;}
 .popup .popup_background .contents .bottom label {}

@@ -20,12 +20,13 @@ main .adult .contents {
     margin: 0 auto;width: 1240px;
 }
 main .adult .contents h2 {
+    font-weight: 700;
     font-size: 1.5rem; color: #a5a5a5;
     padding: 40px 0; 
 }
 main .adult .contents ul{ }
 main .adult .contents ul li{
-    padding: 28px 0; border-bottom: 1px solid #a5a5a5;
+    padding: 28px 0; border-bottom: 1px solid #2f2f2f;
 }
 /* 공통 이미지 크기조정 */
 main .adult .contents ul li img{
@@ -50,5 +51,5 @@ main .adult .contents .pw_setting {
 }
 main .adult .contents .pw_setting a {
     color: #a5a5a5; text-decoration: underline;
-    
+    font-size: 0.875rem;
 }
