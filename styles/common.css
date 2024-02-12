@@ -1,6 +1,5 @@
 /* 알림함 */
-.notification {
-    display: none;
+.notification { 
     position: absolute;
     background: rgba(0, 0, 0, 0.8); width: 100%; height: 100vh;
 }
@@ -58,15 +57,30 @@
 .category_s h2{
     color: #ffff; padding-bottom: 20px;
 }
-.category_s a{color: #a5a5a5;  }
+.category_s a{color: #a5a5a5;}
+.category_s a:hover{
+    color: #fff;
+}
 .category_s a em{color: #a5a5a5; display: flex; align-items: center;}
+.category_s a em:hover{color: #fff;}
 .category_s a em::after {
     content: '' ;display: flex; width: 5px; height: 5px;
     background-color: #ff27a3; border-radius: 50%; margin-left: 10px;
 }
+.category_s .contents_background .close {
+    position: absolute;  right: 245px; top:150px   
+}
+.category_s .contents_background .close a {
+    
+}
+.category_s .contents_background .close a img {
+    
+}
+
 .category_s .contents_background .contents .all_category {
     width: 100%; 
 }
+
 .category_s .contents_background .contents .all_category h1 {
     color: #fff; margin: 0 0 28px 40px; font-size: 1.75rem
 }

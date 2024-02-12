@@ -1,0 +1,57 @@
+body {}
+body main {}
+body main section {}
+body main section .main_benner {
+    width: 100%; height: 100vh;
+    background-image: url(../images/wave_service/main_background_img.png); background-position: center; 
+    background-size: cover;
+    background-attachment:fixed ;
+}
+body main section .main_benner .benner_contents {
+    max-width: 1240px;    margin: 0 auto;
+    
+}
+body main section .main_benner .benner_contents .contents_text {
+    display: flex; flex-flow: column nowrap;
+    max-width: 495px;text-align: center;
+}
+body main section .main_benner .benner_contents .contents_text h2 {
+    font-size: 2.5rem; color: #fff; padding-top: 190px  ;
+}
+body main section .main_benner .benner_contents .contents_text img {
+    width: 180px; margin: 0 auto; padding: 10px 0 30px;
+}
+body main section .main_benner .benner_contents .contents_text .text_sub{
+    display: flex; flex-flow: column nowrap;
+}
+body main section .main_benner .benner_contents .contents_text span {
+    color: #fff; font-size: 1.25rem; line-height: 30px;
+    letter-spacing: -1px;
+}
+body main section .benner_second {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+body main section .benner_second .contents_first {
+    width: 100%; height: 100vh;
+    background-image: url(../images/wave_service/benner_img1.png);
+     position: relative;
+    background-size: cover;
+}
+body main section .benner_second .contents_first a {}
+body main section .benner_second .contents_first a img {
+    position: absolute; top: 300px;
+}
+body main section .benner_second .contents_first  .before {}
+body main section .benner_second .contents_first  .next img {
+    position: absolute; right: 0;
+}
+body main section .wavve_style{
+    width: 100%;
+    background: #f7f7f7;
+    padding: 120px 0;
+}
+body main section .wavve_style .style_first{
+    width: 1240px; margin: 0 auto;
+    text-align: center;
+}
