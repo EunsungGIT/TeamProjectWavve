@@ -1,5 +1,5 @@
 body {background: #1b1b1b;}
-main {width: 1240px; margin: 0 auto;}
+main {max-width: 1240px; margin: 0 auto;}
 /* category */
 main .category {
     margin-top: 60px;

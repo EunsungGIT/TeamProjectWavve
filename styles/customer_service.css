@@ -1,6 +1,6 @@
 /* main */
 main {
-    width: 100%; background-color: #1b1b1b
+    background-color: #1b1b1b
 }
 main .main_title {
     padding: 40px 0; background-color: #252525; 
@@ -9,10 +9,10 @@ main .main_title {
 main .main_title h1 {
     font-size: 1.5rem ;color: #fff;
     margin: 0 34.5px;
-    width: 1240px; margin: 0 auto;
+    max-width: 1240px; margin: 0 auto;
 }
 main .customer_service {
-    width: 1240px; margin: 0 auto;
+    max-width: 1240px; margin: 0 auto;
     padding-bottom: 80px;
 }
 main .customer_service .contents_title {
@@ -64,3 +64,106 @@ main .customer_service .notice .notice_title #noticeFrm fieldset #noticeBtn {
     background: #1351f9; border-radius: 30px;
     font-size: 0.875rem; margin-left: 5px;
 }
+main .customer_service .notice .notice_info {
+    border-top: 2px solid #2f2f2f;
+    padding-bottom: 40px;
+}
+main .customer_service .notice .notice_info dl {
+    display: flex; border-bottom: 1px solid #2f2f2f;
+}
+main .customer_service .notice .notice_info dl dt {
+    padding: 15px 0; color: #a5a5a5;
+    width: calc(100% / 3); text-align: center;
+    font-size: 0.938rem; font-weight: 700;
+}
+main .customer_service .notice .notice_info dl dd {
+    padding: 15px 0; color: #a5a5a5;
+    font-size: 0.875rem; width: calc(100% / 3);
+    text-align: center;
+}
+main .customer_service .notice .notice_info dl dd a {
+    color: #a5a5a5; font-size: 0.875rem;
+}
+main .customer_service .notice .notice_page {
+    padding-bottom: 80px;
+    display: flex; justify-content: center;
+}
+main .customer_service .notice .notice_page a {
+    color: #a5a5a5; width: 36px; height: 36px;
+    font-size: 0.875rem; display: flex;
+    justify-content: center; align-items: center;
+}
+main .customer_service .notice .notice_page a:first-child {
+    color: #fff; border: 1px solid #fff;
+    border-radius: 50%;
+}
+main .customer_service .faq {padding-bottom: 80px;}
+main .customer_service .faq .faq_top {
+    background: #252525; padding: 40px 169px;
+    max-width: 1240px; margin: 0 auto 40px;
+}
+main .customer_service .faq .faq_top h2 {
+    font-size: 1.625rem; color: #fff;
+    padding-bottom: 24px; text-align: center;
+}
+main .customer_service .faq .faq_top #faqFrm {
+    padding-bottom: 24px;
+}
+main .customer_service .faq .faq_top #faqFrm fieldset {}
+main .customer_service .faq .faq_top #faqFrm fieldset #faq_search {
+    width: 560px; height: 46px; font-size: 0.875rem;
+    padding: 0 20px; background: #2f2f2f;
+}
+main .customer_service .faq .faq_top #faqFrm fieldset #faqBtn {
+    width: 119px; height: 46px;
+    background: #1351f9; color: #fff;
+    border-radius: 50px; font-size: 0.813rem;
+    font-weight: 700;
+}
+main .customer_service .faq .faq_top .faq_often {
+    display: flex; align-items: center;
+}
+main .customer_service .faq .faq_top .faq_often h3 {
+    font-size: 1.125rem; color: #a5a5a5;
+    padding-right: 20px;
+}
+main .customer_service .faq .faq_top .faq_often a {
+    font-size: 0.875rem; color: #a5a5a5;
+    text-decoration: underline; margin-left: 20px;
+}
+main .customer_service .faq .faq_category {padding-bottom: 20px;}
+main .customer_service .faq .faq_category a {
+    font-size: 1.25rem; color: #a5a5a5;
+    margin-right: 12px;
+    padding-right: 12px; position: relative;
+}
+main .customer_service .faq .faq_category a::after {
+    content: ''; display: inline-block;
+    background: #2f2f2f; width: 1px;
+    height: 18px; transform: translateY(-50%);
+    position: absolute; top: 50%; margin: 0 12px;
+}
+main .customer_service .faq .faq_category a:first-child {color: #fff;}
+main .customer_service .faq .faq_category a:last-child::after {background: none;}
+main .customer_service .faq .faq_info {
+    border-top: 2px solid #2f2f2f;
+}
+main .customer_service .faq .faq_info a {
+    border-bottom: 1px solid #2f2f2f;
+    padding: 27px; display: block;
+}
+main .customer_service .faq .faq_info a span {
+    color: #a5a5a5; margin-right: 27px;
+}
+main .customer_service .faq .faq_info a strong {
+    color: #a5a5a5;
+}
+main .customer_service .inquiry {}
+main .customer_service .inquiry .inquiry_top {}
+main .customer_service .inquiry .inquiry_top .number_time {}
+main .customer_service .inquiry .inquiry_top .number_time .number {}
+main .customer_service .inquiry .inquiry_top .number_time .number img {}
+main .customer_service .inquiry .inquiry_top .number_time .number p {}
+main .customer_service .inquiry .inquiry_top .number_time .inquiry_help {}
+main .customer_service .inquiry .inquiry_top .number_time .inquiry_help p {}
+main .customer_service .inquiry .inquiry_top .number_time .inquiry_help #inquiryBtn {}

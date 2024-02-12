@@ -8,7 +8,7 @@ main .mypage_top_wrap {
     border-bottom: 1px solid #1b1b1b;
 }
 main .mypage_top_wrap .mypage_top {
-    width: 1240px; margin: 0 auto;
+    max-width: 1240px; margin: 0 auto;
     display: flex; justify-content: flex-end;
 }
 main .mypage_top_wrap .mypage_top a {
@@ -26,7 +26,7 @@ main .mypage_bottom_wrap {
     background: #252525; height: 144px; 
 }
 main .mypage_bottom_wrap .mypage_bottom {
-    width: 1240px; margin: 0 auto;
+    max-width: 1240px; margin: 0 auto;
     padding: 24px 0; height: 100%;
     display: flex; align-items: center;
 }
@@ -56,7 +56,7 @@ main .mypage_bottom_wrap .mypage_bottom .mypage_right a span {
     color: #fff; margin-left: 12px;
 }
 main section {
-    width: 1240px; margin: 0 auto;
+    max-width: 1240px; margin: 0 auto;
 }
 main .record {margin-top: 40px;}
 main section h2 {

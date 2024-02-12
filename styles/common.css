@@ -1,5 +1,6 @@
 /* 알림함 */
 .notification { 
+    display: none;
     position: absolute;
     background: rgba(0, 0, 0, 0.8); width: 100%; height: 100vh;
 }
@@ -109,7 +110,7 @@ header {
     position: sticky; top: 0; z-index: 9999;
 }
 header .h_top {
-    width: 1240px; height: 34px; margin: 0 auto;
+    max-width: 1240px; height: 34px; margin: 0 auto;
     display: flex; justify-content: flex-end;
     align-items: center;
 }
@@ -175,7 +176,7 @@ header .h_bottom_wrap {
 }
 header .h_bottom_wrap .h_bottom {
     position: relative;
-    width: 1240px; height: 74px; margin: 0 auto;
+    max-width: 1240px; height: 74px; margin: 0 auto;
     display: flex; justify-content: space-between;
     align-items: center;
 }
@@ -236,7 +237,7 @@ footer {
 }
 footer .f_top_wrap {border-bottom: 1px solid #2f2f2f;}
 footer .f_top_wrap .f_top {
-    width: 1240px; height: 50px; margin: 0 auto;
+    max-width: 1240px; height: 50px; margin: 0 auto;
     align-items: center; position: relative;
     display: flex; justify-content: flex-start;
 }
@@ -270,7 +271,7 @@ footer .f_top_wrap .f_top #swiper_notice .move #next a img {
     border-right: 1px solid #2f2f2f;
 }
 footer .f_bottom {
-    width: 1240px; height: 250px;
+    max-width: 1240px; height: 250px;
     margin: 0 auto; padding-bottom: 100px;
     display: flex; justify-content: space-between;
 }

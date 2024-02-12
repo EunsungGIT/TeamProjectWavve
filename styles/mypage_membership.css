@@ -11,7 +11,7 @@ main .breakdown_title {
     margin-bottom: 40px; padding: 40px 0;
 }
 main .breakdown_title h2 {
-    margin: 0 auto; width: 1240px;
+    margin: 0 auto; max-width: 1240px;
     color: #fff; font-size: 1.5rem;
 }
 main .breakdown {

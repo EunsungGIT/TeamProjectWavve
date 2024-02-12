@@ -1,7 +1,7 @@
 main {
     width: 100%; background-color: #1b1b1b
 }
-main .wave_on {width: 1240px; margin: 0 auto;}
+main .wave_on {max-width: 1240px; margin: 0 auto;}
 main .page_top {
     padding: 40px 0; background-color: #252525; 
     width: 100%; margin-bottom: 40px;
@@ -10,18 +10,17 @@ main .page_top {
 main .page_top h1 {
     font-size: 1.5rem ;color: #fff;
     margin: 0 34.5px;
-    width: 1240px; margin: 0 auto;
+    max-width: 1240px; margin: 0 auto;
 }
 main .wave_on .main_contents {
 }
 main .wave_on .main_contents .contents_first {
-    width: 1240px ; margin: 0 auto;
+    max-width: 1240px ; margin: 0 auto;
 }
 main .wave_on .main_contents .contents_first a {}
-main .wave_on .main_contents .contents_first a img {width: 1240px; height: 248px;}
-
+main .wave_on .main_contents .contents_first a img {width: 100%;}
 main .wave_on .main_contents .contents_second {
-    width: 1178px; margin: 0 auto; 
+    max-width: 1240px; margin: 0 auto; 
 }
 main .wave_on .main_contents .contents_second .waveon_buy {
     display: flex; flex-flow: row nowrap; justify-content: space-between;

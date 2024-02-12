@@ -2,7 +2,7 @@ main {background: #1b1b1b;}
 main .title_wrap {background: #252525;}
 main .title_wrap .title {
     padding: 40px 0;
-    width: 1240px; margin: 0 auto;
+    max-width: 1240px; margin: 0 auto;
 }
 main .title_wrap .title h2 {
     color: #fff; font-size: 1.5rem;
@@ -16,13 +16,13 @@ main .event {
     background: #3468f2;
     display: flex; justify-content: center;
 }
-main .event img {width: 1024px;}
+main .event img {max-width: 1024px;}
 main .open {
     display: flex; justify-content: center;
 }
 main .open img {}
 main .membership {
-    width: 1240px; margin: 0 auto;
+    max-width: 1240px; margin: 0 auto;
     padding-bottom: 80px;
 }
 main .membership .membership_title {
