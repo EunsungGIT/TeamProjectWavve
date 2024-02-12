@@ -35,8 +35,8 @@ body main section .benner_second {
 body main section .benner_second .contents_first {
     width: 100%; height: 100vh;
     background-image: url(../images/wave_service/benner_img1.png);
-     position: relative;
     background-size: cover;
+    position: relative; background-position: center;
 }
 body main section .benner_second .contents_first a {}
 body main section .benner_second .contents_first a img {
@@ -54,4 +54,18 @@ body main section .wavve_style{
 body main section .wavve_style .style_first{
     width: 1240px; margin: 0 auto;
     text-align: center;
+}
+body main section .wavve_style .style_first .first_wrap {}
+body main section .wavve_style .style_first .first_wrap .wrap_contents {}
+body main section .wavve_style .style_first .first_wrap .wrap_contents .text1 {
+    font-size: 0.875rem; font-weight: 700;
+}
+body main section .wavve_style .style_first .first_wrap .wrap_contents .text2 {
+    font-size: 1.5rem; margin-bottom: 70px;
+}
+body main section .wavve_style .style_first .first_wrap .wrap_contents h1  {
+    font-size: 4.375rem; font-weight: 700; margin: 30px 0; 
+}
+body main section .wavve_style .style_first .first_wrap .wrap_contents h1 em {
+    font-size: 4.375rem; color: #1351f9; font-weight: 700;
 }
