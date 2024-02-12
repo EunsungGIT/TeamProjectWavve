@@ -28,7 +28,7 @@ main .event_wrap .event_title_tap a {
     color: #fff;  font-size: 1.125rem;
 }
 main .event_wrap .event_middle {
-    width: 1240px; margin: 0 auto;
+    max-width: 1240px; margin: 0 auto;
     position: relative;
 }
 main .event_wrap .event_middle .event_content {
