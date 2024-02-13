@@ -3,11 +3,7 @@ body {background: #1b1b1b;}
 
 /* 알림함 */
 .notification { 
-<<<<<<< HEAD
     display: none;
-=======
-    z-index: 999;
->>>>>>> 772865649e2c98ac917f2ff2d53c07f75a2b6a4f
     position: absolute;
     background: rgba(0, 0, 0, 0.8); width: 100%; height: 100vh;
     z-index:850;

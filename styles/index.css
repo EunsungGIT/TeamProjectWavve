@@ -65,26 +65,25 @@ header .h_bottom_wrap .h_bottom nav > a:first-child {color: #fff;}
         
     }
     /* 밑 이미지 안 글자 */
-<<<<<<< HEAD
     main .wrap #top_container #top_images #top_img1 a img { 
         /* width: 1240px; 이미지 크기  */
        /*  width: 100%;  */
         border-radius: 15px;
         margin-right: 10px; border-radius: 15px;
-        
     }
+    
     main .wrap #top_container #top_images #top_img1 a .top_img_font {
         position: absolute; top: 10px; left: 0px;
-=======
-    main .wrap #top_container #top_images .top_img1 a img { 
+    }
+
+   /*  main .wrap #top_container #top_images .top_img1 a img { 
         width: 1240px;  margin-right: 20px;
         display: none;  border-radius: 15px;
        
-    }
+    } */
     main .wrap #top_container #top_images .top_img1 a .top_img_font {
         position: absolute; top: 0px; left: 0px;
        
->>>>>>> 772865649e2c98ac917f2ff2d53c07f75a2b6a4f
     }
 
     /* 2번째 이미지 시작. ---*/
