@@ -1,4 +1,5 @@
 /* 상단 메인 슬라이드 */
+<<<<<<< HEAD
 const my_swiper = new Swiper('#top_container', { 
     autoplay:{delay:2000},
     loof:true,
@@ -10,6 +11,13 @@ const my_swiper = new Swiper('#top_container', {
     pagination:{
         el:'.swiper-pagination'
     },
+=======
+var mySwiper = new Swiper('#top_container', { 
+    autoplay:{delay:1000},
+    loop:true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+>>>>>>> 772865649e2c98ac917f2ff2d53c07f75a2b6a4f
     navigation:{
         nextEl:'#top_container .swiper-button-next',
         prevEl:'#top_container .swiper-button-prev',
