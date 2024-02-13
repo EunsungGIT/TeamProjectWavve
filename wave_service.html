@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웨이브 서비스소개</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
@@ -87,15 +89,73 @@
                     </div>
                 </div>
             </div>
-            <div class="benner_second">
-                <div class="contents_first">
-                    <a href="#" class="before"><img src="./images/wave_service/before_icon.png" alt=""></a>
-                    <a href="#" class="next"><img src="./images/wave_service/next_icon.png" alt=""></a>
+            <div class="swiper-container product_benner">
+                <div class="swiper-pagination page_nav"></div>
+                <div class="swiper-wrapper benner_main">
+                    <div class="swiper-slide benner_contents">
+                        <div class="benner_text">
+                            <h1>재미의 파도를 타다! <br> Wavve</h1>
+                            <p>
+                                다시 한번 새로워진 Wavve!<br>
+                                더욱 다양한 콘텐츠와 혜택,<br>
+                                Wavve에서 재미의 파도를 타보세요
+                            </p>
+                        </div>
+                        <div class="benner_img">
+                            <img src="./images/wave_service/benner1.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="swiper-slide benner_contents" >
+                        <div class="benner_text">
+                            <h1>볼만한 컨텐츠. <br>더욱 재미있게<br>만나세요</h1>
+                            <p>
+                                오직 웨이브에서만 만나볼 수 있는<br>
+                                다양한 콘텐츠와 테마별 에디터 픽으로<br>
+                                보고싶은 콘텐츠를 만나보세요
+                            </p>
+                        </div>
+                        <div class="benner_img">
+                            <img src="./images/wave_service/benner2.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="swiper-slide benner_contents" >
+                        <div class="benner_text">
+                            <h1>더욱 풍부해진<br> LIVE,VOD,영화</h1>
+                            <p>
+                                지상파 포함 LIVE 채널과 방송 VOD,<br>
+                                취향저격 해외시리즈와 영화!<br>
+                                세상에서 가장 빠른Quick VOD는 물론,<br>
+                                이용권 하나로 영화까지!
+                            </p>
+                        </div>
+                        <div class="benner_img">
+                            <img src="./images/wave_service/benner3.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="swiper-slide benner_contents" >
+                        <div class="benner_text">
+                            <h1>더욱 합리적이고<br>새로워진<br>Wavve 이용권</h1>
+                            <p>
+                                Basic,Standard,Premium<br>
+                                어떤 이용권이로든 다양한 기기에서<br>
+                                6,0000편의 Wavvie 영화까지 자유롭게!
+                            </p>
+                        </div>
+                        <div class="benner_img">
+                            <img src="./images/wave_service/benner4.png" alt="#">
+                        </div>
+                    </div>
                 </div>
+                <a href="#" class="swiper-button-prev" id="prev">
+                    <img src="./images/wave_service/prev_icon.png" alt="">
+                </a>
+                <a href="#" class="swiper-button-next" id="next">
+                    <img src="./images/wave_service/next_icon.png" alt="">
+                </a>
             </div>
             <div class="wavve_style">
                 <div class="style_first">
-                    <div class="first_wrap">
+                    <div class="content_wrap first_wrap">
                         <div class="wrap_contents">
                             <p class="text1">Wavve style</p>
                             <h1>Fit your <em>screen</em></h1>
@@ -106,15 +166,184 @@
                             <ul>
                                 <li>
                                     <h2>더 넓게</h2>
-                                    <p>삼성/LG 스마트TV</p>
+                                    <div class="text">
+                                        <span>삼성/LG스마트 TV</span>
+                                        <span>스마트 프로젝터에 탑재된</span>
+                                        <span>Wavve를 만나보세요!</span>
+                                    </div>
                                 </li>
-                                <li></li>
+                                <li>
+                                    <h2>더 편리하게</h2>
+                                    <div class="text">
+                                        <span>크롬캐스트,패밀리허브,</span>
+                                        <span>android 셋톱박스 등</span>
+                                        <span>다양한 기기에서 편리하게</span>
+                                        <span>Wavve를 이용하세요!</span>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content_wrap second_wrap">
+                        <div class="wrap_contents">
+                            <p class="text1">Wavve style</p>
+                            <h1>Fit your <em>screen</em></h1>
+                            <p class="text2">당신의 스크린에 딱 맞추어 Wavve를 즐겨보세요.</p>
+                            <img src="./images/wave_service/service_style_benner.png" alt="모니터 화면">
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li>
+                                    <img src="./images/wave_service/movie_icon.png" alt="영화">
+                                    <h2>영화도 더 Wavve!</h2>
+                                    <div class="text">
+                                        <span>Wavve 이용권으로</span>
+                                        <span>수천편의 Wavvie 영화까지</span>
+                                        <span>마음껏 즐기세요!</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/wave_service/music_icon.png" alt="음악">
+                                    <h2>음악도 더 Wavve!</h2>
+                                    <div class="text">
+                                        <span>방송과 음악을 가장 알뜰하게</span>
+                                        <span>즐기는 방법!</span>
+                                        <span>Wavve X Bugs 결합상품!</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/wave_service/wavve_icon.png" alt="로고">
+                                    <h2>PC방,병원,도서관에서도 무료로!</h2>
+                                    <div class="text">
+                                        <span>&LT;Wavve on&GT;가맹점에서는 로그인없이</span>
+                                        <span>Wavve를 무료로 즐길수 있어요!</span>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="download">
+                <div class="download_wrap">
+                    <div class="download_contents">
+                        <div class="contents_text">
+                            <p>앱 다운로드</p>
+                            <h2>새로운 Wavve를 만나보세요</h2>
+                            <span>더욱 다양한 콘텐츠와 혜택,Wavve에서 재미의 파도를 타 보세요.</span>
+                        </div>
+                        <div class="bottom_contents">
+                            <div class="img"><img src="./images/wave_service/wavve_phone_img.png" alt=""></div>
+                            <div class="app_download">
+                                <a href="#"><img src="./images/wave_service/apple_download.jpg" alt="에플다운로드"></a>
+                                <a href="#">
+                                    <img src="./images/wave_service/google.download.jpg" alt="구글 다운로드">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="use">
+                <div class="use_wrap">
+                    <div class="use_contents">
+                        <div class="use_text">
+                            <p>이용권</p>
+                            <h2>어떤 이용권이로든 </h2>
+                            <h2>Wavvie 영화까지 자유롭게!</h2>
+                            <div class="text_box">
+                                <span>원하는 최고  화질과 동시접속 회선 수 에 따라</span>
+                                <span> 나에게 꼭 맞는 이용권을 선택하세요</span>
+                            </div>
+                            <div class="button">
+                                <a href="./membership.html">waveon 이용권 보러가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="follow">
+                <div class="follow_contents">
+                    <div class="follow_text">
+                        <p>wavve의 새로운 소식을 누구보다 먼저 받아보고 싶다면?</p>
+                        <h1>SNS에서 "Wavve"를 팔로우하세요!</h1>
+                    </div>
+                    <div class="follow_link">
+                        <a href="#"><img src="./images/wave_service/facebook_img.jpg" alt="페이스북"></a>
+                        <a href="#"><img src="./images/wave_service/naver_img.jpg" alt="네이버"></a>
+                        <a href="#"><img src="./images/wave_service/youtube_img.jpg" alt="유튜브"></a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="f_top_wrap">
+            <div class="f_top">
+                <a href="./information.html">공지사항</a>
+                <div class="swiper_container" id="swiper_notice">
+                    <div class="swiper-wrapper" id="notice_wrap">
+                        <a href="#" class="swiper-slide" id="notice_001">[점검안내] 2월 22일 롯데홈쇼핑 라이브 채널 점검</a>
+                        <a href="#" class="swiper-slide" id="notice_002">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
+                        <a href="#" class="swiper-slide" id="notice_003">[웨이브 폰트 출시] '웨이브 파도체'로 나만의 콘텐츠를 채워보세요!</a>
+                        <a href="#" class="swiper-slide" id="notice_004">[업데이트] 2월 1주 프로그램 리스트</a>
+                        <a href="#" class="swiper-slide" id="notice_005">[업데이트/중지] 2월 wavvie 영화 리스트</a>
+                    </div>
+                    <div class="move">
+                        <div class="swiper-button-prev" id="prev">
+                            <a href="#"><img src="./images/common/prev.png" alt="이전"></a>
+                        </div>
+                        <div class="swiper-button-next" id="next">
+                            <a href="#"><img src="./images/common/next.png" alt="다음"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f_bottom">
+            <div class="f_left">
+                <div class="info">
+                    <a href="#">회사소개</a>
+                    <a href="#">인재채용</a>
+                    <a href="#">서비스 소개</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보 처리방침</a>
+                    <a href="#">고객센터</a>
+                </div>
+                <div class="company">
+                    <p class="company_info">
+                        <span>콘텐츠웨이브 주식회사</span>
+                        <span>대표이사 이태현</span>
+                        <span class="last">고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)</span><br>
+                        <span>사업자등록번호 220-88-38020</span>
+                        <span class="last">호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사</span><br>
+                        <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
+                        <span class="last">통신판매업 정보 공개 : <a href="#" class="web">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
+                        <span>서울특별시 영등포구 여의나루로 60 포스트타워 19층</span>
+                        <span class="last">전자우편주소 : <a href="#">helpdesk@wavve.com</a></span><br>
+                    </p>
+                    <p class="copyright">Copyright&copy; 콘텐츠웨이브(주) All rights reserved.</p>
+                </div>
+            </div>
+            <div class="f_right">
+                <a href="#" class="logo"><img src="./images/common/footer_logo.svg" alt="웨이브온"></a>
+                <select name="selWavveOn" id="selWavveOn">
+                    <option value="">사업자용 웨이브 가입</option>
+                    <option value="">웨이브온 서비스 소개</option>
+                    <option value="">웨이브온 PC방 서비스</option>
+                    <option value="">웨이브온 도서관 서비스</option>
+                    <option value="">웨이브온 병원 서비스</option>
+                    <option value="">웨이브온 숙박 서비스</option>
+                    <option value="">웨이브온 일반 서비스</option>
+                </select>
+                <div class="sns">
+                    <a href="#"><img src="./images/common/facebook.png" alt="페이스북"></a>
+                    <a href="#"><img src="./images/common/naver.png" alt="네이버"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script/service.js"></script>
 </body>
 </html>
