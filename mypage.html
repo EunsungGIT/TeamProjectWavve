@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웨이브 MY</title>
     <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/mypage.css">
 </head>
 <body>
-    <!-- 알림함 -->
+    <!-- 알림함&알림설정 -->
     <div class="notification">
         <div class="contents_all">
+            <!-- 알림함 -->
             <div class="main_contents">
                 <div class="contents_top">
                     <div class="left">
@@ -33,13 +38,71 @@
                         <img src="./images/common/warning.png" alt="알림없음">
                         <p>알림 내역이 없어요 </p>
                     </div>
-                    <div class="second_contents">
+                </div> <!--"contents_bottom" 끝 -->
+            </div>
+            <!-- 알림설정 -->
+            <div class="setting_wrap">
+                <div class="setting_content_all">
+                    <div class="setting_main_contents">
+                        <div class="setting_contents_top">
+                            <div class="setting_left">
+                                <span class="setting_notification_sub">알림설정</span>
+                            </div>
+                            <div class="setting_right">
+                                <a href="#">
+                                    <img src="./images/common/notification.png" alt="알림">
+                                    <p>알림함</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="setting_contents_bottom">
+                            <div class="setting_first_contents">
+                                <div class="setting_chk_container">
+                                    <div class="setting_top_inform">
+                                        <div class="setting_left">
+                                            <span>시청 예약 알림</span>
+                                        </div>
+                                        <div class="setting_right">
+                                            <div class="setting_radio_style">
+                                                <span class="top_on">
+                                                    <input type="radio" class="setting_chk_on" value="chk_y">
+                                                    <label for="setting_chk_on">ON</label>
+                                                </span>
+                                                <span class="top_off">
+                                                    <input type="radio" class="setting_chk_off" value="chk_n">
+                                                    <label for="setting_chk_on">OFF</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="setting_btm_inform">
+                                        <div class="setting_btm_left">
+                                            <span>관심 프로그램 업로드 알림</span>
+                                        </div>
+                                        <div class="setting_btm_right">
+                                            <div class="setting_radio_style">
+                                                <span class="btm_on">
+                                                    <input type="radio" class="setting_chk_on" value="chk_y">
+                                                    <label for="setting_chk_on">ON</label>
+                                                </span>
+                                                <span class="btm_off">
+                                                    <input type="radio" class="setting_chk_off" value="chk_n">
+                                                    <label for="setting_chk_on">OFF</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="setting_close">
+                <a href="#" class="setting_close_btn"><img src="./images/icon/close_icon.png" alt=""></a>
+            </div>
         </div>
     </div>
-    <!-- 전체 카테고리 -->
     <div class="category_s">
         <div class="contents_background">
             <div class="contents">
@@ -158,7 +221,8 @@
                 <div class="profile_m">
                     <p class="photo"><img src="./images/common/profile.png" alt="프로필"></p>
                     <p class="name">프로필1</p>
-                    <a href="./profile_edit.html" class="edit">프로필 편집 <img src="./images/common/more.png" alt="바로가기"></a>
+                    <a href="./profile_edit.html" class="edit">프로필 편집 <img src="./images/common/more.png"
+                            alt="바로가기"></a>
                     <a href="#">회원정보 수정</a>
                     <a href="#">성인 콘텐츠 설정</a>
                     <a href="#">알림함 <span>0</span></a>
@@ -254,7 +318,7 @@
         <section class="movie">
             <h2>관심 영화</h2>
             <div class="data">
-                <img src="./images/mypage/warning.png" alt="">      
+                <img src="./images/mypage/warning.png" alt="">
                 <span>관심 영화가 없어요</span>
             </div>
         </section>
@@ -308,7 +372,8 @@
                         <span>사업자등록번호 220-88-38020</span>
                         <span class="last">호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사</span><br>
                         <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
-                        <span class="last">통신판매업 정보 공개 : <a href="#" class="web">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
+                        <span class="last">통신판매업 정보 공개 : <a href="#"
+                                class="web">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
                         <span>서울특별시 영등포구 여의나루로 60 포스트타워 19층</span>
                         <span class="last">전자우편주소 : <a href="#">helpdesk@wavve.com</a></span><br>
                     </p>
@@ -335,4 +400,5 @@
     </footer>
     <script src="./script/common.js"></script>
 </body>
+
 </html>
