@@ -4,7 +4,7 @@ main {
 main .wave_on {max-width: 1240px; margin: 0 auto;}
 main .page_top {
     padding: 40px 0; background-color: #252525; 
-    width: 100%; margin-bottom: 40px;
+    width: 100%; 
     position: sticky; top: 108px;
 }
 main .page_top h1 {
@@ -17,8 +17,23 @@ main .wave_on .main_contents {
 main .wave_on .main_contents .contents_first {
     max-width: 1240px ; margin: 0 auto;
 }
-main .wave_on .main_contents .contents_first a {}
-main .wave_on .main_contents .contents_first a img {width: 100%;}
+main .wave_on .main_contents .contents_first .contents_benner {
+    display: flex; width: 100%; 
+}
+main .wave_on .main_contents .contents_first .contents_benner a {}
+main .wave_on .main_contents .contents_first .contents_benner a img{
+    max-width: 620px;
+}
+main .wave_on .main_contents .contents_first .contents_benner a em {
+    color: #a5a5a5; font-size: 1.5rem; display: block;
+    line-height: 58px; padding-top: 30px;
+}
+main .wave_on .main_contents .contents_first .contents_benner a span {
+    color: #a5a5a5; line-height: 25px; 
+}
+main .wave_on .main_contents .contents_first .contents_benner a .show_more{
+    display: block; padding-top: 20px;
+}
 main .wave_on .main_contents .contents_second {
     max-width: 1240px; margin: 0 auto; 
 }
@@ -62,16 +77,26 @@ main .wave_on .main_contents .contents_second .second .top_contents dl  dt:nth-c
     width: 100%; padding-left: 0;   border-bottom: 2px solid  rgb(47, 47, 47);
 }
 main .wave_on .main_contents .contents_second .second .top_contents dl  dt:nth-child(2){
-    border-bottom: 2px solid  rgb(47, 47, 47);
+    border-bottom: 1px solid  rgb(47, 47, 47);
 }
 main .wave_on .main_contents .contents_second .second .top_contents dl dd:nth-child(3){
     border-bottom: 1px solid  rgb(47, 47, 47);
 }
 main .wave_on .main_contents .contents_second .second .top_contents dl  dt {
-    width: 150px; padding: 12px 12px 12px 0; color: #a5a5a5;
+    width: 150px; padding: 16px 16px 16px 0; color: #a5a5a5;
 }
+
+main .wave_on .main_contents .contents_second .second .top_contents dl .title {
+    padding: 0; 
+}
+
+main .wave_on .main_contents .contents_second .second .boder_top {
+    border-top: 1px solid rgb(47, 47, 47);  
+    padding-top: 40px;
+}
+
 main .wave_on .main_contents .contents_second .second .top_contents dl  dd {
-    width: calc(100% - 150px); padding: 12px; font-size: 1.5rem;  text-align: right;
+    width: calc(100% - 150px); padding: 16px; font-size: 1.5rem;  text-align: right;
     align-items: center; color: #fff;
 }
 main .wave_on .main_contents .contents_second .second .top_contents dl .img {
