@@ -1,7 +1,7 @@
 /* 상단 메인 슬라이드 */
 var mySwiper = new Swiper('#top_container', { 
     autoplay:{delay:1000},
-    loof:true,
+    loop:true,
     slidesPerView: 1,
     spaceBetween: 10,
     navigation:{
