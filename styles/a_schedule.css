@@ -138,6 +138,7 @@ main section .broadcasting_announcement .contents_all .announcement_main li .mai
 }
 main section .broadcasting_announcement .contents_all .announcement_main li .main_contents h1 {
     color: #a5a5a5;  font-size: 1.75rem;
+    padding-left: 20px;
 }
 main section .broadcasting_announcement .contents_all .announcement_main li .main_contents .title{
     display: flex; align-items: center;
@@ -161,7 +162,7 @@ main section .broadcasting_announcement .contents_all .announcement_main li .mai
 }
 main section .broadcasting_announcement .contents_all .announcement_main li .main_contents .contents_more a span {
     border: 1px solid #a5a5a5;
-    color: #a5a5a5; padding: 10px 20px; font-size: 1.5rem;
+    color: #a5a5a5; padding: 10px 15px; font-size: 1.15rem;
     border-radius: 25px;
 }
 /* on air */
