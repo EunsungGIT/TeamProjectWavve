@@ -99,6 +99,10 @@ header .h_bottom_wrap .h_bottom nav > a:first-child {color: #fff;}
     main .wrap .middle_wrap .img_container1 {
     margin-top: 80px;
     }
+    /* 맨 밑 슬라이드 */
+    main .wrap .middle_wrap .img_container1_btm {
+        margin-bottom: 130px;
+    }
     main .wrap .middle_wrap .img_container1 .title {
         display: flex;
         justify-content: space-between;
