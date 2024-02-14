@@ -31,6 +31,9 @@ main .wave_on .main_contents .contents_first .contents_benner a em {
 main .wave_on .main_contents .contents_first .contents_benner a span {
     color: #a5a5a5; line-height: 25px; 
 }
+main .wave_on .main_contents .contents_first .contents_benner a span img {
+    width: 14px; position:relative; top: 1px;
+}
 main .wave_on .main_contents .contents_first .contents_benner a .show_more{
     display: block; padding-top: 20px;
 }

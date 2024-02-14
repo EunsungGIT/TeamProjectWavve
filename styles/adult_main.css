@@ -19,6 +19,32 @@ main .adult .contents {
     padding-bottom: 80px; margin: 0 34.5px;
     margin: 0 auto;width: 1240px;
 }
+main .adult .contents ul li .title_box .label_input {
+    display: flex ;  
+}
+main .adult .contents ul li .title_box .label_input input{
+    display: none; 
+}
+main .adult .contents ul li .title_box .label_input label{}
+main .adult .contents ul li .title_box .label_input label::before {
+    position: relative; bottom: 3px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/adult/cheak.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+    margin-right:10px;
+}
+main .adult .contents ul li .title_box .label_input input:checked + label::before {
+    position: relative; bottom: 3px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/adult/cheak_input.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+}
 main .adult .contents h2 {
     font-weight: 700;
     font-size: 1.5rem; color: #a5a5a5;
@@ -31,18 +57,20 @@ main .adult .contents ul li{
 /* 공통 이미지 크기조정 */
 main .adult .contents ul li img{
     width: 16px; height: 16px; position: relative; top: 2px;
+    margin-left: 8px;
 }
 
 main .adult .contents ul li label {
-    display: flex; 
+    display: flex;   color: #fff; margin-right: 8px;
 }
 main .adult .contents ul li .title_box .first_contents input{
     margin-right: 5px;
 }
 main .adult .contents ul li label span {
-    color: #fff; margin-right: 8px;
+    
 }
-main .adult .contents ul li .main_text {}
+main .adult .contents ul li .main_text {
+}
 main .adult .contents ul li .main_text span {
     font-size: 0.875rem; color: #a5a5a5;
 }
