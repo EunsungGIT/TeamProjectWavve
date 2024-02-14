@@ -31,117 +31,43 @@ header .h_bottom_wrap .h_bottom nav > a:first-child {color: #fff;}
         max-width: 1912px; margin: 0 auto;
         background: #1b1b1b;
     }
+
     main .wrap {}
 
     main .wrap #top_container {
         margin-bottom: 120px;
         margin-left: 20px;
-
+        overflow: hidden;
     }
-
-
 
     main .wrap #top_container #top_images {
         display: flex;
         justify-content: space-between;
         position: relative;
-        
     }
+
     /* 이미지 공통 클래스  */
     main .wrap #top_container #top_images .top_img {
         overflow: hidden; height: 512px;
+        /* #top_img1~4 - > top_img 공통 */
+        position: relative;
+        justify-content: center;
+        border-radius: 15px;
+        
     }
 
-    main .wrap #top_container #top_images .top_img img {
+    main .wrap #top_container #top_images .top_img a {}
+
+    main .wrap #top_container #top_images .top_img a img {
         width: 1240px; height: 100%; 
     }
 
-    main .wrap #top_container #top_images #top_img1 {
-        position: relative;
-        justify-content: center;
-    }
-
-    main .wrap #top_container #top_images #top_img1 a {
-        
-    }
-    /* 밑 이미지 안 글자 */
-    main .wrap #top_container #top_images #top_img1 a img { 
-        /* width: 1240px; 이미지 크기  */
-       /*  width: 100%;  */
-        border-radius: 15px;
-        margin-right: 10px; border-radius: 15px;
-    }
-    
-    main .wrap #top_container #top_images #top_img1 a .top_img_font {
+    main .wrap #top_container #top_images .top_img a .top_img_font {
         position: absolute; top: 10px; left: 0px;
-    }
+    } 
+    /* 공통 클래스 끝 */
 
-   /*  main .wrap #top_container #top_images .top_img1 a img { 
-        width: 1240px;  margin-right: 20px;
-        display: none;  border-radius: 15px;
-       
-    } */
-    main .wrap #top_container #top_images .top_img1 a .top_img_font {
-        position: absolute; top: 0px; left: 0px;
-       
-    }
-
-    /* 2번째 이미지 시작. ---*/
-    main .wrap #top_container #top_images #top_img2 {
-        position: relative;
-        justify-content: center;
-        
-    }
-    main .wrap #top_container #top_images #top_img2 a {}
-
-    /* 밑 이미지 안 글자 */
-    main .wrap #top_container #top_images #top_img2 a img {
-        width: 1240px; 
-        margin-right: 10px; border-radius: 15px;
-    }
-    
-    main .wrap #top_container #top_images #top_img2 a .top_img_font {
-        position: absolute; top: 0px; left: 0px;
-    }
-
-    /* 3번째 이미지 시작. ---*/
-    main .wrap #top_container #top_images #top_img3 {
-        position: relative;
-        justify-content: center;
-        margin-right: 30px;
-    }
-    main .wrap #top_container #top_images #top_img3 a {
-    }
-    /* 밑 이미지 안 글자 */
-    main .wrap #top_container #top_images #top_img3 a img {
-        width: 1240px; 
-        margin-right: 10px;
-        border-radius: 15px;
-    }
-    main .wrap #top_container #top_images #top_img3 a .top_img_font {
-        position: absolute; top: 0px; left: 0px;
-    }
-    main .wrap #top_container #top_images #top_img4 {
-        position: relative;
-        justify-content: center;
-        margin-right: 30px;
-    }
-    main .wrap #top_container #top_images #top_img4 a {}
-    /* 밑 이미지 안 글자 */
-    main .wrap #top_container #top_images #top_img4 a img {
-        width: 1240px; /* height: 508px; */
-        margin-right: 10px;
-        border-radius: 15px;
-    }
-    main .wrap #top_container #top_images #top_img4 a .top_img_font {
-        position: absolute; top: 0px; left: 0px;
-    }
     /* 메인 배너 양옆 버튼 시작 --- */
-
-    
-    main .wrap #top_container #top_prev {
-        position: absolute; top: 350px; left: 85px;
-    }
     main .wrap #top_container #top_prev::after {display: none;}
     main .wrap #top_container #top_prev img {
         width: 100px;
@@ -156,7 +82,11 @@ header .h_bottom_wrap .h_bottom nav > a:first-child {color: #fff;}
         width: 100px;
     }
     main .wrap #top_container .swiper-pagination {
-        background: violet; 
+        position: absolute; top: 640px;
+      /*   background: violet; */
+    }
+    main .wrap #top_container.lockSwipes {
+
     }
     /*----------------------------밑에 하단 슬라이드 시작----------------------------*/
 
@@ -216,16 +146,26 @@ header .h_bottom_wrap .h_bottom nav > a:first-child {color: #fff;}
         transform: translateX(-30px);
         transition: 0.2s;
     }
+
+    main .wrap .middle_wrap .img_container1 #swiper_wavve_images #prev::after {
+        display: none;
+    }
+
     main .wrap .middle_wrap .img_container1:hover #swiper_wavve_images #prev{
         transform: translateX(0);
     }
-
+    
     main .wrap .middle_wrap .img_container1 #swiper_wavve_images #next {
         position: absolute;
         top: 170px; right: 0px;
         transform: translateX(30px);
         transition: 0.2s;
     }
+
+    main .wrap .middle_wrap .img_container1 #swiper_wavve_images #next::after {
+        display: none;
+    }
+
     main .wrap .middle_wrap .img_container1:hover #swiper_wavve_images #next {
         transform: translateX(0);
     }
