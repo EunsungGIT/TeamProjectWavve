@@ -12,8 +12,7 @@ main .holding_coin_wrap .main_wrap{
 /* 쿠폰내역 h1 */
 main .holding_coin_wrap  .holding_title {
     background-color:#252525 ;
-    padding-top: 30px; padding-bottom: 30px;
-
+    padding: 40px 0; margin-bottom: 40px;
 }
 main .holding_coin_wrap .holding_title h1 {
     font-size: 24px; color: #fff;
@@ -25,8 +24,8 @@ main .holding_coin_wrap  .main_wrap .holding_coin_middle {
 
 }
 main .holding_coin_wrap .main_wrap .holding_coin_middle .holding_middle_title {
-    padding-top: 30px; padding-bottom: 5px;
     display: flex; justify-content: space-between;
+    margin-bottom: 20px;
 }
 main .holding_coin_wrap .main_wrap .holding_coin_middle .holding_middle_title h3 {
     font-size: 24px; color:#fff;

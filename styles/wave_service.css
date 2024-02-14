@@ -1,3 +1,6 @@
+body {
+    background: #fff;
+}
 main {}
 main section {}
 main section .main_benner {
@@ -194,7 +197,6 @@ main section .follow .follow_contents .follow_text h1 {
 main section .follow .follow_contents .follow_link{}
 
 main section .follow .follow_contents .follow_link a img {
-    width: 65px; 
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {display: none;}

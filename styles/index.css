@@ -1,8 +1,8 @@
 /* 팝업 */
 .popup {
-display: none;
-position: absolute; width: 100%; z-index: 9999;
-height: 100vh; background: rgba(0, 0, 0, 0.8) ;
+    display: none;
+    position: absolute; width: 100%; z-index: 9999;
+    height: 100vh; background: rgba(0, 0, 0, 0.8) ;
 }
 .popup .popup_background{}
 .popup .popup_background .contents {
@@ -20,6 +20,14 @@ position: relative; left: 10px;
 }
 .popup .popup_background .contents .bottom{margin-top: 10px;}
 .popup .popup_background .contents .bottom label {}
+.popup .popup_background .contents .bottom label input{}
+.popup .popup_background .contents .bottom input::after {
+    /* content: ''; display: inline-block; 
+    background-image:url(../images/faviconV2.png);
+    width: 17px; height: 17px; */
+    background: transparent;    
+    border: 1px solid #a5a5a5
+}
 .popup .popup_background .contents .bottom label span {color: #f5f5f5;}
 
 /* header nav hover */
@@ -69,54 +77,30 @@ main .wrap #top_container #top_images .top_img a img {
  width: 100%;
 }
 
-main .wrap #top_container #top_images .top_img a .top_img_font {
-    position: absolute; top: 10px; left: 0px;
-} 
-/* 공통 클래스 끝 */
+    main .wrap #top_container #top_images .top_img a .top_img_font {
+        position: absolute; top: 10px; left: 0px;
+    } 
+    /* 공통 클래스 끝 */
 
-/* 메인 배너 양옆 버튼 시작 --- */
-main .wrap #top_container #top_prev {
-    position: absolute; top: 350px; left: 85px;
-}
-main .wrap #top_container #top_prev::after {display: none;}
-
-main .wrap #top_container #top_prev img {
-    width: 100px;
-}
-main .wrap #top_container #top_next {
-    position: absolute; top: 350px; right: 85px;
-}
-main .wrap #top_container #top_next::after{display: none;}
-
-main .wrap #top_container #top_next img {
-    width: 100px;
-}
-/* swiper-pagination  */
-main .wrap #top_container .btm_btn {
-    display: flex; position: absolute; 
-    text-align: center;
-    justify-content:space-between;
-    flex-flow: row nowrap;
-    width: 190px; right: 850px;
-    margin-top: 25px;
-    /*   background: violet; */
-
+    /* 메인 배너 양옆 버튼 시작 --- */
+    main .wrap #top_container #top_prev::after {display: none;}
+    main .wrap #top_container #top_prev img {
+        width: 100px;
+    }
     
-}
-/* 페이지네이션 */
-main .wrap #top_container .btm_btn .swiper-pagination {
-    color: #fff;
-}
-
-.swiper-pagination {
-    color: #f5f5f5;
-}
-
-
-main .wrap #top_container .btm_btn .lockswipes_btn {
-
-}
-main .wrap #top_container .btm_btn .lockswipes_btn img {
+    main .wrap #top_container #top_next {
+        position: absolute; top: 350px; right: 85px;
+    }
+    main .wrap #top_container #top_next::after{display: none;}
+    main .wrap #top_container #top_next {}
+    main .wrap #top_container #top_next img {
+        width: 100px;
+    }
+    main .wrap #top_container .swiper-pagination {
+        position: absolute; top: 640px;
+      /*   background: violet; */
+    }
+    main .wrap #top_container.lockSwipes {
 
     /*  background: turquoise; */
 }
