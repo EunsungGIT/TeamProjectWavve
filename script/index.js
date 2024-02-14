@@ -1,5 +1,4 @@
 /* 상단 메인 슬라이드 */
-
 const my_swiper = new Swiper('#top_container', { 
     autoplay:{delay:2000},
     loof:true,
@@ -15,7 +14,19 @@ const my_swiper = new Swiper('#top_container', {
         nextEl:'#top_container .swiper-button-next',
         prevEl:'#top_container .swiper-button-prev',
     },
+    
 })
+
+/* 메인 배너 슬라이더 밑에 멈춤 버튼 실패 작업중 */
+/* const main_stop_btn = document.querySelector(".stop_lockswipes")
+
+main_stop_btn.addEventListener("click", ()=>{
+    var mySwiper = new Swiper('.swiper-container', {
+        // Swiper 설정
+    });
+})
+ */
+/* ------------------------------------------------------------ */
 
 /* 하단 슬라이드  */
 var mySwiper = new Swiper('#swiper_wavve_images', { 
