@@ -90,16 +90,18 @@ main section #swiper_series #series_wrap a span {
     font-family: 'Noto Sans KR', sans-serif;
     color: #a5a5a5; margin-top: 10px;
 }
-main section #swiper_series .swiper-button-prev {
-    position: absolute; top: 40px; left: 0;
+main section #swiper_series #search_prev {
+    position: absolute; top: 70px; left: 0;
     transition: 0.2s;
     transform: translateX(-30px);
 }
-main section:hover #swiper_series .swiper-button-prev {transform: translateX(0);}
+main section #swiper_series #search_prev::after {display: none;}
+main section:hover #swiper_series #search_prev {transform: translateX(0);}
 
-main section #swiper_series .swiper-button-next {
-    position: absolute; top: 40px; right: 0;
+main section #swiper_series #search_next {
+    position: absolute; top: 70px; right: 0;
     transition: 0.2s;
     transform: translateX(30px);
 }
-main section:hover #swiper_series .swiper-button-next {transform: translateX(0);}
+main section #swiper_series #search_next::after {display: none;}
+main section:hover #swiper_series #search_next {transform: translateX(0);}
