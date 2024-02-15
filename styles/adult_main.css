@@ -15,7 +15,6 @@ main .adult .title h1 {
     max-width: 1240px; margin: 0 auto;
 }
 main .adult .contents {
-    /* background: #fff; */
     justify-content: center;
     display: flex; flex-flow: column;
     padding-bottom: 80px; margin: 0 34.5px;
@@ -28,7 +27,6 @@ main .adult .contents ul li .title_box .label_input {
 main .adult .contents ul li .title_box .label_input input{
     display: none; 
 }
-main .adult .contents ul li .title_box .label_input label{}
 main .adult .contents ul li .title_box .label_input label::before {
     position: relative; bottom: 3px;
     content: '';

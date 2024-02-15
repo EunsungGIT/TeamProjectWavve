@@ -1,13 +1,18 @@
-main {background: #1b1b1b; height: 100vh; }
+main {background: #1b1b1b;  }
 main .background {}
 main .background .contents {
-    padding: 268px;
+    padding: 170px;
+    display: flex; 
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
 }
 
 main .background .contents .img {
     text-align: center;
 }
-main .background .contents img {
+main .background .contents .img img {
     width: 94px; height: 94px;
 }
 main .background .contents .text { 
@@ -29,6 +34,7 @@ main .background .contents .btn .cancellation {
     line-height: 18px;
     color: #fff;
     border-radius: 26px; border: 0;
+    margin-bottom: 10px 
 }
 main .background .contents .btn .pw {
     background: #1351f9; width: 316px;

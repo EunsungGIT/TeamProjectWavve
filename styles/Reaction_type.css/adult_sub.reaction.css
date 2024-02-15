@@ -1,0 +1,23 @@
+@media screen and (max-width:1240px){
+    
+}
+@media screen and (max-width:768px){
+    main .background .contents .text span {
+        font-size: 0.875rem;
+    }
+    main .background .contents .img img {
+        width: 70px; height: 70px;
+    }
+    main .background .contents .btn button {
+        font-size: 0.875rem;
+    }
+    main .background .contents .btn .cancellation {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:430px){
+    
+}
+@media screen and (max-width:320px){
+    
+}
