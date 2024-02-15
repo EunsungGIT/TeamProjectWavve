@@ -1,0 +1,31 @@
+@media screen and (max-width:1240px){
+    main .title_wrap .title {
+        padding: 40px 60px;
+    }
+    main .membership {
+        padding: 0 60px 80px;
+    }
+    main .warning {
+        padding: 0 60px 20px;
+    }
+    main .event img {max-width: 768px;}
+}
+@media screen and (max-width:768px){
+    main .event img {max-width: 430px;}
+    main .membership .partnership ul li .partner .price {
+        display: flex; flex-flow: column nowrap;
+        align-items: center;
+    }
+    main .membership .partnership ul li .partner .price span {margin: 0 0 10px 0;}
+    main .membership .partnership .benefit {padding: 36px 20px;}
+    main .membership .partnership .benefit p {font-size: 0.75rem;}
+    main .warning p,
+    main .warning span,
+    main .warning span a {font-size: 0.75rem;}
+}
+@media screen and (max-width:430px){
+    
+}
+@media screen and (max-width:320px){
+    
+}

@@ -9,7 +9,7 @@ main .category #seriesBtn {
     width: 240px; height: 60px; text-align: left;
     padding-left: 64px; position: relative;
     border: 1px solid #717171; border-radius: 50px;
-    color: #fff; font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
     transition: 0.2s;
     display: flex; align-items: center;
 }
@@ -42,7 +42,7 @@ main .category #movieBtn {
     width: 240px; height: 60px; text-align: left;
     margin-left: 10px; padding-left: 64px;
     border: 1px solid #717171; border-radius: 50px;
-    color: #fff; font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
     transition: 0.2s; position: relative;
     display: flex; align-items: center;
 }
@@ -71,23 +71,20 @@ main section {margin-top: 40px;}
 main .movie {padding-bottom: 100px;}
 main section h2 {
     margin-bottom: 24px;
-    font-family: 'Noto Sans KR', sans-serif;
     font-size: 1.5rem; color: #fff;
 }
 main section #swiper_series {
     max-width: 1240px; overflow: hidden;
     position: relative;
 }
-main section #swiper_series #series_wrap {display: flex; }
+main section #swiper_series #series_wrap {}
 main section #swiper_series #series_wrap a {
-    display: flex; flex-flow: column nowrap;
     margin-right: 10px;
 }
 main section #swiper_series #series_wrap a img {
     width: 240px; border-radius: 10px;
 }
 main section #swiper_series #series_wrap a span {
-    font-family: 'Noto Sans KR', sans-serif;
     color: #a5a5a5; margin-top: 10px;
 }
 main section #swiper_series #search_prev {

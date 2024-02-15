@@ -278,7 +278,7 @@ body {background: #1b1b1b;}
 }
 
 /* 위로가기 */
-#up {position: fixed; right: 20px; bottom: 20px;}
+#up {position: fixed; right: 40px; bottom: 40px;}
 
 /* header */
 header {
