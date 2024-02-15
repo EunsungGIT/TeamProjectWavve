@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'손흥민-이강인 충돌' : 웨이브</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/live_contents.css">
+</head>
+<body>
+    <!-- 팝업 영상 -->
+    <div class="popup_video">
+        <a href="#"><img src="./images/live_contents/close.png" alt="닫기"></a>
+        <div class="video">
+            <video src="./video/live_contents_001.mp4" muted autoplay></video>
+            <div class="playbar">
+                <div class="play"></div>
+            </div>
+            <div class="icon">
+                <a href="#"><img src="./images/live_contents/pause_s.png" alt="일시정지"></a>
+                <a href="#"><img src="./images/live_contents/time.png" alt="시간"></a>
+                <a href="#"><img src="./images/live_contents/sound.png" alt="음량"></a>
+                <span>9:45 / 12:30</span>
+            </div>
+        </div>
+    </div>
+    <!--main -->
+    <main>
+        <div class="video_bg">
+            <div class="video">
+                <a href="#"><img src="./images/live_contents/pause.png" alt="일시정지"></a>
+                <video src="./video/live_contents_001.mp4" muted autoplay></video>
+                <div class="playbar">
+                    <div class="play"></div>
+                </div>
+                <div class="icon">
+                    <div class="left">
+                        <a href="#"><img src="./images/live_contents/pause_s.png" alt="일시정지"></a>
+                        <a href="#"><img src="./images/live_contents/time.png" alt="시간"></a>
+                        <a href="#"><img src="./images/live_contents/sound.png" alt="음량"></a>
+                        <span>9:45 / 12:30</span>
+                    </div>
+                    <div class="right">
+                        <a href="#"><img src="./images/live_contents/settings.png" alt="설정"></a>
+                        <a href="#"><img src="./images/live_contents/channel.png" alt="전체 채널"></a>
+                        <a href="#"><img src="./images/live_contents/popup_player.png" alt="팝업 플레이어"></a>
+                        <a href="#"><img src="./images/live_contents/wide.png" alt="전체화면"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video_title">
+            <div class="title_top">
+                <h2>손흥민-이강인 충돌 590회</h2>
+                <button type="button" id="playBtn">시청하기</button>
+            </div>
+            <p>12:12 ~ 12:40</p>
+            <div class="icon_box">
+                <a href="#">
+                    <img src="./images/live_contents/heart.svg" alt="관심등록">
+                    <span>관심</span>
+                </a>
+                <a href="#">
+                    <img src="./images/live_contents/share.svg" alt="공유하기">
+                    <span>공유</span>
+                </a>
+                <a href="#">
+                    <img src="./images/live_contents/schedule.svg" alt="전체 편성표">
+                    <span>전체 편성표</span>
+                </a>
+                <a href="#">
+                    <img src="./images/live_contents/vod.svg" alt="VOD 보기">
+                    <span>VOD 보기</span>
+                </a>
+            </div>
+        </div>
+        <div class="schedule">
+            <h2>채널 편성표</h2>
+            <div class="time_table">
+                <div class="swiper-container" id="swiper_schedule">
+                    <div class="swiper-wrapper schedule_wrap">
+                        <div class="swiper-slide schedule_001">
+                            <div class="schedule_info">
+                                <h3>손흥민-이강인 충돌 589회</h3>
+                                <p>11:43 ~ 12:12</p>
+                            </div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="swiper-slide schedule_002">
+                            <div class="schedule_info">
+                                <h3>손흥민-이강인 충돌 590회</h3>
+                                <p>11:43 ~ 12:12</p>
+                            </div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="swiper-slide schedule_003">
+                            <div class="schedule_info">
+                                <h3>손흥민-이강인 충돌 591회</h3>
+                                <p>11:43 ~ 12:12</p>
+                            </div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="swiper-slide schedule_004">
+                            <div class="schedule_info">
+                                <h3>손흥민-이강인 충돌 592회</h3>
+                                <p>11:43 ~ 12:12</p>
+                            </div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="swiper-slide schedule_005">
+                            <div class="schedule_info">
+                                <h3>손흥민-이강인 충돌 593회</h3>
+                                <p>11:43 ~ 12:12</p>
+                            </div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="swiper-slide schedule_006">
+                            <div class="schedule_info">
+                                <h3>손흥민-이강인 충돌 594회</h3>
+                                <p>11:43 ~ 12:12</p>
+                            </div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="swiper-slide schedule_007">
+                            <div class="schedule_info">
+                                <h3>손흥민-이강인 충돌 595회</h3>
+                                <p>11:43 ~ 12:12</p>
+                            </div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="swiper-slide schedule_008">
+                            <div class="schedule_info">
+                                <h3>손흥민-이강인 충돌 596회</h3>
+                                <p>11:43 ~ 12:12</p>
+                            </div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="swiper-slide schedule_009">
+                            <div class="schedule_info">
+                                <h3>손흥민-이강인 충돌 597회</h3>
+                                <p>11:43 ~ 12:12</p>
+                            </div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="swiper-slide schedule_010">
+                            <div class="schedule_info">
+                                <h3>손흥민-이강인 충돌 598회</h3>
+                                <p>11:43 ~ 12:12</p>
+                            </div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev" id="schedule_prev">
+                        <img src="./images/live_contents/prev.png" alt="이전">
+                    </div>
+                    <div class="swiper-button-next" id="schedule_next">
+                        <img src="./images/live_contents/next.png" alt="다음">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="all_schedule">
+            <div class="title_refresh">
+                <div class="all_recommend">
+                    <a href="#">전체 채널</a>
+                    <a href="#">추천</a>
+                </div>
+                <a href="#"><img src="./images/live_contents/refresh.png" alt="새로고침">새로고침</a>
+            </div>
+            <div class="live_title">
+                <select name="filter" id="filter">
+                    <option value="">전체 장르</option>
+                    <option value="">정주행 채널 (무료)</option>
+                    <option value="">지상파</option>
+                    <option value="">종편/보도</option>
+                    <option value="">홈쇼핑 (무료)</option>
+                    <option value="">드라마/예능</option>
+                    <option value="">시사/교양</option>
+                    <option value="">영화/스포츠</option>
+                    <option value="">키즈/애니</option>
+                    <option value="">라디오/음악</option>
+                </select>
+            </div>
+            <div class="live_video">
+                <a href="#">
+                    <video src="./video/live_001.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>JTBC</h3>
+                        <p>카리나</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <video src="./video/live_002.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>YTN</h3>
+                        <p>더뉴스</p>
+                    </div>
+                    <p>무료</p>
+                </a>
+                <a href="#">
+                    <video src="./video/live_003.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>유튜브</h3>
+                        <p>쯔양 먹방</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <video src="./video/live_004.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>JTBC</h3>
+                        <p>카리나</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <video src="./video/live_005.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>JTBC</h3>
+                        <p>카리나</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <video src="./video/live_001.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>JTBC</h3>
+                        <p>카리나</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <video src="./video/live_002.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>YTN</h3>
+                        <p>더뉴스</p>
+                    </div>
+                    <p>무료</p>
+                </a>
+                <a href="#">
+                    <video src="./video/live_003.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>유튜브</h3>
+                        <p>쯔양 먹방</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <video src="./video/live_004.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>JTBC</h3>
+                        <p>카리나</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <video src="./video/live_005.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>JTBC</h3>
+                        <p>카리나</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <video src="./video/live_001.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>JTBC</h3>
+                        <p>카리나</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <video src="./video/live_002.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>YTN</h3>
+                        <p>더뉴스</p>
+                    </div>
+                    <p>무료</p>
+                </a>
+                <a href="#">
+                    <video src="./video/live_003.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>유튜브</h3>
+                        <p>쯔양 먹방</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <video src="./video/live_004.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>JTBC</h3>
+                        <p>카리나</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <video src="./video/live_005.mp4" autoplay muted></video>
+                    <div class="playbar">
+                        <div class="play"></div>
+                    </div>
+                    <div class="video_title">
+                        <h3>JTBC</h3>
+                        <p>카리나</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="./script/live_contents.js"></script>
+</body>
+</html>
