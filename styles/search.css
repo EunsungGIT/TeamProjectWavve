@@ -82,13 +82,13 @@ main section #swiper_series #series_wrap a {
     margin-right: 10px;
 }
 main section #swiper_series #series_wrap a img {
-    width: 240px; border-radius: 10px;
+    width: 100%; border-radius: 10px;
 }
 main section #swiper_series #series_wrap a span {
     color: #a5a5a5; margin-top: 10px;
 }
 main section #swiper_series #search_prev {
-    position: absolute; top: 70px; left: 0;
+    position: absolute; top: 45%; left: 0;
     transition: 0.2s;
     transform: translateX(-30px);
 }
@@ -96,7 +96,7 @@ main section #swiper_series #search_prev::after {display: none;}
 main section:hover #swiper_series #search_prev {transform: translateX(0);}
 
 main section #swiper_series #search_next {
-    position: absolute; top: 70px; right: 0;
+    position: absolute; top: 45%; right: 0;
     transition: 0.2s;
     transform: translateX(30px);
 }

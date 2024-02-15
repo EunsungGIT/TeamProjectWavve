@@ -3,6 +3,7 @@ header .h_bottom_wrap .h_bottom nav > a:nth-of-type(2) {color: #fff;}
 
 /* 시청예약 */
 .reservation_bg {
+    display: none;
     position: absolute; width: 100%; height: 100vh;
     z-index: 500;
     background: rgba(0, 0, 0, 0.5);
@@ -78,14 +79,13 @@ main .live .live_title #filter {
 main .live .live_title #filter option {color: #a5a5a5;}
 main .live .live_video {
     display: flex; flex-flow: row wrap;
-    justify-content: space-between;
 }
 main .live .live_video a {
     margin-bottom: 40px;
     border-radius: 10px; position: relative;
 }
 main .live .live_video a video {
-    width: 240px; height: 135px;
+    width: calc(100% - 20px); height: 135px;
     border-radius: 10px;
 }
 main .live .live_video a #mutedBtn {

@@ -1,0 +1,17 @@
+@media screen and (max-width:1240px){
+    main .title_wrap .title {
+        padding: 0 60px;
+    }
+    main .live {
+        padding: 0 60px;
+    }
+}
+@media screen and (max-width:768px){
+    
+}
+@media screen and (max-width:430px){
+    
+}
+@media screen and (max-width:320px){
+    
+}
