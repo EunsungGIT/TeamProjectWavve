@@ -17,13 +17,13 @@
     /* 폰트 */
     /* 코인내역 */
     main .holding_coin_wrap .holding_title h1 {
-        font-size: 1.25rem; color: #fff;
+        font-size:  1.375rem; color: #fff;
         padding: 0 60px;
     }
 
     /* 보유 코인 내역 */
     main .holding_coin_wrap .main_wrap .holding_coin_middle .holding_middle_title h3 {
-        font-size: 1.25rem; color:#fff;
+        font-size: 1.375rem; color:#fff;
         margin-bottom: 10px;
     }
     /* 코인충전 */
@@ -65,12 +65,12 @@
 
     /* 적립코인 */
     main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .holding_coin_nav{
-        font-size: 1.1rem; color: #a5a5a5; position: relative;
+        font-size: 1rem; color: #a5a5a5; position: relative;
     }
 
     /* 소진코인 */
     main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .exhaust_coin_nav {
-        font-size: 1.1rem; color: #a5a5a5;
+        font-size: 1rem; color: #a5a5a5;
     }
     /* 쿠폰이 없어요. 부분 */
 
