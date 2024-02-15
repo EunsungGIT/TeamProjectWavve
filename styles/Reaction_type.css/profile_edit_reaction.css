@@ -1,0 +1,57 @@
+@media screen and (max-width:1240px){
+    section {padding: 0 60px;}
+    section #profileFrm fieldset h2{font-size:2rem;}
+    section #profileFrm fieldset p img {width: 140px;}
+    section #profileFrm fieldset a {font-size: 0.875rem;}
+    section #profileFrm fieldset a img { width: 16px;  }
+    section #profileFrm fieldset label {
+        font-size: 0.875rem; padding: 8px 0;
+        }
+        section #profileFrm fieldset .profile_wrap {
+            width: 700px; height: 195px;
+        }
+        section #profileFrm fieldset label #user_name {
+            width: 373px; height: 48px;
+        }
+        section #profileFrm fieldset .profile_wrap img {width: 80px; height: 80px;}
+        section #profileFrm fieldset .profile_wrap img:nth-child(15),
+        section #profileFrm fieldset .profile_wrap img:nth-child(16){display: none;}
+        section #profileFrm fieldset .button #checkBtn,section #profileFrm fieldset .button #cancelBtn {
+            width: 190px; height: 42px;
+            font-size: 0.875rem;
+        }
+}
+@media screen and (max-width:768px){
+    section #profileFrm fieldset h2{font-size:1.875rem;}
+    section #profileFrm fieldset p img {width: 120px;}
+    section #profileFrm fieldset a {font-size: 0.75rem;}
+    section #profileFrm fieldset a img { width: 14px;  }
+    section #profileFrm fieldset label {
+        font-size: 0.75rem; padding: 6px 0;
+        }
+        section #profileFrm fieldset .profile_wrap {
+            width: 500px; height: 195px;
+        }
+        section #profileFrm fieldset label #user_name {
+            width: 353px; height: 42px;
+        }
+
+        section #profileFrm fieldset .profile_wrap img {width: 80px; height: 80px;}
+
+        section #profileFrm fieldset .profile_wrap img:nth-child(11),
+        section #profileFrm fieldset .profile_wrap img:nth-child(12),
+        section #profileFrm fieldset .profile_wrap img:nth-child(13),
+        section #profileFrm fieldset .profile_wrap img:nth-child(14),
+        section #profileFrm fieldset .profile_wrap img:nth-child(15),
+        section #profileFrm fieldset .profile_wrap img:nth-child(16){display: none;}
+        section #profileFrm fieldset .button #checkBtn,section #profileFrm fieldset .button #cancelBtn {
+            width: 170px; height: 38px;
+            font-size: 0.85rem;
+        }
+}
+@media screen and (max-width:430px){
+    
+}
+@media screen and (max-width:320px){
+    
+}

@@ -15,20 +15,19 @@ section #profileFrm fieldset {
 section #profileFrm fieldset h2 {
     color: #fff; margin-bottom: 12px;
     font-size: 2.25rem;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 section #profileFrm fieldset p {margin-top: 60px;}
 section #profileFrm fieldset p img {width: 160px;}
 section #profileFrm fieldset a {
     display: flex; align-items: center;
     color: #a5a5a5;
-    font-family: 'Noto Sans KR', sans-serif;
     padding: 10px 18px; margin-top: 24px;
 }
-section #profileFrm fieldset a img {}
+section #profileFrm fieldset a img {
+    position: relative; top: 1px;
+}
 section #profileFrm fieldset label {
     padding: 10px 0; color: #a5a5a5;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 section #profileFrm fieldset label #user_name {
     width: 393px; height: 54px;
@@ -36,7 +35,6 @@ section #profileFrm fieldset label #user_name {
     background: #252525; border-radius: 5px;
 }
 section #profileFrm fieldset label #user_name::placeholder {
-    font-family: 'Noto Sans KR', sans-serif;
     font-size: 1.125rem;
 }
 section #profileFrm fieldset .profile_wrap {
@@ -53,12 +51,10 @@ section #profileFrm fieldset .button {
 section #profileFrm fieldset .button #cancelBtn {
     width: 236px; height: 52px;
     background: #5e5e5e; color: #fff;
-    font-family: 'Noto Sans KR', sans-serif;
     border-radius: 50px; margin-right: 8px;
 }
 section #profileFrm fieldset .button #checkBtn {
     width: 236px; height: 52px;
     background: #1351f9; color: #fff;
-    font-family: 'Noto Sans KR', sans-serif;
     border-radius: 50px;
 }
