@@ -147,47 +147,66 @@ main section .contents_info {
     }
     main section .contents_info .info_contents .recommend .img_container .title a img {}
     /* 믿고 보는 웨이브 에디터 추천작 */
-    main section .contents_info .info_contents .recommend .img_container .wavve_images {
+    main section .contents_info .info_contents .recommend .img_container #wavve_images {
         position: relative;
         display: flex;
         flex-flow: row nowrap;
         overflow: hidden;
         text-align: center;
     }
-    main section .contents_info .info_contents .recommend .img_container .wavve_images .wavve_img {
+    main section .contents_info .info_contents .recommend .img_container #wavve_images #wavve_img {
         display: flex; border-radius: 25px;
     } 
-    main section .contents_info .info_contents .recommend .img_container .wavve_images .wavve_img a {
+    main section .contents_info .info_contents .recommend .img_container #wavve_images #wavve_img .swiper-slide {
     /*     width: calc(100% / 4 - 30px / 4); */
         margin-right: 20px; overflow: hidden;
         border-radius: 25px;
     }
-    main section .contents_info .info_contents .recommend .img_container .wavve_images .wavve_img a img {
+    main section .contents_info .info_contents .recommend .img_container #wavve_images #wavve_img a img {
     /*  /*   border-radius: 30px; */
     /*    width: 20%; */ 
     
     width: 250px; 
     }
     
-    main section .contents_info .info_contents .recommend .img_container .wavve_images .wavve_img a:hover {
+    main section .contents_info .info_contents .recommend .img_container #wavve_images #wavve_img a:hover {
         /* transform: scale(1.1); transition:  0.3s; */
     }
-    main section .contents_info .info_contents .recommend .img_container .wavve_images .wavve_img a img:hover {
+    main section .contents_info .info_contents .recommend .img_container #wavve_images #wavve_img a img:hover {
         transform: scale(1.1); transition:  0.3s;
     }
     
     /*  */
-    main section .contents_info .info_contents .recommend .img_container .wavve_images .prev {
+    main section .contents_info .info_contents .recommend .img_container #wavve_images #prev {
         position: absolute;
-        top: 220px; left: 0px;
+        top: 190px; left: 0px;
+        transform: translateX(-30px);
+        transition: 0.2s;
     }
-    main section .contents_info .info_contents .recommend .img_container .wavve_images .prev > .test {}
-    main section .contents_info .info_contents .recommend .img_container .wavve_images .next {
-        width: 100px;
+    main section .contents_info .info_contents .recommend .img_container #wavve_images #prev::after{
+        display: none;
+    }
+
+    main section .contents_info .info_contents .recommend .img_container:hover  #wavve_images #prev {
+        transform: translateX(0);
+    }
+
+
+    main section .contents_info .info_contents .recommend .img_container #wavve_images .prev > .test {}
+    main section .contents_info .info_contents .recommend .img_container #wavve_images #next {
         position: absolute;
-        top: 220px; right: 0px;
+        top: 190px; right: 0px;
+        transform: translateX(30px);
+        transition: 0.2s;
     }
     
+    main section .contents_info .info_contents .recommend .img_container #wavve_images #next::after{
+        display: none;
+    }
+
+    main section .contents_info .info_contents .recommend .img_container:hover  #wavve_images #next{
+        transform: translateX(0);
+    } 
     /*  */
 
 

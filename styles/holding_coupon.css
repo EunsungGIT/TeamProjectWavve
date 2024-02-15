@@ -1,10 +1,10 @@
-main .holding_coupon_wrap { background: #1b1b1b;
-    
+main .holding_coupon_wrap { 
+    background: #1b1b1b;
 }
 
 main .holding_coupon_wrap .main_wrap { 
-max-width: 1240px;
-margin: 0 auto;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 /* 쿠폰내역 h1 */
@@ -124,22 +124,15 @@ main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_c
     margin-right: 6px;
     display: inline-block;
     position: absolute; top: 9px; left: -6px;
-   
 }
-
 
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font_right li {
     color: #5e5e5e; margin-top: 10px;
-    
-  
 }
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font_right li p {
     font-size: 14px; color: #5e5e5e; text-align: left;
     
 }
-
-
-
 
 /* 보유쿠폰 | 소진 쿠폰 */
 main .holding_coupon_wrap .main_wrap .holding_exhaust {
@@ -157,13 +150,12 @@ main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .h
 main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li a {
     color: #2f2f2f; margin-right: 10px;
 }
-
+/* 중간에 | 선 */
 main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li a::after {
     content: ""; display: inline-block;
-    background: #2f2f2f; width: 1px; height: 15px;
-    transform: translate(3px, -1px);
-    position: absolute; top: 7px;
-    margin-left:2px;
+    background:#2f2f2f; width: 1.5px; height: 15px;
+    position: relative; top: 1px;
+    margin:0px 3px 0px 15px; 
 }
 
 main .holding_coupon_wrap .main_wrap  .holding_exhaust .holding_exhaust_nav li .holding_coupon_nav {}

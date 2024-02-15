@@ -9,7 +9,7 @@ main .holding_coin_wrap .main_wrap{
 }
 
 
-/* 쿠폰내역 h1 */
+/* 코인내역 h1 */
 main .holding_coin_wrap  .holding_title {
     background-color:#252525 ;
     padding: 40px 0; margin-bottom: 40px;
@@ -27,13 +27,16 @@ main .holding_coin_wrap .main_wrap .holding_coin_middle .holding_middle_title {
     display: flex; justify-content: space-between;
     margin-bottom: 20px;
 }
+
 main .holding_coin_wrap .main_wrap .holding_coin_middle .holding_middle_title h3 {
     font-size: 24px; color:#fff;
     margin-bottom: 10px;
 }
+
 main .holding_coin_wrap .holding_coin_middle .holding_middle_title a {
     
 }
+
 main .holding_coin_wrap .main_wrap .holding_coin_middle .holding_middle_title a span {
     color: #3887ff; position: relative;  bottom: 7px;
 }
@@ -167,19 +170,14 @@ main .holding_coin_wrap .holding_coin_middle .holding_coin_main .holding_coin_co
    
 }
 
-
 main .holding_coin_wrap .holding_coin_middle .holding_coin_main .holding_coin_container .holding_coin_font_right li {
     color: #5e5e5e; margin-top: 10px;
     
-  
 }
+
 main .holding_coin_wrap .holding_coin_middle .holding_coin_main .holding_coin_container .holding_coin_font_right li p {
-    font-size: 14px; color: #5e5e5e; text-align: left;
-    
+    font-size: 14px; color: #5e5e5e; text-align: left;    
 }
-
-
-
 
 /* 보유쿠폰 | 소진 쿠폰 */
 main .holding_coin_wrap .main_wrap .holding_exhaust {
@@ -187,12 +185,14 @@ main .holding_coin_wrap .main_wrap .holding_exhaust {
 }
 main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav {display: flex;
 flex-flow: row nowrap;
+
 }
-/* 보유쿠폰 */
+/* 적립코인 */
 main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li {
     list-style: none; 
-    
 }
+
+/* 적립코인 */
 main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .holding_coin_nav{
     font-size: 18px; color: #a5a5a5; position: relative;
 }
@@ -201,30 +201,22 @@ main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .hol
 
 main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li a {
     color: #2f2f2f; margin-right: 10px;  /* 2f2f2f */
+
 }
-main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li a::after {
+/* 중간에 | 선 */
+main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li:first-child a::after {
     content: ""; display: inline-block;
-    background: #2f2f2f; width: 1px; height: 15px;
-    transform: translate(3px, -1px);
-    position: absolute; top: 7px;
-    margin-left:2px;
-    
-    /* 111 */
+    background:#2f2f2f; width: 1.5px; height: 15px;
+    position: relative; top: 1px;
+    margin:0px 3px 0px 15px; 
 }
-main .holding_coin_wrap .holding_exhaust .holding_exhaust_nav li {
-    
+main .holding_coin_wrap .holding_exhaust .holding_exhaust_nav li {}
+
+/* 소진 코인 */
+main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .exhaust_coin_nav {font-size: 18px; color: #a5a5a5;
+left: 10px;
 }
 
-/* | 부분
-main .holding_coin_wrap .holding_exhaust .holding_exhaust_nav .vertical-bar {
-    width: 10px; 
-    height: 15px;
-    margin-left: 10px;
-    color: #252525;
-
-} */
-main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .holding_coin_nav {}
-main .holding_coin_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .exhaust_coin_nav {  font-size: 18px; color: #a5a5a5;}
 /* 쿠폰이 없어요. 부분 */
 main .holding_coin_wrap .not_coin {
     text-align: center;
