@@ -1,6 +1,14 @@
-main {background: #1b1b1b; height: 100vh; }
-main .background {}
+main {
+    max-width: 100%;
+    background: #1b1b1b;}
+main .background {
+}
 main .background .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; 
+    align-items: center;
     padding: 140px;
 }
 main .background .contents h2 {
@@ -17,12 +25,13 @@ main .background .contents .text {
     align-items: center;
     margin: 20px 0 60px; 
 }
+
 main .background .contents .text span {color: #a5a5a5;}
 main .background .contents .text span:nth-child(1){
     padding-bottom: 5px;
 }
 main .background .contents ul {
-    width: 480px;
+    max-width: 480px;
     display: flex; margin:  0 auto;
 }
 main .background .contents ul li  {
