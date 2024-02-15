@@ -39,11 +39,12 @@
     main .wrap #top_container {
         margin-bottom: 120px;
         overflow: hidden;
+
     }   
     
     main .wrap #top_container #top_images {
         justify-content: space-between;
-       
+        
     }
     
     /* 이미지 공통 클래스 슬라이더   */
@@ -52,21 +53,22 @@
         /* #top_img1~4 - > top_img 공통 */
         position: relative;
         opacity: 0.5;
-       
+        
     }
     
     main .wrap #top_container #top_images .swiper-slide-active {
-        border: 5px solid #24b42c; 
         opacity: 1 !important;
         width: 1240px;
-    /*     height: 508px; */
+        border-radius: 15px;
     }
     
     main .wrap #top_container #top_images .top_img a {
+ 
     }
     
     main .wrap #top_container #top_images .top_img a img {
      width: 100%;
+     border-radius: 15px;
     }
     
     main .wrap #top_container #top_images .top_img a .top_img_font {
@@ -97,11 +99,8 @@
         text-align: center;
         justify-content:space-between;
         flex-flow: row nowrap;
-        width: 190px; right: 850px;
-        margin-top: 25px;
-        /*   background: violet; */
-    
-        
+        width: 190px; right: 745px;
+        margin-top: 25px;        
     }
     /* 페이지네이션 */
     main .wrap #top_container .btm_btn .swiper-pagination {
@@ -111,15 +110,23 @@
     .swiper-pagination {
         color: #f5f5f5;
     }
-    
+    /* 페이지네이션 색상적용 */
+    main .wrap #top_container .btm_btn .swiper-pagination .swiper-pagination-bullet {
+        background: #fff;
+    }
+      /* 페이지네이션 끝 */
     
     main .wrap #top_container .btm_btn .lockswipes_btn {
     
     }
     main .wrap #top_container .btm_btn .lockswipes_btn img {
     
-        /*  background: turquoise; */
     }
+
+
+
+    /* :root {--swiper-theme-color:#fff}
+ */    
     /*----------------------------밑에 하단 슬라이드 시작----------------------------*/
     
     main .wrap .middle_wrap {
