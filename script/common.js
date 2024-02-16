@@ -1,6 +1,7 @@
 // 채팅 API
 const chat = document.querySelector ('#chat')
 const chat_icon = document.querySelector('#chat_icon')
+const chat_icon_img = document.querySelector('#chat_icon img')
 const chat_box = document.querySelector('.chat_box')
 const chat_message = document.querySelector('.chat_message')
 const user_text = document.querySelector('.user_text')
@@ -12,6 +13,13 @@ chat_box.classList.add('chatHide')
 chat_icon.addEventListener('click', ()=>{
     chat_box.classList.toggle('chatHide')
     chat_box.classList.toggle('chatShow')
+    if(chat_box.classList.contains('chatShow')){
+        chat_icon_img.src = './images/common/chat_close.png'
+        chat_icon_img.style.transform = 'rotate(90deg)';
+    }else{
+        chat_icon_img.src = './images/common/chat.jpg'
+        chat_icon_img.style.transform = 'rotate(0)';
+    }
 })
 
 chatBtn.addEventListener('click', ()=>{

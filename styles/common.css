@@ -2,7 +2,7 @@
 body, html {scroll-behavior:smooth;}
 body {background: #1b1b1b;}
 
-/* 서브메뉴 JS */
+/* CHAT JS */
 .chatHide {display: none !important;}
 .chatShow {animation: chatShow 0.5s both;}
 @keyframes chatShow {
@@ -18,7 +18,6 @@ body {background: #1b1b1b;}
 .notification {
     position: absolute;
     background: rgba(0, 0, 0, 0.8); width: 100%; height: 100vh;
-    z-index:850;
 }
 .notification .contents_all {
     display: flex;
@@ -291,11 +290,13 @@ body {background: #1b1b1b;}
 /* 채팅 */
 #chat {}
 #chat #chat_icon {
+    z-index: 9998;
     position: fixed; right: 40px; bottom: 40px;
-    width: 60px; border-radius: 50%;
+    width: 60px; border-radius: 50%; transition: 1s;
 }
 #chat #chat_icon img {
     width: 100%; border-radius: 50%;
+    transition: 1s;
 }
 #chat h2 {
     color: #fff; display: flex;
@@ -338,7 +339,10 @@ body {background: #1b1b1b;}
 }
 
 /* 위로가기 */
-#up {position: fixed; right: 40px; bottom: 110px;}
+#up {
+    z-index: 9997;
+    position: fixed; right: 40px; bottom: 110px;
+}
 
 /* 서브메뉴 JS */
 .hide {animation: hide 0.5s both;}

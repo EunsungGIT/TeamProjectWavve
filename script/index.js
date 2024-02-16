@@ -1,12 +1,13 @@
 // 팝업창
 const top_a = document.querySelectorAll('.contents .top a')
-const checkbox = document.querySelector('#day_close')
+const popup = document.querySelector('.popup')
 
 top_a[1].addEventListener('click', ()=>{
-    if(checkbox.checked){
-        console.log('checked true')
-    }
-})
+    popup.classList.add('hide')
+    setTimeout(() => {
+        popup.style.display = 'none'
+    }, 300);
+});
 
 /* 상단 메인 슬라이드 */
 const my_swiper = new Swiper('#top_container', { 
