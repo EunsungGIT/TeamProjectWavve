@@ -5,7 +5,7 @@ main .wave_on {max-width: 1240px; margin: 0 auto;}
 main .page_top {
     padding: 40px 0; background-color: #252525; 
     width: 100%; 
-    position: sticky; top: 108px;
+    position: sticky; top: 0;
 }
 main .page_top h1 {
     font-size: 1.5rem ;color: #fff;

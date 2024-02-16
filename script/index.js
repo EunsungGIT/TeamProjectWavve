@@ -49,7 +49,6 @@ main_stop_btn.addEventListener("click", ()=>{
 
 /* 하단 슬라이드  */
 var mySwiper = new Swiper('#swiper_wavve_images', { 
-    autoplay:{delay:1000},
     loof:true,
     slidesPerView: 5,
     spaceBetween: 10,

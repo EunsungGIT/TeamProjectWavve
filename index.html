@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +7,10 @@
     <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
@@ -167,9 +168,6 @@
                     </div>
                 </div>
             </div>
-            <div class="close">
-                <a href="#"><img src="./images/icon/c" alt="닫기"></a>
-            </div>
         </div>
     </div>
     <!-- 위로가기 -->
@@ -182,8 +180,7 @@
                 <div class="profile_m">
                     <p class="photo"><img src="./images/common/profile.png" alt="프로필"></p>
                     <p class="name">프로필1</p>
-                    <a href="./profile_edit.html" class="edit">프로필 편집 <img src="./images/common/more.png"
-                            alt="바로가기"></a>
+                    <a href="./profile_edit.html" class="edit">프로필 편집 <img src="./images/common/more.png" alt="바로가기"></a>
                     <a href="#">회원정보 수정</a>
                     <a href="#">성인 콘텐츠 설정</a>
                     <a href="#">알림함 <span>0</span></a>
@@ -441,7 +438,7 @@
     <footer>
         <div class="f_top_wrap">
             <div class="f_top">
-                <a href="./information.html">공지사항</a>
+                <a href="./customer_service.html">공지사항</a>
                 <div class="swiper_container" id="swiper_notice">
                     <div class="swiper-wrapper" id="notice_wrap">
                         <a href="#" class="swiper-slide" id="notice_001">[점검안내] 2월 22일 롯데홈쇼핑 라이브 채널 점검</a>
@@ -451,12 +448,12 @@
                         <a href="#" class="swiper-slide" id="notice_005">[업데이트/중지] 2월 wavvie 영화 리스트</a>
                     </div>
                     <div class="move">
-                        <div class="swiper-button-prev" id="prev">
-                            <a href="#"><img src="./images/common/prev.png" alt="이전"></a>
-                        </div>
-                        <div class="swiper-button-next" id="next">
-                            <a href="#"><img src="./images/common/next.png" alt="다음"></a>
-                        </div>
+                        <a href="#" class="swiper-button-prev" id="f_prev">
+                            <img src="./images/common/prev.png" alt="">
+                        </a>
+                        <a href="#" class="swiper-button-next" id="f_next">
+                            <img src="./images/common/next.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -466,10 +463,10 @@
                 <div class="info">
                     <a href="#">회사소개</a>
                     <a href="#">인재채용</a>
-                    <a href="#">서비스 소개</a>
-                    <a href="#">이용약관</a>
-                    <a href="#">개인정보 처리방침</a>
-                    <a href="#">고객센터</a>
+                    <a href="./wave_service.html">서비스 소개</a>
+                    <a href="./customer_service.html">이용약관</a>
+                    <a href="./customer_service.html">개인정보 처리방침</a>
+                    <a href="./customer_service.html">고객센터</a>
                 </div>
                 <div class="company">
                     <p class="company_info">
@@ -479,8 +476,7 @@
                         <span>사업자등록번호 220-88-38020</span>
                         <span class="last">호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사, 아마존웹서비시즈코리아 유한회사</span><br>
                         <span>통신판매업 신고번호 : 제 2021-서울영등포-0585호</span>
-                        <span class="last">통신판매업 정보 공개 : <a href="#"
-                                class="web">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
+                        <span class="last">통신판매업 정보 공개 : <a href="#" class="web">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
                         <span>서울특별시 영등포구 여의나루로 60 포스트타워 19층</span>
                         <span class="last">전자우편주소 : <a href="#">helpdesk@wavve.com</a></span><br>
                     </p>
