@@ -19,7 +19,7 @@ main .event_ongoing_wrap .event_ongoing_middle {width: 1240px; margin: 0 auto;}
 /* 타이틀 탭 */
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap {
      /* width: 100%; */ border-bottom: 1px solid #2f2f2f;
-     height: 68px; 
+    height: 68px; 
 }
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .tap_taget {
     color: #fff; font-size: 1.125rem;

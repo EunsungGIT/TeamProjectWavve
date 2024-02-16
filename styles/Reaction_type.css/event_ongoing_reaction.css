@@ -1,0 +1,30 @@
+@media screen and (max-width:1240px){
+    /* padding: 0 60px; */
+
+    /* 상단 선물박스 감싸는 곳 */
+    main .event_ongoing_wrap .event_ongoing_title {
+
+    }
+
+    main .event_ongoing_wrap .event_ongoing_title .event_ongoing_photo {}
+    main .event_ongoing_wrap .event_ongoing_title .event_ongoing_photo img {}
+
+    /* 메인 타이틀 전체 묶는  기간까지 div */
+    main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title{
+
+    }
+
+    /* 신년 특집! */
+    main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title .ongoing_title_top h1 {
+
+    }
+}
+@media screen and (max-width:768px){
+    
+}
+@media screen and (max-width:430px){
+    
+}
+@media screen and (max-width:320px){
+    
+}
