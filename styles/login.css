@@ -150,6 +150,7 @@ section .contents  .bottom_text::before{
 }
 /* 팝업 */
 section .popup { 
+    display: none;
     background: rgba(0, 0, 0, 0.5);
     height: 100vh;
     position: fixed; width: 100%;
