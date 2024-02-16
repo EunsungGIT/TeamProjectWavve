@@ -179,7 +179,8 @@ main section .broadcasting_announcement .contents_all .announcement_main .on_air
     padding-right: 30px;
 }
 main section .broadcasting_announcement .contents_all .announcement_main .on_air .main_contents .contents_more a h2::before{
+    margin-right: 10px;
     display: inline-block;
-    content: '';  width: 20px; height: 20px;
+    content: '';  width: 18px; height: 18px;
     background: #f90228; border-radius: 50%;
 }
