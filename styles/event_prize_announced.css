@@ -14,7 +14,7 @@ main .event_prize_wrap .event_title h1 {
 /* 탭 */
 main .event_prize_wrap .event_title_tap {
     /* width: 100%; */ border-bottom: 1px solid #2f2f2f;
-    height: 68px;  
+    height: 68px;   
 }
 /* 진행중 이벤트 */
 main .event_prize_wrap .event_title_tap .taget {
@@ -25,31 +25,44 @@ main .event_prize_wrap .event_title_tap .taget {
 }
 /* 당첨자 발표 */
 main .event_prize_wrap .event_title_tap a {
-    color: #fff;  font-size: 1.125rem;
+    color: #a5a5a5;;  font-size: 1.125rem;
 }
 main .event_prize_wrap .event_middle {
-    width: 1240px; margin: 0 auto;
+   max-width: 1240px; margin: 0 auto;
     position: relative;
+    
 }
 main .event_prize_wrap .event_middle .event_contents{
-    display: flex; flex-flow: row nowrap;
-    border-bottom:1px solid #2f2f2f ;
+/*     display: flex; flex-flow: row nowrap;
+    border-bottom:1px solid #2f2f2f ; */
+
+     /* 0216 추가 */
+     display: flex;
+     flex-wrap: wrap;
 }
 
 
-main .event_prize_wrap .event_middle .event_contents::after {
+/* main .event_prize_wrap .event_middle .event_contents::after {
     content: ""; 
     position: absolute; 
     left: 0; 
     bottom: 230px; 
     width: 100%; 
     height: 1px; 
- /*    background-color:#2f2f2f;  */
-    
-}
+} */
 
 main .event_prize_wrap .event_middle .event_contents .event_content {
     margin-top: 20px; margin-bottom: 20px;
+    /* 0216 */
+    width: 50%;
+    border-bottom:1px solid #2f2f2f ;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    /* flex: 1 1 50% */
+    /* 50%가 기본 값 flex box에 적용되는 속성
+    3번째 50%가 flex-basis 기본 너비 
+    flex-grow 첫 번째 50의 속성보다 1대 1 비율로   
+    */
 }
 main .event_prize_wrap .event_middle .event_contents .event_content a {
     display: flex;
@@ -61,17 +74,17 @@ main .event_prize_wrap .event_middle .event_contents .event_content a .content_l
     width: 260px; border-radius: 10px;
 }
 main .event_prize_wrap .event_middle .event_contents .event_content a .content_right {
-    width: 360px; /* auto 줬더니 날라가서
-    여기 값 지정해줘도 반응형때 문제 없을련지? 111 */
-    padding: 0px 0px 0px 0px;
-   /*  vertical-align: top; */
-    display: block;
+    
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+
 }
 /*  [신년특집] 웨이브와 함께~ */
 main .event_prize_wrap .event_middle .event_contents .event_content a .content_right .event_h1 {
-    color: #a5a5a5; font-size: 20px; display: flex;
+    color: #a5a5a5; font-size: 20px; 
+    margin-bottom: 15px;
 }
 /* 기간 경품 */
 main .event_prize_wrap .event_middle .event_contents .event_content a .content_right .event_h {

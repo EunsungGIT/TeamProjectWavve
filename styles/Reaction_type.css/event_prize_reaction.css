@@ -1,0 +1,11 @@
+@media screen and (max-width:1240px){
+   /*  padding: 0 60px; */
+    main .event_prize_wrap .event_middle .event_contents .event_content {
+        width: 100%;
+
+    }
+
+}
+@media screen and (max-width:768px){
+    
+}

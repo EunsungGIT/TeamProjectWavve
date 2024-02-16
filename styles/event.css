@@ -13,9 +13,11 @@ main .event_wrap .event_title h1 {
 }
 /* 탭 */
 main .event_wrap .event_title_tap {
-    /* width: 100%; */ border-bottom: 1px solid #2f2f2f;
-    height: 68px;  
+    
+    border-bottom: 1px solid #2f2f2f;
+    height: 68px; 
 }
+
 /* 진행중 이벤트 */
 main .event_wrap .event_title_tap .taget {
     color: #fff; font-size: 1.125rem;
@@ -32,7 +34,7 @@ main .event_wrap .event_middle {
     position: relative;
 }
 main .event_wrap .event_middle .event_content {
-    margin-top: 50px; margin-bottom: 30px;
+    margin-top: 30px; margin-bottom: 40px;
 }
 main .event_wrap .event_middle .event_content::after {
     content: ""; 
