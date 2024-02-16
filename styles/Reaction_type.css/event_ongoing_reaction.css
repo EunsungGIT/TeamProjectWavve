@@ -1,5 +1,8 @@
 @media screen and (max-width:1240px){
     main .event_ongoing_wrap .event_ongoing_middle {width: 100%;}
+    main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title a span { display: none;
+    }
+    .content_wrap1 {padding: 0 60px;}
 
 }/*1240 조건 종료*/
 @media screen and (max-width:768px){

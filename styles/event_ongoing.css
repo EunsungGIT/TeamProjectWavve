@@ -31,13 +31,13 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .not_tap
     color: #a5a5a5; font-size: 1.125rem; /* margin-left: 20px; */
 }
 /* 메인 타이틀 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title{
+.event_ongoing_main_title{
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title h1 {
+.event_ongoing_main_title h1 {
      /* 30px; -> 1.875rem */ color: #fff;
     font-size: 1.875rem;
     font-weight: bold;
@@ -45,87 +45,89 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title h1 {
 }
 
 /* 목록을 올리기 위해 h1 + <a href="./event.html">  */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title .ongoing_title_top {
+.event_ongoing_main_title .ongoing_title_top {
     display: flex; justify-content: space-between;
 }
 
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title .event_ongoing_date {
+.event_ongoing_main_title .event_ongoing_date {
     font-size: 18px; color: #a5a5a5; 
 }
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title a {
+.event_ongoing_main_title a {
     color: #a5a5a5; 
     margin-bottom: 17px; 
     display: flex; 
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title a img {} 
+.event_ongoing_main_title a img {
+    width: 42px; height: 42px;
+} 
 /* 목록 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title a .list_text {
+.event_ongoing_main_title a .list_text {
     padding-top: 10px; padding-left: 5px;  color: #a5a5a5; 
 } 
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap a{
+.event_ongoing_title_tap a{
     /* 18px - > 1.125rem */
     color: #fff; font-size: 1.125rem;
 }
 /* 하위 내용들 전체 박스 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content {}
+.event_ongoing_content {}
 
 
 /* ★ 이벤트 진행중 이미지 - > 코드로  */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container {
+.event_ongoing_content .ongoing_main_container {
     position: relative;
 }
 /* left, right 총괄 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .ongoing_container_title{
+.ongoing_container_title{
     background-image: url(../images/event/event_ongoing_background_img.jpg);
     display: flex; padding: 30px; 
     justify-content: center;
 }
 /* left */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_left {
+.ongoing_container_title .ongoing_container_left {
     position: relative; top: 60px;
 }
 /* 메인 이미지 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_left img {
+.ongoing_container_title .ongoing_container_left img {
     
 }
 /* right */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_right {
+.ongoing_container_title .ongoing_container_right {
     display: flex; flex-flow: column wrap;
     margin-left: 20px; margin-top:60px;
 }
 /* h1 [신년특집] */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_right .ongoing_container_h1 {
+.event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_right .ongoing_container_h1 {
     color: #fff; font-size: 40px; margin-bottom: 30px;
     letter-spacing: -1.5px;
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_right .ongoing_content {
+.event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_right .ongoing_content {
     color: #717171; font-size: 18px; margin-bottom: 30px;
     line-height: 1.5; 
 }
 /* 기간 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_right .ongoing_date{
+.event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_right .ongoing_date{
     color: #a5a5a5; font-size: 17px; flex-flow: column nowrap;
 }
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_right .ongoing_date_content {/* 기간 과 날짜 따로주고 싶으면. */}
+.event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_right .ongoing_date_content {/* 기간 과 날짜 따로주고 싶으면. */}
 
 /* 메인 흰색 박스 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle {
+.event_ongoing_content .ongoing_main_container .container_middle {
     background: #f7f7f7; padding: 70px 0 30px 0;
 
 
 }
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content {
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content {
     background: violet;
     width: calc(100% - 200px);
     margin: 0 auto;
 }
 /* ul 화이트 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box { 
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box { 
     background:#ffffff; display: flex;
     flex-flow: column wrap;
     padding: 30px 40px 40px 40px;
@@ -137,7 +139,7 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_m
 }
 
 /* 이벤트 경품  */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .middle_title {
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .middle_title {
     border: 1px solid #000; border-radius: 50px;
     padding: 7px 25px 7px 25px; color: #d0cfd7;
     background: #000;
@@ -145,17 +147,18 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_m
     font-weight:400; letter-spacing:-1px;
     width:max-content;
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box {
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box {
     display:flex; justify-content: center;
 }
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box .middle_title_item  {
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box .middle_title_item  {
     margin-right:10px;
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box .middle_title_item img {width:100%;}
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box .middle_title_item:last-child {margin-right:0;}
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box .middle_title_item img {width:100%;}
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box .middle_title_item .middle_ranking {
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box .middle_title_item:last-child {margin-right:0;}
+
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box .middle_title_item .middle_ranking {
     justify-content: space-around;
    /*  text-align: center; */
     text-align:center;
@@ -164,13 +167,13 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_m
     font-weight: 500;
     
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box .middle_title_item p{
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box .middle_title_item p{
     width: 85%;
     text-align: center;
     font-weight: 500;
 }
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .btm_lottery  {
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .btm_lottery  {
      display: flex;
      margin-top: 40px;
      margin-bottom: 40px;
@@ -181,37 +184,37 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_m
      /* 0212 이 부분 물어보기  */
      /* justify-content: center; */
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .btm_lottery .btm_lottery_day {
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .btm_lottery .btm_lottery_day {
 
 }
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .btm_lottery .btm_day {
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .btm_lottery .btm_day {
     margin-left: 10px;
     font-weight:300; 
 }
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .dtm_explain {
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .dtm_explain {
     background:white; 
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .dtm_explain p{
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .dtm_explain p{
     font-weight: 300; font-size: 14px;
 }
 
 
 /* 마지막 회색 박스 시작 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .btm_container {
+.event_ongoing_content .ongoing_main_container .btm_container {
     background: #eeeeee; padding: 40px 120px 30px 70px;
     
 
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .btm_container .btm_container_bold {
+.event_ongoing_content .ongoing_main_container .btm_container .btm_container_bold {
     font-weight: 500; color: #848484;
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .btm_container .btm_container_span {
+.event_ongoing_content .ongoing_main_container .btm_container .btm_container_span {
     font-weight: 500; color: #848484;
 }
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_main_container .btm_container p{
+.event_ongoing_content .ongoing_main_container .btm_container p{
     margin-bottom: 7px;
     font-weight: 300; color: #848484;
 }
@@ -219,21 +222,21 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_m
 
 
 /* 매인 이미지 - > 변환 끝 -------------------------------------*/
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container {
+.event_ongoing_content .ongoing_container {
     width: 1224px; margin: 0 auto;
 }
 /* ul */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items {
+.event_ongoing_content .ongoing_container .ongoing_items {
 display: flex; flex-flow: row wrap; 
 padding: 0px; margin: 0px;
 }
 /* 개별 li 아이템들 ex 헝거게임 매복 등등 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li{
+.event_ongoing_content .ongoing_container .ongoing_items li{
     width: calc(50%); position: relative;
     
 }
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li::after {
+.event_ongoing_content .ongoing_container .ongoing_items li::after {
  
   content: ""; 
   position: absolute; 
@@ -248,25 +251,25 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_c
 
 
 /* 이미지와 span 박스를 전체를 묶는 a */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a {
+ .ongoing_items li a {
     display: flex; 
     margin-top: 30px;
  
     
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_img {
+ .ongoing_items li a .ongoing_img {
     width: 185px; /* display: inline-block; */
 }
 /* 개별 아이템 이미지 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_img img {
+.ongoing_items li a .ongoing_img img {
     width: 185px; padding-right: 10px;
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box {
+.ongoing_items li a .ongoing_span_box {
 
 }
 /* main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container { background: violet;
 } */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span {
+.ongoing_container .ongoing_items li a .ongoing_span_box span {
 /*     display: table-cell; */
     width: auto;
     padding: 0px 0px 0px 0px;
@@ -275,17 +278,17 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_c
     display: flex;
     flex-flow: row wrap;
 }
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_h1 {
+.ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_h1 {
     font-size: 18px; color:#a5a5a5; display: block;
 }
 /* 제목 감독 출연진 등  ongoing_h*/
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_h {
+.ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_h {
     flex-flow: column nowrap; color: #a5a5a5; font-size: 14px;
     width: 40px;
     margin-top: 10px; margin-right: 5px;
 }
 /* 판타지, 액션 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_hc {font-size: 14px; color: #717171;
+.ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_hc {font-size: 14px; color: #717171;
     flex-flow: column wrap; 
     width: 100%;
     margin-top: 5px;
@@ -294,13 +297,13 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_c
 
 
 /* 판타지 액션 등등  등등 관련 줄거리 내용 등등 */
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_c {
+.ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_c {
     font-size: 16px; color: #717171;
     width: calc(100% - 70px);
     margin-top: 10px;
 }
 
-main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_content .ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_rc {
+.ongoing_container .ongoing_items li a .ongoing_span_box span .ongoing_rc {
     color: #717171;
 }
 
