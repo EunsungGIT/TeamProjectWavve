@@ -1,4 +1,4 @@
-/* 제목로고 */
+s/* 제목로고 */
 section {}
 section .contents_all{
     margin: 0 auto;
@@ -8,7 +8,6 @@ section .header {
 }
 section .header .logo {
         padding: 61px 0 27px;
-
 }
 section .header .logo img {}
 /* 메인컨텐츠 */
@@ -150,7 +149,6 @@ section .contents  .bottom_text::before{
 }
 /* 팝업 */
 section .popup { 
-    display: none;
     background: rgba(0, 0, 0, 0.5);
     height: 100vh;
     position: fixed; width: 100%;

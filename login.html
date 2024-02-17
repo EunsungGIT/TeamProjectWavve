@@ -40,11 +40,11 @@
                             <ul>
                                 <li>
                                     <input type="text" name="user_id" id="user_id" placeholder="Wavve@example.com">
-                                    <p><img src="./images/login/icon_gray.png" alt="#">로그인, 비밀번호 찾기, 알림에 사용되니 정확한 이메일을 입력해 주세요.</p>
+                                    <p class="id_error"><img class="icon" src="./images/login/icon_gray.png" alt="#">로그인, 비밀번호 찾기, 알림에 사용되니 정확한 이메일을 입력해 주세요.</p>
                                 </li>
                                 <li>
                                     <input type="password" name="user_pw" id="user_pw" placeholder="Wavve비밀번호 설정">
-                                    <p><img src="./images/login/icon_gray.png" alt="#">비밀번호는 8~20자 이내로 영문 대소문자, 숫자, 특수문자 중 3가지 이상 혼용하여 입력해 주세요.</p>
+                                    <p class="pw_error"><img class="icon" src="./images/login/icon_gray.png" alt="#">비밀번호는 8~20자 이내로 영문 대소문자, 숫자, 특수문자 중 3가지 이상 혼용하여 입력해 주세요.</p>
                                     <button type="button" id="pw_btn">Show</button>
                                 </li>
                             </ul>
@@ -138,7 +138,7 @@
                     <button type="button" id="clear_join">회원가입 완료</button>
                 </div>
                 <div class="close">
-                    <a href="#"><img src="./images/login/popup_close.png" alt="닫기"></a>
+                    <a href="#" id="sub"><img src="./images/login/popup_close.png" alt="닫기"></a>
                 </div>
             </div>
         </div>

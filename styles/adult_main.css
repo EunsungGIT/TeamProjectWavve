@@ -76,9 +76,10 @@ main .adult .contents ul li .main_text span {
     font-size: 0.875rem; color: #a5a5a5;
 }
 main .adult .contents .pw_setting {
-    margin-top: 28px; display: flex; float: right; 
+    margin-top: 28px; display: flex; 
+    justify-content: right;
 }
 main .adult .contents .pw_setting a {
     color: #a5a5a5; text-decoration: underline;
-    font-size: 0.875rem;
+    font-size: 0.875rem;  
 }
