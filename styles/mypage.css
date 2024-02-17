@@ -48,7 +48,9 @@ main .mypage_bottom_wrap .mypage_bottom .mypage_left .profile_info a {
     color: #fff; display: flex; align-items: center;
 }
 main .mypage_bottom_wrap .mypage_bottom .mypage_left .profile_info a img {margin-left: 5px;}
-main .mypage_bottom_wrap .mypage_bottom .mypage_right {width: 50%;}
+main .mypage_bottom_wrap .mypage_bottom .mypage_right {
+    width: 50%; text-align: right;
+}
 main .mypage_bottom_wrap .mypage_bottom .mypage_right a {
     color: #a5a5a5; margin-left: 60px;
 }

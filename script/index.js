@@ -1,12 +1,15 @@
 // 팝업창
+const body_html = document.querySelector('body, html')
 const top_a = document.querySelectorAll('.contents .top a')
 const popup = document.querySelector('.popup')
 
+body_html.style.overflow = 'hidden'
 top_a[1].addEventListener('click', ()=>{
     popup.classList.add('hide')
+    body_html.style.overflow = 'auto'
     setTimeout(() => {
         popup.style.display = 'none'
-    }, 300);
+    }, 500);
 });
 
 /* 상단 메인 슬라이드 */

@@ -83,6 +83,7 @@ main section #swiper_series #series_wrap a {
 }
 main section #swiper_series #series_wrap a img {
     width: 100%; border-radius: 10px;
+    margin-bottom: 10px;
 }
 main section #swiper_series #series_wrap a span {
     color: #a5a5a5; margin-top: 10px;
