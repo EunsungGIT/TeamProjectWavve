@@ -18,6 +18,10 @@ window.addEventListener('scroll',()=>{
     }
 })
 
+closeBtn.addEventListener('click',()=>{
+    popup_video.style.display = 'none'
+})
+
 // 메인 비디오
 
 
@@ -29,3 +33,11 @@ var mySwiper = new Swiper('#swiper_schedule', {
         prevEl:'#swiper_schedule #schedule_prev',
     },
 })
+// 스케줄 알람
+const bell = document.querySelectorAll('i')
+
+for(let i of bell){
+    i.addEventListener('click',()=>{
+        i.style.color = '#1351f9'
+    })
+}
