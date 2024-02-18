@@ -5,5 +5,5 @@ open_btn.addEventListener('click',()=>{
 })
 
 close_btn.addEventListener('click',()=>{
-    window.close();
+    window.location.href = './adult_main.html'
 })

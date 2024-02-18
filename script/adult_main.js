@@ -1,17 +1,24 @@
-const btn1 = document.querySelector('.btn1')
-const btn2 = document.querySelector('.btn2')
-const btn3 = document.querySelector('.btn3')
-const btn4 = document.querySelector('#pw_btn')
+const btn1 = document.querySelectorAll('.btn')
+console.log(btn1)
+for(let i of btn1){
+    i.addEventListener('click',()=>{
+        window.location.href = './adult_sub.html'
+    })
+}
 
-btn1.addEventListener('click',()=>{
-    window.location.href = './adult_certified.html'
-})
+
+
+
+
+
+
+
+
+
+
+
+
+const btn2 = document.querySelector('#pw_btn')
+
 btn2.addEventListener('click',()=>{
-    window.location.href = './adult_certified.html'
-})
-btn3.addEventListener('click',()=>{
-    window.location.href = './adult_certified.html'
-})
-btn4.addEventListener('click',()=>{
-    window.location.href = './adult_certified.html'
-})
+    window.location.href = './adult_sub.html'})
