@@ -25,7 +25,10 @@
     width: 98%; align-items: center;
     display: flex; justify-content: flex-start;
     position: absolute; bottom: 10px; left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 50px); transition: 0.5s;
+}
+.popup_video .video:hover .icon {
+    transform: translate(-50%, 0);
 }
 .popup_video .video .icon a {
     width: 34px; margin-right: 12px;
@@ -66,7 +69,11 @@ main .video_bg .video .icon {
     width: 98%; align-items: center;
     display: flex; justify-content: space-between;
     position: absolute; bottom: 10px; left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); transition: 1s;
+    opacity: 0;
+}
+main .video_bg .video:hover .icon {
+    opacity: 1;
 }
 main .video_bg .video .icon .left {
     display: flex; align-items: center;
@@ -147,6 +154,7 @@ main .schedule .time_table #swiper_schedule .swiper-slide .schedule_info h3 {
 main .schedule .time_table #swiper_schedule .swiper-slide .schedule_info p {color: #a5a5a5;}
 main .schedule .time_table #swiper_schedule .swiper-slide i {
     font-size: 1.5rem; color: #a5a5a5;
+    cursor: pointer;
 }
 main .schedule .time_table #swiper_schedule #schedule_prev {
     position: absolute; left: 0;
@@ -200,18 +208,21 @@ main .all_schedule .live_video {
     justify-content: space-between;
 }
 main .all_schedule .live_video a {
-    margin-bottom: 40px;
+    margin-bottom: 40px; width: 240px;
+    overflow: hidden;
     border-radius: 10px; position: relative;
 }
 main .all_schedule .live_video a video {
-    width: 240px; height: 135px;
-    border-radius: 10px;
+    width: 100%; border-radius: 10px; transition: 0.5s;
+}
+main .all_schedule .live_video a video:hover {
+    transform: scale(1.1);
 }
 main .all_schedule .live_video a .playbar {
     background: rgba(0, 0, 0, 0.2); border-bottom-left-radius: 10px;
     border-bottom-right-radius: 50px;
     width: 100%; height: 5px;
-    position: absolute; bottom: 69px;
+    position: absolute; bottom: 66px;
 }
 main .all_schedule .live_video a .playbar .play {
     background: #1351f9; border-bottom-left-radius: 10px;

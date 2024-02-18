@@ -103,7 +103,9 @@ main .customer_service .notice .notice_page a:first-child {
     border-radius: 50%;
 }
 /* 자주 묻는 질문 FAQ */
-main .customer_service .faq {padding-bottom: 80px;}
+main .customer_service .faq {
+    padding-bottom: 80px;
+}
 main .customer_service .faq .faq_top {
     background: #252525; padding: 40px 169px;
     max-width: 1240px; margin: 0 auto 40px;
@@ -170,7 +172,7 @@ main .customer_service .faq .faq_info a p {
 }
 main .customer_service .faq .faq_info a p img {
     position: absolute; right: 0; top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); transition: 0.5s;
 }
 main .customer_service .faq .faq_info .faq_contents {
     padding: 25px 56px 25px 188px;
