@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="keywords" content="">
+ <meta name="description" content="">
+    <title></title>
+</head>
+<body>
+    <div class="coin_charging_wrap">
+        <div class="coin_charging_title">
+            <h1>코인충전</h1>
+        </div>
+        <div class="coin_charging_middle">
+            <div class="coin_charging_tap">
+                <a href="#" class="tap_taget">일반 충전</a>
+                <a href="#" class="not_tap_taget">자동 충전</a>
+            </div>
+            <table class="details_payment_table">
+                <caption class="table_title">결제내용</caption>
+                <colgroup>
+                    <col width="178px">
+                    <col width="*">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">충전할 코인 선택</th>
+                        <td colspan="3">
+                            <div class="radio_btn_style">
+                                <input type="radio" id="radio_btn1" name="blue_btn" value="radio_btn1"
+                                checked="checked" class="radio_on"
+                                >
+                                <label for="radio_btn1">3,000 코인</label>
+                            </div>
+                            <div class="radio_btn_style">
+                                <input type="radio" id="radio_btn2" name="blue_btn" value="radio_btn1"
+                                checked="checked" class="radio_on"
+                                >
+                                <label for="radio_btn2">5,000 코인</label>
+                            </div>
+                            <div class="radio_btn_style">
+                                <input type="radio" id="radio_btn3" name="blue_btn" value="radio_btn1"
+                                checked="checked" class="radio_on"
+                                >
+                                <label for="radio_btn1">10,000 코인 (+보너스 코인 10% 지급)</label>
+                            </div>
+                            <div class="radio_btn_style">
+                                <input type="radio" id="radio_btn4" name="blue_btn" value="radio_btn1"
+                                checked="checked" class="radio_on"
+                                >
+                                <label for="radio_btn1">30,000 코인 (+보너스 코인 10% 지급)</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table_total">
+                        <th class="row">최종 결제 금액</th>
+                        <td>
+                            <p class="table_total_price">
+                                <span id="total_span">3,000</span>
+                                원
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="payment_box">
+            <h2 class="payment_box_title">결제수단 선택</h2>
+            <div class="payment_content">
+                <input type="radio" id="payment_btn" name="payment_btn">
+                <label for="payment_btn">빠른결제</label>
+                <div class="card_pay_ment_box">
+                    <!-- method-quick-toggle -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

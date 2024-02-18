@@ -11,7 +11,7 @@
     display: flex;
     }
     .popup .popup_background .contents .top .popup_img {
-    background-image: url(../images/1706165557490076058.jpg);
+    background-image: url(../images/popup/popup.jpg);
     width: 420px; height: 600px; border-radius: 10px; background-position: center; 
     }
     .popup .popup_background .contents .top .close{

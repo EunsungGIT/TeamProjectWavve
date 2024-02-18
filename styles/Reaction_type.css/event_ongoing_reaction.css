@@ -3,11 +3,26 @@
     main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_main_title a span { display: none;
     }
     .content_wrap1 {padding: 0 60px;}
+    /*  */
+    .ongoing_container .ongoing_items .ongoing_item{
+        width: 100%;
+    }
+    .event_ongoing_content .ongoing_main_container .container_middle .middle_content {
+        background: violet;
+        width: calc(100% - 100px);
+        margin: 0 auto;
+    }
 
 }/*1240 조건 종료*/
 @media screen and (max-width:768px){
-    
-
+    .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .box {
+        flex-direction: column;
+    }
+    .event_ongoing_content .ongoing_main_container .container_middle .middle_content {
+        background: violet;
+        width: calc(100% - 50px);
+        margin: 0 auto;
+    }
 }/*768 조건 종료*/
 @media screen and (max-width:430px){
     
