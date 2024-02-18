@@ -1,5 +1,5 @@
 /* 코인 충전 팝업 페이지 */
-*{}
+*{margin: 0;}
 #frm_payment1 {
     background: #252525;
 }
@@ -7,7 +7,10 @@
 #frm_payment2 {
     background: #252525;
 }
-#frm_payment1 .coin_charging_wrap {}
+/* 전체 */
+#frm_payment1 .coin_charging_wrap {
+    /* padding: 48px 30px; */
+}
 /* 코인충전 타이틀 */
 #frm_payment1 .coin_charging_wrap .coin_charging_title {
     background: #1351f9; 
@@ -23,144 +26,264 @@
 #frm_payment1 .coin_charging_wrap .coin_charging_middle{
  
 }
+/* ul */
 #frm_payment1 .coin_charging_wrap .coin_charging_middle .coin_charging_tap {
-    border-bottom:5px solid #1351f9 ;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
+   border-bottom: 1px solid #2f2f2f;
+   text-align: center;
+   margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .coin_charging_tap li{
+    margin: 0px 40px;
+    display: inline-block;
 }
 /* 일반충전 */
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .coin_charging_tap .tap_taget {
-    display: inline-block;
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .coin_charging_tap li .tap_taget {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    letter-spacing: -.3px;
+    color: #a5a5a5;
+    border-bottom: 2px solid #1351f9;
+    font-weight: 700;
+    color: #fff;
+}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .coin_charging_tap li .not_tap_taget {
+    display: block;
     height: 60px;
     line-height: 60px;
     font-size: 18px;
     letter-spacing: -.3px;
     color: #a5a5a5;
 }
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .coin_charging_tap .not_tap_taget {
-    display: inline-block;
-    height: 60px;
-    line-height: 60px;
-    font-size: 18px;
-    letter-spacing: -.3px;
-    color: #a5a5a5;
+/* 테이블 감싸는 전체 */
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content{
+    padding-bottom:50px ;
 }
 /* 결제내용 */
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table {}
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table .table_title{}
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table colgroup {}
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table colgroup  col {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table {
+    width: 100%;
+    border-top:2px solid #2f2f2f ;
+}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table .table_title{
+    width: auto;
+    height: auto;
+    text-indent: inherit;
+    visibility: inherit;
+    line-height: inherit;
+    overflow: inherit;
+    font-size: 24px;
+    text-align: left;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table colgroup {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table colgroup  col {}
 /* tbody */
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody {}
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody tr {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody tr {}
 /* 충전할 코인 선택 */
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody tr th{}
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody tr td{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody tr th{
+    padding-top: 24px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #a5a5a5;
+    padding: 12px 20px;
+    text-align: left;
+    vertical-align: middle
+}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody tr td{
+    padding-top: 24px;
+    padding-bottom: 12px;
+    padding: 12px 20px;
+    vertical-align: middle;
+}
+
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style {
+    margin-bottom: 16px
+}
+
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style input {
+    display: none;
+}
 /* 블루버튼 아이콘  */
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody tr td .radio_btn_style{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style label::before{
+    position: relative; bottom: 3px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+    margin-right:10px; 
+}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style input:checked + label::before{
+    position: relative; bottom: 3px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak_input.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+}
 /* radio_btn1 */
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody tr td .radio_btn_style #radio_btn1{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style #radio_btn1{}
 /* 라디오 버튼 calss 공통선택자  */
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody tr td .radio_btn_style .radio_btn{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style .radio_btn{}
 /* 3,000 코인 */
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody tr td .radio_btn_style label{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style label{
+    position: relative;
+    font-size: 16px;
+    color: #a5a5a5;
+}
 /* 최종 결제 금액 전체*/
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody .table_total{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody .table_total{}
 /* 최종 결제 금액 문장 */
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody .table_total .row{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody .table_total .row{
+    text-align: left;
+    color: #a5a5a5;
+    padding: 12px 20px;
+}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody .table_total td{
+    padding: 12px 20px 
+}
 /* 테이블 토탈 가격 전체 p */
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody .table_total .table_total_price{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody .table_total .table_total_price{
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+}
 /* 3,000원 */
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .details_payment_table tbody .table_total .table_total_price #total_span{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody .table_total .table_total_price #total_span{
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+}
+/*  */
 /* 결제 박스 */
-#frm_payment1 .coin_charging_wrap .payment_box{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .payment_boxs .payment_boxs{
+    padding-bottom: 50px 
+}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .payment_boxs .payment_boxs .payment_box{
+}
 /* 결제수단 선택 */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_box_title{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content #payment_btn{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content label{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_box_title{
+    width: auto;
+    height: auto;
+    text-indent: inherit;
+    visibility: inherit;
+    line-height: inherit;
+    overflow: inherit;
+    font-size: 24px;
+    text-align: left;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 16px 
+}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content #payment_btn{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    background-color: #8045df;
+    margin: 0;
+    background: transparent;
+}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content label{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box{}
 /* 스와이퍼 시작 */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_container{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap .swiper-slide-next{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap .swiper-slide-next .card_update{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_container{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap .swiper-slide-next{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap .swiper-slide-next .card_update{}
 /* 카드 등록 */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap .swiper-slide-next .card_update #update{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_container .swiper-pagination-clickable {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap .swiper-slide-next .card_update #update{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_container .swiper-pagination-clickable {}
 /* 스와이퍼 페이지네이션 밑에 둥근 */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_container .swiper-pagination-clickable .swiper-pagination-bullet{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_container .swiper-pagination-clickable .swiper-button-next{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_container .swiper-pagination-clickable .swiper-button-prev{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_container .swiper-pagination-clickable .swiper-notification{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_container .swiper-pagination-clickable .swiper-pagination-bullet{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_container .swiper-pagination-clickable .swiper-button-next{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_container .swiper-pagination-clickable .swiper-button-prev{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_container .swiper-pagination-clickable .swiper-notification{}
 /*  */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_containerv .crad_content {}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_containerv .crad_content ul {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_containerv .crad_content {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_containerv .crad_content ul {}
 /* 등록된 카드는 [회원정보]에서 관리하실 수 있습니다. */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_pay_ment_box .crad_containerv .crad_content ul li {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_pay_ment_box .crad_containerv .crad_content ul li {}
 /*  */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm {}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm #card_btms{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_btm {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_btm #card_btms{}
 /* 다른 결제수단 */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm label{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .charging_wrap .payment_boxs .payment_box .payment_content .card_btm label{}
+/* 추가-- 여기까지 위 */
 /* ul */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content {}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li {}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a {}
 /* 신용카드 이미지 */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a img{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a #26{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a .card_btm_credit {}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a span {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a img{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a #26{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a .card_btm_credit {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a span {}
 
 /* 페이코 간편결제 ---------------------------------------------------------------------------------- */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li {}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a {}
 /* 페이코 이미지 */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a img{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a #27{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a .card_btm_payco {}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a span {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a img{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a #27{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a .card_btm_payco {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a span {}
 
 /* 휴대폰 간편결제 ----------------------------------------------------------------------------------- */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li {}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a {}
 /* 휴대폰 이미지 */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a img{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a #28{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a .card_btm_phone {}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a span {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a img{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a #28{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a .card_btm_phone {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a span {}
 
 /* 카카오페이 */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li {}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a {}
 /* 휴대폰 이미지 */
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a img{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a #29{}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a .card_btm_kakao {}
-#frm_payment1 .coin_charging_wrap .payment_box .payment_content .card_btm .card_btm_content li a .blind {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a img{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a #29{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a .card_btm_kakao {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li a .blind {}
 /*  */
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_btn {}
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_btn li {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .card_btm_btn {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .card_btm_btn li {}
 /* 취소 */
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_btn li .card_cancle_gray {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .card_btm_btn li .card_cancle_gray {}
 /* 다음 */
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_btn li .card_payment_blue {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .card_btm_btn li .card_payment_blue {}
 /* 충전한 코인의 유효기간은 5년입니다. */
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_content {}
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_content .dot_text{}
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_content .dot_text span{}
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_content .dot_text span #card_btm_more_noti{}
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_content .dot_text span #card_btm_more_noti lable{}
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_content .dot_text span #card_btm_more_noti .card_btm_more_wrap{}
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_content .dot_text span #card_btm_more_noti .card_btm_more_wrap .dot_text02{}
-#frm_payment1 .coin_charging_wrap .payment_box .card_btm_content .dot_text span #card_btm_more_noti .card_btm_more_wrap .dot_text02 span{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .card_btm_content {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .card_btm_content .dot_text{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .card_btm_content .dot_text span{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .card_btm_content .dot_text span #card_btm_more_noti{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .card_btm_content .dot_text span #card_btm_more_noti lable{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .card_btm_content .dot_text span #card_btm_more_noti .card_btm_more_wrap{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .card_btm_content .dot_text span #card_btm_more_noti .card_btm_more_wrap .dot_text02{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .card_btm_content .dot_text span #card_btm_more_noti .card_btm_more_wrap .dot_text02 span{}
 
 /* 자동충전에 밑에 추가된 부분 매월 자동 결제에 동의합니다. */
-#frm_payment1 .coin_charging_wrap .payment_box .card_check_style {}
-#frm_payment1 .coin_charging_wrap .payment_box .card_check_style  #card_check {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .card_check_style {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .card_check_style  #card_check {}
 /* 위 #card_check 같은 것 */
-#frm_payment1 .coin_charging_wrap .payment_box .card_check_style  .check_blue {}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .card_check_style  .check_blue {}
 /* 매월 자동 결제에 동의합니다. */
-#frm_payment1 .coin_charging_wrap .payment_box .card_check_style lable{}
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .card_check_style lable{}
