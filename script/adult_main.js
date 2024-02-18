@@ -8,16 +8,6 @@ for(let i of btn1){
 
 
 
-
-
-
-
-
-
-
-
-
-
 const btn2 = document.querySelector('#pw_btn')
 
 btn2.addEventListener('click',()=>{
