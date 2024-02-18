@@ -25,7 +25,10 @@
     width: 98%; align-items: center;
     display: flex; justify-content: flex-start;
     position: absolute; bottom: 10px; left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 50px); transition: 0.5s;
+}
+.popup_video .video:hover .icon {
+    transform: translate(-50%, 0);
 }
 .popup_video .video .icon a {
     width: 34px; margin-right: 12px;
@@ -66,7 +69,11 @@ main .video_bg .video .icon {
     width: 98%; align-items: center;
     display: flex; justify-content: space-between;
     position: absolute; bottom: 10px; left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); transition: 1s;
+    opacity: 0;
+}
+main .video_bg .video:hover .icon {
+    opacity: 1;
 }
 main .video_bg .video .icon .left {
     display: flex; align-items: center;
