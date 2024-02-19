@@ -24,38 +24,68 @@
         <a href="#"><img src="./images/live_contents/close.png" alt="닫기"></a>
         <div class="video">
             <video src="./video/live_contents_001.mp4" muted autoplay></video>
-            <div class="playbar">
-                <div class="play"></div>
-            </div>
-            <div class="icon">
-                <a href="#"><img src="./images/live_contents/pause_s.png" alt="일시정지"></a>
-                <a href="#"><img src="./images/live_contents/time.png" alt="시간"></a>
-                <a href="#"><img src="./images/live_contents/sound.png" alt="음량"></a>
-                <span>9:45 / 12:30</span>
+            <div class="popup_video_top"></div>
+            <div class="popup_video_bottom">
+                <div class="playbar">
+                    <div class="play"></div>
+                </div>
+                <div class="icon">
+                    <a href="#"><img src="./images/live_contents/pause_s.png" alt="일시정지"></a>
+                    <a href="#"><img src="./images/live_contents/time.png" alt="시간"></a>
+                    <a href="#"><img src="./images/live_contents/sound.png" alt="음량"></a>
+                    <span>9:45 / 12:30</span>
+                </div>
             </div>
         </div>
+    </div>
+    <!-- 관심등록 팝업 -->
+    <div class="favorite">관심채널로 등록했어요.</div>
+    <!-- 공유 -->
+    <div class="share_bg">
+        <div class="share">
+            <h2>공유</h2>
+            <div class="twitter_facebook">
+                <a href="#">
+                    <img src="./images/live_contents/twitter.png" alt="트위터">
+                    <span>트위터</span>
+                </a>
+                <a href="#">
+                    <img src="./images/live_contents/facebook.png" alt="페이스북">
+                    <span>페이스북</span>
+                </a>
+            </div>
+            <div class="link_copy">
+                <input type="text" id="link" value="https://www.wavve.com/player/live?channelid=C2501">
+                <button type="button" id="copyBtn">링크복사</button>
+            </div>
+            <a href="#"><img src="./images/live_contents/popup_close.svg" alt="닫기"></a>
+        </div>
+        <div class="copy">링크를 복사했어요. 원하는 곳에 붙여넣기(CTRL + V)해주세요.</div>
     </div>
     <!--main -->
     <main>
         <div class="video_bg">
             <div class="video">
-                <video src="./video/live_contents_001.mp4" muted autoplay></video>
+                <video id="main_video" src="./video/live_contents_001.mp4" muted autoplay></video>
+                <div class="video_top"></div>
                 <a href="#"><img src="./images/live_contents/pause.png" alt="일시정지"></a>
-                <div class="playbar">
-                    <div class="play"></div>
-                </div>
-                <div class="icon">
-                    <div class="left">
-                        <a href="#"><img src="./images/live_contents/pause_s.png" alt="일시정지"></a>
-                        <a href="#"><img src="./images/live_contents/time.png" alt="시간"></a>
-                        <a href="#"><img src="./images/live_contents/sound.png" alt="음량"></a>
-                        <span>9:45 / 12:30</span>
+                <div class="video_bottom">
+                    <div class="playbar">
+                        <div class="play"></div>
                     </div>
-                    <div class="right">
-                        <a href="#"><img src="./images/live_contents/settings.png" alt="설정"></a>
-                        <a href="#"><img src="./images/live_contents/channel.png" alt="전체 채널"></a>
-                        <a href="#"><img src="./images/live_contents/popup_player.png" alt="팝업 플레이어"></a>
-                        <a href="#"><img src="./images/live_contents/wide.png" alt="전체화면"></a>
+                    <div class="icon">
+                        <div class="left">
+                            <a href="#"><img src="./images/live_contents/pause_s.png" alt="일시정지"></a>
+                            <a href="#"><img src="./images/live_contents/time.png" alt="시간"></a>
+                            <a href="#"><img src="./images/live_contents/sound.png" alt="음량"></a>
+                            <span>9:45 / 12:30</span>
+                        </div>
+                        <div class="right">
+                            <a href="#"><img src="./images/live_contents/settings.png" alt="설정"></a>
+                            <a href="#"><img src="./images/live_contents/channel.png" alt="전체 채널"></a>
+                            <a href="#"><img src="./images/live_contents/popup_player.png" alt="팝업 플레이어"></a>
+                            <a href="#"><img src="./images/live_contents/wide.png" alt="전체화면"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,6 +274,114 @@
                         <p>식물키우기</p>
                     </div>
                 </a>
+            </div>
+            <div class="recommend">
+                <section class="recommend_channel">
+                    <h2>같은 시간대 종편/보도 채널</h2>
+                    <div class="swiper-container" id="swiper_channel">
+                        <div class="swiper-wrapper" id="channel_wrap">
+                            <a href="#" class="swiper-slide" id="series_001">
+                                <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
+                                <span>나 혼자 산다</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_002">
+                                <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                                <span>전지적 참견 시점</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_001">
+                                <img src="./images/search/search_series_003.jpg" alt="나 혼자 산다">
+                                <span>궁금한 이야기 Y</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_001">
+                                <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
+                                <span>나 혼자 산다</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_002">
+                                <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                                <span>전지적 참견 시점</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_001">
+                                <img src="./images/search/search_series_003.jpg" alt="나 혼자 산다">
+                                <span>궁금한 이야기 Y</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_001">
+                                <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
+                                <span>나 혼자 산다</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_002">
+                                <img src="./images/search/search_series_002.jpg" alt="나 혼자 산다">
+                                <span>전지적 참견 시점</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_001">
+                                <img src="./images/search/search_series_003.jpg" alt="나 혼자 산다">
+                                <span>궁금한 이야기 Y</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_001">
+                                <img src="./images/search/search_series_001.jpg" alt="나 혼자 산다">
+                                <span>나 혼자 산다</span>
+                            </a>
+                        </div>
+                        <div class="swiper-button-prev" id="channel_prev">
+                            <img src="./images/search/slide_prev.png" alt="이전">
+                        </div>
+                        <div class="swiper-button-next" id="channel_next">
+                            <img src="./images/search/slide_next.png" alt="다음">
+                        </div>
+                    </div>
+                </section>
+                <section class="relevant_vod">
+                    <h2>관련VOD</h2>
+                    <div class="swiper-container" id="swiper_channel">
+                        <div class="swiper-wrapper" id="channel_wrap">
+                            <a href="#" class="swiper-slide" id="series_001">
+                                <img src="./images/search/search_movie_001.jpg" alt="나 혼자 산다">
+                                <span>외계+인 2부</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_002">
+                                <img src="./images/search/search_movie_002.jpg" alt="나 혼자 산다">
+                                <span>찰리의 초콜릿 공장</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_003">
+                                <img src="./images/search/search_movie_003.jpg" alt="나 혼자 산다">
+                                <span>해리포터와 마법사의 돌</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_001">
+                                <img src="./images/search/search_movie_001.jpg" alt="나 혼자 산다">
+                                <span>외계+인 2부</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_002">
+                                <img src="./images/search/search_movie_002.jpg" alt="나 혼자 산다">
+                                <span>찰리의 초콜릿 공장</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_003">
+                                <img src="./images/search/search_movie_003.jpg" alt="나 혼자 산다">
+                                <span>해리포터와 마법사의 돌</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_001">
+                                <img src="./images/search/search_movie_001.jpg" alt="나 혼자 산다">
+                                <span>외계+인 2부</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_002">
+                                <img src="./images/search/search_movie_002.jpg" alt="나 혼자 산다">
+                                <span>찰리의 초콜릿 공장</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_003">
+                                <img src="./images/search/search_movie_003.jpg" alt="나 혼자 산다">
+                                <span>해리포터와 마법사의 돌</span>
+                            </a>
+                            <a href="#" class="swiper-slide" id="series_001">
+                                <img src="./images/search/search_movie_001.jpg" alt="나 혼자 산다">
+                                <span>외계+인 2부</span>
+                            </a>
+                        </div>
+                        <div class="swiper-button-prev" id="channel_prev">
+                            <img src="./images/search/slide_prev.png" alt="이전">
+                        </div>
+                        <div class="swiper-button-next" id="channel_next">
+                            <img src="./images/search/slide_next.png" alt="다음">
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>

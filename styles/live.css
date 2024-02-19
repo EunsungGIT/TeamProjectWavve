@@ -78,15 +78,17 @@ main .live .live_title #filter {
 }
 main .live .live_title #filter option {color: #a5a5a5;}
 main .live .live_video {
-    display: flex; flex-flow: row wrap;
+    display: flex; flex-flow: row nowrap;
 }
 main .live .live_video a {
-    margin-bottom: 40px;
+    margin: 0 10px 40px 0; width: calc(100% / 5 - 10px);
     border-radius: 10px; position: relative;
+    flex: 1;
+    
 }
 main .live .live_video a video {
-    width: calc(100% - 20px); height: 135px;
-    border-radius: 10px;
+    height: 135px; border-radius: 10px;
+    width: 100%;
 }
 main .live .live_video a #mutedBtn {
     width: 30px; position: absolute;
