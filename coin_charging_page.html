@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +18,6 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/coin_charging_page.css">
 </head>
-
 <body>
     <form name="frm_payment" id="frm_payment1" method="post">
         <div class="coin_charging_wrap">
@@ -31,8 +29,8 @@
                     <li> <a href="#" class="tap_taget">일반 충전</a></li>
                     <li> <a href="#" class="not_tap_taget">자동 충전</a></li>
                 </ul>
-                <!--  -->
-                <div class="charging_wrap">
+                <div class="nomal_charging_coin"> 
+                <div class="charging_wrap ">
                     <div class="charging_content">
                         <table class="details_payment_table">
                             <caption class="table_title">결제내용</caption>
@@ -199,21 +197,14 @@
                         </span>
                     </p>
                 </div>
+            </div> <!-- 하나 더 추가 -->
             </div>
         </div>
     </form>
     <!-- 자동충전 -->
-    <form name="frm_payment" id="frm_payment1" method="post">
+    <form name="frm_payment" id="frm_payment2" class="auto_charging_coin" method="post">
         <div class="coin_charging_wrap">
-            <div class="coin_charging_title">
-                <h1>코인충전</h1>
-            </div>
-            <div class="coin_charging_middle">
-                <ul class="coin_charging_tap">
-                    <li> <a href="#" class="not_tap_taget">일반 충전</a></li>
-                    <li> <a href="#" class="tap_taget">자동 충전</a></li>
-                </ul>
-                <!--  -->
+            <div class="coin_charging_middle auto_coin_charging_middle">
                 <div class="charging_wrap">
                     <div class="charging_content">
                         <table class="details_payment_table">
