@@ -87,7 +87,7 @@ section .contents .content_box form fieldset ul li button {
 }
 /* 회원가입 버튼 */
 section .contents .content_box form fieldset #join_btn {
-    width: 100%; background: #a5a5a5; padding: 20px 0;border-radius: 100px;
+    width: 100%; background: #717171; padding: 20px 0;border-radius: 100px;
     color: #fff;
 }
 /* 하단 */
@@ -221,4 +221,20 @@ section .popup .background .close  {
 section .popup .background .close a {}
 section .popup .background .close a img {
     width: 30px; height: 30px; 
+}
+
+
+.login_show {
+    animation: login_show 0.5s both;
+}
+.login_hide {
+    animation: login_hide 0.5s both;
+}
+@keyframes login_show {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes login_hide {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
 }
