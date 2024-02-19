@@ -17,7 +17,7 @@ main .purchasing_wrap .purchasing_middle .purchasing_title_tap {    border-botto
 /* 개별구매 탭*/
 main .purchasing_wrap  .purchasing_middle .purchasing_title_tap .taget {
     color: #fff; font-size: 1.125rem;
-    border-bottom: 4px solid #1351f9;
+    /* border-bottom: 4px solid #1351f9; */
     line-height: 63px;  
     padding: 0 10px 19px;
     margin-right: 10px;
@@ -45,4 +45,11 @@ main .purchasing_wrap .purchasing_middle .not_purchasing_btm .not_purchasing img
 main .purchasing_wrap .purchasing_middle .not_purchasing_btm .not_purchasing  p {
     font-size: 22px; color: #a5a5a5;
     margin-top: 10px;
+}
+
+
+
+.mypage_border {
+    border-bottom: 4px solid #1351f9;
+    padding: 0 10px 19px;
 }
