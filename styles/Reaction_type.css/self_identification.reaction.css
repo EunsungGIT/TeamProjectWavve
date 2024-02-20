@@ -1,0 +1,22 @@
+@media screen and (max-width:1240px){
+    section {padding: 0 60px;}
+
+}
+@media screen and (max-width:768px){
+    section .self_wrap .contests_background .contents {
+    margin: 0 auto;
+    max-width: 500px; padding: 40px  ;
+    background: #252525; overflow: hidden;
+}
+
+section .self_wrap .contents h2 {
+    font-size: 1.5rem  ;
+}
+section .self_wrap .contents h2 em {
+    font-size: 1.5rem;
+}
+
+section .self_wrap .contents .banner img { 
+    max-width: 420px;  margin-bottom: 54px;
+}
+}
