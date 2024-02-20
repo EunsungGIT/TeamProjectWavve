@@ -124,11 +124,11 @@ share_close.addEventListener('click',()=>{
 })
 
 // 스케줄 swiper
-var mySwiper = new Swiper('#swiper_schedule', { 
+var mySwiper = new Swiper('.swiper_schedule', { 
     slidesPerView: 4,
     navigation:{
-        nextEl:'#swiper_schedule #schedule_next',
-        prevEl:'#swiper_schedule #schedule_prev',
+        nextEl:'.swiper_schedule #schedule_next',
+        prevEl:'.swiper_schedule #schedule_prev',
     },
 })
 // 스케줄 알람
@@ -174,12 +174,12 @@ all_recommend[1].addEventListener('click', () => {
 });
 
 // 추천 영상 swiper
-var mySwiper = new Swiper('#swiper_channel', { 
+var mySwiper = new Swiper('.swiper_channel', { 
     slidesPerView: 2,
     spaceBetween: 10,
     navigation:{
-        nextEl:'#swiper_channel #channel_next',
-        prevEl:'#swiper_channel #channel_prev',
+        nextEl:'.swiper_channel .channel_next',
+        prevEl:'.swiper_channel .channel_prev',
     },
     breakpoints:{
         768: {

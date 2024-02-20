@@ -85,18 +85,11 @@ main .live .live_video {
 main .live .live_video a {
     margin: 0 10px 40px 0; width: calc(100% / 5 - 10px);
     border-radius: 10px; position: relative;
-    flex: 1;
-    
 }
 main .live .live_video a video {
-    height: 135px; border-radius: 10px;
-    width: 100%;
+    border-radius: 10px;
+    width: 100%; transition: 0.5s;
 }
-main .live .live_video a #mutedBtn {
-    width: 30px; position: absolute;
-    right: 10px; bottom: 60px;
-}
-main .live .live_video a #mutedBtn img {width: 100%;}
 main .live .live_video a .playbar {
     background: rgba(0, 0, 0, 0.2); border-bottom-left-radius: 10px;
     border-bottom-right-radius: 50px;
