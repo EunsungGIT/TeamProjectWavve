@@ -1,11 +1,12 @@
 /* 시청예약 */
 const reservation_table = document.querySelectorAll('.reservation_table a')
 const reservation_bg = document.querySelector('.reservation_bg')
+const reservation = document.querySelector('.reservation')
 const reservation_close = document.querySelector('.reservation #close')
 
 reservation_bg.style.display = 'none'
 reservation_table[0].addEventListener('click',()=>{
-    reservation_bg.classList.add('wide')
+    reservation.classList.add('wide')
     reservation_bg.style.display = 'flex'
 })
 reservation_close.addEventListener('click',()=>{

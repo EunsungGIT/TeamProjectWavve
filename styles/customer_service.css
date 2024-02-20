@@ -121,11 +121,12 @@ main .customer_service .faq .faq_top #faqFrm fieldset {
     display: flex; justify-content: space-between;
 }
 main .customer_service .faq .faq_top #faqFrm fieldset #faq_search {
-    width: 560px; height: 46px; font-size: 0.875rem;
+    width: 100%; height: 46px; font-size: 0.875rem;
     padding: 0 20px; background: #2f2f2f; color: #a5a5a5;
+    border-radius: 10px;
 }
 main .customer_service .faq .faq_top #faqFrm fieldset #faqBtn {
-    width: 119px; height: 46px;
+    width: 119px; height: 46px; margin-left: 10px;
     background: #1351f9; color: #fff;
     border-radius: 50px; font-size: 0.813rem;
     font-weight: 700;
