@@ -22,6 +22,7 @@ main .open {
     display: flex; justify-content: center;
 }
 main .open img {}
+
 main .membership {
     max-width: 1240px; margin: 0 auto;
     padding-bottom: 80px;

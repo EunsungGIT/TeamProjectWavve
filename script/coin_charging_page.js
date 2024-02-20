@@ -47,16 +47,14 @@ coin_charging_title[1].addEventListener("click", ()=> {
 })
 
 /* 자세히보기 */
-
-const coin_view_title = document.querySelector("#card_btm_more_noti > label")
+/* 일반충전 자세히보기 */
+/* const coin_view_title = document.querySelector("#card_btm_more_noti > label")
 const coin_view_content = document.querySelector(".card_btm_more_wrap")
 
 coin_view_content.style.display = "none"
 
 coin_view_title.addEventListener("click", ()=>{
-   /*  coin_view_content.style.display = "block" */
-
-    if(coin_view_content) {
+   if(coin_view_content) {
         coin_view_content.style.display = "block"
     } else {
         coin_view_title.addEventListener("click", ()=>{
@@ -64,6 +62,57 @@ coin_view_title.addEventListener("click", ()=>{
     })
     }
 });
+ */
+ /*  coin_view_content.style.display = "block" */
 
+/*    coin_view_content.classList.add("card_btm_more_wrap")
+   coin_view_title.classList.remove("card_btm_more_wrap") */
+
+
+
+
+/* 탭  */
+const tap_taget = document.querySelector(".tap_taget")
+const not_tap_taget = document.querySelector(".not_tap_taget")
+
+tap_taget.classList.add("coin_mypage_border")
+
+
+
+not_tap_taget.addEventListener("click",()=>{
+    not_tap_taget.classList.add("coin_mypage_border")
+    tap_taget.classList.remove("coin_mypage_border")
+})
+
+tap_taget.addEventListener("click",()=>{
+    tap_taget.classList.add("coin_mypage_border")
+    not_tap_taget.classList.remove("coin_mypage_border")
+})
+/* 탭 끝 */
 
 /* 가격변환 */
+
+
+const price_blue_btn = document.querySelector(".radio_btn")
+
+document.querySelectorAll(".price_blue_btn").forEach(radio_btn => {
+    price_blue_btn.addEventListener("click",()=>{
+
+    });
+})
+
+/* 충전할 코인 선택 */
+
+/* 동일한 인덱스의 배열값 */
+
+const blue_price_btn = document.querySelectorAll(".radio_btn_style label")
+
+const coin_total = document.querySelector(".table_total_price #total_span")
+
+const btn_input = document.querySelectorAll(".radio_btn")
+
+
+
+blue_price_btn[0].addEventListener("click", ()=>{
+    btn_input[0].value = coin_total.innerHTML
+})

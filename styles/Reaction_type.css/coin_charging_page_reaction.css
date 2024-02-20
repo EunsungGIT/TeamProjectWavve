@@ -1,0 +1,42 @@
+@media screen and (max-width:1240px){
+}
+
+@media screen and (max-width:708px){
+
+
+}
+
+
+@media screen and (max-width:510px){
+
+    /* 일반충전 */
+    #frm_payment1 .coin_charging_wrap .coin_charging_middle .nomal_charging_coin .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li {
+        width: 100%;	
+    }
+
+    #frm_payment1 .coin_charging_wrap .coin_charging_middle .nomal_charging_coin .payment_boxs .payment_box .payment_content .card_btm .card_btm_content {
+        padding: 20px 20px 280px 20px;
+    }
+
+    #frm_payment1 .coin_charging_wrap .coin_charging_middle .nomal_charging_coin .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style label
+{
+    line-height: 25px;
+}
+
+
+
+    /* 자동충전 */
+    #frm_payment2 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content li {
+        width: 100%;
+    }
+
+    #frm_payment2 .coin_charging_wrap .coin_charging_middle .payment_boxs .payment_box .payment_content .card_btm .card_btm_content {
+        padding: 20px 20px 280px 20px;
+    }
+
+    #frm_payment2 .coin_charging_wrap .coin_charging_middle .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style label
+{
+    line-height: 25px;
+}
+    
+}

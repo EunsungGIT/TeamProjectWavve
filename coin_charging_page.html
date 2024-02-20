@@ -15,8 +15,9 @@
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/coin_charging_page.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/Reaction_type.css/coin_charging_page_reaction.css">
 </head>
 <body>
     <form name="frm_payment" id="frm_payment1" method="post">
@@ -69,8 +70,7 @@
                                     <th class="row">최종 결제 금액</th>
                                     <td>
                                         <p class="table_total_price">
-                                            <span id="total_span">3,000</span>
-                                            원
+                                            <span id="total_span"></span>
                                         </p>
                                     </td>
                                 </tr>
@@ -170,6 +170,7 @@
                         <span>
                             미사용 상품은 구매 후 7일 내 청약철회 가능하며, 법정대리인의 동의를 받지 않은 미성년자 거래는 취소 가능합니다.
                             <a href="#" id="card_btm_more_noti">
+                                <!-- 자동충전 -->
                                 <label for="card_btm_noti">자세히보기</label>
                             </a>
                             <span class="card_btm_more_wrap">
@@ -219,23 +220,23 @@
                                     <td colspan="3">
                                         <div class="radio_btn_style">
                                             <!-- radio_btn_style label::before -->
-                                            <input type="radio" id="radio_btn1" class="radio_btn" name="blue_btn"
-                                                value="radio_btn1" checked="checked" class="radio_on">
-                                            <label for="radio_btn1">3,000 코인(자동결제) (+보너스 코인 10% 지급)</label>
+                                            <input type="radio" id="radio_btn4" class="radio_btn" name="blue_btn"
+                                                value="3,000원" checked="checked" class="radio_on">
+                                            <label for="radio_btn4">3,000 코인(자동결제) (+보너스 코인 10% 지급)</label>
                                         </div>
                                         <div class="radio_btn_style">
-                                            <input type="radio" id="radio_btn2" class="radio_btn" name="blue_btn"
-                                                value="radio_btn2" class="radio_on">
-                                            <label for="radio_btn2">5,000 코인(자동결제) (+보너스 코인 10% 지급)</label>
+                                            <input type="radio" id="radio_btn5" class="radio_btn" name="blue_btn"
+                                                value="5,000원" class="radio_on">
+                                            <label for="radio_btn5">5,000 코인(자동결제) (+보너스 코인 10% 지급)</label>
                                         </div>
                                         <div class="radio_btn_style">
                                             <input type="radio" id="radio_btn3" class="radio_btn" name="blue_btn"
-                                                value="radio_btn3" class="radio_on">
+                                                value="10,000원" class="radio_on">
                                             <label for="radio_btn3">10,000 코인 (+보너스 코인 10% 지급)</label>
                                         </div>
                                         <div class="radio_btn_style">
                                             <input type="radio" id="radio_btn4" class="radio_btn" name="blue_btn"
-                                                value="radio_btn4" class="radio_on">
+                                                value="30,000원" class="radio_on">
                                             <label for="radio_btn4">30,000 코인 (+보너스 코인 10% 지급)</label>
                                         </div>
                                     </td>
@@ -244,7 +245,7 @@
                                     <th class="row">최종 결제 금액</th>
                                     <td>
                                         <p class="table_total_price">
-                                            <span id="total_span">3,000</span>
+                                            <span id="total_span"></span>
                                             원
                                         </p>
                                     </td>
