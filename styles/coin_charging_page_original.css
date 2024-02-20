@@ -154,7 +154,8 @@
     height:23px;
     margin-right:10px; 
 }
-#frm_payment1 .coin_charging_wrap .coin_charging_middle .nomal_charging_coin .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style input:checked + label::before{
+
+#frm_payment1 .coin_charging_wrap .coin_charging_middle .nomal_charging_coin .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style input:checked + label::before {
     position: relative; bottom: -7px;
     content: '';
     display: inline-block;
@@ -163,6 +164,7 @@
     width: 23px;
     height:23px;
 }
+
 /* radio_btn1 */
 #frm_payment1 .coin_charging_wrap .coin_charging_middle .nomal_charging_coin .charging_wrap .charging_content .details_payment_table tbody tr td .radio_btn_style #radio_btn1{}
 /* 라디오 버튼 calss 공통선택자  */

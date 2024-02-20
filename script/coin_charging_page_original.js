@@ -46,9 +46,9 @@ coin_charging_title[1].addEventListener("click", ()=> {
 })
 
 
-/* 탭  */
-const tap_taget = document.querySelector(".tap_taget")
-const not_tap_taget = document.querySelector(".not_tap_taget")
+/* 탭------------------------------------------------------------ */
+const tap_taget = document.querySelector(".tab_title active")
+const not_tap_taget = document.querySelector(".tab_title")
 
 tap_taget.classList.add("coin_mypage_border")
 
@@ -83,11 +83,10 @@ document.querySelectorAll(".price_blue_btn").forEach(radio_btn => {
 const coin_total = document.querySelector(".table_total_price #total_span")
 const btn_input = document.querySelectorAll(".radio_btn")
 
-<<<<<<< HEAD
+/* 
 blue_price_btn[4].addEventListener("click", ()=>{
     btn_input[4].value = coin_total.innerHTML
     console.log(btn_input[4])
-=======
 
 for(let i of btn_input){
     i.addEventListener('click',()=>{
@@ -96,5 +95,5 @@ for(let i of btn_input){
 }
 blue_price_btn[0].addEventListener("click", ()=>{
     btn_input[0].value = coin_total.innerHTML
->>>>>>> 16374425c77da040dd64a662b79229c527b7b529
 })
+ */

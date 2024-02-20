@@ -13,8 +13,16 @@ body, html {background:#1b1b1b;}
 }
 .coin_charging_wrap .coin_charging_middle .tab_title:first-child {margin-right:70px;}
 .coin_charging_wrap .coin_charging_middle .active {
-    color:#fff; border-bottom:2px solid #1351f9;
+    /* js classList add로 */
+    /* color:#fff; border-bottom:2px solid #1351f9; */
 }
+
+/* 탭 js */
+/* 공통 탭 보더 */
+.coin_mypage_border {
+    border-bottom: 4px solid #1351f9;
+}
+
 /* --------------------------------일반&자동 공통 디자인 */
 #frm_payment1, #frm_payment2 {padding:20px;}
 #frm_payment1 fieldset, #frm_payment2 fieldset {}
@@ -34,16 +42,49 @@ body, html {background:#1b1b1b;}
     width:calc(100% - 150px); padding-left:15px;
     display:flex; flex-flow:column nowrap;
 }
+/* 상단 라디오 버튼-------------------------- */
 #frm_payment1 fieldset .charging_content .charging_coin_list .right label,
 #frm_payment2 fieldset .charging_content .charging_coin_list .right label {
     padding:10px 0;
+    display: flex;
+    flex-flow: row nowrap;
 }
+
+#frm_payment1 fieldset .charging_content .charging_coin_list .right label::before,
+#frm_payment2 fieldset .charging_content .charging_coin_list .right label::before {
+    position: relative; bottom: 0px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+    margin-right:10px;
+    
+}
+
+/* 기존 라디오 버튼 숨김  */
 #frm_payment1 fieldset .charging_content .charging_coin_list .right label input[id^=normal_coin],
-#frm_payment2 fieldset .charging_content .charging_coin_list .right label input[id^=auto_coin] {}
+#frm_payment2 fieldset .charging_content .charging_coin_list .right label input[id^=auto_coin] {
+    display: none;
+}
+
+#frm_payment1 fieldset .charging_content .charging_coin_list .right label input[id^=normal_coin]:checked + label::before,
+#frm_payment2 fieldset .charging_content .charging_coin_list .right label input[id^=auto_coin]:checked + label::before {
+    position: relative; bottom: 0px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak_input.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+}
+
 #frm_payment1 fieldset .charging_content .charging_coin_list .right label span,
 #frm_payment2 fieldset .charging_content .charging_coin_list .right label span {
     color:#a5a5a5;
-}
+} 
+/* ---------------------------------------------------------------------------- */
 #frm_payment1 fieldset .charging_content .coin_result,
 #frm_payment2 fieldset .charging_content .coin_result {display:flex; padding:20px 0;}
 #frm_payment1 fieldset .charging_content .coin_result .left,
@@ -64,19 +105,63 @@ form fieldset .payment_box h2 {
     color:#fff; font-size:1.5rem; padding:50px 0 15px;
 }
 form fieldset .payment_box .payment_content {}
+/* 빠른 결제 라디오 버튼 스타일 -----------------------------------------------*/
 form fieldset .payment_box .payment_content .fast_pay {
     background:#2f2f2f; padding:10px;
 }
+form fieldset .payment_box .payment_content .fast_pay input[type=radio] {display: none;}
+
 form fieldset .payment_box .payment_content .fast_pay input[type=radio] {}
+
+form fieldset .payment_box .payment_content .fast_pay input[type=radio]:checked + label::before {
+    position: relative; bottom: -5px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak_input.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+}
 form fieldset .payment_box .payment_content .fast_pay label[for] {color:#a5a5a5;}
+form fieldset .payment_box .payment_content .fast_pay label[for]::before {
+    position: relative; bottom: -5px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+    margin-right:10px;
+}
 form fieldset .payment_box .payment_content .card_pay_ment_box {}
 form fieldset .payment_box .payment_content .card_pay_ment_box .card_content {color:#a5a5a5; padding:20px 0;}
 form fieldset .payment_box .payment_content .card_btm {}
 form fieldset .payment_box .payment_content .card_btm .other_pay {
     background:#2f2f2f; padding:10px;
 }
-form fieldset .payment_box .payment_content .card_btm .other_pay input[type=radio] {}
+form fieldset .payment_box .payment_content .card_btm .other_pay input[type=radio] {display: none;}
+form fieldset .payment_box .payment_content .card_btm .other_pay input[type=radio]:checked + label::before {
+    position: relative; bottom: -5px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak_input.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+}
+
 form fieldset .payment_box .payment_content .card_btm .other_pay label[for] {color:#a5a5a5;}
+
+form fieldset .payment_box .payment_content .card_btm .other_pay label[for]::before {
+    position: relative; bottom: -5px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+    margin-right:10px;
+}
 form fieldset .payment_box .payment_content .card_btm .card_btm_content {
     display:flex; flex-flow:row wrap; justify-content: flex-start;
     width:80%; margin:30px auto;
@@ -111,3 +196,4 @@ form fieldset .card_btm_btn li button[id*=payment] {
 .card_btm_contents * {color:#5e5e5e; font-size:0.85rem;}
 .card_btm_contents p {line-height:1.7;}
 .card_btm_contents p span {}
+

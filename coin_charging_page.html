@@ -25,8 +25,8 @@
                 <h1>코인충전</h1>
             </div>
             <div class="coin_charging_middle">
-                <a href="#" class="tab_title active">일반 충전</a>
-                <a href="#" class="tab_title">자동 충전</a>
+                <a href="#" class="tab_title tab_active">일반 충전</a>
+                <a href="#" class="tab_title tab_auto">자동 충전</a>
             </div>
         </div>
     <div class="coin_wrap">
@@ -40,20 +40,28 @@
                     <div class="charging_coin_list">
                         <div class="left">충전할 코인 선택</div>
                         <div class="right">
+                            <!-- 0221 저녁 ~ 아침 8시
+                            1. name을 동일하게 부여해서 연관성을 만들었는데 동시에 표기됨. - > 수정
+                            2. 스와이퍼 적용을 다시해야하는데 기존거 주석 풀어보니 감이 정말 1도 안온다. - > x
+                            3. 라디오 버튼 span에다 before(회색)  input에 + chk(파랑색) 주면 옆에 span 붕괴된다.
+                            -> 수정완료
+                            4. 상단 라디오버튼 클릭 x ->
+                            5. 탭 아래 효과 x 
+                            -->
                             <label>
-                                <input type="checkbox" name="chk" id="normal_coin1">
+                                <input type="checkbox" name="chk1" id="normal_coin1" checked="checked">
                                 <span>3,000코인</span>
                             </label>
                             <label>
-                                <input type="checkbox" name="chk" id="normal_coin2">
+                                <input type="checkbox" name="chk1" id="normal_coin2">
                                 <span>5,000코인</span>
                             </label>
                             <label>
-                                <input type="checkbox" name="chk" id="normal_coin3">
+                                <input type="checkbox" name="chk1" id="normal_coin3">
                                 <span>10,000코인(+보너스 코인 10%지급)</span>
                             </label>
                             <label>
-                                <input type="checkbox" name="chk" id="normal_coin4">
+                                <input type="checkbox" name="chk1" id="normal_coin4">
                                 <span>30,000코인(+보너스 코인 10%지급)</span>
                             </label>
                         </div>
@@ -68,12 +76,12 @@
                     <h2>결제수단 선택</h2>
                     <div class="payment_content">
                         <div class="fast_pay">
-                            <input type="radio" id="normal_pay_btn" name="card_btms" value="normal_pay_btn">
+                            <input type="radio" id="normal_pay_btn" name="card_btms1" value="normal_pay_btn">
                             <label for="normal_pay_btn">빠른결제</label>
                         </div>
                         <div class="card_pay_ment_box">
                             <!-- 스와이프 시작. -->
-                            <div class="swiper-container crad_container">
+                           <!--  <div class="swiper-container crad_container">
                                 <div class="swiper-wrapper card_wrap">
                                     <div class="swiper-slide kb_img">
                                         <a href="#"><img src="./images/holding_coin/coin_card-kb.png" alt=""></a>
@@ -89,13 +97,13 @@
                                 <div class="btm_btn">
                                     <div class="swiper-pagination"></div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- 스와이퍼 끝 -->
                             <p class="card_content">등록된 카드는 [회원정보]에서 관리하실 수 있습니다.</p>
                         </div>
                         <div class="card_btm">
                             <div class="other_pay">
-                                <input type="radio" id="card_normal_btms" name="card_normal_btms" value="card_normal_btms">
+                                <input type="radio" id="card_normal_btms" name="card_btms1" value="card_normal_btms">
                                 <label for="card_normal_btms">다른 결제수단</label>
                             </div>
                             <!-- 다른 결제 수단에 신용카드 이미지 -->
@@ -146,19 +154,19 @@
                         <div class="left">충전할 코인 선택</div>
                         <div class="right">
                             <label>
-                                <input type="checkbox" name="chk" id="auto_coin1">
+                                <input type="checkbox" name="chk2" id="auto_coin5" checked="checked" >
                                 <span>3,000코인(+보너스 코인 10%지급)</span>
                             </label>
                             <label>
-                                <input type="checkbox" name="chk" id="auto_coin2">
+                                <input type="checkbox" name="chk2" id="auto_coin6">
                                 <span>5,000코인(+보너스 코인 10%지급)</span>
                             </label>
                             <label>
-                                <input type="checkbox" name="chk" id="auto_coin3">
+                                <input type="checkbox" name="chk2" id="auto_coin7">
                                 <span>10,000코인(+보너스 코인 10%지급)</span>
                             </label>
                             <label>
-                                <input type="checkbox" name="chk" id="auto_coin4">
+                                <input type="checkbox" name="chk2" id="auto_coin8">
                                 <span>30,000코인(+보너스 코인 10%지급)</span>
                             </label>
                         </div>
@@ -173,7 +181,7 @@
                     <h2>결제수단 선택</h2>
                     <div class="payment_content">
                         <div class="fast_pay">
-                            <input type="radio" id="auto_pay_btn" name="card_btms" value="auto_pay_btn">
+                            <input type="radio" id="auto_pay_btn" name="card_btms2" value="auto_pay_btn">
                             <label for="auto_pay_btn">빠른결제</label>
                         </div>
                         <div class="card_pay_ment_box">
@@ -182,7 +190,7 @@
                         </div>
                         <div class="card_btm">
                             <div class="other_pay">
-                                <input type="radio" id="card_auto_btms" name="card_auto_btms" value="card_auto_btms">
+                                <input type="radio" id="card_auto_btms" name="card_btms2" value="card_auto_btms">
                                 <label for="card_auto_btms">다른 결제수단</label>
                             </div>
                             <!-- 다른 결제 수단에 신용카드 이미지 -->
@@ -245,6 +253,6 @@
             </p>
         </div>
     </div>
-    <script src="./script/coin_charging_page.js"></script>
+    <script src="./script/coin_charging.js"></script>
 </body>
 </html>
