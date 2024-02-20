@@ -27,6 +27,13 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
     100% {opacity: 0;}
 }
 
+/* 알림함 및 시청예약 모션 */
+.wide {animation: wide 0.5s both;}
+@keyframes wide {
+    0% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}
+
 /* 알림함 */
 .notification {
     position: fixed; z-index: 9999;

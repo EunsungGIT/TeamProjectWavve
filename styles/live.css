@@ -3,13 +3,13 @@ header .h_bottom_wrap .h_bottom nav > a:nth-of-type(2) {color: #fff;}
 
 /* 시청예약 */
 .reservation_bg {
-    display: none;
     position: absolute; width: 100%; height: 100vh;
-    z-index: 500;
+    z-index: 500; display: flex; justify-content: center;
+    align-items: center;
     background: rgba(0, 0, 0, 0.5);
 }
 .reservation_bg .reservation {
-    width: 560px;
+    width: 560px; position: relative;
 }
 .reservation_bg .reservation .reservation_title {
     height: 86px; display: flex; align-items: center;
@@ -35,8 +35,10 @@ header .h_bottom_wrap .h_bottom nav > a:nth-of-type(2) {color: #fff;}
     margin-top: 13px;
 }
 .reservation_bg .reservation .reservation_info p img {}
-.reservation_bg .reservation .reservation_wrap #close {}
-.reservation_bg .reservation .reservation_wrap #close img {}
+.reservation_bg .reservation #close {
+    position: absolute; top: 0; right: -40px;
+}
+.reservation_bg .reservation #close img {}
 
 /* main */
 main {background: #1b1b1b;}
