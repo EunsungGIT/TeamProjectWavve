@@ -12,6 +12,10 @@ main .purchasing_wrap .purchasing_title h1 {
 }
 /* 탭 전체*/
 main .purchasing_wrap .purchasing_middle .purchasing_title_tap {    border-bottom: 1px solid #2f2f2f; height: 68px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea5031185ca0922c313e7bd40f6ffbb3965b6b14
 }
 /* 개별구매 탭*/
 main .purchasing_wrap  .purchasing_middle .purchasing_title_tap .taget {
@@ -48,5 +52,5 @@ main .purchasing_wrap .purchasing_middle .not_purchasing_btm .not_purchasing  p 
 
 .mypage_border {
     border-bottom: 4px solid #1351f9;
-    padding: 0 10px 19px;
+    padding-bottom: 19px;
 }
