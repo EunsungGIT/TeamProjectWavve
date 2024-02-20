@@ -109,10 +109,13 @@ category.addEventListener('mouseleave', ()=>{
 // 카테고리 내 전체 카테고리
 const category_m_a = document.querySelectorAll('.category_m a')
 const category_all = document.querySelector('.category_s')
-
+const close_category = document.getElementById('close_btn')
 category_all.style.display = 'none'
 category_m_a[0].addEventListener('click', ()=>{
     category_all.style.display = 'block'
+})
+close_category.addEventListener('click',()=>{
+    category_all.style.display = 'none'
 })
 
 // footer swiper

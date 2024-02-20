@@ -125,8 +125,8 @@ checking_all.addEventListener('click',function(){
         }
     }
 })
-let checking_count = 0
 console.log(essential[0],essential[1],essential[2],essential[3])
+let checking_count = 0
 
 for(let i of essential){
     i.addEventListener('click',function(){
@@ -143,9 +143,24 @@ for(let i of essential){
             }
             if(checking_count === 4){
                 checking_btn.style.backgroundColor = '#1351f9'
+                checking_btn.addEventListener('click',()=>{
+                    window.alert('member.wavve.com 내용: \n 안내 \n 신작 콘텐츠 및 이벤트 정보 수신등의 설정이 변경되었습니다.\n전송자 :콘텐츠 웨이브<주>\nSMS/이메일:수신함\n일자:2024.00.00\n회원 정보 수정에서 수신 동의 여부를 변결할 수 있습니다')
+                })
             }
             console.log(checking_count)
             console.log(i)
         }
     })
 }
+//화살표 클릭시  이동
+
+const arrow = document.querySelectorAll ('li > a > img')
+console.log(arrow)
+for(let i of arrow){
+    i.addEventListener('click',()=>{
+        window.location.href = './customer_service.html'
+    })
+}
+
+
+// window.alert('member.wavve.com 내용: \n 안내 \n 신작 콘텐츠 및 이벤트 정보 수신등의 설정이 변경되었습니다.\n전송자 :콘텐츠 웨이브<주>\nSMS/이메일:수신함\n일자:2024.00.00\n회원 정보 수정에서 수신 동의 여부를 변결할 수 있습니다')
