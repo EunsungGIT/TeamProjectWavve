@@ -22,7 +22,6 @@ const nomal_charging_coin =document.querySelector(".nomal_charging_coin")
 
 /* 초기 내용 숨기기 */
 
-/* nomal_charging_coin.style.display = "none" */
 auto_coin_charging.style.display = "none"
 
 
@@ -45,30 +44,6 @@ coin_charging_title[1].addEventListener("click", ()=> {
     coin_charging_title[0].parentElement.classList.remove("active");
     coin_charging_title[1].parentElement.classList.add("active")
 })
-
-/* 자세히보기 */
-/* 일반충전 자세히보기 */
-/* const coin_view_title = document.querySelector("#card_btm_more_noti > label")
-const coin_view_content = document.querySelector(".card_btm_more_wrap")
-
-coin_view_content.style.display = "none"
-
-coin_view_title.addEventListener("click", ()=>{
-   if(coin_view_content) {
-        coin_view_content.style.display = "block"
-    } else {
-        coin_view_title.addEventListener("click", ()=>{
-        coin_view_content.style.display = "none"  
-    })
-    }
-});
- */
- /*  coin_view_content.style.display = "block" */
-
-/*    coin_view_content.classList.add("card_btm_more_wrap")
-   coin_view_title.classList.remove("card_btm_more_wrap") */
-
-
 
 
 /* 탭  */
@@ -112,7 +87,11 @@ const coin_total = document.querySelector(".table_total_price #total_span")
 const btn_input = document.querySelectorAll(".radio_btn")
 
 
-
+for(let i of btn_input){
+    i.addEventListener('click',()=>{
+        console.log(i.value)
+    })
+}
 blue_price_btn[0].addEventListener("click", ()=>{
     btn_input[0].value = coin_total.innerHTML
 })
