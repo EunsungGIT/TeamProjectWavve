@@ -105,14 +105,10 @@ document.querySelectorAll(".price_blue_btn").forEach(radio_btn => {
 
 /* 동일한 인덱스의 배열값 */
 
-const blue_price_btn = document.querySelectorAll(".radio_btn_style label")
-
 const coin_total = document.querySelector(".table_total_price #total_span")
-
 const btn_input = document.querySelectorAll(".radio_btn")
 
-
-
-blue_price_btn[0].addEventListener("click", ()=>{
-    btn_input[0].value = coin_total.innerHTML
+blue_price_btn[4].addEventListener("click", ()=>{
+    btn_input[4].value = coin_total.innerHTML
+    console.log(btn_input[4])
 })
