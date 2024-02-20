@@ -1,0 +1,11 @@
+@media screen and (max-width:1240px){
+    main .mypage_top_wrap .mypage_top {
+        padding: 0 60px;
+    }
+    main .mypage_bottom_wrap .mypage_bottom {
+        padding: 0 60px;
+    }
+    main section {
+        padding: 0 60px;
+    }
+}

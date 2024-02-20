@@ -21,6 +21,10 @@ console.log(live_video,live_video_a)
 live_video_a.forEach((t,i)=>{
     t.addEventListener('mouseenter',()=>{
         live_video[i].play()
-        live_video_a[i].style.flex = '2'
+    })
+})
+live_video_a.forEach((t,i)=>{
+    t.addEventListener('mouseleave',()=>{
+        live_video[i].pause()
     })
 })
