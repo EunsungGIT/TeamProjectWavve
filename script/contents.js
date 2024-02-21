@@ -1,15 +1,33 @@
+/* a태그 */
+const a_all = document.querySelectorAll('body a')
+
+for(let i of a_all){
+    i.addEventListener('click',(e)=>{
+        e.preventDefault();
+    })
+}
+
 /* 비슷한 영화 및 남녀노소 모두, 오늘은 애니 앞으로 */
 var mySwiper = new Swiper('.wavve_images', { 
     loop:true,
-    slidesPerView: 5,
+    slidesPerView: 1,
     spaceBetween: 10,
     navigation:{
         nextEl:'.wavve_images .swiper-button-next',
         prevEl:'.wavve_images .swiper-button-prev',
     },
+    breakpoints:{
+        430: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1240: {
+            slidesPerView: 5,
+        },
+    },
 })
-
-//일반자바
 
 // 상단 자바스크립트
 const optionBtn =document.querySelector('#optionBtn')
@@ -17,7 +35,6 @@ const translation_all =document.querySelector('.button_m')
 let distinction = true
 console.log(optionBtn)
 console.log(translation_all)
-
 
 optionBtn.addEventListener('click',()=>{
     distinction = !distinction
@@ -28,7 +45,6 @@ optionBtn.addEventListener('click',()=>{
         translation_all.style.display = 'none'
     }
 })
-
 
 //클릭시 그 내용 보이기
 const translation_sub = document.querySelectorAll('.button_m a')
@@ -45,8 +61,6 @@ translation_sub[1].addEventListener('click',()=>{
     translation_all.style.display = 'none'
     distinction = true
 })
-
-
 
 // 관심
 const icon = document.querySelectorAll ('.icon a')
@@ -65,7 +79,6 @@ icon[0].addEventListener('click',()=>{
 })
 
 //공유
-
 const share = document.querySelector('.share_bg')
 const share_close = document.querySelector('.share > a')
 const copy_message = document.querySelector('.copy')
@@ -95,7 +108,6 @@ share_close.addEventListener('click',()=>{
     }, 500);
 })
 
-
 // 하단 정보 자바스크립트
 //제목변수
 const menu_title = document.querySelectorAll ('.menu_title')
@@ -124,7 +136,6 @@ menu_title.forEach((t,i)=>{
     })
 })
 
-
 //더보기 클릭시 상세정보로 가기
 const show_more = document.querySelector('.detail a')
 console.log(show_more)
@@ -150,7 +161,6 @@ let speack_variable = true
 // 음소거
 const video_muted = document.querySelector ('.contents video')
 console.log(video_muted)
-
 
 speak_btn.addEventListener('click',()=>{
     speack_variable = !speack_variable

@@ -549,11 +549,17 @@ footer .f_top_wrap .f_top #swiper_notice .move {
     height: 50px;
 }
 footer .f_top_wrap .f_top #swiper_notice .move #f_prev {left: -90px;}
+footer .f_top_wrap .f_top #swiper_notice .move #f_prev:hover {
+    filter: brightness(50%);
+}
 footer .f_top_wrap .f_top #swiper_notice .move #f_prev::after {display: none;}
 footer .f_top_wrap .f_top #swiper_notice .move #f_prev img {
     border-left: 1px solid #2f2f2f;
 }
 footer .f_top_wrap .f_top #swiper_notice .move #f_next {}
+footer .f_top_wrap .f_top #swiper_notice .move #f_next:hover {
+    filter: brightness(50%);
+}
 footer .f_top_wrap .f_top #swiper_notice .move #f_next::after {display: none;}
 footer .f_top_wrap .f_top #swiper_notice .move #f_next img {
     border-left: 1px solid #2f2f2f;

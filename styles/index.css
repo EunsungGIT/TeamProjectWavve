@@ -17,6 +17,9 @@
 .popup .popup_background .contents .top .close{
     position: relative; left: 10px;
 }
+.popup .popup_background .contents .top .close:hover {
+    filter: brightness(50%);
+}
 .popup .popup_background .contents .bottom{margin-top: 10px;}
 .popup .popup_background .contents .bottom label {
     color: #a5a5a5; font-weight: 400;
@@ -81,17 +84,22 @@ main .wrap #top_container #top_images .top_img a .top_img_font {
 
 /* 메인 배너 양옆 버튼 시작 --- */
 main .wrap #top_container #top_prev {
-    position: absolute; top: 50%; left: 100px;
+    position: absolute; top: 40%; left: 100px;
     width: 100px;
 }
+main .wrap #top_container #top_prev:hover {
+    filter: brightness(50%);
+}
 main .wrap #top_container #top_prev::after {display: none;}
-
 main .wrap #top_container #top_prev img {
     width: 100%;
 }
 main .wrap #top_container #top_next {
-    position: absolute; top: 50%; right: 100px;
+    position: absolute; top: 40%; right: 100px;
     width: 100px;
+}
+main .wrap #top_container #top_next:hover {
+    filter: brightness(50%);
 }
 main .wrap #top_container #top_next::after{display: none;}
 
@@ -103,20 +111,19 @@ main .wrap #top_container .btm_btn {
     margin-top: 20px;
 }
 /* 페이지네이션 */
-main .wrap #top_container .btm_btn .swiper-pagination {
-    display: inline-block;
-}
+main .wrap #top_container .btm_btn .swiper-pagination {}
 /* 페이지네이션 색상적용 */
 main .wrap #top_container .btm_btn .swiper-pagination .swiper-pagination-bullet {
-    background: #fff;
+    background: #fff; width: 10px; height: 10px;
 }
 /* 페이지네이션 끝 */
-main .wrap #top_container .btm_btn a {
-    width: 100px; position: relative; left: 100px;
+main .wrap #top_container .btm_btn .btn_pagination {
+    width: 300px; margin: 0 auto;
 }
-main .wrap #top_container .btm_btn a img {
-    width: 100px;
-} 
+main .wrap #top_container .btm_btn .btn_pagination a {
+    display: inline-block;
+}
+main .wrap #top_container .btm_btn .btn_pagination a img {}
 
 /*----------------------------밑에 하단 슬라이드 시작----------------------------*/
 

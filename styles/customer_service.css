@@ -307,10 +307,10 @@ main .customer_service .agree .agree_contents .agree_version {
     display: flex; justify-content: center;
     margin-top: 40px; 
 }
-main .customer_service .agree .agree_contents .agree_version #verFilter {
+main .customer_service .agree .agree_contents .agree_version .verFilter {
     color: #a5a5a5; background: #252525;
     padding: 8px 60px 8px 20px;
 }
-main .customer_service .agree .agree_contents .agree_version #verFilter option {
+main .customer_service .agree .agree_contents .agree_version .verFilter option {
     color: #a5a5a5;
 }

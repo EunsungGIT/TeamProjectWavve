@@ -16,8 +16,10 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/contents.css">
+    <link rel="stylesheet" href="./styles/Reaction_type.css/contents_reaction.css">
 </head>
 <body>
+    <!-- 공유 -->
     <div class="share_bg">
         <div class="share">
             <h2>공유</h2>
@@ -39,12 +41,15 @@
         </div>
         <div class="copy">링크를 복사했어요. 원하는 곳에 붙여넣기(CTRL + V)해주세요.</div>
     </div>
+    <!-- main -->
     <main>
         <section>
             <div class="favorite">관심영화로 등록했어요</div>
             <div class="contents">
                 <div class="video_bg"></div>
-                <video src="./video/contents.mp4" autoplay muted loop></video>
+                <div class="gradient_bg">
+                    <video src="./video/contents.mp4" autoplay muted loop></video>
+                </div>
                 <div class="video_intro">
                     <img src="./images/contents/only.svg" alt="오직 웨이브에서만">
                     <div class="logo">
@@ -57,7 +62,7 @@
                             <a href="#">자막</a>
                             <a href="#">더빙</a>
                         </div>
-                        <button type="button" id="buyBtn">이용권 구매하기</button>
+                        <button type="button" id="buyBtn" onclick="location.href = './membership.html'">이용권 구매하기</button>
                         <div class="icon">
                             <a href="#">
                                 <img src="./images/contents/heart.svg" alt="관심등록">
@@ -117,14 +122,14 @@
                                 <div class="swiper-wrapper wavve_img" >
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_003.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_003.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_003.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
                                 </div>
                                 <a href="#" class="swiper-button-prev prev" ><img src="./images/contents/slide_prev.png" alt=""></a>
                                 <a href="#" class="swiper-button-next next" ><img src="./images/contents/slide_next.png" alt=""></a>
@@ -137,16 +142,16 @@
                             </div>
                             <div class="swiper-container wavve_images" >
                                 <div class="swiper-wrapper wavve_img" >
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
-                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
                                 </div>
                                 <a href="#" class="swiper-button-prev prev" ><img src="./images/contents/slide_prev.png" alt=""></a>
                                 <a href="#" class="swiper-button-next next"><img src="./images/contents/slide_next.png" alt=""></a>
