@@ -83,7 +83,6 @@ main section .contents_info .info_title {
 }
 main section .contents_info .info_title a {
     color: #fff; font-size: 1.125rem;
-    border-bottom: 4px solid #1351f9;
     line-height: 63px;  
     padding: 0 10px 19px;
 }
@@ -263,4 +262,13 @@ main section .contents_info .information .information_box .information_contents 
 }
 main section .contents_info .information .information_box .information_contents .main_text .detailed_information dd .content_information span { 
 display:  flex ; flex-flow: column nowrap; margin-right: 16px;
+}
+
+main section .contents_info .info_contents .contents_item ul{
+    display: flex;
+}
+
+/* 자바스크립트용  */
+.contants_border {
+    border-bottom: 4px solid #1351f9;
 }

@@ -1,6 +1,6 @@
 /* 비슷한 영화 및 남녀노소 모두, 오늘은 애니 앞으로 */
 var mySwiper = new Swiper('#wavve_images', { 
-    loof:true,
+    loop:true,
     slidesPerView: 5,
     spaceBetween: 10,
     navigation:{
@@ -10,32 +10,30 @@ var mySwiper = new Swiper('#wavve_images', {
 })
 
 //일반자바
-const related_video = document.querySelector('.related_video')
-const recommendation = document.querySelector('.recommendation')
-const details =document.querySelector('.details')
 
-const info_contents =document.querySelector('.info_contents')
-const recommend =document.querySelector('.recommend')
-const information =document.querySelector('.information')
-console.log(related_video,recommendation,details)
-console.log(info_contents,recommend,information)
-recommend.style.display = 'none'
-information.style.display = 'none'
+//제목변수
+const menu_title = document.querySelectorAll ('.menu_title')
+const contents_container = document.querySelectorAll('.container_contents')
+console.log(contents_container[0])
 
-related_video.addEventListener('click',()=>{
-    recommend.style.display = 'none'
-    information.style.display = 'none'
-    info_contents.style.display='block'
+// 숨기기
+const hide = () =>{
+    for(let i of contents_container ){i.style.display = 'none'}
+}
+hide()
+contents_container[0].style.display = 'flex'
+menu_title[0].classList.add('contants_border')
 
-})
+const border_remove = () =>{
+    for(let r of menu_title){r.classList.remove('contants_border')}
+}
 
-recommendation.addEventListener('click',()=>{
-    recommend.style.display = 'block'
-    information.style.display='none'
-    info_contents.style.display ='none'
-})
-details.addEventListener('click',()=>{
-    info_contents.style.display ='none'
-    recommend.style.display = 'none'
-    information.style.display = 'block'
+menu_title.forEach((t,i)=>{
+    console.log(t,i)
+    t.addEventListener('click',()=>{
+        border_remove()
+        t.classList.add('contants_border')
+        hide()
+        contents_container[i].style.display = 'block'
+    })
 })
