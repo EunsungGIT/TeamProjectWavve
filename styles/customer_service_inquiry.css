@@ -51,7 +51,7 @@ main #inquiryFrm fieldset dl {
 main #inquiryFrm fieldset dl dt {
     padding: 24px 0 12px 40px; color: #a5a5a5;
     font-weight: 700; width: 280px;
-    position: relative;
+    position: relative; width: 25%;
 }
 main #inquiryFrm fieldset dl dt::before {
     content: ''; display: inline-block;
@@ -64,15 +64,15 @@ main #inquiryFrm fieldset dl:nth-of-type(8) dt::before{
     background: none;
 }
 main #inquiryFrm fieldset dl dd {
-    padding: 12px 28px 12px 0;
+    padding: 12px 28px 12px 0; width: 75%;
 }
 main #inquiryFrm fieldset dl dd #user_name {
-    width: 435px; height: 46px;
+    width: 50%; height: 46px;
     color: #a5a5a5; padding: 0 20px;
     border-radius: 10px; background: #252525;
 }
 main #inquiryFrm fieldset dl dd #user_email {
-    width: 435px; height: 46px;
+    width: 50%; height: 46px;
     color: #a5a5a5; padding: 0 20px;
     border-radius: 10px; background: #252525;
 }
@@ -81,12 +81,12 @@ main #inquiryFrm fieldset dl dd span {
     font-size: 0.875rem; display: block;
 }
 main #inquiryFrm fieldset dl dd #user_num {
-    width: 435px; height: 46px;
+    width: 50%; height: 46px;
     color: #a5a5a5; padding: 0 20px;
     border-radius: 10px; background: #252525;
 }
 main #inquiryFrm fieldset dl dd #question {
-    width: 435px; height: 46px;
+    width: 50%; height: 46px;
     padding-left: 20px; color: #fff;
     border-radius: 10px; background: #252525;
 }
@@ -113,13 +113,13 @@ main #inquiryFrm fieldset dl dd input:checked + label::before {
     border: 1px solid #1351f9; margin-right: 8px;
 }
 main #inquiryFrm fieldset dl dd #program_info {
-    width: 715px; height: 160px;
+    width: 80%; height: 160px;
     padding: 12px 20px; color: #a5a5a5;
     background: #252525; border: none;
     border-radius: 10px;
 }
 main #inquiryFrm fieldset dl dd #os_browser {
-    width: 715px; height: 95px;
+    width: 80%; height: 95px;
     padding: 12px 20px; color: #a5a5a5;
     background: #252525; border: none;
     border-radius: 10px;
@@ -128,12 +128,12 @@ main #inquiryFrm fieldset dl:nth-of-type(9) dd {
     display: flex; flex-flow: column nowrap;
 }
 main #inquiryFrm fieldset dl dd #inquiry_box {
-    width: 932px; height: 46px;
+    width: 100%; height: 46px;
     color: #a5a5a5; padding: 0 20px;
     border-radius: 10px; background: #252525;
 }
 main #inquiryFrm fieldset dl dd #inquiry_contents {
-    width: 715px; height: 350px;
+    width: 80%; height: 350px;
     padding: 12px 20px; color: #a5a5a5;
     background: #252525; border: none;
     border-radius: 10px; margin-top: 10px;

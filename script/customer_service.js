@@ -1,3 +1,12 @@
+/* a태그 */
+const a_all = document.querySelectorAll('body a')
+
+for(let i of a_all){
+    i.addEventListener('click',(e)=>{
+        e.preventDefault();
+    })
+}
+
 const contents_title = document.querySelectorAll('.contents_title a')
 const section = document.querySelectorAll('.customer_service section')
 
