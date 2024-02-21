@@ -34,26 +34,28 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
     100% {transform: scale(1);}
 }
 
-/* 알림함 */
+/* 알림함 ---------------------------------------------------------------------------------------- */
 .notification {
-    position: fixed; z-index: 9999;
-    background: rgba(0, 0, 0, 0.8);
-    width: 100%; height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8); width: 100%; height: 100vh;
+    z-index:850;
 }
+
 .notification .contents_all {
-    display: flex;
+    display: flex ; width: 100%; padding-top: 100px;
     width: 450px;
     margin: 0 auto;
     padding-top: 100px;
     flex-flow: column;
     position: relative;
-    
 }
+
 /* 알림함 큰 틀 */
 .notification .contents_all .main_contents {
-    background: #1B1B1B; width: 100%; height: 550px; 
+    width: 560px; height: 550px; 
+    background: #1B1B1B; width: 100%; 
     margin: 0 auto;  overflow: hidden; border-radius: 20px;
-    
+
 }
 .notification .contents_all .main_contents .contents_top {
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
@@ -67,25 +69,6 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 /* 공통 폰트 색상 */
 .notification .contents_all .main_contents p {
     color: #fff; font-size: 0.875rem;
-}
-.notification .contents_all .main_contents .contents_top span {
-    color: #fff; font-size: 1.5rem;
-}
-.notification .contents_all .main_contents .contents_top .right {
-    height: 40px; align-items: center; display: flex;
-    border: 1px solid #fff; padding: 24px; border-radius: 50px; 
-}
-.notification .contents_all .main_contents .contents_top .right img {margin: 0 4px 0 0;}
-.notification .contents_all .main_contents .contents_top .right a {
-    display: flex;
-}
-/* 내용 */
-.notification .contents_all .main_contents .contents_bottom {}
-.notification .contents_all .main_contents .contents_bottom .first_contents {
-    text-align: center; padding-top: 130px;
-}
-.notification .contents_all .main_contents .contents_bottom .first_contents img {}
-.notification .contents_all .main_contents .contents_bottom .first_contents p {
     color: #a5a5a5; font-size: 1.375rem; margin-top: 13px;
 }
 
@@ -104,7 +87,7 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
     position: absolute; top: 100px; right: -40px;
 }
 .notification .contents_all .setting_close a {
-    
+
 }
 .notification .contents_all .setting_close a img {}
 
@@ -131,7 +114,7 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
     height: 40px; align-items: center; display: flex;
     border: 1px solid #fff; border-radius: 50px; 
     padding: 17px 19px 17px 19px;
-    
+
 }
 .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_right a {
     display: flex;
@@ -175,7 +158,7 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 
 /* left */
 .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_left {
-    
+
 }
 /*시청 예약 알림 or 관심 프로그램 업로드 알림  */
 .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_left span {
