@@ -2,6 +2,10 @@
     main {
         padding: 0 60px;
     }
+    main .wrap #top_container #top_prev,
+    main .wrap #top_container #top_next {
+        width: 50px;
+    }
 }
 @media screen and (max-width:768px){
 
