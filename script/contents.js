@@ -1,16 +1,102 @@
 /* 비슷한 영화 및 남녀노소 모두, 오늘은 애니 앞으로 */
-var mySwiper = new Swiper('#wavve_images', { 
+var mySwiper = new Swiper('.wavve_images', { 
     loop:true,
     slidesPerView: 5,
     spaceBetween: 10,
     navigation:{
-        nextEl:'#wavve_images .swiper-button-next',
-        prevEl:'#wavve_images .swiper-button-prev',
+        nextEl:'.wavve_images .swiper-button-next',
+        prevEl:'.wavve_images .swiper-button-prev',
     },
 })
 
 //일반자바
 
+// 상단 자바스크립트
+const optionBtn =document.querySelector('#optionBtn')
+const translation_all =document.querySelector('.button_m')
+let distinction = true
+console.log(optionBtn)
+console.log(translation_all)
+
+
+optionBtn.addEventListener('click',()=>{
+    distinction = !distinction
+    console.log(distinction)
+    if(distinction === false){
+        translation_all.style.display = 'block'
+    }else{
+        translation_all.style.display = 'none'
+    }
+})
+
+
+//클릭시 그 내용 보이기
+const translation_sub = document.querySelectorAll('.button_m a')
+
+console.log(translation_sub[0],translation_sub[1])
+
+translation_sub[0].addEventListener('click',()=>{
+    optionBtn.innerHTML = '자막'
+    translation_all.style.display = 'none'
+    distinction = true
+})
+translation_sub[1].addEventListener('click',()=>{
+    optionBtn.innerHTML = '더빙'
+    translation_all.style.display = 'none'
+    distinction = true
+})
+
+
+
+// 관심
+const icon = document.querySelectorAll ('.icon a')
+const icon_img =document.querySelectorAll('.icon a img')
+const  heart =document.querySelector('.favorite')
+console.log(heart)
+heart.style.display = 'none'
+
+icon[0].addEventListener('click',()=>{
+    icon_img[0].src = '../images/live_contents/red_heart.svg'
+    heart.style.display = 'block'
+    heart.classList.add('show')
+    setTimeout(()=>{
+        heart.style.display = 'none'
+    },3000)
+})
+
+//공유
+
+const share = document.querySelector('.share_bg')
+const share_close = document.querySelector('.share > a')
+const copy_message = document.querySelector('.copy')
+const copyBtn = document.querySelector('#copyBtn')
+const linkInput = document.querySelector('#link')
+
+share.style.display = 'none'
+icon[1].addEventListener('click',()=>{
+    share.style.display = 'block'
+})
+
+copy_message.style.display = 'none'
+copyBtn.addEventListener('click',()=>{
+    navigator.clipboard.writeText(linkInput.value)
+    copy_message.style.display = 'block'
+    copy_message.classList.add('show')
+    setTimeout(() => {
+        copy_message.style.display = 'none'
+    }, 3000);
+})
+
+share_close.addEventListener('click',()=>{
+    share.classList.add('hide')
+    setTimeout(() => {
+        share.style.display = 'none'
+        share.classList.remove('hide')
+    }, 500);
+})
+
+
+// 하단 정보 자바스크립트
 //제목변수
 const menu_title = document.querySelectorAll ('.menu_title')
 const contents_container = document.querySelectorAll('.container_contents')
@@ -37,3 +123,44 @@ menu_title.forEach((t,i)=>{
         contents_container[i].style.display = 'block'
     })
 })
+
+
+//더보기 클릭시 상세정보로 가기
+const show_more = document.querySelector('.detail a')
+console.log(show_more)
+// window.addEventListener('scroll',()=>{
+//     const scrollaa = window.scrollY
+//     console.log(scrollaa)
+// })
+show_more.addEventListener('click',()=>{
+    menu_title[2].classList.add('contants_border')
+    menu_title[0].classList.remove('contants_border')
+    menu_title[1].classList.remove('contants_border')
+    contents_container[0].style.display = 'none'
+    contents_container[1].style.display = 'none'
+    contents_container[2].style.display = 'block'
+    window.scrollTo(0,417)
+})
+
+const speak =document.querySelector('#muted img')
+const speak_btn=document.getElementById('muted')
+console.log(speak_btn)
+let speack_variable = true
+
+// 음소거
+const video_muted = document.querySelector ('.contents video')
+console.log(video_muted)
+
+
+speak_btn.addEventListener('click',()=>{
+    speack_variable = !speack_variable
+    console.log(speack_variable)
+    if(speack_variable === false){
+        speak.src = './images/contents/speak.png'
+        video_muted.muted = false
+    }else{
+        speak.src = './images/contents/muted.png'
+        video_muted.muted = true
+    }
+})
+
