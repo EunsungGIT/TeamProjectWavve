@@ -94,24 +94,33 @@ quick_pay_btn.addEventListener("click", ()=> {
 })
 /* 일반충전 끝 --------------------------------------------------------------------*/
 
-/* 자동충전 시작 */
+/* 자동충전 시작------------------------------------------------------------------- */
+
+
+/* 빠른 결제 박스 */
+const auto_quick_payment_box = document.querySelector("#frm_payment2 .card_pay_ment_box")
+/* 다른 결제 박스 */
+const auto_different_payment_box = document.querySelector("#frm_payment2 .card_btm_content")
+
 /* 빠른 결제수단 탭 */
 const auto_quick_pay_btn = document.querySelector("#auto_pay_btn")
 /* 다른 결제수단 탭 */
-const auto_other_pay_btn = document.querySelectorAll("frm_payment2 > .card_btm > .other_pay > label ")
+const auto_other_pay_btn = document.querySelector("#frm_payment2 .other_pay > label ")
 
-different_payment_box.style.display = "none"
+auto_different_payment_box.style.display = "none"
 
 auto_quick_pay_btn.classList.add("active")
 
 auto_other_pay_btn.addEventListener("click", ()=> {
-    quick_payment_box.style.display = "none"
-    different_payment_box.style.display = "block"
+    console.log("dddddd")
+    auto_quick_payment_box.style.display = "none"
+    auto_different_payment_box.style.display = "flex"
 })
 
 auto_quick_pay_btn.addEventListener("click",()=>{
-    quick_payment_box.style.display = "block"
-    different_payment_box.style.display = "none"
+    console.log("dddddd")
+    auto_different_payment_box.style.display = "none"
+    auto_quick_payment_box.style.display = "flex"
 })
 
 
@@ -119,9 +128,7 @@ auto_quick_pay_btn.addEventListener("click",()=>{
 /* 빠른 결제 & 다른 결제 수단 끝 -------------------------------------------------------*/
 
 /* 카드등록 */
-
 const card_register = document.querySelector(".card_wrap > .card_register_img")
-
 console.log(card_register)
 
 card_register.addEventListener("click", ()=>{
@@ -129,7 +136,6 @@ card_register.addEventListener("click", ()=>{
 })
 
 /* 일반충전 & 자동충전 화면 전환  끝*/
-
 
 /* 결제내용- > 충전코인리스트 */
 
@@ -144,7 +150,6 @@ const nomal_coin_result = document.querySelector("#frm_payment1 .price")
 console.log(nomal_coin_result)
 console.log(coin_price_span_nomal,coin_price_span_auto)
 
-
 coin_price_span_nomal.forEach((t,i)=>{
     console.log(t,i)
     t.addEventListener("click", ()=>{
@@ -155,9 +160,9 @@ coin_price_span_nomal.forEach((t,i)=>{
 /*         nomal_coin_result */
        /*  getElementById *//* ("coin_price_span_nomal").innerHTML="dddd" */   
         nomal_coin_result.innerHTML = coin_price[i].toLocaleString("ko-kr")
-        
     })
 })
+
 
 /* 자동충전 */
 const auto_coin_result = document.querySelector("#frm_payment2 .price")

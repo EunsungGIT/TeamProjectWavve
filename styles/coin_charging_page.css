@@ -123,6 +123,7 @@ form fieldset .payment_box .payment_content {
 /* 빠른 결제 라디오 버튼 스타일 -----------------------------------------------*/
 form fieldset .payment_box .payment_content .fast_pay {
     background:#2f2f2f; padding:10px;
+    padding-bottom: 15px;
     }
 form fieldset .payment_box .payment_content .fast_pay input[type=radio] {display: none;}
 
@@ -189,6 +190,7 @@ form fieldset .payment_box .payment_content .card_pay_ment_box .card_content {
 form fieldset .payment_box .payment_content .card_btm {}
 form fieldset .payment_box .payment_content .card_btm .other_pay {
     background:#2f2f2f; padding:10px;
+    padding-bottom: 16px;
 }
 form fieldset .payment_box .payment_content .card_btm .other_pay input[type=radio] {display: none;}
 form fieldset .payment_box .payment_content .card_btm .other_pay input[type=radio]:checked + label::before {
