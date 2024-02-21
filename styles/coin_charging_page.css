@@ -13,16 +13,20 @@ body, html {background:#1b1b1b;}
 }
 .coin_charging_wrap .coin_charging_middle .tab_title:first-child {margin-right:70px;}
 .coin_charging_wrap .coin_charging_middle .active {
+
     /* js classList add로 */
     /* color:#fff; border-bottom:2px solid #1351f9; */
 }
-
 /* 탭 js */
 /* 공통 탭 보더 */
 .coin_mypage_border {
     border-bottom: 4px solid #1351f9;
+    color: #fff !important;
 }
-
+.card_btm_content_box_style {
+    background: #1351f9;
+    color: #fff;
+}
 /* --------------------------------일반&자동 공통 디자인 */
 #frm_payment1, #frm_payment2 {padding:20px;}
 #frm_payment1 fieldset, #frm_payment2 fieldset {}
@@ -50,17 +54,9 @@ body, html {background:#1b1b1b;}
     flex-flow: row nowrap;
 }
 
-#frm_payment1 fieldset .charging_content .charging_coin_list .right label::before,
-#frm_payment2 fieldset .charging_content .charging_coin_list .right label::before {
-    position: relative; bottom: 0px;
-    content: '';
-    display: inline-block;
-    background-image: url(../images/icon/cheak.png);
-    background-size: cover; 
-    width: 23px;
-    height:23px;
-    margin-right:10px;
-    
+#frm_payment1 fieldset .charging_content .charging_coin_list .right label,
+#frm_payment2 fieldset .charging_content .charging_coin_list .right label {
+
 }
 
 /* 기존 라디오 버튼 숨김  */
@@ -69,9 +65,9 @@ body, html {background:#1b1b1b;}
     display: none;
 }
 
-#frm_payment1 fieldset .charging_content .charging_coin_list .right label input[id^=normal_coin]:checked + label::before,
-#frm_payment2 fieldset .charging_content .charging_coin_list .right label input[id^=auto_coin]:checked + label::before {
-    position: relative; bottom: 0px;
+#frm_payment1 fieldset .charging_content .charging_coin_list .right label input[id^=normal_coin]:checked + span::before,
+#frm_payment2 fieldset .charging_content .charging_coin_list .right label input[id^=auto_coin]:checked + span::before {
+    position: relative; bottom: -6px;
     content: '';
     display: inline-block;
     background-image: url(../images/icon/cheak_input.png);
@@ -83,6 +79,18 @@ body, html {background:#1b1b1b;}
 #frm_payment1 fieldset .charging_content .charging_coin_list .right label span,
 #frm_payment2 fieldset .charging_content .charging_coin_list .right label span {
     color:#a5a5a5;
+} 
+#frm_payment1 fieldset .charging_content .charging_coin_list .right label span::before,
+#frm_payment2 fieldset .charging_content .charging_coin_list .right label span::before {
+    position: relative; bottom: -6px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+    margin-right:10px;
+    
 } 
 /* ---------------------------------------------------------------------------- */
 #frm_payment1 fieldset .charging_content .coin_result,
@@ -99,16 +107,23 @@ body, html {background:#1b1b1b;}
     color:#fff; font-weight:700; font-size:1.5rem;
 }
 /* 일반&자동 ----결제 수단 선택 */
-form fieldset .payment_box {}
+form fieldset .payment_box {
+   
+}
 form fieldset .payment_box h2 {
     border-bottom:1px solid #2f2f2f;
     color:#fff; font-size:1.5rem; padding:50px 0 15px;
 }
-form fieldset .payment_box .payment_content {}
+form fieldset .payment_box .payment_content {
+    margin-bottom: 20px;
+    border: 4px solid #2f2f2f;
+    border-radius: 6px;
+    
+}
 /* 빠른 결제 라디오 버튼 스타일 -----------------------------------------------*/
 form fieldset .payment_box .payment_content .fast_pay {
     background:#2f2f2f; padding:10px;
-}
+    }
 form fieldset .payment_box .payment_content .fast_pay input[type=radio] {display: none;}
 
 form fieldset .payment_box .payment_content .fast_pay input[type=radio] {}
@@ -133,8 +148,44 @@ form fieldset .payment_box .payment_content .fast_pay label[for]::before {
     height:23px;
     margin-right:10px;
 }
-form fieldset .payment_box .payment_content .card_pay_ment_box {}
-form fieldset .payment_box .payment_content .card_pay_ment_box .card_content {color:#a5a5a5; padding:20px 0;}
+form fieldset .payment_box .payment_content .card_pay_ment_box {
+    flex-flow: column;
+}
+/* 스와이퍼 시작 */
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; height: 235px;
+    width: 635px;
+    /* width: 100%; */
+    margin: 20px 0px 0px 0px;
+
+}
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap{
+    text-align: center;
+}
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap .kb_img{}
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap .kb_img a{}
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container .card_wrap .kb_img a img{width: 304px;}
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container .swiper-pagination{}
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container #coin_normal_next{}
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container #coin_next::after{display: none;}
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container #coin_normal_next img{}
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container #coin_normal_prev{}
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container #coin_prev::after{display: none;}
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container #coin_normal_prev img{}
+
+form fieldset .payment_box .payment_content .card_pay_ment_box .crad_container .card_content{
+    display: block;
+    margin-bottom: 20px;
+}
+/* 스와이퍼 끝 */
+form fieldset .payment_box .payment_content .card_pay_ment_box .card_content {
+    color:#a5a5a5; padding:20px 0;
+    margin-left: 25px;
+}
 form fieldset .payment_box .payment_content .card_btm {}
 form fieldset .payment_box .payment_content .card_btm .other_pay {
     background:#2f2f2f; padding:10px;
