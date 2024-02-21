@@ -34,37 +34,39 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
     100% {transform: scale(1);}
 }
 
-/* 알림함 ---------------------------------------------------------------------------------------- */
-.notification {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.8); width: 100%; height: 100vh;
-    z-index:850;
+/* 알림함 */
+.notification_bg {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed; top: 0; z-index: 9999;
+    width: 100vw; height: 100vh;
+    display: flex; justify-content: center; align-items: center;
 }
-
-.notification .contents_all {
-    display: flex ; width: 100%; padding-top: 100px;
-    width: 450px;
-    margin: 0 auto;
-    padding-top: 100px;
-    flex-flow: column;
-    position: relative;
+.notification_bg .notification {
+    width: 560px; height: 550px;
+    background: #1b1b1b; border-radius: 10px;
 }
-
-/* 알림함 큰 틀 */
-.notification .contents_all .main_contents {
-    width: 560px; height: 550px; 
-    background: #1B1B1B; width: 100%; 
-    margin: 0 auto;  overflow: hidden; border-radius: 20px;
-
+.notification_bg .notification .notification_top {
+    padding: 0 35px; height: 86px;
+    background: #1351f9; align-items: center;
+    display: flex; justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-.notification .contents_all .main_contents .contents_top {
-    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
-    padding: 24px 35px; background: #1351f9;    
+.notification_bg .notification .notification_top h2 {
+    color: #fff; font-size: 1.5rem;
 }
-
-.notification .contents_all .main_contents .contents_top .left {}
-.notification .contents_all .main_contents .contents_top .left span {
+.notification_bg .notification .notification_top a {
+    border: 1px solid #fff; padding: 0 24px;
+    border-radius: 50px; font-size: 0.875rem;
+    height: 40px;
 }
+.notification_bg .notification .notification_top a img {}
+.notification_bg .notification .notification_bottom {
+    height: 464px; display: flex; flex-flow: column nowrap;
+    justify-content: center; align-items: center;
+}
+.notification_bg .notification .notification_bottom img {}
+.notification_bg .notification .notification_bottom span {}
 
 /* 공통 폰트 색상 */
 .notification .contents_all .main_contents p {
