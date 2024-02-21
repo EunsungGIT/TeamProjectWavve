@@ -18,9 +18,30 @@
     <link rel="stylesheet" href="./styles/contents.css">
 </head>
 <body>
-    <!-- main -->
+    <div class="share_bg">
+        <div class="share">
+            <h2>공유</h2>
+            <div class="twitter_facebook">
+                <a href="#">
+                    <img src="./images/live_contents/twitter.png" alt="트위터">
+                    <span>트위터</span>
+                </a>
+                <a href="#">
+                    <img src="./images/live_contents/facebook.png" alt="페이스북">
+                    <span>페이스북</span>
+                </a>
+            </div>
+            <div class="link_copy">
+                <input type="text" id="link" value="https://www.wavve.com/player/live?channelid=C2501">
+                <button type="button" id="copyBtn">링크복사</button>
+            </div>
+            <a href="#"><img src="./images/live_contents/popup_close.svg" alt="닫기"></a>
+        </div>
+        <div class="copy">링크를 복사했어요. 원하는 곳에 붙여넣기(CTRL + V)해주세요.</div>
+    </div>
     <main>
         <section>
+            <div class="favorite">관심영화로 등록했어요</div>
             <div class="contents">
                 <div class="video_bg"></div>
                 <video src="./video/contents.mp4" autoplay muted loop></video>
@@ -92,8 +113,8 @@
                                 <!-- 남녀노소 모두, 오늘은 애니 앞으로 -->
                                 <a href="#"><img src="#" alt="">더보기<img src="./images/bnr_img_next.svg" alt="#"></a>
                             </div>
-                            <div class="swiper-container" id="wavve_images">
-                                <div class="swiper-wrapper" id="wavve_img">
+                            <div class="swiper-container wavve_images">
+                                <div class="swiper-wrapper wavve_img" >
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
@@ -105,8 +126,8 @@
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
                                 </div>
-                                <a href="#" class="swiper-button-prev" id="prev"><img src="./images/contents/slide_prev.png" alt=""></a>
-                                <a href="#" class="swiper-button-next" id="next"><img src="./images/contents/slide_next.png" alt=""></a>
+                                <a href="#" class="swiper-button-prev prev" ><img src="./images/contents/slide_prev.png" alt=""></a>
+                                <a href="#" class="swiper-button-next next" ><img src="./images/contents/slide_next.png" alt=""></a>
                             </div>
                         </div>
                         <div class="img_container">
@@ -114,8 +135,8 @@
                                 <span>남녀노소 모두, 오늘은 애니 앞으로</span>
                                 <a href="#"><img src="#" alt="">더보기<img src="./images/bnr_img_next.svg" alt="#"></a>
                             </div>
-                            <div class="swiper-container" id="wavve_images">
-                                <div class="swiper-wrapper" id="wavve_img">
+                            <div class="swiper-container wavve_images" >
+                                <div class="swiper-wrapper wavve_img" >
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
@@ -127,8 +148,8 @@
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
                                     <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
                                 </div>
-                                <a href="#" class="swiper-button-prev" id="prev"><img src="./images/contents/slide_prev.png" alt=""></a>
-                                <a href="#" class="swiper-button-next" id="next"><img src="./images/contents/slide_next.png" alt=""></a>
+                                <a href="#" class="swiper-button-prev prev" ><img src="./images/contents/slide_prev.png" alt=""></a>
+                                <a href="#" class="swiper-button-next next"><img src="./images/contents/slide_next.png" alt=""></a>
                             </div>
                         </div>
                     </ul>
