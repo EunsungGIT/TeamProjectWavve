@@ -56,17 +56,24 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
     color: #fff; font-size: 1.5rem;
 }
 .notification_bg .notification .notification_top a {
-    border: 1px solid #fff; padding: 0 24px;
+    border: 1px solid #fff;/*  padding: 0 24px; */
     border-radius: 50px; font-size: 0.875rem;
-    height: 40px;
+   /*  height: 40px; */ color: #fff; 
+    display: flex; padding: 10px 20px 10px 20px;
 }
-.notification_bg .notification .notification_top a img {}
+.notification_bg .notification .notification_top a img {
+    width: 19px; height: 19px;
+}
 .notification_bg .notification .notification_bottom {
     height: 464px; display: flex; flex-flow: column nowrap;
     justify-content: center; align-items: center;
 }
 .notification_bg .notification .notification_bottom img {}
-.notification_bg .notification .notification_bottom span {}
+.notification_bg .notification .notification_bottom span {
+    font-size: 1.375rem; color: #a5a5a5;
+    margin-top: 13px
+}
+
 
 /* 공통 폰트 색상 */
 .notification .contents_all .main_contents p {
@@ -74,23 +81,27 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
     color: #a5a5a5; font-size: 1.375rem; margin-top: 13px;
 }
 
-/* ----------------알림함 끝 알림설정 시작-------------------- */
+/* 알림함 끝 알림설정 시작 */
 /* 알림설정 */
 .notification_bg .notification .setting_wrap {
     width: 100%;
     margin: 0 auto;
+    
 }
 .notification_bg .notification .setting_wrap .setting_content_all {
-    display: flex ;  width: 100%; padding-top: 100px;
-    position: relative;
+    
 }
 
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents {
+    background: #252525; width: 560px;  
+    margin: 0 auto;  overflow: hidden; border-radius: 20px;
     position: absolute; top: 100px; right: -40px;
 }
 
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top {
-    
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    background: #1351f9;
+    padding: 29px 39px 29px 39px;
 }
 /* 알림설정 left */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_left {
@@ -98,34 +109,40 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 }
 /* 알림설정 span */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_left .setting_notification_sub {
-
+    display: flex; color: #fff; font-size: 1.5rem; font-weight: bold;
 }
 /* 알림설정 right */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_right {
-    
+    height: 40px; align-items: center; display: flex;
+    border: 1px solid #fff; border-radius: 50px; 
+    padding: 17px 19px 17px 19px;
 }
 /* 알림함 버튼 */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_right a {
-    
+    display: flex;
 }
 
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_right a img{
-    
+    margin: 0px 4px 0px 0px;
 }
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_right a p {
-    
+    color: #fff; font-size: 0.875rem;
 }
 
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom {
-    
+    padding: 10px 10px 10px 10px;
 }
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents {
-
+    text-align: center;
 }
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container {
 
 }
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px 30px 10px 30px; */
+    padding: 24px 35px;
 
 }
 /* 시청 예약 알림 전체 */
@@ -134,7 +151,8 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 }
 /* 시청 예약 알림 */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_left span {
-
+    font-size: 16px; color:#a5a5a5 ;
+    font-weight: bold;
 }
 
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_right{
@@ -145,15 +163,41 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 }
 /* 시청 예약 알림 on span */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_on {
-
+    
 }
 /* 시청 예약 알림 - on input  */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_on .setting_chk_on {
 
 }
+/* 시청 예약 알림 - on input  */
+.notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_on .setting_chk_on:checked + label::before {
+    position: relative; bottom: -6px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak_input.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+}
+/* 시청 예약 알림 - on input  */
+.notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_on .setting_chk_on {
+    display: none;
+}
 /* 시청 예약 알림 on label */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_on label {
-
+    color: #a5a5a5;
+    font-weight: bold; 
+}
+/* 시청 예약 알림 on label */
+.notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_on label::before {
+    position: relative; bottom: -6px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+    margin-right:10px;
 }
 
 /* 시청 예약 알림 off span */
@@ -163,16 +207,43 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 
 /* 시청 예약 알림 - off input  */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_off .setting_chk_off{
-
+    display: none;
+}
+/* 시청 예약 알림 - off input  */
+.notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_off .setting_chk_off:checked + label::before{
+    position: relative; bottom: -6px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak_input.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
 }
 
 /* 시청 예약 알림 - off input  */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_off label {
+    color: #a5a5a5;
+    font-weight: bold;
+}
 
+/* 시청 예약 알림 - off label  */
+.notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_off label::before {
+    position: relative; bottom: -6px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+    margin-right:10px;
 }
 
 /* 관심 프로그램 업로드 알림 큰틀 */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_btm_inform {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px 30px 10px 30px; */
+    padding: 24px 35px;
 
 }
 
@@ -182,7 +253,8 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 }
 /* 관심 프로그램 업로드 알림 span */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_left span {
-
+    font-size: 16px; color:#a5a5a5 ;
+    font-weight: bold;
 }
 /* 관심 프로그램 업로드 알림 right */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right {
@@ -199,11 +271,33 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 }
 /* 관심 프로그램 업로드 알림  btm_on 버튼 on input */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_on .setting_chk_on {
-
+    display: none;
 }
+/* 관심 프로그램 업로드 알림  btm_on 버튼 on input */
+.notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_on .setting_chk_on:checked + label::before {
+    position: relative; bottom: -6px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak_input.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+}
+
 /* 관심 프로그램 업로드 알림  btm_on 버튼 on label */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_on label {
-
+    font-size: 16px; color:#a5a5a5 ; 
+    font-weight: bold;
+}
+.notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_on label::before {
+    position: relative; bottom: -6px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+    margin-right:10px;
 }
 
 
@@ -214,163 +308,44 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 
 /* 관심 프로그램 업로드 알림  btm_on 버튼 on input */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_off .setting_chk_off {
-
+    display: none;
+}
+/* 관심 프로그램 업로드 알림  btm_on 버튼 on input */
+.notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_off .setting_chk_off:checked + label::before {
+    position: relative; bottom: -6px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak_input.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
 }
 
 /* 관심 프로그램 업로드 알림  btm_on 버튼 on label */
 .notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_off label {
-
+    font-size: 16px; color:#a5a5a5 ; 
+    font-weight: bold;
 }
+/* 관심 프로그램 업로드 알림  btm_on 버튼 on label */
+.notification_bg .notification .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom  .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_off label::before {
+    position: relative; bottom: -6px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon/cheak.png);
+    background-size: cover; 
+    width: 23px;
+    height:23px;
+    margin-right:10px;
+}
+
+/* x 버튼 */
+.notification_bg .notification .setting_close {
+}
+.notification_bg .notification .setting_close .setting_close_btn{}
+.notification_bg .notification .setting_close .setting_close_btn img{}
+
 
 /* 0221 저녁 새롭게 선택자 정리 끝 - > 적용하기 */
-
-
-.notification_bg .notification .contents_all .setting_close {
-   
-}
-.notification_bg .notification .contents_all .setting_close a {
-
-}
-.notification_bg .notification .contents_all .setting_close a img {}
-
-/* 알림설정 컨테이너 전체 */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents {
-    background: #252525; width: 560px;  
-    margin: 0 auto;  overflow: hidden; border-radius: 20px;
-}
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top{
-    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
-    background: #1351f9;
-    padding: 29px 39px 29px 39px;
-}
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .top_setting_close {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .top_setting_close .top_setting_close_btn {}
-
-/* 왼쪽 */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_left{}
-/* 알림설정 */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_left .setting_notification_sub {display: flex; color: #fff; font-size: 1.5rem; font-weight: bold;}
-/* 오른쪽 */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_right {
-    height: 40px; align-items: center; display: flex;
-    border: 1px solid #fff; border-radius: 50px; 
-    padding: 17px 19px 17px 19px;
-
-}
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_right a {
-    display: flex;
-}
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_right a img {
-    margin: 0 4px 0 0;
-}
-/* 버튼 내부에 알림함 */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top .setting_right a p {
-    color: #fff; font-size: 0.875rem;
-}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_top {
-}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents p {
-    color: #fff; font-size: 0.875rem;
-}
-
-
-/* 내용 */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom {
-    padding: 10px 10px 10px 10px;
-}
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents {
-    text-align: center;
-}
-/* div */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container {
-
-}
-
-/* left right 묶는 태그 */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform {
-    display: flex;
-    justify-content: space-between;
-    /* padding: 10px 30px 10px 30px; */
-    padding: 24px 35px;
-
-}
-
-/* left */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_left {
-
-}
-/*시청 예약 알림 or 관심 프로그램 업로드 알림  */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_left span {
-    font-size: 16px; color:#a5a5a5 ;
-    font-weight: bold;
-}
-
-/* right */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_right {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_on {
-    color: #1351f9;
-}
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_on .setting_chk_on {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_on label {
-    color: #a5a5a5;
-    font-weight: bold; 
-}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_off {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_off .setting_chk_off {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_top_inform .setting_right .setting_radio_style .top_off label {
-    color: #a5a5a5;
-    font-weight: bold;
-}
-
-
-/* setting_btm_inform 관심 프로그램 업로드 알림 */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_btm_inform {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 35px;
-} 
-
-/* btm_left */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_left{}
-
-.notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_left span{
-    font-size: 16px; color:#a5a5a5 ; 
-    font-weight: bold;
-}
-
-/* right */
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_on {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_on .setting_chk_on {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_on label {
-    font-size: 16px; color:#a5a5a5 ; 
-    font-weight: bold;
-}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_off {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_off .setting_chk_off {}
-
-.notification_bg .notification .contents_all .setting_wrap .setting_content_all .setting_main_contents .setting_contents_bottom .setting_first_contents .setting_chk_container .setting_btm_inform .setting_btm_right .setting_radio_style .btm_off label {
-    font-size: 16px; color:#a5a5a5 ; 
-    font-weight: bold;
-}
-
 /* ---------- */
 
 /* 전체 카테고리 */
