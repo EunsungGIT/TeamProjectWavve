@@ -9,3 +9,37 @@ for (let i = 0; i < sns_link.length; i++) {
     };
     }(i));
 }
+
+/* 로그인 수단 변경 */
+const find_id_m = document.querySelectorAll('.find_id_m a')
+const find_box = document.querySelector('.find_box')
+const common_box = document.querySelector('.common_box')
+const phone_pin = document.querySelectorAll('.common_box .method a')
+
+find_id_m[0].style.color = '#fff'
+find_id_m[0].style.borderBottom = '3px solid #1351f9'
+find_box.style.display = 'block'
+common_box.style.display = 'none'
+find_id_m[0].addEventListener('click', ()=>{
+    find_id_m[0].style.color = '#fff'
+    find_id_m[0].style.borderBottom = '3px solid #1351f9'
+    find_id_m[1].style.color = '#a5a5a5'
+    find_id_m[1].style.borderBottom = '3px solid #252525'
+    find_box.style.display = 'block'
+    common_box.style.display = 'none'
+})
+find_id_m[1].addEventListener('click', ()=>{
+    find_id_m[1].style.color = '#fff'
+    find_id_m[1].style.borderBottom = '3px solid #1351f9'
+    find_id_m[0].style.color = '#a5a5a5'
+    find_id_m[0].style.borderBottom = '3px solid #252525'
+    find_box.style.display = 'none'
+    common_box.style.display = 'block'
+})
+
+phone_pin[0].addEventListener('click',()=>{
+    window.alert('휴대폰 인증 페이지로 이동합니다.')
+})
+phone_pin[1].addEventListener('click',()=>{
+    window.alert('아이핀 인증 페이지로 이동합니다.')
+})
