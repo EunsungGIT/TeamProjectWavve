@@ -69,14 +69,33 @@ const  heart =document.querySelector('.favorite')
 console.log(heart)
 heart.style.display = 'none'
 
-icon[0].addEventListener('click',()=>{
-    icon_img[0].src = '../images/live_contents/red_heart.svg'
-    heart.style.display = 'block'
-    heart.classList.add('show')
-    setTimeout(()=>{
-        heart.style.display = 'none'
-    },3000)
+
+let heart_change = true
+icon[0].addEventListener('click',(e)=>{
+    heart_change = !heart_change
+    console.log(heart_change)
+    if(heart_change === false){
+        icon_img[0].src = '../images/live_contents/red_heart.svg'
+        heart.innerHTML = '관심체널로 등록되었어요'
+        heart.style.display = 'block';
+        heart.classList.add('show')
+        e.preventDefault();
+        setTimeout(() => {
+            heart.style.display = 'none'
+        }, 2000);
+    }else{icon_img[0].src = '../images/live_contents/heart.svg'
+        e.preventDefault();
+        heart.innerHTML = '관심등록이 헤제되었어요'
+        heart.style.display = 'block';
+        heart.classList.add('show')
+        e.preventDefault();
+        setTimeout(() => {
+            heart.style.display = 'none'
+        }, 2000);
+    }
+
 })
+
 
 //공유
 const share = document.querySelector('.share_bg')
@@ -91,10 +110,11 @@ icon[1].addEventListener('click',()=>{
 })
 
 copy_message.style.display = 'none'
-copyBtn.addEventListener('click',()=>{
+copyBtn.addEventListener('click',(e)=>{
     navigator.clipboard.writeText(linkInput.value)
     copy_message.style.display = 'block'
     copy_message.classList.add('show')
+    e.preventDefault();
     setTimeout(() => {
         copy_message.style.display = 'none'
     }, 3000);

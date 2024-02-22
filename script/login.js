@@ -9,3 +9,30 @@ for (let i = 0; i < sns_link.length; i++) {
     };
     }(i));
 }
+
+
+//에러메세지 
+const user_id = document.getElementById('user_id')
+const user_pw = document.getElementById('user_pw')
+const id_error = document.querySelector('.id_error')
+const pw_error = document.querySelector('.pw_error')
+const login_btn = document.getElementById('loginBtn')
+console.log(user_id,user_pw,login_btn)
+login_btn.addEventListener('click',()=>{
+    if(user_id.value === ''){
+        id_error.innerHTML =  '<img src="./images/login/icon_error_pink.png" alt="핑크시계">이메일 또는 아이디를 입력해 주세요'
+        id_error.style.color = '#ff27a3'
+    }else{
+        id_error.innerHTML = ''
+    }
+    if(user_pw.value === ''){
+        pw_error.innerHTML = '<img src="./images/login/icon_error_pink.png" alt="핑크시계"> 비밀번호를 입력해주세요'
+        pw_error.style.color = '#ff27a3'
+    }else{
+        pw_error.innerHTML= ''
+    }
+
+    if(user_id.value !== '' && user_pw.value !== ''){
+        window.location.href ='./index.html'
+    }
+})

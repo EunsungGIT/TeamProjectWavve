@@ -15,6 +15,16 @@ main .login p {
 main .login #loginFrm {}
 main .login #loginFrm fieldset {}
 main .login #loginFrm fieldset {}
+main .login #loginFrm fieldset .id_error {
+    float: left; position: relative; bottom: 8px; left: 8px;
+    display: flex; font-size: 0.875rem;  align-items: center;
+    padding: 8px; 
+}
+main .login #loginFrm fieldset .pw_error {
+    float: left;     display: flex;  font-size: 0.875rem;
+    padding: 8px 8px 0 8px ; position: relative; left: 8px;
+    align-items: center;
+}
 main .login #loginFrm fieldset #user_id {
     background: #2f2f2f; padding: 0 20px;
     width: 480px; height: 53px; border-radius: 10px;
@@ -27,7 +37,7 @@ main .login #loginFrm fieldset #user_pw {
 }
 main .login #loginFrm fieldset .checkbox {
     margin-bottom: 33px; text-align: left;
-    display: flex;
+    display: flex; margin-top: 30px;
 }
 main .login #loginFrm fieldset .checkbox #save_id {
 }

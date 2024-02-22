@@ -40,7 +40,9 @@
                 <fieldset>
                     <legend class="skip">로그인 양식</legend>
                     <input type="text" id="user_id" placeholder="이메일 주소 또는 아이디">
+                    <span class="id_error"></span>
                     <input type="text" id="user_pw" placeholder="비밀번호">
+                    <span class="pw_error"></span>
                     <div class="checkbox">
                         <input type="checkbox" name="save_id" id="save_id">
                         <label for="save_id">아이디 저장</label>
@@ -48,7 +50,7 @@
                         <label for="auto_login">자동 로그인</label>
                     </div>
                 </fieldset>
-                <button type="button" id="loginBtn" onclick="location.href = './index.html'">로그인</button>
+                <button type="button" id="loginBtn" >로그인</button>
             </form>
             <div class="find_join">
                 <a href="./login_find_id.html">아이디 찾기</a>

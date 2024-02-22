@@ -19,8 +19,9 @@ window.addEventListener('scroll',()=>{
         main_video.style.display = 'block'
     }
 })
-closeBtn.addEventListener('click',()=>{
+closeBtn.addEventListener('click',(e)=>{
     popup_video.style.display = 'none'
+    e.preventDefault();
 })
 // 재생 아이콘
 popup_icon[0].addEventListener('click',()=>{
@@ -81,16 +82,32 @@ right_icon[3].addEventListener('click',()=>{
 const icon = document.querySelectorAll('.icon_box a')
 const icon_img = document.querySelectorAll('.icon_box a img')
 const favorite = document.querySelector('.favorite')
-
+let heart_change = true
 favorite.style.opacity = '0';
 favorite.style.display = 'none';
-icon[0].addEventListener('click',()=>{
-    icon_img[0].src = '../images/live_contents/red_heart.svg'
-    favorite.style.display = 'block';
-    favorite.classList.add('show')
-    setTimeout(() => {
-        favorite.style.display = 'none'
-    }, 3000);
+icon[0].addEventListener('click',(e)=>{
+    heart_change = !heart_change
+    console.log(heart_change)
+    if(heart_change === false){
+        icon_img[0].src = '../images/live_contents/red_heart.svg'
+        favorite.innerHTML = '관심체널로 등록되었어요'
+        favorite.style.display = 'block';
+        favorite.classList.add('show')
+        e.preventDefault();
+        setTimeout(() => {
+            favorite.style.display = 'none'
+        }, 2000);
+    }else{icon_img[0].src = '../images/live_contents/heart.svg'
+        e.preventDefault();
+        favorite.innerHTML = '관심등록이 헤제되었어요'
+        favorite.style.display = 'block';
+        favorite.classList.add('show')
+        e.preventDefault();
+        setTimeout(() => {
+            favorite.style.display = 'none'
+        }, 2000);
+    }
+
 })
 
 // 공유
