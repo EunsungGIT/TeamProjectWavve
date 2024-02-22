@@ -28,6 +28,9 @@ body, html {background:#1b1b1b;}
     color: #fff;
     border: 1px solid #1351f9;
 }
+.coin_abox_span_style {
+    color: #fff;
+}
 /* --------------------------------일반&자동 공통 디자인 */
 #frm_payment1, #frm_payment2 {padding:20px;}
 #frm_payment1 fieldset, #frm_payment2 fieldset {}
