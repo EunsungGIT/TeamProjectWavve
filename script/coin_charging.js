@@ -176,6 +176,7 @@ coin_price_span_auto.forEach((t,i)=>{
     })
 })
 
+
 /* 다른결제 수단 클릭 이벤트 */
 
 /* const card_btm_content_box = document.querySelectorAll(".card_btm_content li > a")
