@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +6,9 @@
     <title>웨이브 MY</title>
     <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -15,87 +16,77 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/mypage.css">
+    <link rel="stylesheet" href="./styles/mypage_notification.css">
+    <!--  <link rel="stylesheet" href="./styles/mypage.css"> -->
 </head>
 <body>
-     <!-- 알림함 -->
-     <div class="notification_bg">
-        <div class="notification">
+    <!-- 알림함 -->
+    <div class="notification_bg">
+        <div class="notification_wrap">
             <div class="notification_top">
                 <h2>알림함</h2>
                 <a href="#"><img src="./images/icon/notification_icon.png" alt="">알림설정</a>
             </div>
-            <div class="notification_bottom">
-                <img src="./images/icon/warning.png" alt="없음">
-                <span>알림 내역이 없어요</span>
+            <div class="notification">
+                <div class="notification_bottom">
+                    <img src="./images/icon/warning.png" alt="없음">
+                    <span>알림 내역이 없어요</span>
+                </div>
             </div>
             <!-- 여기 알림설정 시작-->
             <!-- 알림설정 -->
             <div class="setting_wrap">
-                <div class="setting_content_all">
-                    <div class="setting_main_contents">
-                        <div class="setting_contents_top">
+                <div class="setting_contents_bottom">
+                    <div class="setting_chk_container">
+                        <div class="setting_top_inform">
                             <div class="setting_left">
-                                <span class="setting_notification_sub">알림설정</span>
+                                <span>시청 예약 알림</span>
                             </div>
                             <div class="setting_right">
-                                <a href="#">
-                                    <img src="./images/common/notification.png" alt="알림">
-                                    <p>알림함</p>
-                                </a>
+                                <div class="setting_radio_style">
+                                    <span class="top_on">
+                                        <input type="radio" class="setting_chk_on" value="chk_y" name="setting_chk"
+                                            id="setting_chk_on">
+                                        <label for="setting_chk_on">ON</label>
+                                    </span>
+                                    <span class="top_off">
+                                        <input type="radio" class="setting_chk_off" value="chk_n" name="setting_chk"
+                                            id="setting_chk_off">
+                                        <label for="setting_chk_off">OFF</label>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="setting_contents_bottom">
-                            <div class="setting_first_contents">
-                                <div class="setting_chk_container">
-                                    <div class="setting_top_inform">
-                                        <div class="setting_left">
-                                            <span>시청 예약 알림</span>
-                                        </div>
-                                        <div class="setting_right">
-                                            <div class="setting_radio_style">
-                                                <span class="top_on">
-                                                    <input type="radio" class="setting_chk_on" value="chk_y">
-                                                    <label for="setting_chk_on">ON</label>
-                                                </span>
-                                                <span class="top_off">
-                                                    <input type="radio" class="setting_chk_off" value="chk_n">
-                                                    <label for="setting_chk_on">OFF</label>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="setting_btm_inform">
-                                        <div class="setting_btm_left">
-                                            <span>관심 프로그램 업로드 알림</span>
-                                        </div>
-                                        <div class="setting_btm_right">
-                                            <div class="setting_radio_style">
-                                                <span class="btm_on">
-                                                    <input type="radio" class="setting_chk_on" value="chk_y">
-                                                    <label for="setting_chk_on">ON</label>
-                                                </span>
-                                                <span class="btm_off">
-                                                    <input type="radio" class="setting_chk_off" value="chk_n">
-                                                    <label for="setting_chk_on">OFF</label>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="setting_btm_inform">
+                            <div class="setting_btm_left">
+                                <span>관심 프로그램 업로드 알림</span>
+                            </div>
+                            <div class="setting_btm_right">
+                                <div class="setting_radio_style">
+                                    <span class="btm_on">
+                                        <input type="radio" class="setting_chk_on" value="chk_y" name="chk" name="chk"
+                                            id="chk_on">
+                                        <label for="chk_on">ON</label>
+                                    </span>
+                                    <span class="btm_off">
+                                        <input type="radio" class="setting_chk_off" value="chk_n" name="chk"
+                                            id="chk_off">
+                                        <label for="chk_off">OFF</label>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-              <!-- 알림설정  -->
-              <div class="setting_close">
+            <!-- 알림설정 끝 -->
+            <div class="setting_close">
                 <a href="#" class="setting_close_btn"><img src="./images/icon/close_icon.png" alt=""></a>
             </div>
         </div>
     </div>
-        <script src="./script/common.js"></script>
+    <!-- </div> --><!-- notification_bg -->
+    <script src="./script/mypage_notification_box.js"></script>
 </body>
 
 </html>

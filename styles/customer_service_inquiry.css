@@ -1,9 +1,3 @@
-/* UP 버튼 */
-#up {
-    z-index: 9997;
-    position: fixed; right: 40px; bottom: 40px;
-}
-
 h1 {
     max-width: 1240px; margin: 0 auto;
     height: 112px; position: sticky; top: 0;
