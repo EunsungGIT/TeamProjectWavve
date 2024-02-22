@@ -64,6 +64,7 @@ profile.addEventListener('mouseleave', () => {
 });
 
 // header 프로필 내 알림함
+const body_html = document.querySelector('body, html')
 const profile_m_a = document.querySelectorAll('.profile_m a')
 const notification_entire = document.querySelector(".notification_bg")
 const notifiaction_wrapper = document.querySelector('.notification_wrap')
