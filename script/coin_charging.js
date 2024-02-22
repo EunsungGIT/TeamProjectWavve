@@ -177,15 +177,53 @@ coin_price_span_auto.forEach((t,i)=>{
 })
 
 
-/* 다른결제 수단 클릭 이벤트 */
-
-/* const card_btm_content_box = document.querySelectorAll(".card_btm_content li > a")
-console.log(card_btm_content_box)
-
-
-let content_box_style = document.getElementById("card_btm_content_box_style");
-
-card_btm_content_box.addEventListener("click", ()=> {
-    content_box_style.style.background = "blue"
+/* 
+menu_title.forEach((t,i)=>{
+    console.log(t,i)
+    t.addEventListener('click',()=>{
+        border_remove()
+        t.classList.add('contants_border')
+        hide()
+        contents_container[i].style.display = 'block'
+    })
 })
- */
+*/
+
+/* 다른결제 수단 blue 클릭 이벤트 */
+
+const card_btm_content_box = document.querySelectorAll(".card_btm_content li > a");
+/* 이미지 변경 변수 생성 */
+const coin_abox_img = document.querySelector("card_btm_content a > img")
+console.log(card_btm_content_box,coin_abox_img)
+
+// card_btm_content_box.forEach((t,i)=>{
+//     console.log(t,i)
+//     t.addEventListener("click",()=>{
+//         t.classList.add("card_btm_content_box_style")
+//         card_btm_content_box[i].style.background = "#1351f9"
+//         card_btm_content_box[i].style.color = "#fff"
+//         card_btm_content_box[i].style.border = "#1351f9"
+//     })
+// })
+
+card_btm_content_box.forEach((t, i) => {
+    t.addEventListener("click", () => {
+        // 클릭되지 않은 박스에 대한 스타일 초기화
+        card_btm_content_box.forEach(coin_abox => {
+            if (coin_abox !== t) { // 클릭된 박스 아닌 경우에만 초기화
+                coin_abox.classList.remove("card_btm_content_box_style");
+                coin_abox.style.background = "initial";
+                coin_abox.style.color = "initial";
+                // 보더 스타일은 초기화하지 않음
+            }
+        });
+
+        // 클릭한 박스에 스타일 적용
+        t.classList.add("card_btm_content_box_style");
+        t.style.background = "#1351f9";
+        t.style.color = "#fff";
+        t.style.border = "1px solid #5e5e5e"; // 클릭한 요소의 border 스타일 설정
+        event.preventDefault(); // 위로 올라가는 동작을 방지해준다.
+        coin_abox_img[i].src = "./images/holding_coin/coin_icon-card-on.png";
+    });
+});

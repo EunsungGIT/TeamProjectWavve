@@ -26,6 +26,7 @@ body, html {background:#1b1b1b;}
 .card_btm_content_box_style {
     background: #1351f9;
     color: #fff;
+    border: 1px solid #1351f9;
 }
 /* --------------------------------일반&자동 공통 디자인 */
 #frm_payment1, #frm_payment2 {padding:20px;}
