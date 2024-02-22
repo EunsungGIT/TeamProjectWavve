@@ -44,10 +44,14 @@ main section .day_warp .day_contents .contents_all .date_list {
     display: flex;  justify-content: space-around  ;
 }
 main section .day_warp .day_contents .contents_all .date_list li {
-    width: 100px ;   text-align: center; border-radius: 120px;
+    width: 100px ;   text-align: center; 
 }
-main section .day_warp .day_contents .contents_all .date_list li:nth-child(4){
-    border: 4px solid #fff;
+main section .day_warp .day_contents .contents_all .date_list li:hover {
+    transform: scale(1.1); transition: 0.3  s;
+}
+main section .day_warp .day_contents .contents_all .date_list li:nth-child(6):hover,
+main section .day_warp .day_contents .contents_all .date_list li:nth-child(7):hover{
+    transform: scale(1);
 }
 
 /* 날짜 공통 색깔 */
@@ -89,6 +93,9 @@ main section .broadcasting .broadcasting_contents {
 main section .broadcasting .broadcasting_contents a {}
 main section .broadcasting .broadcasting_contents a img {
     width: 130px;
+}
+main section .broadcasting .broadcasting_contents a img:hover{
+    transform: scale(1.4); transition:  0.5s;
 }
 /* 방송 편성표 */
 main section .broadcasting_announcement {
@@ -195,4 +202,8 @@ main section .broadcasting_announcement .contents_all .announcement_main .on_air
     display: inline-block;
     content: '';  width: 18px; height: 18px;
     background: #f90228; border-radius: 50%;
+}
+
+.time_border {
+    border: 4px solid #fff; border-radius: 120px;
 }

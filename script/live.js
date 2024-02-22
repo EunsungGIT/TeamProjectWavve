@@ -21,6 +21,9 @@ console.log(live_video,live_video_a)
 live_video_a.forEach((t,i)=>{
     t.addEventListener('mouseenter',()=>{
         live_video[i].play()
+        setTimeout(() => {
+        live_video_a[i].classList.add('test')
+        }, 500);
     })
 })
 live_video_a.forEach((t,i)=>{
