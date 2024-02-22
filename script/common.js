@@ -68,7 +68,7 @@ const profile_m_a = document.querySelectorAll('.profile_m a')
 const notification = document.querySelector('.notification')
 const notification_box = document.querySelector('.notification_box')
 
-notification.style.display = 'none';
+// notification.style.display = 'none';
 profile_m_a[3].addEventListener('click', ()=>{
     notification.style.display = 'block';
 })
