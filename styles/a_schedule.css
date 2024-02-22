@@ -104,6 +104,11 @@ main section .broadcasting_announcement .contents_all .announcement_header {
 main section .broadcasting_announcement .contents_all .announcement_header h1 {
     font-size: 2.375rem; color: #a5a5a5;
 }
+main section .broadcasting_announcement .contents_all .announcement_header h1 span {
+}
+main section .broadcasting_announcement .contents_all .announcement_header h1 img{
+    width: 150px; position: relative; top: 28px
+}
 main section .broadcasting_announcement .contents_all .announcement_header .contents_btn{
     display: flex;
 }
@@ -112,10 +117,12 @@ main section .broadcasting_announcement .contents_all .announcement_header .cont
 }
 main section .broadcasting_announcement .contents_all .announcement_header .contents_btn .real_time{
     padding: 12px 30px; 
-    background: #000; display: flex;
+    background: #2f2f2f; display: flex;
     border: 1px solid #1D1D22;
-    border-radius: 6px;
+    border-radius: 6px; 
 }
+main section .broadcasting_announcement .contents_all .announcement_header .contents_btn .real_time:hover {
+    background: #000;}
 main section .broadcasting_announcement .contents_all .announcement_header .contents_btn .real_time span
 {color: #fff;}
 main section .broadcasting_announcement .contents_all .announcement_header .contents_btn .real_time img {width: 20px;}
@@ -164,6 +171,11 @@ main section .broadcasting_announcement .contents_all .announcement_main li .mai
     border: 1px solid #a5a5a5;
     color: #a5a5a5; padding: 10px 15px; font-size: 1.15rem;
     border-radius: 25px;
+}
+main section .broadcasting_announcement .contents_all .announcement_main li .main_contents .contents_more a span:hover{
+    border: 1px solid #1351f9;
+    background: #1351f9;
+    color:#fff
 }
 /* on air */
 main section .broadcasting_announcement .contents_all .announcement_main .on_air {

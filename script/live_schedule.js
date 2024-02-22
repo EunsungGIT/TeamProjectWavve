@@ -76,6 +76,52 @@ live_tv.addEventListener('click',()=>{
     window.location.href = './live.html'
 })
 
+//클릭시 이미지 방송사
+const broadcasting_img = document.querySelector ('h1 span img')
+console.log(broadcasting_img)
+broadcasting[0].addEventListener('click',()=>{
+    broadcasting_img.src = './images/a_schedule/KBS_rogo.png'
+})
+broadcasting[1].addEventListener('click',()=>{
+    broadcasting_img.src = './images/a_schedule/mbc_rogo.png'
+})
+broadcasting[2].addEventListener('click',()=>{
+    broadcasting_img.src = './images/a_schedule/sbs_rogo.png'
+})
+
+//벨 클릭시 색깔 바뀌기
+const alarm  = document.querySelectorAll ('.fa-bell') 
+for(let m of alarm){
+    m.addEventListener('click',(e)=>{
+        m.style.color = '#fff'
+        e.preventDefault();
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //시간표  시간없으면 그냥 활성화 시키는용
 
 // const live_on = document.querySelectorAll('.on_air h1')
