@@ -1,4 +1,5 @@
 /* 시청예약 */
+const live_body_html = document.querySelector('body, html')
 const reservation_table = document.querySelectorAll('.reservation_table a')
 const reservation_bg = document.querySelector('.reservation_bg')
 const reservation = document.querySelector('.reservation')
@@ -6,10 +7,12 @@ const reservation_close = document.querySelector('.reservation #close')
 
 reservation_bg.style.display = 'none'
 reservation_table[0].addEventListener('click',()=>{
-    reservation.classList.add('wide')
+    live_body_html.style.overflow = 'hidden'
     reservation_bg.style.display = 'flex'
+    reservation.classList.add('wide')
 })
 reservation_close.addEventListener('click',()=>{
+    live_body_html.style.overflow = 'auto'
     reservation_bg.style.display = 'none'
 })
 
@@ -24,7 +27,6 @@ live_video_a.forEach((t,i)=>{
     muted[i].style.display = 'none'
     t.addEventListener('mouseenter',()=>{
         live_video_a[i].style.width = '385px'
-        // video_playbar[i].style.display = 'none'
         muted[i].style.display = 'block'
         video_title[i].style.opacity = '0'
         live_video[i].play();

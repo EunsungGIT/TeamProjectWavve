@@ -1,9 +1,23 @@
-main {margin-top: 200px;}
-main h2 {
-    font-size: 1.5rem; color: #fff;
-    font-weight: 700; margin: 0 auto 20px;
-    max-width: 1240px;
+main {}
+main .title_wrap {
+    background: #252525; padding: 40px 0;
+    margin-bottom: 40px; 
 }
+main .title_wrap .title {
+    max-width: 1240px; margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+main .title_wrap .title .left {}
+main .title_wrap .title .left h2 {
+    font-size: 1.5rem; color: #fff;
+}
+main .title_wrap .title .left p {
+    margin-top: 2px; color: #a5a5a5;
+    line-height: 1.5;
+}
+main .title_wrap .title #heartBtn {}
+main .title_wrap .title #heartBtn img {}
 main .movie {
     max-width: 1240px; margin: 0 auto;
     display: flex; flex-flow: row wrap;

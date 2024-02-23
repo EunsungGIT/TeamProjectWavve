@@ -38,6 +38,9 @@ header .h_bottom_wrap .h_bottom nav > a:nth-of-type(2) {color: #fff;}
 .reservation_bg .reservation #close {
     position: absolute; top: 0; right: -40px;
 }
+.reservation_bg .reservation #close:hover {
+    filter: brightness(50%);
+}
 .reservation_bg .reservation #close img {}
 
 /* main */
