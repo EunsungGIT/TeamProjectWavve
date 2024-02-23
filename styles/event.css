@@ -13,11 +13,9 @@ main .event_wrap .event_title h1 {
 }
 /* 탭 */
 main .event_wrap .event_title_tap {
-    
     border-bottom: 1px solid #2f2f2f;
     height: 68px; 
 }
-
 /* 진행중 이벤트 */
 main .event_wrap .event_title_tap .taget {
     color: #fff; font-size: 1.125rem;
@@ -44,7 +42,6 @@ main .event_wrap .event_middle .event_content::after {
     width: 100%; 
     height: 1px; 
     background-color:#2f2f2f; 
-    
 }
 main .event_wrap .event_middle .event_content a {
     display: flex;
@@ -56,10 +53,8 @@ main .event_wrap .event_middle .event_content a .content_left img {
     width: 260px; border-radius: 10px;
 }
 main .event_wrap .event_middle .event_content a .content_right {
-    width: 360px; /* auto 줬더니 날라가서
-    여기 값 지정해줘도 반응형때 문제 없을련지? 111 */
+    width: 360px;
     padding: 0px 0px 0px 0px;
-   /*  vertical-align: top; */
     display: block;
     display: flex;
     flex-flow: row wrap;
@@ -71,18 +66,16 @@ main .event_wrap .event_middle .event_content a .content_right .event_h1 {
 }
 /* 기간 경품 */
 main .event_wrap .event_middle .event_content a .content_right .event_h {
-    color: #a5a5a5;  width: 40px; /* display: flex; flex-flow: row wrap; */
+    color: #a5a5a5;  width: 40px;
     flex-flow: column nowrap;
 }
 main .event_wrap .event_middle .event_content a .content_right .event_c {
     color: #717171;  width: calc(100% - 70px);
 }
-
 main .event_wrap .event_middle .page_a {
     text-align: center;
     padding-bottom: 190px;
     padding-top: 30px;
-
 }
 main .event_wrap .event_middle .page_a .taget { 
     border: 1px solid #fff;

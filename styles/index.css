@@ -49,7 +49,7 @@
 /* header nav hover */
 header .h_bottom_wrap .h_bottom nav > a:first-child {color: #fff;}
     
-/* main 시작 -------------------------------------------------------*/
+/*main 시작*/
 /* main 추가한 부분! */
 main {  
     max-width: 1900px;    
@@ -125,7 +125,7 @@ main .wrap #top_container .btm_btn .btn_pagination a {
 }
 main .wrap #top_container .btm_btn .btn_pagination a img {}
 
-/*----------------------------밑에 하단 슬라이드 시작----------------------------*/
+/*밑에 하단 슬라이드 시작*/
 
 main .wrap .middle_wrap {
     position: relative;

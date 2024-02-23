@@ -22,7 +22,6 @@ const normal_charging = document.querySelector("#frm_payment1")
 
 /* 스와이퍼  */
 const my_swiper = new Swiper('.crad_container', { 
-    // autoplay:{delay:3000},
     slidesPerView: 1, //슬라이드 한번에 1개씩 보이기
     centeredSlides:true, // 슬라이드의 기준을 가운데부터 시작하도록 설정하기
     loop:true,

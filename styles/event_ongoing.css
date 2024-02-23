@@ -15,12 +15,11 @@ main .event_ongoing_wrap .event_ongoing_title h1 {
     font-size: 24px; color: #fff;
 }
 /* 선물상자 끝 */
-
 /* 중간 메인  */
 main .event_ongoing_wrap .event_ongoing_middle {
     width: 1240px; margin: 0 auto;
 }
-/* 진행중 이벤트, 당첨자 발표 타이틀 탭 ----------------------------*/
+/* 진행중 이벤트, 당첨자 발표 타이틀 탭*/
 main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap {
     border-bottom: 1px solid #2f2f2f;
     height: 68px; font-size: 1.125rem;
@@ -40,9 +39,9 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .not_tap
     /* 18px - > 1.125rem */
     color: #fff; font-size: 1.125rem;
 }
-/* 진행중 이벤트, 당첨자 발표 타이틀 탭 끝-------------------------- */
+/* 진행중 이벤트, 당첨자 발표 타이틀 탭 끝*/
 
-/* 메인 타이틀 [신년특집], 목록, 2024-01-22 ~ 전체묶음 --------------------------------*/
+/* 메인 타이틀 [신년특집], 목록, 2024-01-22 ~ 전체묶음*/
 .content_wrap1 .event_ongoing_main_title{
     margin-top: 50px;
     margin-bottom: 30px;
@@ -82,12 +81,10 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .not_tap
     padding-top: 10px; padding-left: 5px;  color: #a5a5a5; 
 } 
 
-
 /* 하위 내용들 전체 박스 */
 .event_ongoing_content {}
 
-
-/* ★ 이벤트 진행중 이미지 - > 코드로  */
+/* ★ 이벤트 진행중 이미지 - > 코드  */
 .event_ongoing_content .ongoing_main_container {
     position: relative;
 }
@@ -103,9 +100,8 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .not_tap
     position: relative; top: 60px;
 }
 /* 메인 이미지 */
-.ongoing_container_title .ongoing_container_left img {
-    
-}
+.ongoing_container_title .ongoing_container_left img {}
+
 /* right */
 .ongoing_container_title .ongoing_container_right {
     display: flex; flex-flow: column wrap;
@@ -148,7 +144,6 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .not_tap
     text-align: center;
     align-items: center;
 }
-
 /* 이벤트 경품 둥근 타이틀  */
 .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .middle_title {
     border: 1px solid #000; border-radius: 50px;
@@ -190,34 +185,31 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .not_tap
 }
 /* 당첨자 발표일 기간까지 전체 */
 .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .btm_lottery  {
-     display: flex;
-     margin-top: 40px;
-     margin-bottom: 40px;
-     width: 100%;
-     justify-content: center;
-     padding: 0px 60px 0px 0px; 
-     font-weight: 500;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: center;
+    padding: 0px 60px 0px 0px; 
+    font-weight: 500;
 }
 /* 당첨자 발표일 */
-.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .btm_lottery .btm_lottery_day {
-    
-}
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .btm_lottery .btm_lottery_day {}
+
 /* 3월 8일 */
 .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .btm_lottery .btm_day {
     margin-left: 10px;
     font-weight:300; 
 }
 /* 압구정 론칭기념 웨이브와 함께~ 흰박스 가장 밑 문장 전체 */
-.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .dtm_explain {
-  /*   background:white;  */
-}
+.event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .dtm_explain {}
+
 /* 압구정 론칭기념 웨이브와 함께~ 흰박스 가장 밑 문장 */
 .event_ongoing_content .ongoing_main_container .container_middle .middle_content .middle_white_box .dtm_explain p{
     font-weight: 300; font-size: 14px;
 }
 
-
-/* 마지막 회색 박스 시작 ---------------------------------------------------------------------- */
+/* 마지막 회색 박스 시작 */
 .event_ongoing_content .ongoing_main_container .btm_container {
     background: #eeeeee; padding: 40px 120px 30px 70px;
 }
@@ -235,31 +227,23 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .not_tap
     font-weight: 300; color: #848484;
 }
 
-/* 매인 이미지 - > 변환 끝 -------------------------------------*/
-/*.event_ongoing_wrap .event_ongoing_middle .ongoing_container*/
+/* 매인 이미지 - > 변환 끝*/
 .event_ongoing_content .ongoing_container {
     width: 1224px; margin: 0 auto;
 }
-
-
-/* 하단 영화소개들 시작 ------------------------------------------ */
+/* 하단 영화소개들 시작 */
 /* 시작 하단 영화소개 전부*/
-
 /* 전체 */
 .ongoing_container .ongoing_items{
     display: flex;
     flex-wrap: wrap;
 }
 
-
 .ongoing_container .ongoing_items .ongoing_item{
     width: 50%;
     padding: 20px 20px 20px 0px;
-    /* 밑 */
-   /*   border-bottom: 1px solid #717171; */
-   box-shadow: inset 0 -0.5px #717171;;
+    box-shadow: inset 0 -0.5px #717171;;
 }
-
 
 /* 영화 소개 각각 아이템  */
 .ongoing_container .ongoing_items .ongoing_item a {
@@ -267,9 +251,8 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .not_tap
     align-items: center;
 }
 
-
 /* 영화 이미지 전체 */
- .ongoing_items .ongoing_item a .ongoing_img {
+.ongoing_items .ongoing_item a .ongoing_img {
     width: 185px; 
 
 }
@@ -284,7 +267,6 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .not_tap
 }
 /* 이미지 오른쪽 span 박스*/
 .ongoing_container .ongoing_items .ongoing_item a .ongoing_span_box span {
-/*     display: table-cell; */
     width: auto;
     padding: 0px 0px 0px 0px;
     display: block;
@@ -311,14 +293,12 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .not_tap
     margin-bottom: 20px;
 }
 
-
 /* 감독 출연진 줄거리에 내용들 */
 .ongoing_container .ongoing_items .ongoing_item a .ongoing_span_box span .ongoing_c {
     font-size: 16px; color: #717171;
     width: calc(100% - 70px);
     margin-top: 10px;
 }
-
 /* 하단부 페이지네이션 */
 main .event_ongoing_wrap .page_a {
     padding-top: 120px; padding-bottom: 70px;
@@ -331,36 +311,6 @@ main .event_ongoing_wrap .page_a .taget {color: #fff;
     font-size: 14px; 
 }
 main .event_ongoing_wrap .page_a a {margin-right: 18px;
-color: #a5a5a5;
+    color: #a5a5a5;
 }
 
-/* 끝 */
-
-/* 하단부 영화소개 선택자 문제 생길 시 적용 - 현재 문제없음  
-대공사하여 일단 보류 선택자들
-*/
-
-/* .event_ongoing_content .ongoing_container .ongoing_items {
-    display: flex; flex-flow: row wrap; 
-    padding: 0px; margin: 0px;
-    display: none;
-    
-    }
-   
-    .event_ongoing_content .ongoing_container .ongoing_items li{
-        width: calc(50%); position: relative;
-        background: violet;
-        display: none;
-        
-    }
-   
-    .event_ongoing_content .ongoing_container .ongoing_items li::after {
-      content: ""; 
-      position: absolute; 
-      left: 0; 
-      bottom: -12px; 
-      width: 100%; 
-      height: 1px; 
-      background-color:#2f2f2f; 
-    
-    } */
