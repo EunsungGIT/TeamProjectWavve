@@ -1,6 +1,10 @@
 /* body / html */
 body, html {scroll-behavior:smooth;}
 body {background: #1b1b1b;}
+/* 모든 a마우스포인트 cusor 로 만들기  */
+body a {
+    cursor: pointer;
+}
 
 /* 스크롤 바 */
 /* Firefox */

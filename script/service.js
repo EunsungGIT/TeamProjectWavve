@@ -1,5 +1,6 @@
 let slide = new Swiper('.product_benner',{
     slidesPerView: 1,
+    spaceBetween:30,
     navigation:{
         nextEl:'.product_benner .swiper-button-next',
         prevEl:'.product_benner .swiper-button-prev',
@@ -7,6 +8,11 @@ let slide = new Swiper('.product_benner',{
     pagination:{
         el:'.swiper-pagination'
     },
+    breakpoints:{
+        1240: {
+            spaceBetween:10
+        }
+    }
 })
 
 // 하단 새창

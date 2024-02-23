@@ -22,7 +22,7 @@
     <main>
         <h2>NEW 해외시리즈</h2>
         <div class="movie">
-            <a href="#"><img src="./images/category/overseas_001.jpg" alt=""></a>
+            <!-- <a href="#"><img src="./images/category/overseas_001.jpg" alt=""></a>
             <a href="#"><img src="./images/category/overseas_002.jpg" alt=""></a>
             <a href="#"><img src="./images/category/overseas_001.jpg" alt=""></a>
             <a href="#"><img src="./images/category/overseas_002.jpg" alt=""></a>
@@ -41,14 +41,31 @@
             <a href="#"><img src="./images/category/overseas_001.jpg" alt=""></a>
             <a href="#"><img src="./images/category/overseas_002.jpg" alt=""></a>
             <a href="#"><img src="./images/category/overseas_001.jpg" alt=""></a>
-            <a href="#"><img src="./images/category/overseas_002.jpg" alt=""></a>
+            <a href="#"><img src="./images/category/overseas_002.jpg" alt=""></a> -->
         </div>
         <div class="page">
             <a href="#">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
+            <a href="#">4</a>
         </div>
     </main>
     <script src="./script/common.js"></script>
+    <script src="./script/overseas.json"></script>
+    <script>
+        const movieList=document.querySelector('.movie')
+        fetch('./script/overseas.json')
+        .then(response => response.json())
+        .then(data =>{
+            data.forEach((movie,index)=>{
+                const listItem = document.createElement('a')
+                const indexFormatted =(index +1).toString().padStart(2,'0');
+                listItem.innerHTML = `
+                    <img src="./images/data_img/overseas_img/overseas_img_banner_${indexFormatted}.jpg">
+                `;
+                movieList.appendChild(listItem)
+            })
+        })
+    </script>
 </body>
 </html>
