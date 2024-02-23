@@ -19,18 +19,19 @@ main .holding_coupon_wrap .holding_title h1 {
 }
 
 /* 보유 쿠폰내역 */
-main .holding_coupon_wrap .holding_coupon_middle {
+main .holding_coupon_wrap .holding_coupon_middle {}
 
-}
 main .holding_coupon_wrap .holding_coupon_middle .holding_middle_title {
     justify-content:space-between;
     text-align: left;
     
 }
+
 main .holding_coupon_wrap .holding_coupon_middle .holding_middle_title h3 {
     font-size: 24px; color:#fff;
     margin-bottom: 20px;
 }
+
 /* 안 쪽 회색 박스 */
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main {
 background-color:#252525 ;
@@ -39,19 +40,18 @@ border-radius: 5px;
 padding-bottom: 70px;
 margin: 0 auto;
 width: 1240px;
-
 }
-main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main form {
 
-}
+main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main form {}
+
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main form fieldset {
-    border: none; /* 테두리 제거 */ 
-    justify-content: space-around; text-align: right;
-    
+    border: none;
+    justify-content: space-around; text-align: right;    
 }
 
 /* 쿠폰 번호를 입력해주세요 창 */
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main form fieldset .skip { display: none;}
+
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main form fieldset .input_container {display: flex;}
 
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main form fieldset .holding_coupon_input {
@@ -65,6 +65,7 @@ main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main form field
     color: #5e5e5e;
     padding: 0px 20px 0px 20px;
 }
+
 /* 쿠폰등록 버튼  */
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main form fieldset .holding_coupon_btn {
     background-color: #1351f9;
@@ -77,6 +78,7 @@ main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main form field
     cursor: pointer;
     width: 119px;
 }
+
 /* ul>li 내용들 */
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container {
     display: flex;  justify-content: space-around; 
@@ -91,12 +93,9 @@ main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_c
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font{
     font-size: 0.875rem;
 }
-
-
 /* left */
-main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font_left{
-    
-}
+main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font_left{}
+
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font_left li {
     color: #5e5e5e; margin-top: 10px; position: relative;
 }
@@ -110,13 +109,12 @@ main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_c
     position: absolute; top: 9px; left: -6px;
 }
 
-
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font_left li p {
-     color: #5e5e5e; text-align: left;
+    color: #5e5e5e; text-align: left;
 }
 /* right */
-main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font_right{
-}
+main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font_right{}
+
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font_right li {
     position: relative;
 }
@@ -135,23 +133,19 @@ main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_c
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font_right li {
     color: #5e5e5e; margin-top: 10px;
 }
+
 main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main .holding_coupon_container .holding_coupon_font_right li p {
     color: #5e5e5e; text-align: left;
-    
 }
-
 /* 보유쿠폰 | 소진 쿠폰 */
 main .holding_coupon_wrap .main_wrap .holding_exhaust {
     margin-top: 60px;
 }
 main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav {
-display: flex; flex-flow: row nowrap;
+    display: flex; flex-flow: row nowrap;
 }
-
 /* 보유 소진 쿠폰 공통 폰트 */
-main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .coupon_font {
-        
-}
+main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .coupon_font {}
 
 /* 보유쿠폰 */
 main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li {list-style: none;}
@@ -173,31 +167,32 @@ main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li:fi
 
 main .holding_coupon_wrap .main_wrap  .holding_exhaust .holding_exhaust_nav li .holding_coupon_nav {}
 main .holding_coupon_wrap  .main_wrap .holding_exhaust .holding_exhaust_nav li .exhaust_coupon_nav {  font-size: 18px; color: #a5a5a5;}
+
 /* 쿠폰이 없어요. 부분 */
 main .holding_coupon_wrap .not_coupon {
     text-align: center;
-
-    
 }
+
 main .holding_coupon_wrap  .main_wrap .not_coupon .holding_not_coupon {
     padding: 78px 0px 126px;
 }
 /* 이미지 공통 태그 */
-main .holding_coupon_wrap  .main_wrap .not_coupon .not_coupon_img img{
-   
-}
+main .holding_coupon_wrap  .main_wrap .not_coupon .not_coupon_img img{}
+
 main .holding_coupon_wrap .main_wrap  .not_coupon .holding_not_coupon img {}
+
 main .holding_coupon_wrap .main_wrap  .not_coupon .holding_not_coupon  p {
     margin-top: 10px;
     color: #a5a5a5;
-    /* 22px - >  1.375rem;*/
     font-size: 1.375rem;
 }
 /* 소진된 쿠폰이 없어요 */
 main .holding_coupon_wrap .main_wrap .not_coupon .exhaust_not_coupon {
     padding: 78px 0px 126px;
 }
+
 main .holding_coupon_wrap .main_wrap .not_coupon .exhaust_not_coupon img {}
+
 main .holding_coupon_wrap .main_wrap .not_coupon .exhaust_not_coupon  p {
     margin-top: 10px;
     font-size: 22px; color: #a5a5a5;
