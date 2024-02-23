@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavve(웨이브)</title>
+    <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/contents02.css">
+    <link rel="stylesheet" href="./styles/Reaction_type.css/contents_reaction02.css">
+</head>
+<body>
+    <!-- 공유 -->
+    <div class="share_bg">
+        <div class="share">
+            <h2>공유</h2>
+            <div class="twitter_facebook">
+                <a href="#">
+                    <img src="./images/live_contents/twitter.png" alt="트위터">
+                    <span>트위터</span>
+                </a>
+                <a href="#">
+                    <img src="./images/live_contents/facebook.png" alt="페이스북">
+                    <span>페이스북</span>
+                </a>
+            </div>
+            <div class="link_copy">
+                <input type="text" id="link" value="https://www.wavve.com/player/live?channelid=C2501">
+                <button type="button" id="copyBtn">링크복사</button>
+            </div>
+            <a href="#"><img src="./images/live_contents/popup_close.svg" alt="닫기"></a>
+        </div>
+        <div class="copy">링크를 복사했어요. 원하는 곳에 붙여넣기(CTRL + V)해주세요.</div>
+    </div>
+    <!-- main -->
+    <main>
+        <section>
+            <div class="favorite">관심영화로 등록했어요</div>
+            <div class="contents">
+                <div class="video_bg"></div>
+                <div class="gradient_bg">
+                    <video src="./video/content04_intro.mp4" autoplay muted loop></video>
+                </div>
+                <div class="video_intro">
+                    <img src="./images/contents/only.svg" alt="오직 웨이브에서만">
+                    <div class="logo">
+                        <img src="./images/contents/content04_title.png" alt="박하경 여행기">
+                    </div>
+                    <p class="genre">1시즌1개 · <img src="./images/contents/all.svg" alt="all"> · 드라마 <img
+                            src="./images/contents/content_cc.svg" alt=""> </p>
+                    <div class="contents_box">
+                        <button type="button" id="optionBtn">더빙 <img src="./images/contents/select.svg"
+                                alt="더보기"></button>
+                        <div class="button_m">
+                            <a href="#">자막</a>
+                            <a href="#">더빙</a>
+                        </div>
+                        <button type="button" id="buyBtn" onclick="location.href = './membership.html'">이용권
+                            구매하기</button>
+                        <div class="icon">
+                            <a href="#">
+                                <img src="./images/contents/heart.svg" alt="관심등록">
+                                <span>관심</span>
+                            </a>
+                            <a href="#">
+                                <img src="./images/contents/share.svg" alt="공유하기">
+                                <span>공유</span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="detail">
+                        사라져 버리고 싶은 토요일, 딱 하루의 여행을 떠나는 국어 선생님 박하경의 예상치 못한 순간과 기적 같은 만남을 그린 명랑 유랑기 <a href="#">더보기</a>
+                    </p>
+                </div>
+                <button type="button" id="muted"><img src="./images/contents/muted.png" alt=""></button>
+            </div>
+            <div class="contents_info">
+                <div class="info_title">
+                    <a href="#" class="menu_title related_video">관련영상</a>
+                    <a href="#" class="menu_title recommendation">추천</a>
+                    <a href="#" class="menu_title details">상세정보</a>
+                </div>
+                <div class="info_contents">
+                    <div class="container_contents contents_item ">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="./images/contents/contents04_benner_01.jpg" alt="#">
+                                    </div>
+                                    <em>티저2</em>
+                                    <span>1분</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="./images/contents/contents04_benner_02.jpg" alt="#">
+                                    </div>
+                                    <em>티저1</em>
+                                    <span>1분</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <ul class="second"></ul> -->
+                    <!-- recommend 추천 탭 -->
+                    <ul class="container_contents recommend">
+                        <div class="img_container">
+                            <div class="title">
+                                <span>비슷한 프로그램</span>
+                                <a href="#"><img src="#" alt="">더보기<img src="./images/bnr_img_next.svg" alt="#"></a>
+                            </div>
+                            <div class="swiper-container wavve_images">
+                                <div class="swiper-wrapper wavve_img">
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_003.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_003.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_003.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                </div>
+                                <a href="#" class="swiper-button-prev prev"><img src="./images/contents/slide_prev.png"
+                                        alt=""></a>
+                                <a href="#" class="swiper-button-next next"><img src="./images/contents/slide_next.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="img_container">
+                            <div class="title">
+                                <span>믿고 보는 웨이브 에디터 추천작</span>
+                                <a href="#"><img src="#" alt="">더보기<img src="./images/bnr_img_next.svg" alt="#"></a>
+                            </div>
+                            <div class="swiper-container wavve_images">
+                                <div class="swiper-wrapper wavve_img">
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img
+                                            src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                </div>
+                                <a href="#" class="swiper-button-prev prev"><img src="./images/contents/slide_prev.png"
+                                        alt=""></a>
+                                <a href="#" class="swiper-button-next next"><img src="./images/contents/slide_next.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </ul>
+                    <!-- 추천 끝  -->
+                    <ul class="container_contents information">
+                        <div class="information_box">
+                            <!-- 추가 -->
+                            <div class="infomation_title">
+                                <em>박하경여행기</em>
+                                <em class="text_box_title">현재 에피소드 : 1. ‘마음내다버리기’</em>
+                                <p class="explanation1">
+                                    열강 해도 딴 짓만 하는 학생들. 사라져 버리고 싶다. 템플스테이로 간 해남 절. 묵언수행 중인 정아와 함께 한 조용한 산책에서 마음을 내다 버린다.
+                                    큰 숨 쉬며 일, 이, 삼. “하아~이제 좀 살겠네”
+
+                                    출연 :이나영, 구교환, 길해연, 박세완, 박인환, 서현우, 선우정아, 신현지, 심은경, 조현철, 한예리
+                                </p>
+                            </div>
+                            <div class="information_contents">
+                                <div class="img">
+                                    <img src="./images/contents/main_benner_004.jpg" alt="#">
+                                </div>
+                                <div class="main_text">
+                                    <div class="text_box">
+                                        <p class="explanation">사라져 버리고 싶은 토요일, 딱 하루의 여행을 떠나는 국어 선생님 박하경의 예상치 못한 순간과 기적
+                                            같은 만남을 그린 명랑 유랑기</p>
+                                    </div>
+                                    <dl class="detailed_information">
+                                        <dt>개요</dt>
+                                        <dd>대한민국</dd>
+                                        <dt>장르</dt>
+                                        <dd><a href="#">#웹드라마</a>,<a href="#">#성장</a>,<a href="#">#청춘</a></dd>
+                                        <dt>출현</dt>
+                                        <dd><a href="#">이나영</a>,<a href="#">구교환</a>,<a href="#">길해연</a>,<a
+                                                href="#">박세완</a>,<a href="#">박인환</a>,<a href="#">서현우</a>,<a
+                                                href="#">선우정아</a>,<a href="#">신현지</a>,<a href="#">심은경</a>,<a
+                                                href="#">조현철</a>,<a href="#">한예리</a></dd>
+                                        <dt>감독</dt>
+                                        <dd><a href="#">이종필</a></dd>
+                                        <dt>등급</dt>
+                                        <dd><img src="./images/contents/all.svg" alt=""></dd>
+                                        </dd>
+                                        <dt>내용정보</dt>
+                                        <dd>
+                                            <div class="content_information">
+                                                <span>
+                                                    <img src="./images/contents/topic_img.svg" alt="주제">
+                                                    <em>전체</em>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/contents/sensationality.img.svg" alt="선정성">
+                                                    <em>전체</em>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/contents/violence_img.svg" alt="폭력성">
+                                                    <em>전체</em>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/contents/dialogue_img.svg" alt="대사">
+                                                    <em>전체</em>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/contents/fear_img.svg" alt="공포">
+                                                    <em>전체</em>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/contents/drug_img.svg" alt="약물">
+                                                    <em>전체</em>
+                                                </span>
+                                                <span>
+                                                    <img src="./images/contents/copy_img.svg" alt="모방위험">
+                                                    <em>전체</em>
+                                                </span>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script/common.js"></script>
+    <script src="./script/contents02.js"></script>
+</body>
+
+</html>
