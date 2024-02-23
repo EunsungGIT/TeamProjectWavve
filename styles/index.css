@@ -122,6 +122,8 @@ main .wrap #top_container .btm_btn .btn_pagination {
 }
 main .wrap #top_container .btm_btn .btn_pagination a {
     display: inline-block;
+    position: relative;
+    z-index: 999;
 }
 main .wrap #top_container .btm_btn .btn_pagination a img {}
 

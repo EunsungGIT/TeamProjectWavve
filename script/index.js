@@ -31,6 +31,21 @@ const my_swiper = new Swiper('#top_container', {
             slidesPerView: 1.5,
         },
     },
+    
+})
+
+/* 상단 메인 슬라이드 Stop & Play btn */
+const main_swiper_stop_btn = document.querySelector(".btn_pagination a") 
+
+main_swiper_stop_btn.addEventListener("click",()=>{
+    if(my_swiper.autoplay.running) {
+        my_swiper.autoplay.stop(); // 슬라이더 멈춤
+        main_swiper_stop_btn.children[0].src ="../images/icon/index_main_bnr_stop.png"
+    } else {
+        my_swiper.autoplay.start() // 슬라이더 시작
+        main_swiper_stop_btn.children[0].src = "../images/icon/index_main_bnr_play.png"
+    }
+    // my_swiper.autoplay.stop(); // 슬라이더 멈춤
 })
 
 /* 하단 슬라이드  */
