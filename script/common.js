@@ -7,7 +7,10 @@ const chat_message = document.querySelector('.chat_message')
 const user_text = document.querySelector('.user_text')
 const chatBtn = document.querySelector('#chatBtn')
 const apiEndpoint = 'https://api.openai.com/v1/chat/completions'
-const apiKey =
+const apiKey = 
+
+
+
 
 chat_box.classList.add('chatHide')
 chat_icon.addEventListener('click', ()=>{
@@ -24,9 +27,16 @@ chat_icon.addEventListener('click', ()=>{
 
 chatBtn.addEventListener('click', ()=>{
     let message = user_text.value
-    addMessage('프로필1',message)
+    addMessage  ('프로필1',message)
     user_text.value = ''
 })
+
+user_text.addEventListener('keydown',(e)=>{
+    if(e.keyCode === 13){
+        chatBtn.click();
+    }
+})
+
 
 function addMessage(target, contents){
     const messageElement = document.createElement('div')
