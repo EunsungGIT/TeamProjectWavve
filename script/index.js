@@ -1,10 +1,10 @@
 // 팝업창
-const body_html = document.querySelector('body, html')
-const top_a = document.querySelectorAll('.contents .top a')
+const popup_close = document.querySelector('.popup .close')
 const popup = document.querySelector('.popup')
+console.log(popup_close)
 
 body_html.style.overflow = 'hidden'
-top_a[1].addEventListener('click', ()=>{
+popup_close.addEventListener('click', ()=>{
     popup.classList.add('hide')
     body_html.style.overflow = 'auto'
     setTimeout(() => {
