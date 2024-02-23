@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavve(웨이브)</title>
+    <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/contents03.css">
+    <link rel="stylesheet" href="./styles/Reaction_type.css/contents_reaction03.css">
+</head>
+<body>
+    <!-- 공유 -->
+    <div class="share_bg">
+        <div class="share">
+            <h2>공유</h2>
+            <div class="twitter_facebook">
+                <a href="#">
+                    <img src="./images/live_contents/twitter.png" alt="트위터">
+                    <span>트위터</span>
+                </a>
+                <a href="#">
+                    <img src="./images/live_contents/facebook.png" alt="페이스북">
+                    <span>페이스북</span>
+                </a>
+            </div>
+            <div class="link_copy">
+                <input type="text" id="link" value="https://www.wavve.com/player/live?channelid=C2501">
+                <button type="button" id="copyBtn">링크복사</button>
+            </div>
+            <a href="#"><img src="./images/live_contents/popup_close.svg" alt="닫기"></a>
+        </div>
+        <div class="copy">링크를 복사했어요. 원하는 곳에 붙여넣기(CTRL + V)해주세요.</div>
+    </div>
+    <!-- main -->
+    <main>
+        <section>
+            <div class="favorite">관심영화로 등록했어요</div>
+            <div class="contents">
+                <div class="video_bg"></div>
+                <div class="gradient_bg">
+                    <video src="./video/content03_intro.mp4" autoplay muted loop></video>
+                </div>
+                <div class="video_intro">
+                    <img src="./images/contents/only.svg" alt="오직 웨이브에서만">
+                    <div class="logo">
+                        <img src="./images/contents/content03_title.png" alt="나 혼자만 레벨업">
+                    </div>
+                    <p class="genre">시즌2개 · <img src="./images/contents/19years.svg" alt="15세"> · 애니메이션 <img src="./images/contents/content_cc.svg" alt=""> </p>
+                    <div class="contents_box">
+                        <button type="button" id="optionBtn">더빙 <img src="./images/contents/select.svg" alt="더보기"></button>
+                        <div class="button_m">
+                            <a href="#">자막</a>
+                            <a href="#">더빙</a>
+                        </div>
+                        <button type="button" id="buyBtn" onclick="location.href = './membership.html'">이용권 구매하기</button>
+                        <div class="icon">
+                            <a href="#">
+                                <img src="./images/contents/heart.svg" alt="관심등록">
+                                <span>관심</span>
+                            </a>
+                            <a href="#">
+                                <img src="./images/contents/share.svg" alt="공유하기">
+                                <span>공유</span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="detail"><a href="#">더보기</a>
+                    </p>
+                </div>
+                <button type="button" id="muted"><img src="./images/contents/muted.png" alt=""></button>
+            </div>
+            <div class="contents_info">
+                <div class="info_title">
+                    <a href="#" class="menu_title related_video">관련영상</a>
+                    <a href="#" class="menu_title recommendation">추천</a>
+                    <a href="#" class="menu_title details">상세정보</a>
+                </div>
+                <div class="info_contents">
+                    <div class="container_contents contents_item ">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="./images/contents/contents03_benner_01.jpg" alt="#">
+                                    </div>
+                                    <em>티저2</em>
+                                    <span>2분</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="./images/contents/contents03_benner_02.jpg" alt="#">
+                                    </div>
+                                    <em>티저1</em>
+                                    <span>2분</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <ul class="second"></ul> -->
+                    <!-- recommend 추천 탭 -->
+                    <ul class="container_contents recommend">
+                        <div class="img_container">
+                            <div class="title">
+                                <span>비슷한 프로그램</span>
+                                <a href="#"><img src="#" alt="">더보기<img src="./images/bnr_img_next.svg" alt="#"></a>
+                            </div>
+                            <div class="swiper-container wavve_images">
+                                <div class="swiper-wrapper wavve_img" >
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_003.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_003.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_003.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                </div>
+                                <a href="#" class="swiper-button-prev prev" ><img src="./images/contents/slide_prev.png" alt=""></a>
+                                <a href="#" class="swiper-button-next next" ><img src="./images/contents/slide_next.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="img_container">
+                            <div class="title">
+                                <span>믿고 보는 웨이브 에디터 추천작</span>
+                                <a href="#"><img src="#" alt="">더보기<img src="./images/bnr_img_next.svg" alt="#"></a>
+                            </div>
+                            <div class="swiper-container wavve_images" >
+                                <div class="swiper-wrapper wavve_img" >
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                </div>
+                                <a href="#" class="swiper-button-prev prev" ><img src="./images/contents/slide_prev.png" alt=""></a>
+                                <a href="#" class="swiper-button-next next"><img src="./images/contents/slide_next.png" alt=""></a>
+                            </div>
+                        </div>
+                    </ul>
+                <!-- 추천 끝  -->
+                    <ul class="container_contents information">
+                        <div class="information_box">
+                            <!-- 추가 -->
+                            <div class="infomation_title">
+                                <em>나 혼자만 레벨업(자막)</em>
+                                <em class="text_box_title">현재 에피소드 : 1. ‘I'm Used to It’</em>
+                                <p class="explanation1">
+                                    10여 년 전. '게이트'라고 불리는 다른 차원과 이쪽 세계를 이어주는 통로가 나타났고 게이트 너머에 숨어 있는 마수와 싸우는 자들을 사람들은 '헌터'라고 불렀다. 헌터는 각성 시의 마력량에 따라 랭크가 나뉘었고 성진우는 가장 낮은 E급 중에서도 최약이라고 불렸다. 어느 날, 던전 공략에 참가한 성진우. 던전을 클리어했지만 그 안에서 또 하나의 입구가 발견됐는데.
+                                </p>
+                            </div>
+                            <div class="information_contents">
+                                <div class="img">
+                                    <img src="./images/contents/main_benner_003.jpg" alt="#">
+                                </div>
+                                <div class="main_text">
+                                    <div class="text_box">
+                                        <p class="explanation"></p>
+                                    </div>
+                                    <dl class="detailed_information">
+                                        <dt>개요</dt>
+                                        <dd>ANIPLUS, 일본, 2023~2024</dd>
+                                        <dt>장르</dt>
+                                        <dd><a href="#">#액션</a>,<a href="#">#판타지</a></dd>
+                                        <dt>감독</dt>
+                                        <dd><a href="#">나카시게 슌스케</a></dd>
+                                        <dt>등급</dt>
+                                        <dd><img src="./images/contents/19years.svg" alt=""></dd>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script/common.js"></script>
+    <script src="./script/contents03.js"></script>
+</body>
+</html>

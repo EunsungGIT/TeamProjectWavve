@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavve(웨이브)</title>
+    <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/contents02.css">
+    <link rel="stylesheet" href="./styles/Reaction_type.css/contents_reaction02.css">
+</head>
+<body>
+    <!-- 공유 -->
+    <div class="share_bg">
+        <div class="share">
+            <h2>공유</h2>
+            <div class="twitter_facebook">
+                <a href="#">
+                    <img src="./images/live_contents/twitter.png" alt="트위터">
+                    <span>트위터</span>
+                </a>
+                <a href="#">
+                    <img src="./images/live_contents/facebook.png" alt="페이스북">
+                    <span>페이스북</span>
+                </a>
+            </div>
+            <div class="link_copy">
+                <input type="text" id="link" value="https://www.wavve.com/player/live?channelid=C2501">
+                <button type="button" id="copyBtn">링크복사</button>
+            </div>
+            <a href="#"><img src="./images/live_contents/popup_close.svg" alt="닫기"></a>
+        </div>
+        <div class="copy">링크를 복사했어요. 원하는 곳에 붙여넣기(CTRL + V)해주세요.</div>
+    </div>
+    <!-- main -->
+    <main>
+        <section>
+            <div class="favorite">관심영화로 등록했어요</div>
+            <div class="contents">
+                <div class="video_bg"></div>
+                <div class="gradient_bg">
+                    <video src="./video/content02_intro.mp4" autoplay muted loop></video>
+                </div>
+                <div class="video_intro">
+                    <img src="./images/contents/only.svg" alt="오직 웨이브에서만">
+                    <div class="logo">
+                        <img src="./images/contents/content02_title.png" alt="고려 거란 전쟁">
+                    </div>
+                    <p class="genre">1시즌1개 · <img src="./images/contents/15years.svg" alt="15세"> · 드라마 <img src="./images/contents/content_cc.svg" alt=""> </p>
+                    <div class="contents_box">
+                        <button type="button" id="optionBtn">더빙 <img src="./images/contents/select.svg" alt="더보기"></button>
+                        <div class="button_m">
+                            <a href="#">자막</a>
+                            <a href="#">더빙</a>
+                        </div>
+                        <button type="button" id="buyBtn" onclick="location.href = './membership.html'">이용권 구매하기</button>
+                        <div class="icon">
+                            <a href="#">
+                                <img src="./images/contents/heart.svg" alt="관심등록">
+                                <span>관심</span>
+                            </a>
+                            <a href="#">
+                                <img src="./images/contents/share.svg" alt="공유하기">
+                                <span>공유</span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="detail">
+                        “이제는 통쾌한 승리의 역사를 재현할 때“ 고려 거란 전쟁은 당대 최강국인 거란제국과 신생국 고려가 맞붙은 26년간의 전쟁이다. 고려는 여섯 차례에 걸친 거란의 침략에도 굴복하지 않고, 마지막엔 강감찬의 귀주대첩으로 거란군...<a href="#">더보기</a>
+                    </p>
+                </div>
+                <button type="button" id="muted"><img src="./images/contents/muted.png" alt=""></button>
+            </div>
+            <div class="contents_info">
+                <div class="info_title">
+                    <a href="#" class="menu_title related_video">관련영상</a>
+                    <a href="#" class="menu_title recommendation">추천</a>
+                    <a href="#" class="menu_title details">상세정보</a>
+                </div>
+                <div class="info_contents">
+                    <div class="container_contents contents_item ">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="./images/contents/contents02_benner_01.jpg" alt="#">
+                                    </div>
+                                    <em>특집 1부-13부 스페셜</em>
+                                    <span>80분</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="./images/contents/contents02_benner_02.jpg" alt="#">
+                                    </div>
+                                    <em>티저6 고려 거란 전쟁</em>
+                                    <span>1분</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <ul class="second"></ul> -->
+                    <!-- recommend 추천 탭 -->
+                    <ul class="container_contents recommend">
+                        <div class="img_container">
+                            <div class="title">
+                                <span>비슷한 프로그램</span>
+                                <a href="#"><img src="#" alt="">더보기<img src="./images/bnr_img_next.svg" alt="#"></a>
+                            </div>
+                            <div class="swiper-container wavve_images">
+                                <div class="swiper-wrapper wavve_img" >
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_003.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_003.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_002.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_003.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_001.jpg" alt=""></a>
+                                </div>
+                                <a href="#" class="swiper-button-prev prev" ><img src="./images/contents/slide_prev.png" alt=""></a>
+                                <a href="#" class="swiper-button-next next" ><img src="./images/contents/slide_next.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="img_container">
+                            <div class="title">
+                                <span>믿고 보는 웨이브 에디터 추천작</span>
+                                <a href="#"><img src="#" alt="">더보기<img src="./images/bnr_img_next.svg" alt="#"></a>
+                            </div>
+                            <div class="swiper-container wavve_images" >
+                                <div class="swiper-wrapper wavve_img" >
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_005.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_006.jpg" alt=""></a>
+                                    <a href="#" class="swiper-slide"><img src="./images/contents/contents_recommend_004.jpg" alt=""></a>
+                                </div>
+                                <a href="#" class="swiper-button-prev prev" ><img src="./images/contents/slide_prev.png" alt=""></a>
+                                <a href="#" class="swiper-button-next next"><img src="./images/contents/slide_next.png" alt=""></a>
+                            </div>
+                        </div>
+                    </ul>
+                <!-- 추천 끝  -->
+                    <ul class="container_contents information">
+                        <div class="information_box">
+                            <!-- 추가 -->
+                            <div class="infomation_title">
+                                <em>고려 거란 전쟁</em>
+                                <em class="text_box_title">현재 에피소드 : 1. ‘서기 1009년 고려, 후계 문제를 둘러싸고 소란에 휩싸이는 조정’</em>
+                                <p class="explanation1">
+                                    서기 1009년 고려, 조정은 후계 문제를 둘러싸고 소란에 휩싸이고. 천추태후에 의해 출가 당해 승려로 살던 적통자 왕순은 살해 위협에 시달린다.
+                                    출연 :김동준, 최수종, 지승현, 이원종, 김재민, 조희봉, 김정학, 윤복인, 이재용, 강신일
+                                </p>
+                            </div>
+                            <div class="information_contents">
+                                <div class="img">
+                                    <img src="./images/contents/main_benner_002.jpg" alt="#">
+                                </div>
+                                <div class="main_text">
+                                    <div class="text_box">
+                                        <p class="explanation">“이제는 통쾌한 승리의 역사를 재현할 때“ 고려 거란 전쟁은 당대 최강국인 거란제국과 신생국 고려가 맞붙은 26년간의 전쟁이다. 고려는 여섯 차례에 걸친 거란의 침략에도 굴복하지 않고, 마지막엔 강감찬의 귀주대첩으로 거란군을 전멸시키며 스스로 전쟁의 종지부를 찍었다. 말 그대로 통쾌한 승리를 쟁취한 것이다. 그러나 우리가 고려 거란 전쟁을 다루려 하는 이유는 단지 기분 좋은 역사를 되새김질하기 위함은 아니다. 전쟁을 이겨낸 고려가 과연 무엇을 이룩하였는지 보여주기 위해서다. 2023년 오늘의 대한민국. 우리가 과연 어떤 길을 가야 하는지... 고려는 그 해답을 분명하게 보여준다 “ 이제는 KOREA의 근원을 알릴 때 “ 한 나라의 역사를 알게 되면, 누구나 그 나라를 새로운 눈으로 바라보게 된다. 그들과 자신들의 공통점을 발견하며 그 나라를 이해하고 존중하게 된다. 고려. KOREA. 이제 세계에 KOREA를 보여줘야 할 때이다. 세계는 이 드라마를 통해 우리가 어떤 사람들인지 알게 될 것이다.</p>
+                                    </div>
+                                    <dl class="detailed_information">
+                                        <dt>개요</dt>
+                                        <dd>KBS</dd>
+                                        <dt>장르</dt>
+                                        <dd><a href="#">사극</a></dd>
+                                        <dt>출현</dt>
+                                        <dd><a href="#">김동준</a>,<a href="#">최수종</a>,<a href="#">지승현</a></dd>
+                                        <dt>감독</dt>
+                                        <dd><a href="#">전우성</a>,<a href="#">김한솔</a></dd>
+                                        <dt>작가</dt>
+                                        <dd><a href="#">이정우</a></dd>
+                                        <dt>등급</dt>
+                                        <dd><img src="./images/contents/15years.svg" alt=""></dd>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script/common.js"></script>
+    <script src="./script/contents02.js"></script>
+</body>
+</html>
