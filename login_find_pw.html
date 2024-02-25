@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/login_find_pw.css">
+    <link rel="stylesheet" href="./styles/Reaction_type.css/login_find_pw_reaction.css">
 </head>
 <body>
     <!-- 채팅 -->
@@ -62,6 +63,7 @@
                     </a>
                 </div>
                 <div class="method_info">
+                    <span class="m_title">SNS 아이디로 가입하신 경우 각 SNS 홈페이지에서 비밀번호 재설정이 가능합니다.</span>
                     <form action="#" method="post" id="findIdFrm">
                         <fieldset>
                             <legend class="skip">아이디 찾기 양식</legend>
@@ -71,12 +73,12 @@
                                 <input type="radio" name="way" id="user_email">
                                 <label for="user_email">이메일 주소</label>
                             </div>
-                            <input type="text" id="user_id" placeholder="아이디">
+                            <input type="text" id="user_id" class="input_class" placeholder="아이디">
                             <div class="certified_submit">
-                                <input type="tel" id="user_tel" placeholder="휴대폰 번호 (번호만 입력)">
+                                <input type="tel" id="user_tel" class="input_class" placeholder="휴대폰 번호 (번호만 입력)">
                                 <button type="button" id="telBtn">전송</button>
                             </div>
-                            <input type="text" id="user_certified" placeholder="인증번호">
+                            <input type="text" id="user_certified" class="input_class" placeholder="인증번호">
                             <button type="button" id="submitBtn">확인</button>
                         </fieldset>
                     </form>

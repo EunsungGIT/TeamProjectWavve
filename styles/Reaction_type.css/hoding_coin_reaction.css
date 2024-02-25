@@ -136,6 +136,7 @@
     }
     main .holding_coin_wrap .main_wrap .m_coin_btn span {
         color: #fff;
+        display: block;
     }
     main .holding_coin_wrap .main_wrap .holding_coin_middle .holding_middle_title a {
         display: none;

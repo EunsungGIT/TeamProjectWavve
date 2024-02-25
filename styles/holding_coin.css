@@ -5,6 +5,9 @@ main .holding_coin_wrap .main_wrap{
     max-width: 1240px;
     margin: 0 auto;
 }
+main .holding_coin_wrap .main_wrap .m_coin_btn span {
+   display: none;
+}
 /* 코인내역 h1 */
 main .holding_coin_wrap  .holding_title {
     background-color:#252525 ;
@@ -17,11 +20,6 @@ main .holding_coin_wrap .holding_title h1 {
 }
 /* 보유 코인내역 */
 main .holding_coin_wrap  .main_wrap .holding_coin_middle {}
-/* 수정중 0225 0800 */
-main .holding_coin_wrap  .main_wrap .holding_coin_middle .m_coin_btn span{
-    display: none;
-    background: wheat;
-}
 
 main .holding_coin_wrap .main_wrap .holding_coin_middle .holding_middle_title {
     display: flex; justify-content: space-between;
