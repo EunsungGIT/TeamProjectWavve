@@ -131,9 +131,12 @@ main .event_wrap .event_middle .event_content a .content_right .event_c {
     main .event_wrap .event_middle .event_content a .content_right .event_h1{
         display: block;
     }
+    main .event_wrap .event_middle .event_content a .content_right .event_h {
+        display: none;
+    }
 } /* 768 */
 
-@media screen and (max-width:430px){
+@media screen and (max-width:500px){
     main .event_wrap .event_middle .event_content a {
         flex-flow: column nowrap;
     }
@@ -145,7 +148,9 @@ main .event_wrap .event_middle .event_content a .content_right .event_c {
         margin-bottom: 30px;
     }
 
-
+    main .event_wrap .event_middle .event_content a .content_right .event_h {
+        display: block;
+    }
 }
 @media screen and (max-width:320px){
     

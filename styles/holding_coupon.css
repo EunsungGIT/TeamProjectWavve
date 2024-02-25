@@ -14,7 +14,7 @@ main .holding_coupon_wrap .holding_title {
 }
 
 main .holding_coupon_wrap .holding_title h1 {
-    font-size: 24px; color: #fff;
+    font-size: 1.5rem; color: #fff;
     margin: 0 auto; width: 1240px;
 }
 
@@ -28,7 +28,7 @@ main .holding_coupon_wrap .holding_coupon_middle .holding_middle_title {
 }
 
 main .holding_coupon_wrap .holding_coupon_middle .holding_middle_title h3 {
-    font-size: 24px; color:#fff;
+    font-size: 1.5rem; color:#fff;
     margin-bottom: 20px;
 }
 
@@ -72,7 +72,7 @@ main .holding_coupon_wrap .holding_coupon_middle .holding_coupon_main form field
     border: 1px solid #1351f9;
     border-radius: 50px;
     padding: 1px 25px 1px 25px;
-    font-size: 15px;
+    font-size: 0.8125rem;
     letter-spacing: 1px;
     color: #fff;
     cursor: pointer;
@@ -151,7 +151,7 @@ main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .c
 main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li {list-style: none;}
 
 main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li .holding_coupon_nav{
-    font-size: 18px; color: #a5a5a5; position: relative;
+    font-size: 1.125rem; color: #a5a5a5; position: relative;
 }
 
 main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li a {
@@ -166,7 +166,7 @@ main .holding_coupon_wrap .main_wrap .holding_exhaust .holding_exhaust_nav li:fi
 }
 
 main .holding_coupon_wrap .main_wrap  .holding_exhaust .holding_exhaust_nav li .holding_coupon_nav {}
-main .holding_coupon_wrap  .main_wrap .holding_exhaust .holding_exhaust_nav li .exhaust_coupon_nav {  font-size: 18px; color: #a5a5a5;}
+main .holding_coupon_wrap  .main_wrap .holding_exhaust .holding_exhaust_nav li .exhaust_coupon_nav {  font-size: 1.125rem; color: #a5a5a5;}
 
 /* 쿠폰이 없어요. 부분 */
 main .holding_coupon_wrap .not_coupon {
@@ -195,5 +195,5 @@ main .holding_coupon_wrap .main_wrap .not_coupon .exhaust_not_coupon img {}
 
 main .holding_coupon_wrap .main_wrap .not_coupon .exhaust_not_coupon  p {
     margin-top: 10px;
-    font-size: 22px; color: #a5a5a5;
+    font-size: 1.375rem; color: #a5a5a5;
 }
