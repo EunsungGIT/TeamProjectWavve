@@ -58,6 +58,9 @@
                 listItem.innerHTML = `
                     <img src="./images/data_img/new_movie_img/new_movie_banner_${indexFormatted}.jpg">
                 `;
+                listItem.addEventListener('click',()=>{
+                    window.location.href = movie.link
+                })
                 movie_list.appendChild(listItem);
             })
         })

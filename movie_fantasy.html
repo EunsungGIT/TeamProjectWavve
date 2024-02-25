@@ -49,6 +49,9 @@
                 listItem.innerHTML = `
                     <img src="./images/data_img/movie_fantasy/movie_fantasy_banner_${indexFormatted}.jpg">
                 `;
+                listItem.addEventListener('click',()=>{
+                    window.location.href = movie.link
+                })
                 movieList.appendChild(listItem)
             })
         })

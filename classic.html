@@ -58,6 +58,9 @@
                 listItem.innerHTML = `
                     <img src="./images/data_img/wavve_classic_img/wavve_classic_banner_${indexFormatted}.jpg">
                 `;
+                listItem.addEventListener('click',()=>{
+                    window.location.href = movie.link
+                })
                 movie_wrap.appendChild(listItem);
             })
         })
