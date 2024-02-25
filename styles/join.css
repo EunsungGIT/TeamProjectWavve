@@ -31,6 +31,10 @@ section .contents .line span{
 section .contents .content_box {
     padding: 40px;
 }
+section .contents .content_box .join_btm_font {
+    font-size: 1.75rem; color:#a5a5a5;
+    background: violet;
+}
 section .contents .content_box h1 {
     text-align: left; margin: 20px 0;
     font-size: 1.75rem; color:#a5a5a5;

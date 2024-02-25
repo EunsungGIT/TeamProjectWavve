@@ -50,4 +50,13 @@
     }
     main .login .sns_join a img {
         width: 55px; height: 55px;    }
-}
+
+        #up {
+            display: none;
+        }
+
+        #chat #chat_icon {
+            right: 0px;
+            bottom: 0px;
+        }
+    }

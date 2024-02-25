@@ -8,5 +8,28 @@
     }
 }
 @media screen and (max-width:768px){
-  
+    section .contents .line {
+        display: none;
+    }
+    section .contents .content_box form fieldset ul li p {
+        align-items: flex-start;
+    }
+    section .contents {
+        background: #1b1b1b;
+    }
+
+    section .contents .content_box h1 {
+        font-size: 1.5625rem;
+    }
+    
+    section .contents .content_box h2 {
+       /*  font-size: 0.8125rem; */
+    }
+    section .contents .content_box .sns_join a img {
+        width: 50px ;height: 50px;
+    } 
+    section .contents .content_box .sns_join {
+        padding: 30px 0px
+    }
+    
 }
