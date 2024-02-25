@@ -211,3 +211,21 @@ card_btm_content_box_auto.forEach((t,i)=>{
         coin_abox_span_auto[i].style.color="#FFF"
     })
 })
+
+
+//확인 및 취소 버튼
+const close_btn = document.querySelectorAll('.close_btn')
+const next_btn =document.querySelectorAll('.next_btn')
+console.log(close_btn,next_btn)
+for(let i of close_btn){
+    i.addEventListener('click',()=>{
+        // window.open('', '_self', '');
+        window.close();
+    })
+}
+for(let j of next_btn){
+    j.addEventListener('click',()=>{
+        window.alert('결제페이지로 이동합니다.')
+        window.close();
+    })
+}
