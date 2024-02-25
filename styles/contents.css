@@ -216,10 +216,10 @@ main section .contents_info .info_contents .recommend .img_container .title {
     margin-top: 30px;
 }
 main section .contents_info .info_contents .recommend .img_container .title span {
-    font-size: 24px; color: #fff;
+    font-size: 1.5rem; color: #fff;
 }
 main section .contents_info .info_contents .recommend .img_container .title a {
-    color: #a5a5a5; font-size: 16px;
+    color: #a5a5a5;
 }
 main section .contents_info .info_contents .recommend .img_container .title a img {}
 /* 믿고 보는 웨이브 에디터 추천작 */
@@ -278,7 +278,7 @@ main section .contents_info .information .information_box .information_contents{
 }
 main section .contents_info .information .information_box .information_contents .img {}
 main section .contents_info .information .information_box .information_contents .img img {
-    width: 185px; height: 277.5px; border-radius: 10px;
+    width: 185px; border-radius: 10px;
 }
 main section .contents_info .information .information_box .information_contents .main_text{
     margin: 0 0 0 24px; padding: 0 0 20px;

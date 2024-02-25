@@ -76,7 +76,7 @@ icon[0].addEventListener('click',(e)=>{
     console.log(heart_change)
     if(heart_change === false){
         icon_img[0].src = '../images/live_contents/red_heart.svg'
-        heart.innerHTML = '관심체널로 등록되었어요'
+        heart.innerHTML = '관심채널로 등록되었어요'
         heart.style.display = 'block';
         heart.classList.add('show')
         e.preventDefault();
@@ -85,7 +85,7 @@ icon[0].addEventListener('click',(e)=>{
         }, 2000);
     }else{icon_img[0].src = '../images/live_contents/heart.svg'
         e.preventDefault();
-        heart.innerHTML = '관심등록이 헤제되었어요'
+        heart.innerHTML = '관심등록이 해제되었어요'
         heart.style.display = 'block';
         heart.classList.add('show')
         e.preventDefault();

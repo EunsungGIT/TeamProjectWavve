@@ -277,18 +277,17 @@ main section .contents_info .information .information_box {}
 main section .contents_info .information .information_box .infomation_title {}
 main section .contents_info .information .information_box .infomation_title em {
     color: #fff;
-font-size: 20px; 
+font-size: 1.25;
 display: block;
 }
 main section .contents_info .information .information_box .infomation_title .text_box_title {
     color: #fff;
-font-size: 16px; 
 margin-top: 20px;
 }
 
 main section .contents_info .information .information_box .infomation_title .explanation1 {
     color: #a5a5a5 ; line-height: 24px;
-    margin-top: 8px; margin-bottom: 8px;
+    margin-top: 8px;
     border-bottom:1px solid rgb(47, 47, 47) ;
     padding-bottom:20px ;
     margin-bottom: 20px;
@@ -302,7 +301,7 @@ main section .contents_info .information .information_box .information_contents{
 main section .contents_info .information .information_box .information_contents .img {}
 
 main section .contents_info .information .information_box .information_contents .img img {
-    width: 185px; height: 277.5px; border-radius: 10px;
+    width: 185px; border-radius: 10px;
 }
 main section .contents_info .information .information_box .information_contents .main_text{
     margin: 0 0 0 24px; padding: 0 0 20px;
