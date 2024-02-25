@@ -23,6 +23,23 @@
         width: calc(100% - 50px);
         margin: 0 auto;
     }
+    .ongoing_container_title {
+        flex-direction: column;
+    }
+
+    .content_wrap1 {
+        padding: 0;
+    }
+    .event_ongoing_content .ongoing_main_container .btm_container {
+     padding: 16px
+    }
+    .ongoing_container_h1_m {
+        display: block;
+    }
+    .ongoing_container_h1 {
+        display: none;
+    }
+
 }/*768 조건 종료*/
 @media screen and (max-width:430px){
     

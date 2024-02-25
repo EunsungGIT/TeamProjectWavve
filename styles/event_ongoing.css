@@ -107,8 +107,11 @@ main .event_ongoing_wrap .event_ongoing_middle .event_ongoing_title_tap .not_tap
     display: flex; flex-flow: column wrap;
     margin-left: 20px; margin-top:60px;
 }
+.ongoing_container_h1_m {
+    display: none;
+}
 /* background images -> h1 [신년특집] */
-.event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_right .ongoing_container_h1 {
+.event_ongoing_content .ongoing_main_container .ongoing_container_title .ongoing_container_right .ongoing_container_h1, .ongoing_container_h1_m {
     color: #fff; font-size: 40px; margin-bottom: 30px;
     letter-spacing: -1.5px;
 }
