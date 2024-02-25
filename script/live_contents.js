@@ -9,7 +9,6 @@ console.log(popup_video,main_video)
 popup_video.style.display = 'none'
 window.addEventListener('scroll',()=>{
     const scrollPosition = window.scrollY;
-    console.log(scrollPosition)
 
     if(scrollPosition >= 300){
         popup_video.style.display = 'flex'
@@ -87,10 +86,9 @@ favorite.style.opacity = '0';
 favorite.style.display = 'none';
 icon[0].addEventListener('click',(e)=>{
     heart_change = !heart_change
-    console.log(heart_change)
     if(heart_change === false){
         icon_img[0].src = '../images/live_contents/red_heart.svg'
-        favorite.innerHTML = '관심체널로 등록되었어요'
+        favorite.innerHTML = '관심채널로 등록되었어요'
         favorite.style.display = 'block';
         favorite.classList.add('show')
         e.preventDefault();
@@ -99,7 +97,7 @@ icon[0].addEventListener('click',(e)=>{
         }, 2000);
     }else{icon_img[0].src = '../images/live_contents/heart.svg'
         e.preventDefault();
-        favorite.innerHTML = '관심등록이 헤제되었어요'
+        favorite.innerHTML = '관심등록이 해제되었어요'
         favorite.style.display = 'block';
         favorite.classList.add('show')
         e.preventDefault();
@@ -142,10 +140,21 @@ share_close.addEventListener('click',()=>{
 
 // 스케줄 swiper
 var mySwiper = new Swiper('.swiper_schedule', { 
-    slidesPerView: 4,
+    slidesPerView: 1,
     navigation:{
         nextEl:'.swiper_schedule #schedule_next',
         prevEl:'.swiper_schedule #schedule_prev',
+    },
+    breakpoints:{
+        430: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1240: {
+            slidesPerView: 5,
+        },
     },
 })
 // 스케줄 알람
@@ -171,7 +180,8 @@ all_recommend[1].style.color = '';
 all_recommend[0].style.borderBottom = '3px solid #1351f9'
 all_recommend[1].style.borderBottom = ''
 
-all_recommend[0].addEventListener('click', () => {
+all_recommend[0].addEventListener('click', (e) => {
+    e.preventDefault()
     live_video.style.display = 'flex';
     recommend.style.display = 'none';
 
@@ -181,7 +191,8 @@ all_recommend[0].addEventListener('click', () => {
     all_recommend[1].style.borderBottom = ''
 });
 
-all_recommend[1].addEventListener('click', () => {
+all_recommend[1].addEventListener('click', (e) => {
+    e.preventDefault()
     live_video.style.display = 'none';
     recommend.style.display = 'block';
     all_recommend[1].style.color = 'white';
@@ -192,13 +203,16 @@ all_recommend[1].addEventListener('click', () => {
 
 // 추천 영상 swiper
 var mySwiper = new Swiper('.swiper_channel', { 
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 10,
     navigation:{
         nextEl:'.swiper_channel .channel_next',
         prevEl:'.swiper_channel .channel_prev',
     },
     breakpoints:{
+        430: {
+            slidesPerView: 2,
+        },
         768: {
             slidesPerView: 3,
         },
@@ -206,4 +220,12 @@ var mySwiper = new Swiper('.swiper_channel', {
             slidesPerView: 5,
         },
     },
+})
+
+/* 새로고침 */
+const reset = document.querySelector('.title_refresh > a')
+console.log(reset)
+
+reset.addEventListener('click',()=>{
+    location.reload();
 })

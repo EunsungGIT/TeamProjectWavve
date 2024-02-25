@@ -23,10 +23,9 @@ main .customer_service .contents_title {
 }
 main .customer_service .contents_title a {
     width: 25%; background-color: #252525;
-    height: 50px;
-    text-align: center;
+    height: 50px; display: flex; align-items: center;
+    justify-content: center;
     color: #a5a5a5;
-    line-height: 50px;
 }
 main .customer_service .contents_title a:nth-child(1){
     background: #1351f9; color: #fff; 
