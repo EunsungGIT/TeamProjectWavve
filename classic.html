@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavve CLASSIC : 웨이브 카테고리</title>
+    <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/overseas_monopoly.css">
+</head>
+<body>
+    <!-- main -->
+    <main>
+        <div class="category_top">
+            <h2>Wavve CLASSIC</h2>
+        </div>
+        <section>
+            <div class="title">
+                <h2>다시 만난 작가와 배우들</h2>
+                <a href="./">더보기<img src="./images/common/more.png" alt="더보기"></a>
+            </div>
+            <div class="swiper-container swiper_category">
+                <div class="swiper-wrapper category_wrap"></div>
+                <div class="swiper-button-prev">
+                    <img src="./images/search/slide_prev.png" alt="이전">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./images/search/slide_next.png" alt="다음">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script/common.js"></script>
+    <script src="./script/overseas_monopoly.js"></script>
+    <script src="./script/classic_data.json"></script>
+    <script>
+        const movie_wrap = document.querySelector('.category_wrap')
+
+        fetch('./script/classic_data.json')
+        .then(response => response.json())
+        .then(data => {
+            // 각 영화 정보를 #movie 리스트 아이템에 삽입
+            const limitedData = data.slice(0, 10);
+            limitedData.forEach((movie, index)=>{
+                const listItem = document.createElement('a');
+                const indexFormatted = (index + 1).toString().padStart(2, '0');
+                listItem.classList.add('swiper-slide')
+                listItem.classList.add('catecory_contents')
+                listItem.innerHTML = `
+                    <img src="./images/data_img/wavve_classic_img/wavve_classic_banner_${indexFormatted}.jpg">
+                `;
+                movie_wrap.appendChild(listItem);
+            })
+        })
+    </script>
+</body>
+</html>
