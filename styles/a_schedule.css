@@ -159,7 +159,7 @@ main section .broadcasting_announcement .contents_all .announcement_main li .mai
     position: relative; left: 80px;
 }
 main section .broadcasting_announcement .contents_all .announcement_main li .main_contents .title a{
-    font-size: 1.375rem; padding-bottom: 5px; color: #a5a5a5;
+    font-size: 1.375rem; color: #a5a5a5;
 }
 main section .broadcasting_announcement .contents_all .announcement_main li .main_contents .title span {
     color: #a5a5a5; padding-left: 20px;

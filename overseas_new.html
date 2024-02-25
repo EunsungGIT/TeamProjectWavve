@@ -43,6 +43,10 @@
                 listItem.innerHTML = `
                     <img src="./images/data_img/overseas_img/overseas_img_banner_${indexFormatted}.jpg">
                 `;
+                console.log(movie.link)
+                listItem.addEventListener('click',()=>{
+                    window.location.href = movie.link
+                })
                 movieList.appendChild(listItem)
             })
         })

@@ -1,7 +1,5 @@
-@media screen and (max-width:1240px){
 
-}
-@media screen and (max-width:1024px){
+@media screen and (max-width:1240px){
     main section .main_benner .benner_contents .contents_text h2 {
         font-size: 2.375rem; color: #fff; padding-top: 190px  ;
     }
@@ -42,7 +40,8 @@
     main section .product_benner .benner_main .benner_contents .benner_text h1 {
         font-size: 2.775rem; font-weight: 500; margin-bottom: 20px;
     }
-    
+    main section .product_benner #prev img {width: 45px;}
+    main section .product_benner #next img {width: 45px;}
 }   
 
 @media screen and (max-width:768px){
@@ -53,7 +52,7 @@
         font-size: 2.65rem; font-weight: 500; margin-bottom: 20px;
     }
     main section .main_benner .benner_contents .contents_text h2 {
-        font-size: 2.5rem; color: #fff; padding-top: 190px  ;
+        font-size: 2.25rem; color: #fff; padding-top: 190px  ;
     }
     main section .main_benner .benner_contents .contents_text img {
         width: 160px; margin: 0 auto; padding: 10px 0 30px;
@@ -63,7 +62,10 @@
         letter-spacing: -1px;
     }
     main section .product_benner .benner_main .benner_contents .benner_text h1 {
-        font-size: 2.525rem; font-weight: 500; margin-bottom: 20px;
+        font-size: 2.25rem; font-weight: 500; margin-bottom: 20px;
+    }
+    main section .product_benner .benner_main .benner_contents .benner_text  p {
+        font-size: 1rem;
     }
     main section .wavve_style .style_first .content_wrap .wrap_contents .text2 {
         font-size: 1.25rem; margin-bottom: 70px; color: #23212a;
@@ -84,7 +86,7 @@
             font-size: 1.25rem; 
     }
     main section .download .download_wrap .download_contents .bottom_contents a img {
-        width: 300px;
+        width: 200px;
     }
     main section .follow .follow_contents .follow_link a img {
         width: 45px;
@@ -94,7 +96,17 @@
     }
     main section .follow .follow_contents .follow_text h1 {
         font-size: 1.625rem ; font-weight: 700;
-}
+    }
+    main section .product_benner .benner_main .benner_contents .benner_img {
+        padding: 0;
+    }
+    main section .product_benner #prev {
+
+    }
+    main section .product_benner #next {
+
+    }
+    main section .product_benner .benner_main .benner_contents{}
 }
 
 /* 폰트사이즈 조금 다르게 바꾼 사이트 */

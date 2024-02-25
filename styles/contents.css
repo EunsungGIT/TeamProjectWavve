@@ -296,9 +296,13 @@ main section .contents_info .information .information_box .information_contents 
 main section .contents_info .information .information_box .information_contents .main_text .detailed_information img {width: 50px; height: 50px;}
 /* 색상 */
 main section .contents_info .information .information_box .information_contents .main_text .detailed_information dt,main section .contents_info .information .information_box .information_contents .main_text .detailed_information dd,main section .contents_info .information .information_box .information_contents .main_text .detailed_information a{color: #fff;
-    padding-top: 30px   ;
+    padding-top: 30px   ; 
 }
 main section .contents_info .information .information_box .information_contents .main_text .detailed_information dt{width: 76px;  font-weight: 400;}
+
+main section .contents_info .information .information_box .information_contents .main_text .detailed_information dd a:hover{
+    text-decoration: underline;
+}
 
 main section .contents_info .information .information_box .information_contents .main_text .detailed_information dd{ width: calc(100% - 76px);}
 

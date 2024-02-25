@@ -38,3 +38,24 @@ for(let y of pay_btn){
         e.preventDefault()
     })
 }
+
+const membership_title = document.querySelectorAll('.membership_title a')
+const partnership = document.querySelector('.partnership')
+const wavve =document.querySelector('.wavve')
+console.log(wavve,partnership)
+partnership.style.display = 'none'
+
+membership_title[0].addEventListener('click',()=>{
+    partnership.style.display = 'none'
+    wavve.style.display = 'block'
+    membership_title[0].style.color = '#fff'
+    membership_title[1].style.color = '#a5a5a5'
+})
+membership_title[1].addEventListener('click',()=>{
+    partnership.style.display = 'block'
+    wavve.style.display = 'none'
+    membership_title[1].style.color = '#fff'
+    membership_title[0].style.color = '#a5a5a5'
+})
+
+/* membership_title[0].addEventListener() */
