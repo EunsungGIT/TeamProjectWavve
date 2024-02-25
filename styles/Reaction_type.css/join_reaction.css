@@ -2,10 +2,11 @@
     section {
         padding: 0 60px;
     }
-    .contents_all {
-        
+
+    main .login .m_title {
+        display: none;
     }
 }
 @media screen and (max-width:768px){
-
+  
 }

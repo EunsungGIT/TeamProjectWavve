@@ -1,12 +1,3 @@
-/* a태그 */
-const a_all = document.querySelectorAll('body a')
-
-for(let i of a_all){
-    i.addEventListener('click',(e)=>{
-        e.preventDefault();
-    })
-}
-
 /* 비슷한 영화 및 남녀노소 모두, 오늘은 애니 앞으로 */
 var mySwiper = new Swiper('.wavve_images', { 
     loop:true,
@@ -50,6 +41,12 @@ optionBtn.addEventListener('click',()=>{
 const translation_sub = document.querySelectorAll('.button_m a')
 
 console.log(translation_sub[0],translation_sub[1])
+
+for(let i of translation_sub){
+    i.addEventListener('click',(e)=>{
+        e.preventDefault()
+    })
+}
 
 translation_sub[0].addEventListener('click',()=>{
     optionBtn.innerHTML = '자막'
@@ -105,7 +102,8 @@ const copyBtn = document.querySelector('#copyBtn')
 const linkInput = document.querySelector('#link')
 
 share.style.display = 'none'
-icon[1].addEventListener('click',()=>{
+icon[1].addEventListener('click',(e)=>{
+    e.preventDefault()
     share.style.display = 'block'
 })
 
@@ -120,7 +118,8 @@ copyBtn.addEventListener('click',(e)=>{
     }, 3000);
 })
 
-share_close.addEventListener('click',()=>{
+share_close.addEventListener('click',(e)=>{
+    e.preventDefault()
     share.classList.add('hide')
     setTimeout(() => {
         share.style.display = 'none'
@@ -148,7 +147,8 @@ const border_remove = () =>{
 
 menu_title.forEach((t,i)=>{
     console.log(t,i)
-    t.addEventListener('click',()=>{
+    t.addEventListener('click',(e)=>{
+        e.preventDefault()
         border_remove()
         t.classList.add('contants_border')
         hide()
@@ -163,7 +163,8 @@ console.log(show_more)
 //     const scrollaa = window.scrollY
 //     console.log(scrollaa)
 // })
-show_more.addEventListener('click',()=>{
+show_more.addEventListener('click',(e)=>{
+    e.preventDefault()
     menu_title[2].classList.add('contants_border')
     menu_title[0].classList.remove('contants_border')
     menu_title[1].classList.remove('contants_border')

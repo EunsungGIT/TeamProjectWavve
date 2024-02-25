@@ -51,8 +51,7 @@ header .h_bottom_wrap .h_bottom nav > a:first-child {color: #fff;}
     
 /*main 시작*/
 /* main 추가한 부분! */
-main {  
-    max-width: 1900px;    
+main {
     margin: 0 auto;
     background: #1b1b1b;
 }
@@ -122,8 +121,8 @@ main .wrap #top_container .btm_btn .btn_pagination {
 }
 main .wrap #top_container .btm_btn .btn_pagination a {
     display: inline-block;
-    position: relative;
-    z-index: 999;
+    position: relative; left: 70px;
+    z-index: 100;
 }
 main .wrap #top_container .btm_btn .btn_pagination a img {}
 
@@ -147,10 +146,10 @@ main .wrap .middle_wrap .img_container1 .title {
     margin-bottom: 25px;
 }
 main .wrap .middle_wrap .img_container1 .title span {
-    font-size: 24px; color: #fff;
+    font-size: 1.5rem; color: #fff;
 }
 main .wrap .middle_wrap .img_container1 .title a {
-    color: #a5a5a5; font-size: 16px;
+    color: #a5a5a5;
 }
 main .wrap .middle_wrap .img_container1 .title a img {}
 /* 믿고 보는 웨이브 에디터 추천작 */
@@ -171,7 +170,7 @@ main .wrap .middle_wrap .img_container1 .swiper_wavve_images .swiper_wavve_img .
 }
 /* 오직 웨이브에서 위에 로고표시 */
 main .wrap .middle_wrap .img_container1 .swiper_wavve_images .swiper_wavve_img .swiper-slide .wavve_img_logo {
-    width: 44px; position: absolute; top: 0px; right: 0px;
+    width: 44px; position: absolute; top: 0px; right: 0px; border-radius: 0;
 }
 main .wrap .middle_wrap .img_container1 .swiper_wavve_images .swiper_wavve_img .swiper-slide img:hover {
     transform: scale(1.1); transition:  0.3s;
