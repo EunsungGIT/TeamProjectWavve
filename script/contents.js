@@ -93,7 +93,6 @@ icon[0].addEventListener('click',(e)=>{
             heart.style.display = 'none'
         }, 2000);
     }
-
 })
 
 

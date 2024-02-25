@@ -57,7 +57,7 @@ main {
 }
 main .wrap {}
 main .wrap #top_container {
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     overflow: hidden; position: relative;
 }   
 main .wrap #top_container #top_images {}
@@ -133,9 +133,7 @@ main .wrap .middle_wrap {
     max-width: 1240px;
     margin: 0 auto;
 }
-main .wrap .middle_wrap .img_container1 {
-    margin-top: 80px;
-}
+main .wrap .middle_wrap .img_container1 {}
 /* 맨 밑 슬라이드 */
 main .wrap .middle_wrap .img_container1_btm {
     margin-bottom: 130px;

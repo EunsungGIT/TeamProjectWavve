@@ -41,3 +41,20 @@ live_video_a.forEach((t,i)=>{
         live_video[i].pause()
     })
 })
+
+const mutedBtn = document.querySelectorAll('.muted')
+const mutedBtn_img = document.querySelectorAll('.muted img')
+let speak_variable = true
+
+mutedBtn.forEach((t,i)=>{
+    t.addEventListener('click', ()=>{
+        speak_variable = !speak_variable
+        if(speak_variable === false){
+            mutedBtn_img[i].src = './images/live/speak.png'
+            live_video[i].muted = false
+        }else{
+            mutedBtn_img[i].src = './images/live/muted.png'
+            live_video[i].muted = true
+        }
+    })
+})

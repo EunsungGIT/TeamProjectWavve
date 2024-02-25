@@ -15,9 +15,11 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/overseas_a.css">
+    <link rel="stylesheet" href="./styles/new_movie.css">
+    <link rel="stylesheet" href="./styles/Reaction_type.css/new_movie_reaction.css">
 </head>
 <body>
+    <div class="favorite">관심 에디터Pick으로 등록했어요</div>
     <!-- main -->
     <main>
         <div class="title_wrap">
@@ -58,6 +60,33 @@
                 `;
                 movie_list.appendChild(listItem);
             })
+        })
+
+        const heart = document.querySelector('#heartBtn')
+        const heart_img = document.querySelector('#heartBtn img')
+        const favorite = document.querySelector('.favorite')
+
+        let heart_change = true
+        favorite.style.display = 'none'
+        heart.addEventListener('click',()=>{
+            heart_change = !heart_change
+            if(heart_change === false){
+                heart_img.src = '../images/live_contents/red_heart.svg'
+                favorite.innerHTML = '관심 에디터Pick으로 등록했어요'
+                favorite.style.display = 'block';
+                favorite.classList.add('show')
+                setTimeout(() => {
+                    favorite.style.display = 'none'
+                }, 2000);
+            }else{
+                heart_img.src = '../images/live_contents/heart.svg'
+                favorite.innerHTML = '관심 에디터Pick 등록을 해제했어요'
+                favorite.style.display = 'block';
+                favorite.classList.add('show')
+                setTimeout(() => {
+                    favorite.style.display = 'none'
+                }, 2000);
+            }
         })
     </script>
 </body>

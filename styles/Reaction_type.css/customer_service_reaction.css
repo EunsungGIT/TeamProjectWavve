@@ -5,7 +5,51 @@
     main .customer_service {
         padding: 0 60px;
     }
+    main .customer_service .notice .notice_title #noticeFrm fieldset #notice_search {
+        width: 200px; font-size: 0.75rem;
+    }
+    main .customer_service .faq .faq_top {
+        padding: 20px 40px;
+    }
+    main .customer_service .faq .faq_top h2 {
+        font-size: 1.25rem;
+    }
+    main .customer_service .faq .faq_top .faq_often {
+        display: none;
+    }
+    main .customer_service .faq .faq_top #faqFrm fieldset {
+        flex-flow: column nowrap;
+    }
+    main .customer_service .faq .faq_top #faqFrm fieldset #faqBtn {
+        width: 100%; margin: 10px 0;
+    }
 }
 @media screen and (max-width:768px){
-
+    main .customer_service .notice .notice_title .notice_category a{
+        display: none;
+    }
+    main .customer_service .notice .notice_info dl dt {
+        font-size: 0.75rem;
+    }
+    main .customer_service .notice .notice_info dl dd {
+        font-size: 0.75rem;
+    }
+    main .customer_service .notice .notice_info dl dd a {
+        font-size: 0.75rem;
+    }
+    main .customer_service .faq .faq_category {
+        display: none;
+    }
+    main .customer_service .faq .faq_info a h3 {
+        display: none;
+    }
+    main .customer_service .faq .faq_info a p {
+        font-size: 0.75rem;
+    }
+    main .customer_service .faq .faq_info .faq_contents {
+        padding: 25px;
+    }
+    main .customer_service .faq .faq_info .faq_contents p {
+        font-size: 0.75rem;
+    }
 }

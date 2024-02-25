@@ -438,6 +438,61 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
     100% {opacity: 0;}
 }
 
+/* header 모바일 */
+.header_m {
+    width: 300px; height: 100vh; z-index: 900;
+    background: #1b1b1b; padding: 50px;
+    position: absolute; right: 0; top: 0;
+}
+.header_m > a {
+    position: absolute; top: 30px; left: 30px;
+}
+.header_m .menu {
+    margin: 60px 0;
+    display: flex; flex-flow: column nowrap;
+}
+.header_m .menu a {
+    margin: 10px 0; text-align: center;
+    font-size: 1.5rem; color: #a5a5a5;
+}
+.header_m .menu a:hover {
+    color: #fff;
+}
+.header_m .account {
+    margin: 60px 0;
+    display: flex; flex-flow: column nowrap;
+}
+.header_m .account a {
+    margin: 10px 0; text-align: center;
+    font-size: 1.25rem; color: #a5a5a5;
+}
+.header_m .account a:hover {
+    color: #fff;
+}
+.header_m .account .profile_mobile {
+    display: flex; flex-flow: column nowrap;
+}
+.header_m .account .profile_mobile > a {}
+.header_m .account .profile_mobile .profile_mobile_m {
+    display: flex; flex-flow: column nowrap;
+}
+.header_m .account .profile_mobile .profile_mobile_m a {
+    font-size: 0.875rem;
+}
+.header_m .account .profile_mobile .profile_mobile_m a span {
+
+}
+.header_m .account .coupon_mobile {
+    display: flex; flex-flow: column nowrap;
+}
+.header_m .account .coupon_mobile a {}
+.header_m .account .coupon_mobile .coupon_mobile_m {
+    display: none; flex-flow: column nowrap;
+}
+.header_m .account .coupon_mobile .coupon_mobile_m a {
+    font-size: 0.875rem;
+}
+
 /* header */
 header {
     background: #1b1b1b;
@@ -555,8 +610,12 @@ header .h_bottom_wrap .h_bottom nav .category .category_m a {
     color: #a5a5a5;
 }
 header .h_bottom_wrap .h_bottom nav .category .category_m a:hover {color: #fff;}
-header .h_bottom_wrap .h_bottom .search {}
-header .h_bottom_wrap .h_bottom .search a {}
+header .h_bottom_wrap .h_bottom .search {
+    display: flex; align-items: center;
+}
+header .h_bottom_wrap .h_bottom .search a {
+    margin-right: 12px;
+}
 header .h_bottom_wrap .h_bottom .search a img {}
 header .h_bottom_wrap .h_bottom .search label {
     display: none; position: relative;
@@ -570,6 +629,9 @@ header .h_bottom_wrap .h_bottom .search label #user_search {
     border: 1px solid #232323;
 }
 header .h_bottom_wrap .h_bottom .search #user_search::placeholder {color: #a5a5a5;}
+header .h_bottom_wrap .h_bottom .search .icon {
+    margin-left: 2px;
+}
 
 /* footer */
 footer {
@@ -586,6 +648,9 @@ footer .f_top_wrap .f_top > a {
     font-size: 1.125rem; color: #a5a5a5;
     margin-right: 25px;
 }
+footer .f_top_wrap .f_top > a:nth-of-type(2) {
+    display: none;
+}
 footer .f_top_wrap .f_top #swiper_notice {
     overflow: hidden; height: 100%;
 }
@@ -600,18 +665,14 @@ footer .f_top_wrap .f_top #swiper_notice .move {
     position: absolute; right: 0; top: 0;
     height: 50px;
 }
-footer .f_top_wrap .f_top #swiper_notice .move #f_prev {left: -90px;}
-footer .f_top_wrap .f_top #swiper_notice .move #f_prev:hover {
-    filter: brightness(50%);
+footer .f_top_wrap .f_top #swiper_notice .move #f_prev {
+    left: -90px;
 }
 footer .f_top_wrap .f_top #swiper_notice .move #f_prev::after {display: none;}
 footer .f_top_wrap .f_top #swiper_notice .move #f_prev img {
     border-left: 1px solid #2f2f2f;
 }
 footer .f_top_wrap .f_top #swiper_notice .move #f_next {}
-footer .f_top_wrap .f_top #swiper_notice .move #f_next:hover {
-    filter: brightness(50%);
-}
 footer .f_top_wrap .f_top #swiper_notice .move #f_next::after {display: none;}
 footer .f_top_wrap .f_top #swiper_notice .move #f_next img {
     border-left: 1px solid #2f2f2f;
