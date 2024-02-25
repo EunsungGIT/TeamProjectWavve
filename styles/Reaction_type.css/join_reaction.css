@@ -20,6 +20,8 @@
 
     section .contents .content_box h1 {
         font-size: 1.5625rem;
+        text-align: center;
+       margin-bottom: 35px;
     }
     
     section .contents .content_box h2 {
@@ -31,5 +33,32 @@
     section .contents .content_box .sns_join {
         padding: 30px 0px
     }
+    section .contents .content_box h2 {
     
+    }
+    section .contents .content_box h2::before {
+    background: #2f2f2f;
+    display: inline-block;
+    content: "";
+    width: 20%;
+    height: 1px;
+
+    transform: translateY(-50%);
+    }
+    section .contents .content_box h2::after {
+    background: #2f2f2f;
+    display: inline-block;
+    content: "";
+    width: 20%;
+    height: 1px;
+   
+    transform: translateY(-50%);
+    }
+
+    section .contents .bottom_text {
+        font-size: 0.8125rem;
+    }
+    section .contents .content_box form fieldset ul li:nth-child(2) p {
+        align-items: center;
+    }
 }
