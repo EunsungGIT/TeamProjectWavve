@@ -16,10 +16,14 @@ main .title_wrap .title p {
 main .event {
     background: #3468f2;
     display: flex; justify-content: center;
+    height: 110px; overflow: hidden;
 }
-main .event img {max-width: 1024px;}
+main .event img {max-width: 1024px;
+    height: 503px;
+}
 main .open {
     display: flex; justify-content: center;
+    transition: transform 0.3s ease;
 }
 main .open img {}
 
@@ -175,3 +179,5 @@ main .warning span a {
     color: #a5a5a5; font-size: 0.875rem;
     text-decoration: underline;
 }
+
+/* 자바스크립트 */
