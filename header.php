@@ -1,20 +1,3 @@
-    <!-- 팝업 -->
-    <div class="popup">
-        <div class="popup_background">
-            <div class="contents">
-                <div class="top">
-                    <a href="./membership.html" class="popup_img"></a>
-                    <a href="#" class="close"><img src="./images/popup/close.png" alt="닫기"></a>
-                </div>
-                <div class="bottom">
-                    <input type="checkbox" name="#" id="day_close">
-                    <label for="day_close">
-                        일주일동안 안보기
-                    </label>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- 알림함 -->
     <div class="notification_bg">
         <div class="notification_wrap">

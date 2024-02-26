@@ -1,7 +1,7 @@
 /* 팝업 영상 */
 .popup_video {
     width: 450px; position: fixed;
-    right: 40px; bottom: 100px; z-index: 9999;
+    right: 40px; bottom: 200px; z-index: 9997;
     display: flex; flex-flow: column nowrap;
     align-items: flex-end;
 }
