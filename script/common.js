@@ -7,10 +7,7 @@ const chat_message = document.querySelector('.chat_message')
 const user_text = document.querySelector('.user_text')
 const chatBtn = document.querySelector('#chatBtn')
 const apiEndpoint = 'https://api.openai.com/v1/chat/completions'
-const apiKey = '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'
-
-
-
+const apiKey = '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';
 
 chat_box.classList.add('chatHide')
 chat_icon.addEventListener('click', ()=>{
@@ -25,10 +22,45 @@ chat_icon.addEventListener('click', ()=>{
     }
 })
 
-chatBtn.addEventListener('click', ()=>{
+async function fetchAIResponse(prompt) {
+    const requestOptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`
+        },
+        body: JSON.stringify({
+            model: "gpt-3.5-turbo",
+            messages: [{
+                role: "user",
+                content: prompt
+            }, ],
+            temperature: 0.3,
+            max_tokens: 400,
+            top_p: 0.3,
+            frequency_penalty: 0.5,
+            presence_penalty: 0.5,
+            stop: ["Human"],
+        }),
+    };
+    try {
+        const response = await fetch(apiEndpoint, requestOptions);
+        const data = await response.json();
+        const aiResponse = data.choices[0].message.content;
+        return aiResponse;
+    } catch (error) {
+        console.error('OpenAI API 호출 중 오류 발생:', error);
+        return 'OpenAI API 호출 중 오류 발생';
+    }
+}
+
+chatBtn.addEventListener('click', async()=>{
     let message = user_text.value
     addMessage  ('프로필1',message)
     user_text.value = ''
+    //ai
+    let aiMessage = await fetchAIResponse(message)
+    addMessage('AI', aiMessage);
 })
 
 user_text.addEventListener('keydown',(e)=>{
@@ -36,7 +68,6 @@ user_text.addEventListener('keydown',(e)=>{
         chatBtn.click();
     }
 })
-
 
 function addMessage(target, contents){
     const messageElement = document.createElement('div')
