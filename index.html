@@ -6,6 +6,9 @@
     <title>Wavve(웨이브)</title>
     <link rel="shortcut icon" href="./images/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js    "></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -14,7 +17,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/common.css">  
     <link rel="stylesheet" href="./styles/reaction_type/common_reaction.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/reaction_type/index.reaction.css">
@@ -597,6 +600,26 @@
             </div>
         </div>
     </footer>
+    <script>
+        $('body').css('overflow', 'hidden');
+        $('.close').on('click',function(){
+            console.log(true)
+            if($('#day_close').is(':checked')){
+                console.log('checked true') 
+                $.cookie('popup','none',{expires:7, path:'/'})
+                $('.popup').fadeOut('fast')
+                $('body').css('overflow', 'auto');
+            }else{
+                $('.popup').fadeOut('fast')
+                $('body').css('overflow', 'auto');
+            }
+            
+        })
+        if($.cookie('popup') =='none'){
+            $('.popup').hide()
+            $('body').css('overflow', 'auto');
+        }
+    </script>
     <script src="./script/common.js"></script>
     <script src="./script/index.js"></script>
 </body>

@@ -1,16 +1,17 @@
-// 팝업창
-const popup_close = document.querySelector('.popup .close')
-const popup = document.querySelector('.popup')
-console.log(popup_close)
+// // 팝업창
+// const popup_close = document.querySelector('.popup .close')
+// const popup = document.querySelector('.popup')
+// console.log(popup_close)
 
-body_html.style.overflow = 'hidden'
-popup_close.addEventListener('click', ()=>{
-    popup.classList.add('hide')
-    body_html.style.overflow = 'auto'
-    setTimeout(() => {
-        popup.style.display = 'none'
-    }, 500);
-});
+// body_html.style.overflow = 'hidden'
+// console.log(body_html)
+// popup_close.addEventListener('click', ()=>{
+//     popup.classList.add('hide')
+//     body_html.style.overflow = 'auto'
+//     setTimeout(() => {
+//         popup.style.display = 'none'
+//     }, 500);
+// });
 
 /* 상단 메인 슬라이드 */
 const my_swiper = new Swiper('#top_container', { 

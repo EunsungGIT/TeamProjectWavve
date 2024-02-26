@@ -7,7 +7,7 @@ const chat_message = document.querySelector('.chat_message')
 const user_text = document.querySelector('.user_text')
 const chatBtn = document.querySelector('#chatBtn')
 const apiEndpoint = 'https://api.openai.com/v1/chat/completions'
-const apiKey = 
+const apiKey = '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'
 
 
 
