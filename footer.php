@@ -3,13 +3,14 @@
         <div class="f_top_wrap">
             <div class="f_top">
                 <a href="./customer_service.html">공지사항</a>
+                <a href="./customer_service.html"><img src="./images/index/notice.png" alt="공지사항"></a>
                 <div class="swiper_container" id="swiper_notice">
                     <div class="swiper-wrapper" id="notice_wrap">
-                        <a href="#" class="swiper-slide" id="notice_001">[점검안내] 2월 22일 롯데홈쇼핑 라이브 채널 점검</a>
-                        <a href="#" class="swiper-slide" id="notice_002">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
-                        <a href="#" class="swiper-slide" id="notice_003">[웨이브 폰트 출시] '웨이브 파도체'로 나만의 콘텐츠를 채워보세요!</a>
-                        <a href="#" class="swiper-slide" id="notice_004">[업데이트] 2월 1주 프로그램 리스트</a>
-                        <a href="#" class="swiper-slide" id="notice_005">[업데이트/중지] 2월 wavvie 영화 리스트</a>
+                        <a href="./customer_service.html" class="swiper-slide" id="notice_001">[점검안내] 2월 22일 롯데홈쇼핑 라이브 채널 점검</a>
+                        <a href="./customer_service.html" class="swiper-slide" id="notice_002">일부 스마트 TV Wavve 서비스 지원 종료 안내 (2024년 1월 1일)</a>
+                        <a href="./customer_service.html" class="swiper-slide" id="notice_003">[웨이브 폰트 출시] '웨이브 파도체'로 나만의 콘텐츠를 채워보세요!</a>
+                        <a href="./customer_service.html" class="swiper-slide" id="notice_004">[업데이트] 2월 1주 프로그램 리스트</a>
+                        <a href="./customer_service.html" class="swiper-slide" id="notice_005">[업데이트/중지] 2월 wavvie 영화 리스트</a>
                     </div>
                     <div class="move">
                         <a href="#" class="swiper-button-prev" id="f_prev">

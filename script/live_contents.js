@@ -5,23 +5,40 @@ const closeBtn = document.querySelector('.popup_video > a')
 const popup_icon = document.querySelectorAll('.popup_video_bottom .icon a')
 const popup_icon_img = document.querySelectorAll('.popup_video_bottom .icon a img')
 
-popup_video.style.display = 'none'
-window.addEventListener('scroll',()=>{
-    const scrollPosition = window.scrollY;
-    console.log(scrollPosition)
+let popupClose = false
+let loadWait = false;
 
-    if(scrollPosition > 400){
-        popup_video.style.display = 'flex'
-        main_video.style.display = 'none'
-    }else{
-        popup_video.style.display = 'none'
-        main_video.style.display = 'block'
-    }
-})
+popup_video.style.visibility = 'hidden'
 closeBtn.addEventListener('click',(e)=>{
-    popup_video.style.display = 'none'
     e.preventDefault();
+    popupClose = true
+    popup_video.style.display = 'none'
 })
+
+function popupFunc() {
+    if (window.scrollY >= 500) {
+    if(popupClose == false){
+    popup_video.style.display = 'flex'
+    popup_video.style.visibility = 'visible';
+    main_video.style.visibility = 'hidden';
+    }
+    } else {
+    popup_video.style.visibility = 'hidden';
+    main_video.style.visibility = 'visible';
+    }
+}
+
+window.addEventListener('scroll', function(e) {
+    if (!loadWait) {
+    window.requestAnimationFrame(function() {
+    popupFunc();
+    loadWait = false;
+    });
+    loadWait = true;
+    }
+});
+
+setTimeout(()=>window.scrollTo(0,0),100)
 // 재생 아이콘
 popup_icon[0].addEventListener('click',()=>{
     if (video.paused) {
