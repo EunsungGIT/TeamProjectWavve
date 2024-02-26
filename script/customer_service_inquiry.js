@@ -16,6 +16,8 @@ cancelBtn.addEventListener('click',()=>{
     }
 })
 
+
+
 submitBtn.addEventListener('click',()=>{
     window.alert('문의가 완료되었습니다.')
     setTimeout(() => {

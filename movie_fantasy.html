@@ -24,16 +24,16 @@
         <div class="movie">
         </div>
         <div class="page">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">7</a>
-            <a href="#">8</a>
-            <a href="#">9</a>
-            <a href="#">10</a>
+            <a href="javascript:void(0)">1</a>
+            <a href="javascript:void(0)">2</a>
+            <a href="javascript:void(0)">3</a>
+            <a href="javascript:void(0)">4</a>
+            <a href="javascript:void(0)">5</a>
+            <a href="javascript:void(0)">6</a>
+            <a href="javascript:void(0)">7</a>
+            <a href="javascript:void(0)">8</a>
+            <a href="javascript:void(0)">9</a>
+            <a href="javascript:void(0)">10</a>
         </div>
     </main>
     <script src="./script/common.js"></script>
@@ -49,12 +49,14 @@
                 listItem.innerHTML = `
                     <img src="./images/data_img/movie_fantasy/movie_fantasy_banner_${indexFormatted}.jpg">
                 `;
-                listItem.addEventListener('click',()=>{
+                listItem.addEventListener('click',(e)=>{
                     window.location.href = movie.link
+                    e.preventDefault()
                 })
                 movieList.appendChild(listItem)
             })
         })
+
     </script>
 </body>
 </html>

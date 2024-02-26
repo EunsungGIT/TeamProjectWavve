@@ -19,13 +19,15 @@ const coupon_contents = document.querySelectorAll ('.not_coupon div')
 console.log(coupon_contents[1])
 coupon_contents[1].style.display = 'none'
 
-coupon_title[0].addEventListener('click',()=>{
+coupon_title[0].addEventListener('click',(e)=>{
     coupon_contents[1].style.display = 'none'
     coupon_contents[0].style.display = 'block'
+    e.preventDefault()
 })
 
-coupon_title[1].addEventListener('click',()=>{
+coupon_title[1].addEventListener('click',(e)=>{
     coupon_contents[0].style.display = 'none'
     coupon_contents[1].style.display = 'block'
+    e.preventDefault()
 })
 

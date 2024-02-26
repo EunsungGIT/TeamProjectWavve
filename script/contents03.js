@@ -195,4 +195,13 @@ speak_btn.addEventListener('click',()=>{
     }
 })
 
-
+const twitter_facebook = document.querySelectorAll('.twitter_facebook a')
+const twittr_link = 'https://twitter.com/?lang=ko'
+const facebook_link = 'https://www.facebook.com/?locale=ko_KR'
+console.log(twitter_facebook[1],twitter_facebook[0])
+twitter_facebook[0].addEventListener('click',()=>{
+    window.open(twittr_link,'_blank', 'width=800, height=600')
+})
+twitter_facebook[1].addEventListener('click',()=>{
+    window.open(facebook_link,'_blank', 'width=800, height=600')
+})

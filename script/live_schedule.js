@@ -161,7 +161,13 @@ for(let m of alarm){
         e.preventDefault();
     })
 }
-
+const title_name =document.querySelectorAll('.title a')
+console.log(title_name[0])
+for(let v of title_name){
+    v.addEventListener('click',(e)=>{
+        e.preventDefault()
+    })
+}
 //시간대 별 부르기
 const live_on = document.querySelectorAll('.on_air h1')
 console.log(live_on[0])
@@ -197,6 +203,6 @@ const replay = document.querySelectorAll('.contents_more  a span')
 for(let w of replay){
     w.addEventListener('click',(e)=>{
         e.preventDefault();
-        window.location.href = './contents.html'
+        window.location.href = './live_contents.html'
     })
 }
