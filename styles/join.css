@@ -97,6 +97,10 @@ section .contents .content_box form fieldset #join_btn {
 /* 하단 */
 section .contents .content_box h2 {
     color: #a5a5a5; font-size: 1.25rem;
+    font-weight: bold;
+}
+section .contents .content_box .m_join_title {
+    display: none;
 }
 /* 양옆 선 */
 section .contents .content_box h2::after{

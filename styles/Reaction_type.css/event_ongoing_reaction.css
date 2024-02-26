@@ -52,6 +52,7 @@
         }
 
         .content_wrap1 {
+            padding: 0 30px;
         }
 
         .event_ongoing_content .ongoing_main_container .btm_container {
@@ -60,6 +61,8 @@
 
         .ongoing_container_h1_m {
             display: block;
+            font-size: 2.1875rem;
+            margin-bottom: auto;
         }
 
         .ongoing_container_h1 {
@@ -95,8 +98,10 @@
         align-items: center;
         margin-bottom: 55px;
     }
+
     .ongoing_container_title .ongoing_container_left img {
         margin-bottom: 25px;
+        width: 200px; height: 300px;
     }
         /*1240 조건 종료*/
     .event_ongoing_main_title a img {

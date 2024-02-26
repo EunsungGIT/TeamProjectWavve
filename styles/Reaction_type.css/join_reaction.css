@@ -8,6 +8,12 @@
     }
 }
 @media screen and (max-width:768px){
+
+    section .contents .content_box {
+        padding: 20px;
+    }
+
+
     section .contents .line {
         display: none;
     }
@@ -19,7 +25,7 @@
     }
 
     section .contents .content_box h1 {
-        font-size: 1.5625rem;
+        font-size: 1.4375rem;
         text-align: center;
        margin-bottom: 35px;
     }
@@ -61,4 +67,20 @@
     section .contents .content_box form fieldset ul li:nth-child(2) p {
         align-items: center;
     }
+    section .contents .content_box h2::before {
+        display: none;
+    }
+    section .contents .content_box h2::after {
+        display: none;
+    }
+    section .contents .content_box .m_join_title{
+        font-weight: bold;
+    }
+    section .contents .content_box .w_join_title{
+        display: none;
+    }
+    section .contents .content_box .m_join_title {
+        display: block;
+    }
+
 }

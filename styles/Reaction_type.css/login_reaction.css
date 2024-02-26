@@ -44,6 +44,7 @@
     }
     main .login #loginFrm #loginBtn {
         margin-top: -30px;
+        width: 465px;
     }
     main .login .sns_join {
         padding: 20px 0
@@ -56,7 +57,13 @@
         }
 
         #chat #chat_icon {
-            right: 0px;
-            bottom: 0px;
+            right: 19px;
+            bottom: 110px;
+        }
+        main .login p:nth-of-type(2)::before {
+            display: none;
+        }
+        main .login p:nth-of-type(2)::after {
+            display: none;
         }
     }
