@@ -17,6 +17,15 @@
     }
 }
 @media screen and (max-width:768px){
+    header .h_top {
+        display: none;
+    }
+    header .h_bottom_wrap .h_bottom .search a:nth-of-type(2) {
+        display: block;
+    }
+    header .h_bottom_wrap .h_bottom nav {
+        display: none;
+    }
     footer .f_top_wrap .f_top > a:nth-of-type(1) {
         display: none;
     }

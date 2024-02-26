@@ -4,13 +4,13 @@ const main_video = document.querySelector('.video_bg .video')
 const closeBtn = document.querySelector('.popup_video > a')
 const popup_icon = document.querySelectorAll('.popup_video_bottom .icon a')
 const popup_icon_img = document.querySelectorAll('.popup_video_bottom .icon a img')
-console.log(popup_video,main_video)
 
 popup_video.style.display = 'none'
 window.addEventListener('scroll',()=>{
     const scrollPosition = window.scrollY;
+    console.log(scrollPosition)
 
-    if(scrollPosition >= 300){
+    if(scrollPosition > 400){
         popup_video.style.display = 'flex'
         main_video.style.display = 'none'
     }else{

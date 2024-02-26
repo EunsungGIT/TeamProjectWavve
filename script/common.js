@@ -52,6 +52,58 @@ up.addEventListener('click', ()=>{
     window.scrollTo({top: 0})
 })
 
+/* header 모바일 */
+const menu_a = document.querySelectorAll('.menu a')
+const profile_mobile = document.querySelector('.profile_mobile > a')
+const profile_mobile_a = document.querySelectorAll('.profile_mobile_m a')
+const profile_mobile_m = document.querySelector('.profile_mobile_m')
+const coupon_mobile = document.querySelector('.coupon_mobile > a')
+const coupon_mobile_m = document.querySelector('.coupon_mobile_m')
+
+profile_mobile_a[3].addEventListener('click',()=>{
+    body_html.style.overflow = 'hidden'
+    notification_entire.style.display = 'block'
+    notifiaction_wrapper.classList.add('wide')
+})
+
+menu_a[1].addEventListener('click',()=>{
+    category_all.style.display = 'block'
+})
+
+let menuActice = true
+profile_mobile_m.style.display = 'none'
+profile_mobile.addEventListener('click',()=>{
+    menuActice = !menuActice
+    console.log(menuActice)
+    if(menuActice === false){
+        profile_mobile_m.classList.add('slide_up')
+        profile_mobile_m.classList.remove('slide_down')
+        profile_mobile_m.style.display = 'flex'
+    }else{
+        profile_mobile_m.classList.add('slide_down')
+        profile_mobile_m.classList.remove('slide_up')
+        setTimeout(() => {
+            profile_mobile_m.style.display = 'none'
+        }, 500);
+    }
+})
+let couponActice = true
+coupon_mobile_m.style.display = 'none'
+coupon_mobile.addEventListener('click',()=>{
+    couponActice = !couponActice
+    if(couponActice === false){
+        coupon_mobile_m.classList.add('slide_up')
+        coupon_mobile_m.classList.remove('slide_down')
+        coupon_mobile_m.style.display = 'flex'
+    }else{
+        coupon_mobile_m.classList.add('slide_down')
+        coupon_mobile_m.classList.remove('slide_up')
+        setTimeout(() => {
+            coupon_mobile_m.style.display = 'none'
+        }, 500);
+    }
+})
+
 // header 프로필 mouseenter
 const profile = document.querySelector('.profile')
 const profile_m = document.querySelector('.profile_m')
@@ -164,6 +216,27 @@ category_m_a[0].addEventListener('click', ()=>{
 })
 close_category.addEventListener('click',()=>{
     category_all.style.display = 'none'
+})
+
+/* header 메뉴 버튼 */
+const menuBtn = document.querySelector('.menuBtn')
+const header_m = document.querySelector('.header_m')
+const backBtn = document.querySelector('.header_m > a')
+
+header_m.style.display = 'none'
+header_m.style.transform = 'translateX(400px)'
+menuBtn.addEventListener('click',()=>{
+    
+    header_m.style.display = 'block'
+    setTimeout(() => {
+        header_m.style.transform = 'translateX(0)'
+    }, 100);
+})
+backBtn.addEventListener('click',()=>{
+    header_m.style.transform = 'translateX(400px)'
+    setTimeout(() => {
+        header_m.style.display = 'none'
+    }, 500);
 })
 
 // footer swiper
