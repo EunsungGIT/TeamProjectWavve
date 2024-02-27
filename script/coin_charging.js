@@ -34,7 +34,6 @@ const my_swiper = new Swiper('.crad_container', {
     },
 })
 
-
 /* 일반충전 & 자동충전 화면 전환 */
 const charging_tap = document.querySelectorAll(".coin_charging_middle > a")
 const normal_charging_tap = document.querySelector("#frm_payment1")
@@ -186,9 +185,7 @@ const card_normal_auto_reset = () => {
     for(let i of coin_abox_span_normal){i.style.color="#a5a5a5"}
     for(let i of coin_abox_span_auto){i.style.color="#a5a5a5"}
 }
-
 card_normal_auto_reset()
-
 //일반 충전 a 클릭 시 이벤트
 card_btm_content_box_normal.forEach((t,i)=>{
     t.addEventListener('click',(e)=>{
@@ -211,8 +208,6 @@ card_btm_content_box_auto.forEach((t,i)=>{
         coin_abox_span_auto[i].style.color="#FFF"
     })
 })
-
-
 //확인 및 취소 버튼
 const close_btn = document.querySelectorAll('.close_btn')
 const next_btn =document.querySelectorAll('.next_btn')
