@@ -152,6 +152,7 @@ main section .contents_info .info_contents .recommend {}
 .share_bg {
     background: rgba(0, 0, 0, 0.8); z-index: 9999;
     position: fixed; height: 100vh; width: 100%;
+    top: 0;
 }
 .share_bg .share {
     background: #252525; width: 460px;

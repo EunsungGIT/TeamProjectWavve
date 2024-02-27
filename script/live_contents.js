@@ -39,13 +39,16 @@ window.addEventListener('scroll', function(e) {
 });
 
 setTimeout(()=>window.scrollTo(0,0),100)
+
 // 재생 아이콘
-popup_icon[0].addEventListener('click',()=>{
-    if (video.paused) {
-        video.play();
+const video_p = document.querySelector('.popup_video video')
+popup_icon[0].addEventListener('click',(e)=>{
+    e.preventDefault()
+    if (video_p.paused) {
+        video_p.play();
         popup_icon_img[0].src = './images/live_contents/pause_s.png'
     } else {
-        video.pause();
+        video_p.pause();
         popup_icon_img[0].src = './images/live_contents/play_s.png'
     }
 })

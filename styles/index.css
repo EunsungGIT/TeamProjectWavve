@@ -133,7 +133,9 @@ main .wrap .middle_wrap {
     max-width: 1240px;
     margin: 0 auto;
 }
-main .wrap .middle_wrap .img_container1 {}
+main .wrap .middle_wrap .img_container1 {
+    margin-bottom: 80px;
+}
 /* 맨 밑 슬라이드 */
 main .wrap .middle_wrap .img_container1_btm {
     margin-bottom: 130px;

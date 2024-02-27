@@ -1,7 +1,7 @@
 main {background: #1b1b1b;}
 main .title_wrap {
     background: #252525;
-    position: sticky; top: 0;
+    position: sticky; top: 109px;
 }
 main .title_wrap .title {
     padding: 40px 0;

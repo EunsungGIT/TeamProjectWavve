@@ -7,7 +7,7 @@ const chat_message = document.querySelector('.chat_message')
 const user_text = document.querySelector('.user_text')
 const chatBtn = document.querySelector('#chatBtn')
 const apiEndpoint = 'https://api.openai.com/v1/chat/completions'
-const apiKey = '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';
+const apiKey = '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';
 
 chat_box.classList.add('chatHide')
 chat_icon.addEventListener('click', ()=>{
